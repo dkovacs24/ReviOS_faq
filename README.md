@@ -1,7 +1,7 @@
 # ReviOS frequently asked questions
 
-## Faceit not working
-### Only works on 21H1 version, download: https://www.revi.cc/revios/download
+## How to install ReviOS
+### https://youtu.be/w4Wn25d02iY
 
 ---
 
@@ -12,13 +12,8 @@
 
 ## Internet icon bug
 ### Try this fix: https://www.revi.cc/revios/workspace#h.ym4x0ntin3b8
-### If not working, try this fix, Discord message link with instructions: https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116,
+### If not working, try this fix, Discord message link with instructions: https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116, 
 ### direct link to the zip file: https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip
-
----
-
-## How to install ReviOS
-### https://youtu.be/w4Wn25d02iY
 
 ---
 
@@ -30,3 +25,8 @@
 
 ## Second monitor not working
 ### Install gpu drivers. Help: https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F
+
+---
+
+## Faceit not working
+### Only works on 21H1 version, download: https://www.revi.cc/revios/download
