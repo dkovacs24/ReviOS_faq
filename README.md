@@ -30,7 +30,7 @@
 
 ## What's the difference between the versions? What to choose?
 
-As of this moment (2022-01-21), there are 3 versions of ReviOS that are supported: 1709, 21H2 and 21.12. No other versions are supported.
+As of this moment (2022-01-21), there are 3 versions of ReviOS that are supported: `1709`, `21H2` and `21.12`. No other versions are supported.
 
 If you are looking for a version:
 - more gaming, less latency and less bloatware oriented, choose `1709`
@@ -86,7 +86,7 @@ Install GPU drivers. Help: https://www.revi.cc/revios/post-install#h.p_GR11WmefR
 
 ## Can I download other language?
 
-Yes, in the Settins. If that isn't working, follow this: https://www.revi.cc/revios/workspace/lang
+Yes, in the Settings. If that isn't working, follow this: https://www.revi.cc/revios/workspace/lang
 
 ---
 
@@ -98,13 +98,13 @@ Not recommended, because it can disable tweaks and reinstall bloatware.
 
 ## Which version can I use Faceit? / Faceit not working
 
-Only works on **21H2** and **21.12** version.
+Only works on `21H2` and `21.12` version.
 
 ---
 
 ## You said Faceit works with 21H2/21.12.
 
-Probably since the release the those versions another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be release soon.
+Probably since the release the those versions another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be released soon.
 
 ---
 
