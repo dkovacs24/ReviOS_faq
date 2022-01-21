@@ -1,4 +1,8 @@
-**Before using this faq, please do your own research, look around on the [ReviOS website](https://www.revi.cc/), there specifically in the [Changelogs](https://www.revi.cc/revios/download/changelog), the [Post-install](https://www.revi.cc/revios/post-install) guide and the [Workspace](https://www.revi.cc/revios/workspace). Also use Google (or the search engine of your choice), especially with not ReviOS related questions. You _can_ find here things that are on the ReviOS website, because people are dumb, and going to ask it anyway.**
+**Before using this faq, please do your own research, look around on the [ReviOS website](https://www.revi.cc/), there specifically in the [Changelogs](https://www.revi.cc/revios/download/changelog), the [Post-install](https://www.revi.cc/revios/post-install) guide and the [Workspace](https://www.revi.cc/revios/workspace).**
+
+**Also use Google (or the search engine of your choice), especially with not ReviOS related questions.** 
+
+**You _can_ find here things that are on the ReviOS website, because people are dumb, and going to ask it anyway.**
 
 
 - [ReviOS frequently asked questions](#revios-frequently-asked-questions)
@@ -18,6 +22,7 @@
   - [There are some visual bugs with ReviOS 11](#there-are-some-visual-bugs-with-revios-11)
   - [Microsoft Store / XBox app not working](#microsoft-store--xbox-app-not-working)
   - [Where is Windows Defender? Can I use it?](#where-is-windows-defender-can-i-use-it)
+  - [Driver missing when installing ReviOS](#driver-missing-when-installing-revios)
 
 
 # ReviOS frequently asked questions
@@ -25,14 +30,14 @@
 
 ## What's the difference between the versions? What to choose?
 
-As of this moment (2022-01-18), there are 3 versions of ReviOS that are supported: 1709, 21H2 and 21.12. No other versions are supported.
+As of this moment (2022-01-21), there are 3 versions of ReviOS that are supported: 1709, 21H2 and 21.12. No other versions are supported.
 
 If you are looking for a version:
-- more gaming, less latency and less bloatware oriented, choose 1709
-- more compatible with latest programs, choose 21H2 or 21.12
+- more gaming, less latency and less bloatware oriented, choose `1709`
+- more compatible with latest programs, choose `21H2` or `21.12`
 
 
-***Faceit only works on 21H2 and 21.12.***
+**_Faceit only works on 21H2 and 21.12._**
 
 ---
 
@@ -56,7 +61,8 @@ There are mirror downloads on the official Discord server, invite link: https://
 
 ## Internet icon bug
 
-If not working, try this fix, Discord message link with instructions: https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116. Direct link to the zip file: https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip
+Fix: Discord message link with instructions: https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116. 
+Direct link to the zip file: https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip
 
 ---
 
@@ -64,7 +70,11 @@ If not working, try this fix, Discord message link with instructions: https://di
 
 Download the drivers from the manufacturer's website.
 
-If you can't do that, for example you don't have internet driver, somehow download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/) Full. It will download all the drivers they have, about 21 GB. If you have internet access and you need to download other drivers, just choose the Lite version, it will scan your hardware, and only download the drivers you need.
+If you can't do that, for example you don't have internet driver, somehow (on other computer or something like that) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/). 
+Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
+If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. After restart you can scan the PC for more missing drivers, or better yet, go to the manufacturers website, and download the drivers from there.
+
+((this section needs more detailing, because in my VM all the drivers up to date, so I can't go though the whole process))
 
 ---
 
@@ -76,7 +86,7 @@ Install GPU drivers. Help: https://www.revi.cc/revios/post-install#h.p_GR11WmefR
 
 ## Can I download other language?
 
-Yes, follow this: https://www.revi.cc/revios/workspace/lang
+Yes, in the Settins. If that isn't working, follow this: https://www.revi.cc/revios/workspace/lang
 
 ---
 
@@ -106,13 +116,16 @@ Yes, they were stripped because leaking memory.
 
 ## AMD driver installation is crashing
 
-It's a Windows 11 bug. Try running the installer in silent mode, with the `/S` flag. Here's help and a script to automate it: https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562
+It's a Windows 11 bug. Try running the installer in silent mode, with the `/S` flag. 
+Here's help and a script to automate it: https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562
 
 ---
 
 ## There are some visual bugs with ReviOS 11
 
 These bugs came from Windows 11, hope they will be fixed in next Microsoft update releases.
+
+In the mean time, try [StartAllBack](https://www.startallback.com/).
 
 ---
 
@@ -131,3 +144,9 @@ In the Windows 11 build you can reactivate it.
 - run `Start.bat`
 - press `1`
 - restart
+
+---
+
+## Driver missing when installing ReviOS
+
+Try plugging the flash drive into another USB port. If sill not working, try using [Ventoy](https://www.ventoy.net/) instead of Rufus.
