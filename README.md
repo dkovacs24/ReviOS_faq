@@ -1,4 +1,4 @@
-**Before using this faq, please do your own research, look around on the [ReviOS website](https://www.revi.cc/), there specifically in the [Changelogs](https://www.revi.cc/revios/download/changelog), the [Post-install](https://www.revi.cc/revios/post-install) guide and the [Workspace](https://www.revi.cc/revios/workspace).**
+**Before using this FAQ, please do your own research, look around on the [ReviOS website](https://www.revi.cc/), there specifically in the [Changelogs](https://www.revi.cc/revios/download/changelog), the [Post-install](https://www.revi.cc/revios/post-install) guide and the [Workspace](https://www.revi.cc/revios/workspace).**
 
 **Also use Google (or the search engine of your choice), especially with not ReviOS related questions.** 
 
