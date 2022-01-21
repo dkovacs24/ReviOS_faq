@@ -36,7 +36,6 @@ If you are looking for a version:
 - more gaming, less latency and less bloatware oriented, choose `1709`
 - more compatible with latest programs, choose `21H2` or `21.12`
 
-
 **_Faceit only works on 21H2 and 21.12._**
 
 ---
@@ -93,6 +92,8 @@ Yes, in the Settings. If that isn't working, follow this: https://www.revi.cc/re
 ## Can I use Windows Update?
 
 Not recommended, because it can disable tweaks and reinstall bloatware.
+
+But you can install update with the help of this guide: https://www.revi.cc/revios/workspace/updating
 
 ---
 
