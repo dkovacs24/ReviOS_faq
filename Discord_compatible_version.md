@@ -53,11 +53,11 @@
 > But you can install update with the help of this guide: https://www.revi.cc/revios/workspace/updating
 <:blank:934095223045374033>
 
-**Which version can I use Faceit? / Faceit not working**
+**Which version can I use Faceit? / Faceit is not working**
 > Only works on `21H2` and `21.12` version.
 <:blank:934095223045374033>
 
-**You said Faceit works with 21H2/21.12, and I am on 21H2/21.12**
+**You said Faceit only works with 21H2/21.12, and I am on 21H2/21.12, and it is still not working**
 > Probably since the release the those versions another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be released soon.
 <:blank:934095223045374033>
 
@@ -124,10 +124,10 @@ https://discord.com/channels/619835916139364383/779558805422735402/9341702555871
 **Can I use Windows Update?**
 https://discord.com/channels/619835916139364383/779558805422735402/934170289569402960
 
-**Which version can I use Faceit? / Faceit not working**
+**Which version can I use Faceit? / Faceit is not working**
 https://discord.com/channels/619835916139364383/779558805422735402/934170309819519036
 
-**You said Faceit works with 21H2/21.12, and I am on 21H2/21.12**
+**You said Faceit only works with 21H2/21.12, and I am on 21H2/21.12, and it is still not working**
 https://discord.com/channels/619835916139364383/779558805422735402/934170342023381033
 
 **GPU and Network monitoring not working in the Task Manager**

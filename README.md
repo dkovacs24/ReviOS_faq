@@ -97,13 +97,13 @@ But you can install update with the help of this guide: https://www.revi.cc/revi
 
 ---
 
-## Which version can I use Faceit? / Faceit not working
+## Which version can I use Faceit? / Faceit is not working
 
 Only works on `21H2` and `21.12` version.
 
 ---
 
-## You said Faceit works with 21H2/21.12, and I am on 21H2/21.12
+## You said Faceit only works with 21H2/21.12, and I am on 21H2/21.12, and it is still not working
 
 Probably since the release the those versions another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be released soon.
 
