@@ -103,7 +103,7 @@ Only works on `21H2` and `21.12` version.
 
 ---
 
-## You said Faceit works with 21H2/21.12
+## You said Faceit works with 21H2/21.12, and I am on 21H2/21.12
 
 Probably since the release the those versions another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be released soon.
 
@@ -122,7 +122,7 @@ Here's help and a script to automate it: https://discord.com/channels/6198359161
 
 ---
 
-## There are some visual bugs with ReviOS 11
+## There are some visual bugs on the taskbar in ReviOS 11
 
 These bugs came from Windows 11, hope they will be fixed in next Microsoft update releases.
 
