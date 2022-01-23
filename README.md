@@ -28,7 +28,7 @@
 # ReviOS frequently asked questions
 
 
-## What's the difference between the versions? What to choose?
+## What is the difference between the versions? What to choose?
 
 As of this moment (2022-01-21), there are 3 versions of ReviOS that are supported: `1709`, `21H2` and `21.12`. No other versions are supported.
 
@@ -36,7 +36,7 @@ If you are looking for a version:
 - more gaming, less latency and less bloatware oriented, choose `1709`
 - more compatible with latest programs, choose `21H2` or `21.12`
 
-**_Faceit only works on 21H2 and 21.12._**
+**_Faceit only works on 21H2 and 21.12._** Details below.
 
 ---
 
@@ -46,13 +46,13 @@ If you are looking for a version:
 
 ---
 
-## How to install ReviOS
+## How to install ReviOS?
 
 [Tutorial](https://youtu.be/w4Wn25d02iY)
 
 ---
 
-## Downloads not working
+## Downloads are not working / Google Drive said: "Sorry, you can't view or download this file at this time." / MEGA quota exceeded
 
 There are mirror downloads on the official Discord server, invite link: https://discord.gg/962y4pU
 
@@ -65,9 +65,9 @@ Direct link to the zip file: https://cdn.discordapp.com/attachments/626772969611
 
 ---
 
-## Internet/sound/touchpad/who knows what else... not working
+## Internet/Sound/Touchpad/other hardware... not working
 
-Download the drivers from the manufacturer's website.
+Download the drivers from the manufacturer's website ans install them.
 
 If you can't do that, for example you don't have internet driver, somehow (on other computer or something like that) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/). 
 Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
@@ -77,13 +77,13 @@ If it finishes (you can monitor the process on the top side of the window), copy
 
 ---
 
-## Second monitor not working
+## Second monitor not working/blank
 
 Install GPU drivers. Help: https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F
 
 ---
 
-## Can I download other language?
+## Can I download other languages?
 
 Yes, in the Settings. If that isn't working, follow this: https://www.revi.cc/revios/workspace/lang
 
@@ -91,7 +91,7 @@ Yes, in the Settings. If that isn't working, follow this: https://www.revi.cc/re
 
 ## Can I use Windows Update?
 
-Not recommended, because it can disable tweaks and reinstall bloatware.
+Not recommended, because it will disable tweaks and reinstall bloatware.
 
 But you can install update with the help of this guide: https://www.revi.cc/revios/workspace/updating
 
@@ -103,7 +103,7 @@ Only works on `21H2` and `21.12` version.
 
 ---
 
-## You said Faceit works with 21H2/21.12.
+## You said Faceit works with 21H2/21.12
 
 Probably since the release the those versions another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be released soon.
 
