@@ -33,7 +33,7 @@
 > Direct link to the zip file: https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip
 <:blank:934095223045374033>
 
-**Internet/Sound/Touchpad/other hardware... not working**
+**Internet/Sound/Bluetooth/Touchpad/other hardware... not working**
 > Download the drivers from the manufacturer's website.
 > If you can't do that, for example you don't have internet driver, somehow (on other computer or something like that) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/). 
 > Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
@@ -112,7 +112,7 @@ https://discord.com/channels/619835916139364383/779558805422735402/9341701423199
 **Internet icon bug**
 https://discord.com/channels/619835916139364383/779558805422735402/934170163979370506
 
-**Internet/Sound/Touchpad/other hardware... not working**
+**Internet/Sound/Bluetooth/Touchpad/other hardware... not working**
 https://discord.com/channels/619835916139364383/779558805422735402/934170196283883591
 
 **Second monitor not working/blank**

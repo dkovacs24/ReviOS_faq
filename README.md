@@ -6,20 +6,20 @@
 
 
 - [ReviOS frequently asked questions](#revios-frequently-asked-questions)
-  - [What's the difference between the versions? What to choose?](#whats-the-difference-between-the-versions-what-to-choose)
+  - [What is the difference between the versions? What to choose?](#what-is-the-difference-between-the-versions-what-to-choose)
   - [Where is the Windows 10 version? / Where are the older versions?](#where-is-the-windows-10-version--where-are-the-older-versions)
-  - [How to install ReviOS](#how-to-install-revios)
-  - [Downloads not working](#downloads-not-working)
+  - [How to install ReviOS?](#how-to-install-revios)
+  - [Downloads are not working / Google Drive said: "Sorry, you can't view or download this file at this time." / MEGA quota exceeded](#downloads-are-not-working--google-drive-said-sorry-you-cant-view-or-download-this-file-at-this-time--mega-quota-exceeded)
   - [Internet icon bug](#internet-icon-bug)
-  - [Internet/sound/touchpad/who knows what else... not working](#internetsoundtouchpadwho-knows-what-else-not-working)
-  - [Second monitor not working](#second-monitor-not-working)
-  - [Can I download other language?](#can-i-download-other-language)
+  - [Internet/Sound/Bluetooth/Touchpad/other hardware... not working](#internetsoundbluetoothtouchpadother-hardware-not-working)
+  - [Second monitor not working/blank](#second-monitor-not-workingblank)
+  - [Can I download other languages?](#can-i-download-other-languages)
   - [Can I use Windows Update?](#can-i-use-windows-update)
-  - [Which version can I use Faceit? / Faceit not working](#which-version-can-i-use-faceit--faceit-not-working)
-  - [You said Faceit works with 21H2/21.12.](#you-said-faceit-works-with-21h22112)
+  - [Which version can I use Faceit? / Faceit is not working](#which-version-can-i-use-faceit--faceit-is-not-working)
+  - [You said Faceit only works with 21H2/21.12, and I am on 21H2/21.12, and it is still not working](#you-said-faceit-only-works-with-21h22112-and-i-am-on-21h22112-and-it-is-still-not-working)
   - [GPU and Network monitoring not working in the Task Manager](#gpu-and-network-monitoring-not-working-in-the-task-manager)
   - [AMD driver installation is crashing](#amd-driver-installation-is-crashing)
-  - [There are some visual bugs with ReviOS 11](#there-are-some-visual-bugs-with-revios-11)
+  - [There are some visual bugs on the taskbar in ReviOS 11](#there-are-some-visual-bugs-on-the-taskbar-in-revios-11)
   - [Microsoft Store / XBox app not working](#microsoft-store--xbox-app-not-working)
   - [Where is Windows Defender? Can I use it?](#where-is-windows-defender-can-i-use-it)
   - [Driver missing when installing ReviOS](#driver-missing-when-installing-revios)
@@ -65,7 +65,7 @@ Direct link to the zip file: https://cdn.discordapp.com/attachments/626772969611
 
 ---
 
-## Internet/Sound/Touchpad/other hardware... not working
+## Internet/Sound/Bluetooth/Touchpad/other hardware... not working
 
 Download the drivers from the manufacturer's website ans install them.
 
