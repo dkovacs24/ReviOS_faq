@@ -10,11 +10,12 @@
   - [Where is the Windows 10 version? / Where are the older versions?](#where-is-the-windows-10-version--where-are-the-older-versions)
   - [How to install ReviOS?](#how-to-install-revios)
   - [Downloads are not working / Google Drive said: "Sorry, you can't view or download this file at this time." / MEGA quota exceeded](#downloads-are-not-working--google-drive-said-sorry-you-cant-view-or-download-this-file-at-this-time--mega-quota-exceeded)
-  - [Internet icon bug](#internet-icon-bug)
   - [Internet/Sound/Bluetooth/Touchpad/other hardware... not working](#internetsoundbluetoothtouchpadother-hardware-not-working)
+  - [Internet icon bug](#internet-icon-bug)
   - [Second monitor not working/blank](#second-monitor-not-workingblank)
   - [Can I download other languages?](#can-i-download-other-languages)
   - [Can I use Windows Update?](#can-i-use-windows-update)
+  - [Can I use the Reset this PC feature?](#can-i-use-the-reset-this-pc-feature)
   - [Which version can I use Faceit? / Faceit is not working](#which-version-can-i-use-faceit--faceit-is-not-working)
   - [You said Faceit only works with 21H2/21.12, and I am on 21H2/21.12, and it is still not working](#you-said-faceit-only-works-with-21h22112-and-i-am-on-21h22112-and-it-is-still-not-working)
   - [GPU and Network monitoring not working in the Task Manager](#gpu-and-network-monitoring-not-working-in-the-task-manager)
@@ -58,13 +59,6 @@ There are mirror downloads on the official Discord server, invite link: https://
 
 ---
 
-## Internet icon bug
-
-Fix: Discord message link with instructions: https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116. 
-Direct link to the zip file: https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip
-
----
-
 ## Internet/Sound/Bluetooth/Touchpad/other hardware... not working
 
 Download the drivers from the manufacturer's website ans install them.
@@ -74,6 +68,13 @@ Extract it, and start the software with `SDIO_auto.bat`. Then select the `Downlo
 If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. After restart you can scan the PC for more missing drivers, or better yet, go to the manufacturers website, and download the drivers from there.
 
 ((this section needs more detailing, because in my VM all the drivers up to date, so I can't go though the whole process))
+
+---
+
+## Internet icon bug
+
+Fix: Discord message link with instructions: https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116. 
+Direct link to the zip file: https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip
 
 ---
 
@@ -93,7 +94,15 @@ Yes, in the Settings. If that isn't working, follow this: https://www.revi.cc/re
 
 Not recommended, because it will disable tweaks and reinstall bloatware.
 
-But you can install update with the help of this guide: https://www.revi.cc/revios/workspace/updating
+But you can install updates with the help of this guide: https://www.revi.cc/revios/workspace/updating
+
+---
+
+## Can I use the Reset this PC feature?
+
+Not recommended, because it will disable tweaks and reinstall bloatware.
+
+We recommend to reinstall ReviOS. Don not forget to backup your data.
 
 ---
 

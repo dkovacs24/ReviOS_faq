@@ -28,16 +28,16 @@
 > Mirror downloads in <#658369065110339640>
 <:blank:934095223045374033>
 
-**Internet icon bug**
-> Fix: https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116. 
-> Direct link to the zip file: https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip
-<:blank:934095223045374033>
-
 **Internet/Sound/Bluetooth/Touchpad/other hardware... not working**
 > Download the drivers from the manufacturer's website.
 > If you can't do that, for example you don't have internet driver, somehow (on other computer or something like that) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/). 
 > Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
 > If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. After restart you can scan the PC for more missing drivers, or better yet, go to the manufacturers website, and download the drivers from there.
+<:blank:934095223045374033>
+
+**Internet icon bug**
+> Fix: https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116. 
+> Direct link to the zip file: https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip
 <:blank:934095223045374033>
 
 **Second monitor not working/blank**
@@ -50,8 +50,13 @@
 
 **Can I use Windows Update?**
 > Not recommended, because it will disable tweaks and reinstall bloatware.
-> But you can install update with the help of this guide: https://www.revi.cc/revios/workspace/updating
+> But you can install updates with the help of this guide: https://www.revi.cc/revios/workspace/updating
 <:blank:934095223045374033>
+
+**Can I use the Reset this PC feature?**
+> Not recommended, because it will disable tweaks and reinstall bloatware.
+> We recommend to reinstall ReviOS. Don not forget to backup your data.
+> <:blank:934095223045374033>
 
 **Which version can I use Faceit? / Faceit is not working**
 > Only works on `21H2` and `21.12` version.
@@ -123,6 +128,9 @@ https://discord.com/channels/619835916139364383/779558805422735402/9341702555871
 
 **Can I use Windows Update?**
 https://discord.com/channels/619835916139364383/779558805422735402/934170289569402960
+
+**Can I use the Reset this PC feature?**
+((link))
 
 **Which version can I use Faceit? / Faceit is not working**
 https://discord.com/channels/619835916139364383/779558805422735402/934170309819519036
