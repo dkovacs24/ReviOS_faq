@@ -1,0 +1,11 @@
+site_name: ReviOS FAQ
+theme:
+  name: material
+# repo_url: https://github.com/dkovacs24/ReviOS_faq/
+# site_author: Dawe24
+nav:
+    - Home: 'index.md'
+    - 'before-install.md'
+    - 'after-install.md'
+    - ReviOS website: 'https://www.revi.cc/'
+    - ReviOS Discord: 'https://discord.gg/962y4pU'
