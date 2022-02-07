@@ -73,7 +73,7 @@ To reactivate GPU statistics:
 
 - open `cmd`
 - run this: `reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f`
-- sc start `GraphicsPerfSvc`
+- `sc start GraphicsPerfSvc`
 - restart
 
 ---
@@ -81,7 +81,7 @@ To reactivate GPU statistics:
 ## AMD driver installation is crashing
 
 It is a Windows 11 bug. Try running the installer in silent mode, with the `/S` flag. 
-Here's help and a script to automate it: https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562
+[Here is help and a script to automate it](https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562)
 
 ---
 
