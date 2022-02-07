@@ -88,7 +88,7 @@ If you are looking for a version:
 
 For the latest version the alternative downloads are on the [website](https://www.revi.cc/revios/download#h.cwre5ugg2fhb).
 
-For the others, ther are mirror downloads on the official Discord server, invite link: https://discord.gg/962y4pU
+For the others, ther are mirror downloads on the [official Discord server](https://discord.gg/962y4pU).
 
 ---
 
@@ -110,20 +110,21 @@ If it finishes (you can monitor the process on the top side of the window), copy
 
 ## Internet icon bug
 
-Fix: Discord message link with instructions: https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116. 
-Direct link to the zip file: https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip
+Fix: [Discord message link with instructions](https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116)
+
+[Zip file](https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip)
 
 ---
 
 ## Second monitor not working/blank or freshrate not desired
 
-Install GPU drivers. Help to tweak: https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F
+Install GPU drivers. [Help to tweak](https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F)
 
 ---
 
 ## Can I download other languages?
 
-Yes, in the Settings. If that isn't working, follow this: https://www.revi.cc/revios/workspace/lang
+Yes, in the Settings. If that isn't working, [follow this guide](https://www.revi.cc/revios/workspace/lang).
 
 ---
 
@@ -131,7 +132,7 @@ Yes, in the Settings. If that isn't working, follow this: https://www.revi.cc/re
 
 Not recommended, because it will disable tweaks and reinstall bloatware.
 
-But if you still want to update, you can install updates with the help of this guide: https://www.revi.cc/revios/workspace/updating
+But if you still want to update, you can install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating).
 
 ---
 
@@ -167,6 +168,7 @@ Probably since the release of that version another update was released by Micros
 Yes, they were stripped because leaking memory.
 
 To reactivate GPU statistics:
+
 - open `cmd`
 - run this: `reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f
 - sc start GraphicsPerfSvc`
@@ -198,6 +200,7 @@ Run `ctfmon` and `wsreset` commands.
 ## Where is Windows Defender? Can I use it?
 
 In the Windows 11 and the latest 10 build you can reactivate it.
+
 - go to`"%userprofile%\Documents\Workspace\Windows Defender"`
 - run `Start.bat`
 - press `1`
