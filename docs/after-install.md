@@ -72,8 +72,8 @@ Yes, they were stripped because leaking memory.
 To reactivate GPU statistics:
 
 - open `cmd`
-- run this: `reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f
-- sc start GraphicsPerfSvc`
+- run this: `reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f`
+- sc start `GraphicsPerfSvc`
 - restart
 
 ---
