@@ -1,5 +1,3 @@
-# After installing ReviOS
-
 ## Internet/Sound/Bluetooth/Touchpad/other hardware... not working
 
 Download the drivers from the manufacturer's website ans install them.

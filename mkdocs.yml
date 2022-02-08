@@ -1,11 +1,14 @@
 site_name: ReviOS Frequently Asked Questions
 theme:
   name: material
+  logo: img/revision_crop.png
+  favicon: img/revision_crop.png
+
 # repo_url: https://github.com/dkovacs24/ReviOS_faq/
 # site_author: Dawe24
 nav:
     - Home: 'index.md'
-    - 'before-install.md'
-    - 'after-install.md'
+    - Before and while installing ReviOS: 'before-install.md'
+    - After installing ReviOS: 'after-install.md'
     - ReviOS website: 'https://www.revi.cc/'
     - ReviOS Discord: 'https://discord.gg/962y4pU'
