@@ -30,6 +30,7 @@ Alternative download links on the official Discord server's download channel.
 
 
 If you are looking for a version:
+
 - more gaming, less latency and less bloatware oriented, choose `1709`
 - more compatible with latest programs, choose `22.01` or `21.12`
 
@@ -60,5 +61,3 @@ For the others, ther are mirror downloads on the [official Discord server](https
 ## Driver missing when installing ReviOS
 
 Try plugging the flash drive into another USB port. If sill not working, try using [Ventoy](https://www.ventoy.net/) instead of Rufus.
-
----

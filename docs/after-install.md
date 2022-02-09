@@ -1,9 +1,13 @@
+# After installing ReviOS
+
 ## Internet/Sound/Bluetooth/Touchpad/other hardware... not working
 
 Download the drivers from the manufacturer's website ans install them.
 
 If you can not do that, because you don not have internet driver, somehow (on other computer or something like that) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/). 
+
 Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
+
 If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. After restart you can scan the PC for more missing drivers, or better yet, go to the manufacturers website, and download the drivers from there.
 
 ---
