@@ -6,7 +6,7 @@ Make sure you did not selected a charcter in the command prompt. (White rectangl
 
 ---
 
-## Internet/Sound/Bluetooth/Touchpad/other hardware... not working
+## Internet/Sound/Bluetooth/other hardware... not working
 
 Download the drivers from the manufacturer's website ans install them.
 
