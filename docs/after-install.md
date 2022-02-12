@@ -1,5 +1,11 @@
 # After installing ReviOS
 
+## The "Do not close the window, otherwise your system won't work properly" not closing
+
+Make sure you did not selected a charcter in the command prompt. (White rectangle) This pauses the running of the script. Press Esc or Enter, and the script will continue.
+
+---
+
 ## Internet/Sound/Bluetooth/Touchpad/other hardware... not working
 
 Download the drivers from the manufacturer's website ans install them.
@@ -37,6 +43,12 @@ Yes, in the Settings. If that isn't working, [follow this guide](https://www.rev
 Not recommended, because it will disable tweaks and reinstall bloatware.
 
 But if you still want to update, you can install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating).
+
+---
+
+## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
+
+This is a bug in the `22.01` version, in the next builds it will be fixed. Until that, avoid updating.
 
 ---
 
@@ -118,3 +130,6 @@ In the Windows 11 and the latest 10 build you can reactivate it.
 - go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization`
 - set the `NoLockScreen` key's value to `0`
 - now you should be able to change it in Settings, if not, restart
+
+---
+
