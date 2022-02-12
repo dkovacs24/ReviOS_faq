@@ -48,7 +48,7 @@ But if you still want to update, you can install updates with the help of [this 
 
 ## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
 
-This is a bug in the `22.01` version, in the next builds it will be fixed. Until that, avoid updating.
+This is a bug in the `22.01` version, in the next builds it will be fixed. Until that, the taskbar icon can be removed with [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg).
 
 ---
 
