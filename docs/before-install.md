@@ -18,7 +18,7 @@ As of this moment (2022-02-07), there are 3 versions of ReviOS that are supporte
 
 [Download](https://www.revi.cc/revios/download#h.ywpa5av3hdf3)
 
-Alternative download links on the official Discord server's download channel.
+Alternative download links on the [official Discord server](https://discord.gg/962y4pU)'s [download channel](https://discord.com/channels/619835916139364383/658369065110339640/922911034514210818).
 
 ### ReviOS 1709
 
@@ -26,7 +26,7 @@ Alternative download links on the official Discord server's download channel.
 
 [Download](https://www.revi.cc/revios/download/alternative-downloads#h.ski2fzvfamkj)
 
-Alternative download links on the official Discord server's download channel.
+Alternative download links on the [official Discord server](https://discord.gg/962y4pU)'s [download channel](https://discord.com/channels/619835916139364383/658369065110339640/859328905336979476).
 
 
 If you are looking for a version:
