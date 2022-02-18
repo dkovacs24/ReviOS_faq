@@ -1,4 +1,5 @@
 site_name: ReviOS Frequently Asked Questions
+site_url: https://dkovacs24.github.io/ReviOS_faq/
 nav:
     - Home: 'index.md'
     - Before and while installing ReviOS: 'before-install.md'
@@ -7,6 +8,7 @@ nav:
     - ReviOS Discord: 'https://discord.gg/962y4pU'
 theme:
   name: material
+  language: en
   logo: img/revision_crop.png
   favicon: img/revision_crop.png
   palette: 
@@ -16,5 +18,14 @@ theme:
   font:
     text: Cantarell
     code: Cantarell
-# repo_url: https://github.com/dkovacs24/ReviOS_faq/
-# site_author: Dawe24
+  features:
+    #- navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.instant
+    - toc.follow
+    #- toc.integrate
+markdown_extensions:
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section for reference
