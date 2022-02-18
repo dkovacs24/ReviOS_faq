@@ -8,6 +8,8 @@
       
       
       
+        <link rel="canonical" href="https://dkovacs24.github.io/ReviOS_faq/">
+      
       <link rel="icon" href="img/revision_crop.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.11">
     
@@ -74,7 +76,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="ReviOS Frequently Asked Questions" class="md-header__button md-logo" aria-label="ReviOS Frequently Asked Questions" data-md-component="logo">
       
@@ -139,13 +143,13 @@
     
   </nav>
   
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -188,9 +192,53 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         Home
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#this-website-was-last-updated-at" class="md-nav__link">
+    This website was last updated at:
+  </a>
+  
+    <nav class="md-nav" aria-label="This website was last updated at:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date" class="md-nav__link">
+    date
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -276,6 +324,34 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#this-website-was-last-updated-at" class="md-nav__link">
+    This website was last updated at:
+  </a>
+  
+    <nav class="md-nav" aria-label="This website was last updated at:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#date" class="md-nav__link">
+    date
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -287,15 +363,31 @@
               
                 
 
-<h1 id="advice-before-doing-anything">Advice before doing anything</h1>
-<p><strong>Before using this FAQ, please do your own research, look around on the <a href="https://www.revi.cc/">ReviOS website</a>, there specifically in the <a href="https://www.revi.cc/revios/download/changelog">Changelogs</a>, the <a href="https://www.revi.cc/revios/post-install">Post-install</a> guide and the <a href="https://www.revi.cc/revios/workspace">Workspace</a> and on <a href="https://discord.gg/962y4pU">our Discord server</a>.</strong></p>
-<p><strong>Also use Google (or the search engine of your choice), especially with not ReviOS related questions.</strong> </p>
-<p><strong>You <em>can</em> find here things that are on the ReviOS website, because people are dumb, and going to ask it anyway.</strong></p>
+<h1 id="advice-before-doing-anything">Advice before doing anything<a class="headerlink" href="#advice-before-doing-anything" title="Anchor link to this section for reference">&para;</a></h1>
+<p>Before using this FAQ, please do your own research, look around on the <a href="https://www.revi.cc/">ReviOS website</a>, there specifically in the <a href="https://www.revi.cc/revios/download/changelog">Changelogs</a>, the <a href="https://www.revi.cc/revios/post-install">Post-install</a> guide and the <a href="https://www.revi.cc/revios/workspace">Workspace</a> and on <a href="https://discord.gg/962y4pU">our Discord server</a>.</p>
+<p>Also use Google (or the search engine of your choice), especially with not ReviOS related questions.</p>
+<p>You can find here things that are on the ReviOS website, because people are dumb, and going to ask it anyway.</p>
+<h3 id="this-website-was-last-updated-at">This website was last updated at:<a class="headerlink" href="#this-website-was-last-updated-at" title="Anchor link to this section for reference">&para;</a></h3>
+<h4 id="date">date<a class="headerlink" href="#date" title="Anchor link to this section for reference">&para;</a></h4>
+<script>
+    document.getElementsByClassName("md-sidebar--secondary")[0].remove();
+    fetch('https://api.github.com/repos/dkovacs24/ReviOS_faq/commits/gh-pages').then(response =>{
+        return response.json();
+    }).then(data =>{
+        //console.log(data["commit"]["author"]["date"]);
+        document.getElementById("date").innerHTML = new Date(data["commit"]["author"]["date"]).toUTCString();
+    })
+</script>
 
               
             </article>
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+            Back to top
+          </a>
         
       </main>
       
@@ -341,7 +433,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.092fa1f6.min.js"}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs.sticky", "navigation.top", "navigation.instant", "toc.follow"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.092fa1f6.min.js"}</script>
     
     
       <script src="assets/javascripts/bundle.5a9542cf.min.js"></script>
