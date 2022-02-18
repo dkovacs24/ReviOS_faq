@@ -2,25 +2,33 @@
 
 ## What is the difference between the versions? What to choose?
 
-As of this moment (2022-02-07), there are 3 versions of ReviOS that are supported: `10 22.01`, `11 21.12` and `1709`. No other versions are supported.
+As of this moment (2022-02-18), there are 3 versions of ReviOS that are supported: `22.02`, `21.01` and `1709`. No other versions are supported.
 
-### ReviOS 10 22.01
+Usually every other released version is based on the same Windows version, with newer updates and tweaks. Like in odd numbered months, Windows 10, in even numbered months Windows 11.
 
-[Changlelog](https://www.revi.cc/revios/download/changelog#h.odb11cheqkzw)
+### Revios 11 22.02
+
+Based on Windows 11.
+
+[Changelog](https://www.revi.cc/revios/download/changelog#h.odb11cheqkzw)
 
 [Download](https://www.revi.cc/revios/download#h.ak1prpz0wx5m)
 
-[Alternative download links](https://www.revi.cc/revios/download#h.cwre5ugg2fhb)
+Alternative download links not available right now, this page will be updated as soon as links are out.
 
-### Revios 11 21.12
+### ReviOS 10 22.01
 
-[Changelog](https://www.revi.cc/revios/download/changelog#h.kzabahjk03q5)
+Based on Windows 10.
 
-[Download](https://www.revi.cc/revios/download#h.ywpa5av3hdf3)
+[Changlelog](https://www.revi.cc/revios/download/changelog#h.t081ow81wszv)
 
-Alternative download links on the [official Discord server](https://discord.gg/962y4pU)'s [download channel](https://discord.com/channels/619835916139364383/658369065110339640/922911034514210818).
+[Download](https://www.revi.cc/revios/download#h.ohynz5ng8xb0)
+
+[Alternative download links](https://www.revi.cc/revios/download#h.rjajkyda4vza)
 
 ### ReviOS 1709
+
+Based on an older release of Windows 10, not many software supports it anymore.
 
 [Changelog](https://www.revi.cc/revios/download/changelog#h.rfvq0n3k2uk7)
 
@@ -32,29 +40,37 @@ Alternative download links on the [official Discord server](https://discord.gg/9
 If you are looking for a version:
 
 - more gaming, less latency and less bloatware oriented, choose `1709`
-- more compatible with latest programs, choose `22.01` or `21.12`
+- more compatible with latest programs, choose `22.02` or `22.01`
 
-**_Faceit only works on 22.01._** Details below.
+**_Faceit only works on 22.02 and 22.01 versions._** [Details below](#which-version-can-i-use-faceit-faceit-is-not-working).
+
+---
+
+## Which version do I need for Faceit?
+
+As of this moment (2022-02-18), Faceit only works on the `22.02` and `22.01` versions.
+
+If you are using one of these versions, and still cannot use Faceit, since the release of that version probably another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be released soon.
 
 ---
 
 ## Where are the older versions?
 
-[Here](https://www.revi.cc/revios/download/alternative-downloads)
+[On the website, under Archive Downloads](https://www.revi.cc/revios/download/archive-downloads)
 
 ---
 
 ## How to install ReviOS?
 
-[Tutorial](https://youtu.be/w4Wn25d02iY)
+[The tutorial is here](https://youtu.be/w4Wn25d02iY)
 
 ---
 
 ## Downloads are not working / Google Drive: "Sorry, you can't view or download this file at this time." / MEGA quota exceeded
 
-For the latest version the alternative downloads are on the [website](https://www.revi.cc/revios/download#h.cwre5ugg2fhb).
+For the latest version the alternative downloads are on the [website](https://www.revi.cc/revios/download), and direct links for the specific versions [above](#what-is-the-difference-between-the-versions-what-to-choose).
 
-For the others, ther are mirror downloads on the [official Discord server](https://discord.gg/962y4pU).
+For other, older version, there are mirror downloads on the [official Discord server](https://discord.gg/962y4pU)'s [download channel](https://discord.com/channels/619835916139364383/658369065110339640).
 
 ---
 
