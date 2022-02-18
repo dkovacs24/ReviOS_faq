@@ -8,7 +8,7 @@ Usually every other released version is based on the same Windows version, with 
 
 ### Revios 11 22.02
 
-Based on Windows 11.
+Based on the latest Windows 11.
 
 [Changelog](https://www.revi.cc/revios/download/changelog#h.odb11cheqkzw)
 
@@ -18,7 +18,7 @@ Alternative download links not available right now, this page will be updated as
 
 ### ReviOS 10 22.01
 
-Based on Windows 10.
+Based on the latest Windows 10.
 
 [Changlelog](https://www.revi.cc/revios/download/changelog#h.t081ow81wszv)
 
@@ -32,7 +32,7 @@ Based on an older release of Windows 10, not many software supports it anymore.
 
 [Changelog](https://www.revi.cc/revios/download/changelog#h.rfvq0n3k2uk7)
 
-[Download](https://www.revi.cc/revios/download/alternative-downloads#h.ski2fzvfamkj)
+[Download](https://www.revi.cc/revios/download/archive-downloads#h.ski2fzvfamkj)
 
 Alternative download links on the [official Discord server](https://discord.gg/962y4pU)'s [download channel](https://discord.com/channels/619835916139364383/658369065110339640/859328905336979476).
 
