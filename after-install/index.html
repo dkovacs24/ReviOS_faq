@@ -300,19 +300,6 @@
     How can I update to the newest version of ReviOS?
   </a>
   
-    <nav class="md-nav" aria-label="How can I update to the newest version of ReviOS?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#can-i-update-to-the-newest-version-of-revios-without-reinstall" class="md-nav__link">
-    Can I update to the newest version of ReviOS without reinstall?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -489,19 +476,6 @@
     How can I update to the newest version of ReviOS?
   </a>
   
-    <nav class="md-nav" aria-label="How can I update to the newest version of ReviOS?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#can-i-update-to-the-newest-version-of-revios-without-reinstall" class="md-nav__link">
-    Can I update to the newest version of ReviOS without reinstall?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -585,7 +559,7 @@
 <hr />
 <h2 id="internet-icon-bug">Internet icon bug<a class="headerlink" href="#internet-icon-bug" title="Anchor link to this section for reference">&para;</a></h2>
 <p><a href="https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116">Discord message link with instructions</a></p>
-<p><a href="https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip">Zip file</a></p>
+<p><a href="https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip">Zip file with the fix</a></p>
 <hr />
 <h2 id="second-monitor-not-workingblank-or-freshrate-not-desired">Second monitor not working/blank or freshrate not desired<a class="headerlink" href="#second-monitor-not-workingblank-or-freshrate-not-desired" title="Anchor link to this section for reference">&para;</a></h2>
 <p>Install GPU drivers. <a href="https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F">Help to tweak</a></p>
@@ -595,15 +569,21 @@
 <hr />
 <h2 id="can-i-use-windows-update">Can I use Windows Update?<a class="headerlink" href="#can-i-use-windows-update" title="Anchor link to this section for reference">&para;</a></h2>
 <p>Not recommended, because it will disable tweaks and reinstall bloatware.</p>
-<p>But if you still want to update, you can manually install updates with the help of <a href="https://www.revi.cc/revios/workspace/updating">this guide</a>.</p>
+<p>In the latest versions it was removed, due to users updating without reading the FAQ or asking.</p>
+<p>If you still want to update, you can manually install updates with the help of <a href="https://www.revi.cc/revios/workspace/updating">this guide</a> or reactivate the Windows Update menu item in settings with this steps:</p>
+<ul>
+<li>open <code>regedit</code></li>
+<li>go to <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer</code></li>
+<li>remove <code>windowsupdate</code> from <code>SettingsPageVisibility</code></li>
+<li>restart</li>
+</ul>
+<h5 id="if-you-update-might-as-well-just-use-stock-windows">If you update, might as well just use stock Windows.<a class="headerlink" href="#if-you-update-might-as-well-just-use-stock-windows" title="Anchor link to this section for reference">&para;</a></h5>
 <hr />
 <h2 id="windows-update-icon-showed-up-on-the-taskbar-andor-the-update-and-shutdownrestart-option-showed-up">Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up<a class="headerlink" href="#windows-update-icon-showed-up-on-the-taskbar-andor-the-update-and-shutdownrestart-option-showed-up" title="Anchor link to this section for reference">&para;</a></h2>
-<p>This is a bug in the <code>22.01</code> version, it will be fixed in the next build, for now you can use <a href="https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg">this fix</a> for the taskbar icon.</p>
+<p>This is a bug in the <code>22.01</code> version, for now you can use <a href="https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg">this fix</a> for the taskbar icon. In the <code>22.02</code> version it is already fixed.</p>
 <hr />
 <h2 id="how-can-i-update-to-the-newest-version-of-revios">How can I update to the newest version of ReviOS?<a class="headerlink" href="#how-can-i-update-to-the-newest-version-of-revios" title="Anchor link to this section for reference">&para;</a></h2>
 <p>You need to reinstall. Do not forget to backup your data.</p>
-<h3 id="can-i-update-to-the-newest-version-of-revios-without-reinstall">Can I update to the newest version of ReviOS without reinstall?<a class="headerlink" href="#can-i-update-to-the-newest-version-of-revios-without-reinstall" title="Anchor link to this section for reference">&para;</a></h3>
-<p>No. Do not forget to backup your data.</p>
 <hr />
 <h2 id="can-i-use-the-reset-this-pc-feature">Can I use the Reset this PC feature?<a class="headerlink" href="#can-i-use-the-reset-this-pc-feature" title="Anchor link to this section for reference">&para;</a></h2>
 <p>It probably does not work, and even if it does, it is not recommended, because it will disable tweaks and reinstall bloatware.</p>

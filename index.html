@@ -192,53 +192,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Home
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="." class="md-nav__link md-nav__link--active">
         Home
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#this-website-was-last-updated-at" class="md-nav__link">
-    This website was last updated at:
-  </a>
-  
-    <nav class="md-nav" aria-label="This website was last updated at:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#date" class="md-nav__link">
-    date
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -324,34 +280,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#this-website-was-last-updated-at" class="md-nav__link">
-    This website was last updated at:
-  </a>
-  
-    <nav class="md-nav" aria-label="This website was last updated at:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#date" class="md-nav__link">
-    date
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -367,14 +295,13 @@
 <p>Before using this FAQ, please do your own research, look around on the <a href="https://www.revi.cc/">ReviOS website</a>, there specifically in the <a href="https://www.revi.cc/revios/download/changelog">Changelogs</a>, the <a href="https://www.revi.cc/revios/post-install">Post-install</a> guide and the <a href="https://www.revi.cc/revios/workspace">Workspace</a> and on <a href="https://discord.gg/962y4pU">our Discord server</a>.</p>
 <p>Also use Google (or the search engine of your choice), especially with not ReviOS related questions.</p>
 <p>You can find here things that are on the ReviOS website, because people are dumb, and going to ask it anyway.</p>
-<h3 id="this-website-was-last-updated-at">This website was last updated at:<a class="headerlink" href="#this-website-was-last-updated-at" title="Anchor link to this section for reference">&para;</a></h3>
-<h4 id="date">date<a class="headerlink" href="#date" title="Anchor link to this section for reference">&para;</a></h4>
+<h4 id="this-website-was-last-updated-at">This website was last updated at:<a class="headerlink" href="#this-website-was-last-updated-at" title="Anchor link to this section for reference">&para;</a></h4>
+<h5 id="date">date<a class="headerlink" href="#date" title="Anchor link to this section for reference">&para;</a></h5>
 <script>
-    document.getElementsByClassName("md-sidebar--secondary")[0].remove();
+    //document.getElementsByClassName("md-sidebar--secondary")[0].remove();
     fetch('https://api.github.com/repos/dkovacs24/ReviOS_faq/commits/gh-pages').then(response =>{
         return response.json();
     }).then(data =>{
-        //console.log(data["commit"]["author"]["date"]);
         document.getElementById("date").innerHTML = new Date(data["commit"]["author"]["date"]).toUTCString();
     })
 </script>
