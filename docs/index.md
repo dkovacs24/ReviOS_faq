@@ -6,15 +6,14 @@ Also use Google (or the search engine of your choice), especially with not ReviO
 
 You can find here things that are on the ReviOS website, because people are dumb, and going to ask it anyway.
 
-### This website was last updated at: 
-#### date
+#### This website was last updated at: 
+##### date
 
 <script>
-    document.getElementsByClassName("md-sidebar--secondary")[0].remove();
+    //document.getElementsByClassName("md-sidebar--secondary")[0].remove();
     fetch('https://api.github.com/repos/dkovacs24/ReviOS_faq/commits/gh-pages').then(response =>{
         return response.json();
     }).then(data =>{
-        //console.log(data["commit"]["author"]["date"]);
         document.getElementById("date").innerHTML = new Date(data["commit"]["author"]["date"]).toUTCString();
     })
 </script>

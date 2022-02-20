@@ -22,7 +22,7 @@ If it finishes (you can monitor the process on the top side of the window), copy
 
 [Discord message link with instructions](https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116)
 
-[Zip file](https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip)
+[Zip file with the fix](https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip)
 
 ---
 
@@ -42,23 +42,28 @@ Yes, in the Settings. If that isn't working, [follow this guide](https://www.rev
 
 Not recommended, because it will disable tweaks and reinstall bloatware.
 
-But if you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating).
+In the latest versions it was removed, due to users updating without reading the FAQ or asking.
+
+If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating) or reactivate the Windows Update menu item in settings with this steps:
+
+- open `regedit`
+- go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer`
+- remove `windowsupdate` from `SettingsPageVisibility`
+- restart
+
+##### If you update, might as well just use stock Windows.
 
 ---
 
 ## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
 
-This is a bug in the `22.01` version, it will be fixed in the next build, for now you can use [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg) for the taskbar icon.
+This is a bug in the `22.01` version, for now you can use [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg) for the taskbar icon. In the `22.02` version it is already fixed.
 
 ---
 
 ## How can I update to the newest version of ReviOS?
 
 You need to reinstall. Do not forget to backup your data.
-
-### Can I update to the newest version of ReviOS without reinstall?
-
-No. Do not forget to backup your data.
 
 ---
 
