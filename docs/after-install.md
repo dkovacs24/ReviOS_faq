@@ -28,7 +28,7 @@ If it finishes (you can monitor the process on the top side of the window), copy
 
 ## Second monitor not working/blank or freshrate not desired
 
-Install GPU drivers. [Help to tweak](https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F)
+Install GPU drivers. [Help to tweak](https://www.revi.cc/revios/post-install#h.p_26IZH4oTRS4J)
 
 ---
 
@@ -84,6 +84,12 @@ To reactivate GPU statistics:
 - open `cmd`
 - run this: `reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f`
 - then run this: `sc start GraphicsPerfSvc`
+- restart
+
+To reactivate Network statistics:
+
+- open `regedit`
+- at `HKLM\System\CurrentControlSet\Services\Ndu` set `Start` to `2`
 - restart
 
 ---

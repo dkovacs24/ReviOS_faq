@@ -4,7 +4,7 @@ Before using this FAQ, please do your own research, look around on the [ReviOS w
 
 Also use Google (or the search engine of your choice), especially with not ReviOS related questions.
 
-You can find here things that are on the ReviOS website, because people are dumb, and going to ask it anyway.
+<br>
 
 #### This website was last updated at: 
 ##### date

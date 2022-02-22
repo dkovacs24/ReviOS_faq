@@ -42,7 +42,7 @@ If you are looking for a version:
 - more gaming, less latency and less bloatware oriented, choose `1709`
 - more compatible with latest programs, choose `22.02` or `22.01`
 
-**_Faceit only works on 22.02 and 22.01 versions._** [Details below](#which-version-can-i-use-faceit-faceit-is-not-working).
+**Faceit only works on 22.02 and 22.01 versions.** [Details below](#which-version-do-i-need-for-faceit).
 
 ---
 
@@ -56,13 +56,19 @@ If you are using one of these versions, and still cannot use Faceit, since the r
 
 ## Where are the older versions?
 
-[On the website, under Archive Downloads](https://www.revi.cc/revios/download/archive-downloads)
+[On the website, under Archive Downloads](https://www.revi.cc/revios/download/archive-downloads).
 
 ---
 
 ## How to install ReviOS?
 
-[The tutorial is here](https://youtu.be/w4Wn25d02iY)
+[The tutorial is here](https://youtu.be/w4Wn25d02iY).
+
+---
+
+## Can I install ReviOS on a MacBook?
+
+Yes, you can. Follow [this guide](https://jensd.be/1011/windows/install-windows-10-on-a-macbook-air-2019-2020-with-t2-chip), with the ReviOS iso of course.
 
 ---
 
