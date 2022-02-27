@@ -1,5 +1,4 @@
 site_name: ReviOS Frequently Asked Questions
-site_url: https://revios.rignoa.com/
 nav:
     - Home: 'index.md'
     - Before and while installing ReviOS: 'before-install.md'
@@ -28,5 +27,4 @@ theme:
 markdown_extensions:
   - toc:
       permalink: true
-      permalink_title: Anchor link to this section for reference
       toc_depth: 3
