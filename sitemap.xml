@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://dkovacs24.github.io/ReviOS_faq/</loc>
-         <lastmod>2022-02-22</lastmod>
+         <loc>https://revios.rignoa.com/</loc>
+         <lastmod>2022-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dkovacs24.github.io/ReviOS_faq/after-install/</loc>
-         <lastmod>2022-02-22</lastmod>
+         <loc>https://revios.rignoa.com/after-install/</loc>
+         <lastmod>2022-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dkovacs24.github.io/ReviOS_faq/before-install/</loc>
-         <lastmod>2022-02-22</lastmod>
+         <loc>https://revios.rignoa.com/before-install/</loc>
+         <lastmod>2022-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
