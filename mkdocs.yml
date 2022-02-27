@@ -1,5 +1,5 @@
 site_name: ReviOS Frequently Asked Questions
-site_url: https://dkovacs24.github.io/ReviOS_faq/
+site_url: https://revios.rignoa.com/
 nav:
     - Home: 'index.md'
     - Before and while installing ReviOS: 'before-install.md'
