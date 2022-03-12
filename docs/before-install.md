@@ -12,7 +12,7 @@ Based on the latest Windows 11.
 
 [Changelog](https://www.revi.cc/revios/download/changelog#h.odb11cheqkzw)
 
-[Download](https://www.revi.cc/revios/download#h.ak1prpz0wx5m)
+[Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9)
 
 Alternative download links not available right now, this page will be updated as soon as links are out.
 
@@ -22,9 +22,9 @@ Based on the latest Windows 10.
 
 [Changlelog](https://www.revi.cc/revios/download/changelog#h.t081ow81wszv)
 
-[Download](https://www.revi.cc/revios/download#h.ohynz5ng8xb0)
+[Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w)
 
-[Alternative download links](https://www.revi.cc/revios/download#h.rjajkyda4vza)
+[Alternative download links](https://www.revi.cc/revios/download#h.ry3n13gw38ew)
 
 ### ReviOS 1709
 
@@ -34,7 +34,7 @@ Based on an older release of Windows 10, not many software supports it anymore.
 
 [Download](https://www.revi.cc/revios/download/archive-downloads#h.ski2fzvfamkj)
 
-Alternative download links on the [official Discord server](https://discord.gg/962y4pU)'s [download channel](https://discord.com/channels/619835916139364383/658369065110339640/859328905336979476).
+Alternative download links on the [official Discord server's](https://discord.gg/962y4pU) [download channel](https://discord.com/channels/619835916139364383/658369065110339640/859328905336979476).
 
 
 If you are looking for a version:
@@ -43,6 +43,26 @@ If you are looking for a version:
 - more compatible with latest programs, choose `22.02` or `22.01`
 
 **Faceit only works on 22.02 and 22.01 versions.** [Details below](#which-version-do-i-need-for-faceit).
+
+---
+
+## What is the system requirement for ReviOS?
+
+It is the same as the stock Windows versions have, although ReviOS uses less RAM.
+
+
+| Total RAM Capacity | Max Usage                       | Actually Available Amount |
+| ------------------ | ------------------------------- | ------------------------- |
+| 2 GB               | 1.1 GB down to 0.9, 1.4 GB peak | 600 MB to 1.1 GB          |
+| 4 GB               | 0.8 GB                          | 3.2 GB                    |
+| 8 GB               | 1 GB                            | 7 GB                      |
+| 16 GB              | 1 GB                            | 15 GB                     |
+| 24 GB              | 1.3 GB                          | 22.7 GB                   |
+
+Tested on a fresh installation of [ReviOS 10 22.01](#revios-10-2201), in VirtualBox, on AMD Ryzen 5900X.
+
+Credit to Stasium#0001
+
 
 ---
 
@@ -76,7 +96,7 @@ Yes, you can. Follow [this guide](https://jensd.be/1011/windows/install-windows-
 
 For the latest version the alternative downloads are on the [website](https://www.revi.cc/revios/download), and direct links for the specific versions [above](#what-is-the-difference-between-the-versions-what-to-choose).
 
-For other, older version, there are mirror downloads on the [official Discord server](https://discord.gg/962y4pU)'s [download channel](https://discord.com/channels/619835916139364383/658369065110339640).
+For other, older version, there are mirror download links on the [official Discord server's](https://discord.gg/962y4pU) [download channel](https://discord.com/channels/619835916139364383/658369065110339640).
 
 ---
 

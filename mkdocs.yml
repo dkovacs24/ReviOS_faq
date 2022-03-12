@@ -3,8 +3,8 @@ nav:
     - Home: 'index.md'
     - Before and while installing ReviOS: 'before-install.md'
     - After installing ReviOS: 'after-install.md'
-    - ReviOS website: 'https://www.revi.cc/'
-    - ReviOS Discord: 'https://discord.gg/962y4pU'
+    - Revision website: 'https://www.revi.cc/'
+    - Revision Discord: 'https://discord.gg/962y4pU'
 theme:
   name: material
   language: en
@@ -15,8 +15,8 @@ theme:
     primary: red
     accent: red
   font:
-    text: Cantarell
-    code: Cantarell
+    text: Inter
+    code: DM Mono
   features:
     #- navigation.tabs
     - navigation.tabs.sticky
@@ -28,3 +28,14 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 3
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.com/users/310497849274007553
+      name: Dawe24#1229
+    - icon: material/web
+      link: https://www.revi.cc/
+      name: Revision website
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/962y4pU
+      name: Revision Discord

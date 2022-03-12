@@ -4,6 +4,8 @@ Before using this FAQ, please do your own research, look around on the [ReviOS w
 
 Also use Google (or the search engine of your choice), especially with not ReviOS related questions.
 
+This website was created and is maintained by [Dawe24#1229](https://discord.com/users/310497849274007553). If you have a question or want to report something about the website, you can find me on [our Discord server](https://discord.gg/962y4pU). **I will not answer questions in private messages, be that ReviOS related or not.**
+
 <br>
 
 #### This website was last updated at: 
