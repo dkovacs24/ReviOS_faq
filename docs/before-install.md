@@ -51,7 +51,7 @@ If you are looking for a version:
 It is the same as the stock Windows versions have, although ReviOS uses less RAM.
 
 
-| Total RAM Capacity | Max Usage                       | Actually Available Amount |
+| Total RAM Capacity | Max Usage                       | Actual Available Amount |
 | ------------------ | ------------------------------- | ------------------------- |
 | 2 GB               | 1.1 GB down to 0.9, 1.4 GB peak | 600 MB to 1.1 GB          |
 | 4 GB               | 0.8 GB                          | 3.2 GB                    |
@@ -61,7 +61,7 @@ It is the same as the stock Windows versions have, although ReviOS uses less RAM
 
 Tested on a fresh installation of [ReviOS 10 22.01](#revios-10-2201), in VirtualBox, on AMD Ryzen 5900X.
 
-Credit to Stasium#0001
+Credit to [Stasium#0001](https://stasium.dev/).
 
 
 ---
