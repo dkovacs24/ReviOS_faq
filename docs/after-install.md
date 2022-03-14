@@ -99,6 +99,8 @@ To reactivate Network statistics:
 It is a Windows 11 bug. Try running the installer in silent mode, with the `/S` flag. 
 [Here is help and a script to automate it](https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562).
 
+If this method is not working, install [Chocolatey](https://chocolatey.org/) and then the `amd-ryzen-chipset` package.
+
 ---
 
 ## There are some visual bugs on the taskbar in ReviOS 11
