@@ -6,6 +6,16 @@ Make sure you did not selected a character in the command prompt (a white rectan
 
 ---
 
+## I cannot log into my user
+
+It is a known bug, and being investigated right now. In the next build of ReviOS, it will be fixed.
+
+So far we know that this is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into you Microsoft account set a PIN code too.
+
+Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Solution reported [here](https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001).
+
+---
+
 ## Internet/Sound/Bluetooth/other hardware... not working
 
 Download the drivers from the manufacturer's website ans install them.
@@ -34,7 +44,7 @@ Install GPU drivers. [Help to tweak](https://www.revi.cc/revios/post-install#h.p
 
 ## Can I download other languages?
 
-Yes, in the Settings. If that isn't working, [follow this guide](https://www.revi.cc/revios/workspace/lang).
+Yes, in the Settings. If that isn't working, follow [this guide](https://www.revi.cc/revios/workspace/lang).
 
 ---
 
@@ -97,7 +107,7 @@ To reactivate Network statistics:
 ## AMD driver installation is crashing
 
 It is a Windows 11 bug. Try running the installer in silent mode, with the `/S` flag. 
-[Here is help and a script to automate it](https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562).
+[Here](https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562) is help and a script to automate it.
 
 If this method is not working, install [Chocolatey](https://chocolatey.org/) and then the `amd-ryzen-chipset` package.
 
@@ -139,4 +149,4 @@ In the Windows 11 and the latest 10 build you can reactivate it.
 
 ## Faceit is not working
 
-You are probably using a version of ReviOS which is not supported by Faceit anymore. [Details here](before-install.md#which-version-do-i-need-for-faceit).
+You are probably using a version of ReviOS which is not supported by Faceit anymore. Details [here](before-install.md#which-version-do-i-need-for-faceit).

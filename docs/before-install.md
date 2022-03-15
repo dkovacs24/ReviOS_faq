@@ -76,13 +76,13 @@ If you are using one of these versions, and still cannot use Faceit, since the r
 
 ## Where are the older versions?
 
-[On the website, under Archive Downloads](https://www.revi.cc/revios/download/archive-downloads).
+On the website, under [Archive Downloads](https://www.revi.cc/revios/download/archive-downloads).
 
 ---
 
 ## How to install ReviOS?
 
-[The tutorial is here](https://youtu.be/w4Wn25d02iY).
+The tutorial is [here](https://youtu.be/w4Wn25d02iY).
 
 ---
 
