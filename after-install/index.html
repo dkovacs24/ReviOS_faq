@@ -337,7 +337,7 @@
       
         <li class="md-nav__item">
   <a href="#microsoft-store-xbox-app-not-working" class="md-nav__link">
-    Microsoft Store / XBox app not working
+    Microsoft Store / Xbox app not working
   </a>
   
 </li>
@@ -520,7 +520,7 @@
       
         <li class="md-nav__item">
   <a href="#microsoft-store-xbox-app-not-working" class="md-nav__link">
-    Microsoft Store / XBox app not working
+    Microsoft Store / Xbox app not working
   </a>
   
 </li>
@@ -589,10 +589,10 @@
 <p>In the latest versions it was removed, due to users updating without reading the FAQ or asking.</p>
 <p>If you still want to update, you can manually install updates with the help of <a href="https://www.revi.cc/revios/workspace/updating">this guide</a> or reactivate the Windows Update menu item in settings with this steps:</p>
 <ul>
-<li>open <code>regedit</code></li>
-<li>go to <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer</code></li>
-<li>remove <code>windowsupdate</code> from <code>SettingsPageVisibility</code></li>
-<li>restart</li>
+<li>Open <code>regedit</code></li>
+<li>Go to <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer</code></li>
+<li>Remove <code>windowsupdate</code> from <code>SettingsPageVisibility</code></li>
+<li>Restart</li>
 </ul>
 <h5 id="if-you-update-might-as-well-just-use-stock-windows">If you update, might as well just use stock Windows.<a class="headerlink" href="#if-you-update-might-as-well-just-use-stock-windows" title="Permanent link">&para;</a></h5>
 <hr />
@@ -603,23 +603,23 @@
 <p>You need to reinstall. Do not forget to backup your data.</p>
 <hr />
 <h2 id="can-i-use-the-reset-this-pc-feature">Can I use the Reset this PC feature?<a class="headerlink" href="#can-i-use-the-reset-this-pc-feature" title="Permanent link">&para;</a></h2>
-<p>It probably does not work, and even if it does, it is not recommended, because it will disable tweaks and reinstall bloatware.</p>
+<p>It is probably not working, and even if it would work, using is not recommended , because it probably will disable tweaks and reinstall bloatware.</p>
 <p>We recommend to reinstall ReviOS. Do not forget to backup your data.</p>
 <hr />
 <h2 id="gpu-and-network-monitoring-not-working-in-the-task-manager">GPU and Network monitoring not working in the Task Manager<a class="headerlink" href="#gpu-and-network-monitoring-not-working-in-the-task-manager" title="Permanent link">&para;</a></h2>
 <p>Yes, they were stripped because leaking memory.</p>
 <p>To reactivate GPU statistics:</p>
 <ul>
-<li>open <code>cmd</code></li>
-<li>run this: <code>reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f</code></li>
-<li>then run this: <code>sc start GraphicsPerfSvc</code></li>
-<li>restart</li>
+<li>Open <code>cmd</code></li>
+<li>Run this: <code>reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f</code></li>
+<li>Then run this: <code>sc start GraphicsPerfSvc</code></li>
+<li>Restart</li>
 </ul>
 <p>To reactivate Network statistics:</p>
 <ul>
-<li>open <code>regedit</code></li>
-<li>at <code>HKLM\System\CurrentControlSet\Services\Ndu</code> set <code>Start</code> to <code>2</code></li>
-<li>restart</li>
+<li>Open <code>regedit</code></li>
+<li>At <code>HKLM\System\CurrentControlSet\Services\Ndu</code> set <code>Start</code> to <code>2</code></li>
+<li>Restart</li>
 </ul>
 <hr />
 <h2 id="amd-driver-installation-is-crashing">AMD driver installation is crashing<a class="headerlink" href="#amd-driver-installation-is-crashing" title="Permanent link">&para;</a></h2>
@@ -631,24 +631,39 @@
 <p>These bugs came from Windows 11, hope they will be fixed in next Microsoft update releases.</p>
 <p>In the mean time, try <a href="https://www.startallback.com/">StartAllBack</a>.</p>
 <hr />
-<h2 id="microsoft-store-xbox-app-not-working">Microsoft Store / XBox app not working<a class="headerlink" href="#microsoft-store-xbox-app-not-working" title="Permanent link">&para;</a></h2>
+<h2 id="microsoft-store-xbox-app-not-working">Microsoft Store / Xbox app not working<a class="headerlink" href="#microsoft-store-xbox-app-not-working" title="Permanent link">&para;</a></h2>
 <p>Run <code>ctfmon</code> and <code>wsreset</code> commands.</p>
+<p>If the login not working in the Xbox app, try these steps:</p>
+<ul>
+<li>Go to <a href="https://store.rg-adguard.net/">https://store.rg-adguard.net/</a></li>
+<li>Change the search options from <code>URL (link)</code> to <code>PackageFamilyName</code> and <code>RP</code> to <code>Slow</code>, and search for <code>Microsoft.GamingApp_8wekyb3d8bbwe</code></li>
+<li>Download the following packages:<ul>
+<li><code>Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx</code></li>
+<li><code>Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe.appx</code></li>
+<li><code>Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe.appx</code></li>
+<li><code>Microsoft.GamingApp_2203.1001.4.0_neutral_~_8wekyb3d8bbwe.msixbundle</code></li>
+</ul>
+</li>
+<li>Go where you downloaded the files, Shift + Right click and choose <code>Open Powershell window here</code></li>
+<li>Run <code>Add-AppxPackage</code> with the downloaded files. E.g.: <code>Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx</code>. <strong>Make sure you install the packages the order listed above</strong></li>
+<li>Restart</li>
+</ul>
 <hr />
 <h2 id="where-is-windows-defender-can-i-use-it">Where is Windows Defender? Can I use it?<a class="headerlink" href="#where-is-windows-defender-can-i-use-it" title="Permanent link">&para;</a></h2>
 <p>In the Windows 11 and the latest 10 build you can reactivate it.</p>
 <ul>
-<li>go to<code>"%userprofile%\Documents\Workspace\Windows Defender"</code></li>
-<li>run <code>Start.bat</code></li>
-<li>press <code>1</code></li>
-<li>restart</li>
+<li>Go to<code>"%userprofile%\Documents\Workspace\Windows Defender"</code></li>
+<li>Run <code>Start.bat</code></li>
+<li>Press <code>1</code></li>
+<li>Restart</li>
 </ul>
 <hr />
 <h2 id="how-to-change-lock-screen-background">How to change lock screen background?<a class="headerlink" href="#how-to-change-lock-screen-background" title="Permanent link">&para;</a></h2>
 <ul>
-<li>open <code>regedit</code></li>
-<li>go to <code>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization</code></li>
-<li>set the <code>NoLockScreen</code> key's value to <code>0</code></li>
-<li>now you should be able to change it in Settings, if not, restart</li>
+<li>Open <code>regedit</code></li>
+<li>Go to <code>HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization</code></li>
+<li>Set the <code>NoLockScreen</code> key's value to <code>0</code></li>
+<li>Now you should be able to change it in Settings, if not, restart</li>
 </ul>
 <hr />
 <h2 id="faceit-is-not-working">Faceit is not working<a class="headerlink" href="#faceit-is-not-working" title="Permanent link">&para;</a></h2>
