@@ -56,10 +56,10 @@ In the latest versions it was removed, due to users updating without reading the
 
 If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating) or reactivate the Windows Update menu item in settings with this steps:
 
-- open `regedit`
-- go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer`
-- remove `windowsupdate` from `SettingsPageVisibility`
-- restart
+- Open `regedit`
+- Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer`
+- Remove `windowsupdate` from `SettingsPageVisibility`
+- Restart
 
 ##### If you update, might as well just use stock Windows.
 
@@ -79,7 +79,7 @@ You need to reinstall. Do not forget to backup your data.
 
 ## Can I use the Reset this PC feature?
 
-It probably does not work, and even if it does, it is not recommended, because it will disable tweaks and reinstall bloatware.
+It is probably not working, and even if it would work, using is not recommended , because it probably will disable tweaks and reinstall bloatware.
 
 We recommend to reinstall ReviOS. Do not forget to backup your data.
 
@@ -91,16 +91,16 @@ Yes, they were stripped because leaking memory.
 
 To reactivate GPU statistics:
 
-- open `cmd`
-- run this: `reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f`
-- then run this: `sc start GraphicsPerfSvc`
-- restart
+- Open `cmd`
+- Run this: `reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f`
+- Then run this: `sc start GraphicsPerfSvc`
+- Restart
 
 To reactivate Network statistics:
 
-- open `regedit`
-- at `HKLM\System\CurrentControlSet\Services\Ndu` set `Start` to `2`
-- restart
+- Open `regedit`
+- At `HKLM\System\CurrentControlSet\Services\Ndu` set `Start` to `2`
+- Restart
 
 ---
 
@@ -121,9 +121,31 @@ In the mean time, try [StartAllBack](https://www.startallback.com/).
 
 ---
 
-## Microsoft Store / XBox app not working
+## Microsoft Store / Xbox app not working
 
 Run `ctfmon` and `wsreset` commands.
+
+If the login not working in the Xbox app, try these steps:
+
+- Open Microsoft Store
+- Click the 3 dots in the upper right corner of the window
+- Click Downloads and updates
+- Click Get updates
+  
+If you have updates, it should start installing them automatically.
+
+If the updating is done, and Xbox login is still not working, go through these steps:
+
+- Go to [https://store.rg-adguard.net/](https://store.rg-adguard.net/)
+- Change the search options from `URL (link)` to `PackageFamilyName` and `RP` to `Slow`, and search for `Microsoft.GamingApp_8wekyb3d8bbwe`
+- Download the following packages:
+    - `Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
+    - `Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
+    - `Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe.appx`
+    - `Microsoft.GamingApp_2203.1001.4.0_neutral_~_8wekyb3d8bbwe.msixbundle`
+- Go where you downloaded the files, Shift + Right click and choose `Open Powershell window here`
+- Run `Add-AppxPackage` with the downloaded files. E.g.: `Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`. **Make sure you install the packages the order listed above**
+- Restart
 
 ---
 
@@ -131,19 +153,19 @@ Run `ctfmon` and `wsreset` commands.
 
 In the Windows 11 and the latest 10 build you can reactivate it.
 
-- go to`"%userprofile%\Documents\Workspace\Windows Defender"`
-- run `Start.bat`
-- press `1`
-- restart
+- Go to`"%userprofile%\Documents\Workspace\Windows Defender"`
+- Run `Start.bat`
+- Press `1`
+- Restart
 
 ---
 
 ## How to change lock screen background?
 
-- open `regedit`
-- go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization`
-- set the `NoLockScreen` key's value to `0`
-- now you should be able to change it in Settings, if not, restart
+- Open `regedit`
+- Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization`
+- Set the `NoLockScreen` key's value to `0`
+- Now you should be able to change it in Settings, if not, restart
 
 ---
 

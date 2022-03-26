@@ -39,8 +39,8 @@ Alternative download links on the [official Discord server's](https://discord.gg
 
 If you are looking for a version:
 
-- more gaming, less latency and less bloatware oriented, choose `1709`
-- more compatible with latest programs, choose `22.02` or `22.01`
+- More gaming, less latency and less bloatware oriented, choose `1709`
+- More compatible with latest softwares, choose `22.02` or `22.01`
 
 **Faceit only works on 22.02 and 22.01 versions.** [Details below](#which-version-do-i-need-for-faceit).
 
@@ -102,4 +102,4 @@ For other, older version, there are mirror download links on the [official Disco
 
 ## Driver missing when installing ReviOS
 
-Try plugging the flash drive into another USB port. If sill not working, try using [Ventoy](https://www.ventoy.net/) instead of Rufus.
+Try plugging the flash drive into another USB port. If still not working, try using [Ventoy](https://www.ventoy.net/) instead of Rufus.
