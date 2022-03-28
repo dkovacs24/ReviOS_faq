@@ -68,9 +68,11 @@ Credit to [Stasium#0001](https://stasium.dev/).
 
 ## Which version do I need for Faceit?
 
-As of this moment (2022-02-18), Faceit only works on the `22.02` and `22.01` versions.
+~~As of this moment (2022-02-18), Faceit only works on the `22.02` and `22.01` versions.~~
 
-If you are using one of these versions, and still cannot use Faceit, since the release of that version probably another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be released soon.
+~~If you are using one of these versions, and still cannot use Faceit, since the release of that version probably another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be released soon.~~
+
+The `22.01` version of ReviOS is outdated, and Faceit most definetely will not work, same applies to `22.02`. If you don't want to reinstall you OS every month or every two months, or , it is recommended to just use stock Windows.
 
 ---
 
