@@ -10,9 +10,9 @@ Usually every other released version is based on the same Windows version, with 
 
 Based on the latest Windows 11.
 
-[Changelog](https://www.revi.cc/revios/download/changelog#h.odb11cheqkzw)
+[Changelog](https://www.revi.cc/revios/download/changelog#h.odb11cheqkzw){target=_blank}
 
-[Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9)
+[Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
 
 Alternative download links not available right now, this page will be updated as soon as links are out.
 
@@ -20,21 +20,21 @@ Alternative download links not available right now, this page will be updated as
 
 Based on the latest Windows 10.
 
-[Changlelog](https://www.revi.cc/revios/download/changelog#h.t081ow81wszv)
+[Changlelog](https://www.revi.cc/revios/download/changelog#h.t081ow81wszv){target=_blank}
 
-[Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w)
+[Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
-[Alternative download links](https://www.revi.cc/revios/download#h.ry3n13gw38ew)
+[Alternative download links](https://www.revi.cc/revios/download#h.ry3n13gw38ew){target=_blank}
 
 ### ReviOS 1709
 
 Based on an older release of Windows 10, not many software supports it anymore.
 
-[Changelog](https://www.revi.cc/revios/download/changelog#h.rfvq0n3k2uk7)
+[Changelog](https://www.revi.cc/revios/download/changelog#h.rfvq0n3k2uk7){target=_blank}
 
-[Download](https://www.revi.cc/revios/download/archive-downloads#h.ski2fzvfamkj)
+[Download](https://www.revi.cc/revios/download/archive-downloads#h.ski2fzvfamkj){target=_blank}
 
-Alternative download links on the [official Discord server's](https://discord.gg/962y4pU) [download channel](https://discord.com/channels/619835916139364383/658369065110339640/859328905336979476).
+Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/859328905336979476){target=_blank}.
 
 
 If you are looking for a version:
@@ -61,7 +61,7 @@ It is the same as the stock Windows versions have, although ReviOS uses less RAM
 
 Tested on a fresh installation of [ReviOS 10 22.01](#revios-10-2201), in VirtualBox, on AMD Ryzen 5900X.
 
-Credit to [Stasium#0001](https://stasium.dev/).
+Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 
 ---
@@ -78,30 +78,30 @@ The `22.01` version of ReviOS is outdated, and Faceit most definetely will not w
 
 ## Where are the older versions?
 
-On the website, under [Archive Downloads](https://www.revi.cc/revios/download/archive-downloads).
+On the website, under [Archive Downloads](https://www.revi.cc/revios/download/archive-downloads){target=_blank}.
 
 ---
 
 ## How to install ReviOS?
 
-The tutorial is [here](https://youtu.be/w4Wn25d02iY).
+The tutorial is [here](https://youtu.be/w4Wn25d02iY){target=_blank}.
 
 ---
 
 ## Can I install ReviOS on a MacBook?
 
-Yes, you can. Follow [this guide](https://jensd.be/1011/windows/install-windows-10-on-a-macbook-air-2019-2020-with-t2-chip), with the ReviOS iso of course.
+Yes, you can. Follow [this guide](https://jensd.be/1011/windows/install-windows-10-on-a-macbook-air-2019-2020-with-t2-chip){target=_blank}, with the ReviOS iso of course.
 
 ---
 
 ## Downloads are not working / Google Drive: "Sorry, you can't view or download this file at this time." / MEGA quota exceeded
 
-For the latest version the alternative downloads are on the [website](https://www.revi.cc/revios/download), and direct links for the specific versions [above](#what-is-the-difference-between-the-versions-what-to-choose).
+For the latest version the alternative downloads are on the [website](https://www.revi.cc/revios/download){target=_blank}, and direct links for the specific versions [above](#what-is-the-difference-between-the-versions-what-to-choose){target=_blank}.
 
-For other, older version, there are mirror download links on the [official Discord server's](https://discord.gg/962y4pU) [download channel](https://discord.com/channels/619835916139364383/658369065110339640).
+For other, older version, there are mirror download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640){target=_blank}.
 
 ---
 
 ## Driver missing when installing ReviOS
 
-Try plugging the flash drive into another USB port. If still not working, try using [Ventoy](https://www.ventoy.net/) instead of Rufus.
+Try plugging the flash drive into another USB port. If still not working, try using [Ventoy](https://www.ventoy.net/){target=_blank} instead of Rufus.

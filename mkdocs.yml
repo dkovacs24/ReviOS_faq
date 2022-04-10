@@ -1,15 +1,27 @@
 site_name: ReviOS Frequently Asked Questions
+copyright: |
+  This website was last updated at: <p id=date style="display:inline">If you see this, the api request wasn't successful.</p> 
+  <script>
+    fetch('https://api.github.com/repos/dkovacs24/ReviOS_faq/commits/gh-pages').then(response =>{
+        return response.json();
+    }).then(data =>{
+        let date = new Date(data["commit"]["author"]["date"]);
+        document.getElementById("date").innerHTML = new Date(date.getTime()-(date.getTimezoneOffset()*60*1000)).toISOString().split('T')[0];
+    })
+  </script>
 nav:
     - Home: 'index.md'
-    - Before and while installing ReviOS: 'before-install.md'
-    - After installing ReviOS: 'after-install.md'
+    #- About ReviOS in general: 'general.md'
+    - Frequently Asked Questions:
+      - Before and while installing ReviOS: 'before-install.md'
+      - After installing ReviOS: 'after-install.md'
     - Revision website: 'https://www.revi.cc/'
     - Revision Discord: 'https://discord.gg/962y4pU'
 theme:
   name: material
   language: en
   logo: img/revision_crop.png
-  favicon: img/revision_crop.png
+  #favicon: assets/images/favicon.png
   palette: 
     scheme: slate
     primary: red
@@ -18,20 +30,31 @@ theme:
     text: Inter
     code: DM Mono
   features:
-    #- navigation.tabs
+    - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
     - navigation.instant
+    #- navigation.sections
     - toc.follow
     #- toc.integrate
 markdown_extensions:
   - toc:
       permalink: true
-      toc_depth: 3
+      #toc_depth: 3
+  - attr_list
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tilde
 extra:
+  generator: true
   social:
-    - icon: fontawesome/brands/discord
+    - icon: octicons/person-16
       link: https://discord.com/users/310497849274007553
       name: Dawe24#1229
     - icon: material/web

@@ -12,7 +12,7 @@ It is a known bug, and being investigated right now. In the next build of ReviOS
 
 So far we know that this is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into you Microsoft account set a PIN code too.
 
-Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Solution reported [here](https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001).
+Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Solution reported [here](https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001){target=_blank}.
 
 ---
 
@@ -20,7 +20,7 @@ Other technique to evade the bug, is to log into your Microsoft account in the M
 
 Download the drivers from the manufacturer's website ans install them.
 
-If you can not do that, because you don not have internet driver, somehow (on other computer or something like that) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/). 
+If you can not do that, because you don not have internet driver, somehow (on other computer or something like that) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
 
 Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
 
@@ -30,21 +30,21 @@ If it finishes (you can monitor the process on the top side of the window), copy
 
 ## Internet icon bug
 
-[Discord message link with instructions](https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116)
+[Discord message link with instructions](https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116){target=_blank}
 
-[Zip file with the fix](https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip)
+[Zip file with the fix](https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip){target=_blank}
 
 ---
 
 ## Second monitor not working/blank or freshrate not desired
 
-Install GPU drivers. [Help to tweak](https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F)
+Install GPU drivers. [Help to tweak](https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F){target=_blank}
 
 ---
 
 ## Can I download other languages?
 
-Yes, in the Settings. If that isn't working, follow [this guide](https://www.revi.cc/revios/workspace/lang).
+Yes, in the Settings. If that isn't working, follow [this guide](https://www.revi.cc/revios/workspace/lang){target=_blank}.
 
 ---
 
@@ -54,7 +54,7 @@ Not recommended, because it will disable tweaks and reinstall bloatware.
 
 In the latest versions it was removed, due to users updating without reading the FAQ or asking.
 
-If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating) or reactivate the Windows Update menu item in settings with this steps:
+If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu item in settings with this steps:
 
 - Open `regedit`
 - Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer`
@@ -67,13 +67,15 @@ If you still want to update, you can manually install updates with the help of [
 
 ## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
 
-This is a bug in the `22.01` version, for now you can use [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg) for the taskbar icon. In the `22.02` version it is already fixed.
+This is a bug in the `22.01` version, for now you can use [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` version it is already fixed.
 
 ---
 
 ## How can I update to the newest version of ReviOS?
 
 You need to reinstall. Do not forget to backup your data.
+
+If you want to update because of Faceit, make sure to check out [the section about it](before-install.md#which-version-do-i-need-for-faceit).
 
 ---
 
@@ -107,9 +109,9 @@ To reactivate Network statistics:
 ## AMD driver installation is crashing
 
 It is a Windows 11 bug. Try running the installer in silent mode, with the `/S` flag. 
-[Here](https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562) is help and a script to automate it.
+[Here](https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562){target=_blank} is help and a script to automate it.
 
-If this method is not working, install [Chocolatey](https://chocolatey.org/) and then the `amd-ryzen-chipset` package.
+If this method is not working, install [Chocolatey](https://chocolatey.org/){target=_blank} and then the `amd-ryzen-chipset` package.
 
 ---
 
@@ -117,7 +119,7 @@ If this method is not working, install [Chocolatey](https://chocolatey.org/) and
 
 These bugs came from Windows 11, hope they will be fixed in next Microsoft update releases.
 
-In the mean time, try [StartAllBack](https://www.startallback.com/).
+In the mean time, try [StartAllBack](https://www.startallback.com/){target=_blank}.
 
 ---
 
@@ -136,14 +138,14 @@ If you have updates, it should start installing them automatically.
 
 If the updating is done, and Xbox login is still not working, go through these steps:
 
-- Go to [https://store.rg-adguard.net/](https://store.rg-adguard.net/)
+- Go to [https://store.rg-adguard.net/](https://store.rg-adguard.net/){target=_blank}
 - Change the search options from `URL (link)` to `PackageFamilyName` and `RP` to `Slow`, and search for `Microsoft.GamingApp_8wekyb3d8bbwe`
 - Download the following packages:
     - `Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
     - `Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
     - `Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe.appx`
     - `Microsoft.GamingApp_2203.1001.4.0_neutral_~_8wekyb3d8bbwe.msixbundle`
-- Go where you downloaded the files, Shift + Right click and choose `Open Powershell window here`
+- Go where you downloaded the files, ++shift+"Right click"++ and choose `Open Powershell window here`
 - Run `Add-AppxPackage` with the downloaded files. E.g.: `Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`. **Make sure you install the packages the order listed above**
 - Restart
 
