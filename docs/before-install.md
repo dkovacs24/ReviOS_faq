@@ -2,54 +2,37 @@
 
 ## What is the difference between the versions? What to choose?
 
-As of this moment (2022-02-18), there are 3 versions of ReviOS that are supported: `22.02`, `21.01` and `1709`. No other versions are supported.
+As of this moment (2022-04-13), there are only 2 versions of ReviOS that are supported: `22.04`, `21.02`. No other versions are supported.
 
-Usually every other released version is based on the same Windows version, with newer updates and tweaks. Like in odd numbered months, Windows 10, in even numbered months Windows 11.
+=== "ReviOS 10 22.04"
 
-### Revios 11 22.02
+    Based on the latest Windows 10.
 
-Based on the latest Windows 11.
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.odb11cheqkzw){target=_blank}
 
-[Changelog](https://www.revi.cc/revios/download/changelog#h.odb11cheqkzw){target=_blank}
+    [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
-[Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
-
-Alternative download links not available right now, this page will be updated as soon as links are out.
-
-### ReviOS 10 22.01
-
-Based on the latest Windows 10.
-
-[Changlelog](https://www.revi.cc/revios/download/changelog#h.t081ow81wszv){target=_blank}
-
-[Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
-
-[Alternative download links](https://www.revi.cc/revios/download#h.ry3n13gw38ew){target=_blank}
-
-### ReviOS 1709
-
-Based on an older release of Windows 10, not many software supports it anymore.
-
-[Changelog](https://www.revi.cc/revios/download/changelog#h.rfvq0n3k2uk7){target=_blank}
-
-[Download](https://www.revi.cc/revios/download/archive-downloads#h.ski2fzvfamkj){target=_blank}
-
-Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/859328905336979476){target=_blank}.
+    Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/963477645859901491){target=_blank}.
 
 
-If you are looking for a version:
+=== "Revios 11 22.02"
 
-- More gaming, less latency and less bloatware oriented, choose `1709`
-- More compatible with latest softwares, choose `22.02` or `22.01`
+    Based on the latest Windows 11.
 
-**Faceit only works on 22.02 and 22.01 versions.** [Details below](#which-version-do-i-need-for-faceit).
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.547zs3c6potx){target=_blank}
+
+    [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
+
+
+**Faceit only works on 22.04 and 22.02 versions.** [Details below](#which-version-do-i-need-for-faceit).
 
 ---
 
 ## What is the system requirement for ReviOS?
 
-It is the same as the stock Windows versions have, although ReviOS uses less RAM.
+Refer to our website's section about this, although it's the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run.
 
+### ReviOS RAM usage
 
 | Total RAM Capacity | Max Usage                       | Actual Available Amount |
 | ------------------ | ------------------------------- | ------------------------- |
@@ -68,11 +51,9 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ## Which version do I need for Faceit?
 
-~~As of this moment (2022-02-18), Faceit only works on the `22.02` and `22.01` versions.~~
+As of this moment (2022-03-13), Faceit only works on the `22.04` and `22.02` versions.
 
-~~If you are using one of these versions, and still cannot use Faceit, since the release of that version probably another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be released soon.~~
-
-The `22.01` version of ReviOS is outdated, and Faceit most definetely will not work, same applies to `22.02`. If you don't want to reinstall you OS every month or every two months, or [apply updates manually](after-install.md#can-i-use-windows-update), it is recommended to just use stock Windows.
+If you are using one of these versions, and still cannot use Faceit, since the release of that version probably another update was released by Microsoft, which is required by Faceit. This is expected to happen to the `22.02` version of ReviOS soon. New build of ReviOS will be released soon. 
 
 ---
 
@@ -96,9 +77,7 @@ Yes, you can. Follow [this guide](https://jensd.be/1011/windows/install-windows-
 
 ## Downloads are not working / Google Drive: "Sorry, you can't view or download this file at this time." / MEGA quota exceeded
 
-For the latest version the alternative downloads are on the [website](https://www.revi.cc/revios/download){target=_blank}, and direct links for the specific versions [above](#what-is-the-difference-between-the-versions-what-to-choose){target=_blank}.
-
-For other, older version, there are mirror download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640){target=_blank}.
+Check our [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640){target=_blank} and [website](https://www.revi.cc/revios/download){target=_blank} for alternative download links.
 
 ---
 

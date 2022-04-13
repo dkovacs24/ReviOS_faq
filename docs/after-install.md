@@ -8,9 +8,7 @@ Make sure you did not selected a character in the command prompt (a white rectan
 
 ## I cannot log into my user
 
-It is a known bug, and being investigated right now. In the next build of ReviOS, it will be fixed.
-
-So far we know that this is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into you Microsoft account set a PIN code too.
+This is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into your Microsoft account set a PIN code too.
 
 Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Solution reported [here](https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001){target=_blank}.
 
@@ -18,13 +16,13 @@ Other technique to evade the bug, is to log into your Microsoft account in the M
 
 ## Internet/Sound/Bluetooth/other hardware... not working
 
-Download the drivers from the manufacturer's website ans install them.
+Download the drivers from the manufacturer's website and install them.
 
-If you can not do that, because you don not have internet driver, somehow (on other computer or something like that) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
+If you can not do that, because you don not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use usb tethering) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
 
 Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
 
-If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. After restart you can scan the PC for more missing drivers, or better yet, go to the manufacturers website, and download the drivers from there.
+If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. Or if you used usb tethering, you can disconnect your phone and install your network drivers right away. After restart you can scan the PC for more missing drivers, or better yet, go to the manufacturer's website, and download the drivers from there.
 
 ---
 
@@ -44,7 +42,7 @@ Install GPU drivers. [Help to tweak](https://www.revi.cc/revios/post-install#h.p
 
 ## Can I download other languages?
 
-Yes, in the Settings. If that isn't working, follow [this guide](https://www.revi.cc/revios/workspace/lang){target=_blank}.
+Yes, in the Settings. If that is not working, follow [this guide](https://www.revi.cc/revios/workspace/lang){target=_blank}.
 
 ---
 
@@ -61,13 +59,8 @@ If you still want to update, you can manually install updates with the help of [
 - Remove `windowsupdate` from `SettingsPageVisibility`
 - Restart
 
-##### If you update, might as well just use stock Windows.
-
----
-
-## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
-
-This is a bug in the `22.01` version, for now you can use [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` version it is already fixed.
+???+ warning 
+    ==**If you update, might as well just use stock Windows.**== Reasons explained above.
 
 ---
 
@@ -96,6 +89,10 @@ To reactivate GPU statistics:
 - Open `cmd`
 - Run this: `reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f`
 - Then run this: `sc start GraphicsPerfSvc`
+  
+    ???+ note
+        If this command fails, which is most likely to happen, download [this zip](https://cdn.discordapp.com/attachments/626772969611460619/953223235833589780/wscapi.zip){target=_blank}, and place the contents of it inside the System32 folder. [Link to the original message and conversation](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274)
+
 - Restart
 
 To reactivate Network statistics:
@@ -136,7 +133,7 @@ If the login not working in the Xbox app, try these steps:
   
 If you have updates, it should start installing them automatically.
 
-If the updating is done, and Xbox login is still not working, go through these steps:
+If the updating is done, and Xbox login is still not working, go through these steps (only on `22.01` and `22.02`):
 
 - Go to [https://store.rg-adguard.net/](https://store.rg-adguard.net/){target=_blank}
 - Change the search options from `URL (link)` to `PackageFamilyName` and `RP` to `Slow`, and search for `Microsoft.GamingApp_8wekyb3d8bbwe`
@@ -162,15 +159,23 @@ In the Windows 11 and the latest 10 build you can reactivate it.
 
 ---
 
+## Faceit is not working
+
+You are probably using a version of ReviOS which is not supported by Faceit anymore. Details [here](before-install.md#which-version-do-i-need-for-faceit).
+
+
+# Outdated questions
+
+
+## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
+
+This is a bug in the `22.01` version, for now you can use [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` version it is already fixed.
+
+---
+
 ## How to change lock screen background?
 
 - Open `regedit`
 - Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization`
 - Set the `NoLockScreen` key's value to `0`
 - Now you should be able to change it in Settings, if not, restart
-
----
-
-## Faceit is not working
-
-You are probably using a version of ReviOS which is not supported by Faceit anymore. Details [here](before-install.md#which-version-do-i-need-for-faceit).
