@@ -30,7 +30,10 @@ As of this moment (2022-04-13), there are only 2 versions of ReviOS that are sup
 
 ## What is the system requirement for ReviOS?
 
-Refer to our website's section about this, although it's the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run.
+Refer to our website's section about this, although it's the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run. The Windows 11 versions of ReviOS have the Secure Boot and TPM requirements disabled.
+
+???+ note "TPM and Secure Boot on Windows 11"
+    If you play games or use anti-cheats that require that Secure Boot and TPM, you still need to enable those fuctions.
 
 ### ReviOS RAM usage
 
@@ -42,7 +45,7 @@ Refer to our website's section about this, although it's the same as the stock W
 | 16 GB              | 1 GB                            | 15 GB                     |
 | 24 GB              | 1.3 GB                          | 22.7 GB                   |
 
-Tested on a fresh installation of [ReviOS 10 22.01](#revios-10-2201), in VirtualBox, on AMD Ryzen 5900X.
+Tested on a fresh installation of ReviOS 10 22.01, in VirtualBox, on AMD Ryzen 5900X.
 
 Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
@@ -51,7 +54,7 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ## Which version do I need for Faceit?
 
-As of this moment (2022-03-13), Faceit only works on the `22.04` and `22.02` versions.
+As of this moment (2022-04-13), Faceit only works on the `22.04` and `22.02` versions.
 
 If you are using one of these versions, and still cannot use Faceit, since the release of that version probably another update was released by Microsoft, which is required by Faceit. This is expected to happen to the `22.02` version of ReviOS soon. New build of ReviOS will be released soon. 
 
