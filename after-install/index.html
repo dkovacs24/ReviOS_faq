@@ -359,13 +359,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#internet-icon-bug" class="md-nav__link">
-    Internet icon bug
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#second-monitor-not-workingblank-or-freshrate-not-desired" class="md-nav__link">
     Second monitor not working/blank or freshrate not desired
   </a>
@@ -535,13 +528,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#internet-icon-bug" class="md-nav__link">
-    Internet icon bug
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#second-monitor-not-workingblank-or-freshrate-not-desired" class="md-nav__link">
     Second monitor not working/blank or freshrate not desired
   </a>
@@ -642,13 +628,9 @@
 <hr />
 <h2 id="internetsoundbluetoothother-hardware-not-working">Internet/Sound/Bluetooth/other hardware... not working<a class="headerlink" href="#internetsoundbluetoothother-hardware-not-working" title="Permanent link">&para;</a></h2>
 <p>Download the drivers from the manufacturer's website and install them.</p>
-<p>If you can not do that, because you don not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use usb tethering) download <a href="https://www.snappy-driver-installer.org/" target="_blank">Snappy Driver Installer Origin</a>. </p>
+<p>If you can not do that, because you do not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use usb tethering) download <a href="https://www.snappy-driver-installer.org/" target="_blank">Snappy Driver Installer Origin</a>. </p>
 <p>Extract it, and start the software with <code>SDIO_auto.bat</code>. Then select the <code>Download Network Drivers Only</code> option. It will start the download of all the existing network drivers. </p>
 <p>If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. Or if you used usb tethering, you can disconnect your phone and install your network drivers right away. After restart you can scan the PC for more missing drivers, or better yet, go to the manufacturer's website, and download the drivers from there.</p>
-<hr />
-<h2 id="internet-icon-bug">Internet icon bug<a class="headerlink" href="#internet-icon-bug" title="Permanent link">&para;</a></h2>
-<p><a href="https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116" target="_blank">Discord message link with instructions</a></p>
-<p><a href="https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip" target="_blank">Zip file with the fix</a></p>
 <hr />
 <h2 id="second-monitor-not-workingblank-or-freshrate-not-desired">Second monitor not working/blank or freshrate not desired<a class="headerlink" href="#second-monitor-not-workingblank-or-freshrate-not-desired" title="Permanent link">&para;</a></h2>
 <p>Install GPU drivers. <a href="https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F" target="_blank">Help to tweak</a></p>
@@ -734,14 +716,18 @@
 </ul>
 </li>
 <li>Go where you downloaded the files, <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd>Right click</kbd></span> and choose <code>Open Powershell window here</code></li>
-<li>Run <code>Add-AppxPackage</code> with the downloaded files. E.g.: <code>Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx</code>. <strong>Make sure you install the packages the order listed above</strong></li>
-<li>Restart</li>
+<li>
+<p>Run <code>Add-AppxPackage</code> with the downloaded files. E.g.: <code>Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx</code>.</p>
+<p><strong>Make sure you install the packages the order listed above.</strong></p>
+</li>
+<li>
+<p>Restart</p>
+</li>
 </ul>
 <hr />
 <h2 id="where-is-windows-defender-can-i-use-it">Where is Windows Defender? Can I use it?<a class="headerlink" href="#where-is-windows-defender-can-i-use-it" title="Permanent link">&para;</a></h2>
-<p>In the Windows 11 and the latest 10 build you can reactivate it.</p>
 <ul>
-<li>Go to<code>"%userprofile%\Documents\Workspace\Windows Defender"</code></li>
+<li>Go to <code>"%userprofile%\Documents\Workspace\Windows Defender"</code></li>
 <li>Run <code>Start.bat</code></li>
 <li>Press <code>1</code></li>
 <li>Restart</li>
@@ -760,6 +746,10 @@
 <li>Set the <code>NoLockScreen</code> key's value to <code>0</code></li>
 <li>Now you should be able to change it in Settings, if not, restart</li>
 </ul>
+<hr />
+<h2 id="internet-icon-bug">Internet icon bug<a class="headerlink" href="#internet-icon-bug" title="Permanent link">&para;</a></h2>
+<p><a href="https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116" target="_blank">Discord message link with instructions</a></p>
+<p><a href="https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip" target="_blank">Zip file with the fix</a></p>
 
               
             </article>
