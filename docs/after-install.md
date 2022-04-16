@@ -18,19 +18,11 @@ Other technique to evade the bug, is to log into your Microsoft account in the M
 
 Download the drivers from the manufacturer's website and install them.
 
-If you can not do that, because you don not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use usb tethering) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
+If you can not do that, because you do not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use usb tethering) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
 
 Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
 
 If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. Or if you used usb tethering, you can disconnect your phone and install your network drivers right away. After restart you can scan the PC for more missing drivers, or better yet, go to the manufacturer's website, and download the drivers from there.
-
----
-
-## Internet icon bug
-
-[Discord message link with instructions](https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116){target=_blank}
-
-[Zip file with the fix](https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip){target=_blank}
 
 ---
 
@@ -143,16 +135,17 @@ If the updating is done, and Xbox login is still not working, go through these s
     - `Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe.appx`
     - `Microsoft.GamingApp_2203.1001.4.0_neutral_~_8wekyb3d8bbwe.msixbundle`
 - Go where you downloaded the files, ++shift+"Right click"++ and choose `Open Powershell window here`
-- Run `Add-AppxPackage` with the downloaded files. E.g.: `Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`. **Make sure you install the packages the order listed above**
+- Run `Add-AppxPackage` with the downloaded files. E.g.: `Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`.
+
+    **Make sure you install the packages the order listed above.**
+
 - Restart
 
 ---
 
 ## Where is Windows Defender? Can I use it?
 
-In the Windows 11 and the latest 10 build you can reactivate it.
-
-- Go to`"%userprofile%\Documents\Workspace\Windows Defender"`
+- Go to `"%userprofile%\Documents\Workspace\Windows Defender"`
 - Run `Start.bat`
 - Press `1`
 - Restart
@@ -179,3 +172,11 @@ This is a bug in the `22.01` version, for now you can use [this fix](https://cdn
 - Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization`
 - Set the `NoLockScreen` key's value to `0`
 - Now you should be able to change it in Settings, if not, restart
+
+---
+
+## Internet icon bug
+
+[Discord message link with instructions](https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116){target=_blank}
+
+[Zip file with the fix](https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip){target=_blank}
