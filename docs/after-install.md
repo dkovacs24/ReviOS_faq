@@ -125,7 +125,7 @@ If the login not working in the Xbox app, try these steps:
   
 If you have updates, it should start installing them automatically.
 
-If the updating is done, and Xbox login is still not working, go through these steps (only on `22.01` and `22.02`):
+If the updating is done, and Xbox login is still not working, go through these steps (tested on `22.01` and `22.02`):
 
 - Go to [https://store.rg-adguard.net/](https://store.rg-adguard.net/){target=_blank}
 - Change the search options from `URL (link)` to `PackageFamilyName` and `RP` to `Slow`, and search for `Microsoft.GamingApp_8wekyb3d8bbwe`
@@ -155,6 +155,9 @@ If the updating is done, and Xbox login is still not working, go through these s
 ## Faceit is not working
 
 You are probably using a version of ReviOS which is not supported by Faceit anymore. Details [here](before-install.md#which-version-do-i-need-for-faceit).
+
+---
+
 
 
 # Outdated questions

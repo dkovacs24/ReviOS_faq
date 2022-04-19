@@ -2,7 +2,7 @@
 
 ## What is the difference between the versions? What to choose?
 
-As of this moment (2022-04-13), there are only 2 versions of ReviOS that are supported: `22.04`, `21.02`. No other versions are supported.
+As of this moment (2022-04-19), there are only 2 versions of ReviOS that are supported: `22.04`, `21.02`. No other versions are supported.
 
 === "ReviOS 10 22.04"
 
@@ -15,16 +15,18 @@ As of this moment (2022-04-13), there are only 2 versions of ReviOS that are sup
     Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/963477645859901491){target=_blank}.
 
 
-=== "Revios 11 22.02"
+=== "Revios 11 22.04"
 
     Based on the latest Windows 11.
 
-    [Changelog](https://www.revi.cc/revios/download/changelog#h.547zs3c6potx){target=_blank}
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
 
     [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
 
+    Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/965855822372569099){target=_blank}.
 
-**Faceit only works on 22.04 and 22.02 versions.** [Details below](#which-version-do-i-need-for-faceit).
+
+**Faceit only works on 10 22.04 and 11 22.04 versions.** [Details below](#which-version-do-i-need-for-faceit).
 
 ---
 
@@ -54,9 +56,9 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ## Which version do I need for Faceit?
 
-As of this moment (2022-04-13), Faceit only works on the `22.04` and `22.02` versions.
+As of this moment (2022-04-19), Faceit only works on the `10 22.04` and `11 22.04` versions.
 
-If you are using one of these versions, and still cannot use Faceit, since the release of that version probably another update was released by Microsoft, which is required by Faceit. This is expected to happen to the `22.02` version of ReviOS soon. New build of ReviOS will be released soon. 
+If you are using one of these versions, and still cannot use Faceit, since the release of that version probably another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be released soon. 
 
 ---
 
