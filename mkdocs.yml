@@ -12,6 +12,7 @@ copyright: |
 nav:
     - Home: 'index.md'
     #- About ReviOS in general: 'general.md'
+    #- How to install ReviOS: 'install.md'
     - Frequently Asked Questions:
       - Before and while installing ReviOS: 'before-install.md'
       - After installing ReviOS: 'after-install.md'
@@ -26,9 +27,9 @@ theme:
     scheme: slate
     primary: red
     accent: deep orange
-  font:
-    text: Inter
-    code: DM Mono
+  #font:
+  #  text: Inter
+  #  code: DM Mono
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -44,7 +45,7 @@ markdown_extensions:
   - attr_list
   - pymdownx.caret
   - pymdownx.details
-  - pymdownx.highlight
+  #- pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
