@@ -2,7 +2,7 @@
 
 ## What is the difference between the versions? What to choose?
 
-As of this moment (2022-04-19), there are only 2 versions of ReviOS that are supported: `22.04`, `21.02`. No other versions are supported.
+As of this moment (2022-04-19), there are only 2 versions of ReviOS that are supported: `10 22.04`, `11 21.04`. No other versions are supported.
 
 === "ReviOS 10 22.04"
 
