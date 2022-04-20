@@ -1,6 +1,6 @@
 site_name: ReviOS Frequently Asked Questions
 copyright: |
-  This website was last updated at: <p id=date style="display:inline">If you see this, the api request wasn't successful.</p> 
+  This website was last updated at <p id=date style="display:inline"><i>If you see this, the api request wasn't successful</i></p>.
   <script>
     fetch('https://api.github.com/repos/dkovacs24/ReviOS_faq/commits/gh-pages').then(response =>{
         return response.json();
@@ -11,8 +11,7 @@ copyright: |
   </script>
 nav:
     - Home: 'index.md'
-    #- About ReviOS in general: 'general.md'
-    #- How to install ReviOS: 'install.md'
+    - How to install ReviOS: 'install.md'
     - Frequently Asked Questions:
       - Before and while installing ReviOS: 'before-install.md'
       - After installing ReviOS: 'after-install.md'
@@ -22,12 +21,12 @@ theme:
   name: material
   language: en
   logo: img/revision_crop.png
-  #favicon: assets/images/favicon.png
+  # favicon: assets/images/favicon.png
   palette: 
     scheme: slate
     primary: red
     accent: deep orange
-  #font:
+  # font:
   #  text: Inter
   #  code: DM Mono
   features:
@@ -35,17 +34,17 @@ theme:
     - navigation.tabs.sticky
     - navigation.top
     - navigation.instant
-    #- navigation.sections
+    # - navigation.sections
     - toc.follow
-    #- toc.integrate
+    # - toc.integrate
 markdown_extensions:
   - toc:
       permalink: true
-      #toc_depth: 3
+      # toc_depth: 3
   - attr_list
   - pymdownx.caret
   - pymdownx.details
-  #- pymdownx.highlight
+  # - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
@@ -65,3 +64,7 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/962y4pU
       name: Revision Discord
+# plugins:
+  #  - redirects:
+      #  redirect_maps:
+          #  'install.md': 'index.md'

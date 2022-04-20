@@ -70,7 +70,7 @@ On the website, under [Archive Downloads](https://www.revi.cc/revios/download/ar
 
 ## How to install ReviOS?
 
-The tutorial is [here](https://youtu.be/w4Wn25d02iY){target=_blank}.
+The tutorial is [here](install.md).
 
 ---
 
