@@ -46,7 +46,8 @@ To reiterate, you will need to delete all OS partitions, not just the C: partiti
 
 ### Backup
 
-TODO
+???+ warning
+    This Windows installing process will delete your previos OS, so you should back up everything you plan to seeing again in the future. At least have separate partition to save your data. Or you can move your things to a flash drive, even the installing flash drive, just after the [2. step](#2-step-making-a-bootable-flash-drive), but before the [3rd](#3-step-booting-the-flash-drive).
 
 
 ## 1. step: Download ReviOS
