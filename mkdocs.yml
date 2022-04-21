@@ -4,6 +4,7 @@ copyright: |
   <script>
     fetch('https://api.github.com/repos/dkovacs24/ReviOS_faq/commits/gh-pages').then(response =>{
         return response.json();
+        // Good job, you found out my GitHub username.
     }).then(data =>{
         let date = new Date(data["commit"]["author"]["date"]);
         document.getElementById("date").innerHTML = new Date(date.getTime()-(date.getTimezoneOffset()*60*1000)).toISOString().split('T')[0];
@@ -30,9 +31,9 @@ theme:
   #  text: Inter
   #  code: DM Mono
   features:
-    # - navigation.tabs
+    - navigation.tabs
     # - navigation.tabs.sticky
-    - navigation.sections
+    # - navigation.sections
     - navigation.top
     - navigation.instant
     - navigation.tracking
