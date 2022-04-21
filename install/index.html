@@ -75,9 +75,7 @@
     
       
 
-  
-
-<header class="md-header md-header--lifted" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="ReviOS Frequently Asked Questions" class="md-header__button md-logo" aria-label="ReviOS Frequently Asked Questions" data-md-component="logo">
       
@@ -142,88 +140,13 @@
     
   </nav>
   
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
-      Home
-    </a>
-  </li>
-
-      
-        
-  
-  
-    
-  
-
-
-  <li class="md-tabs__item">
-    <a href="./" class="md-tabs__link md-tabs__link--active">
-      How to install ReviOS
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../before-install/" class="md-tabs__link">
-        Frequently Asked Questions
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="https://www.revi.cc/" class="md-tabs__link">
-      Revision website
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="https://discord.gg/962y4pU" class="md-tabs__link">
-      Revision Discord
-    </a>
-  </li>
-
-      
-    </ul>
-  </div>
-</nav>
-    
-  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -231,17 +154,13 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="ReviOS Frequently Asked Questions" class="md-nav__button md-logo" aria-label="ReviOS Frequently Asked Questions" data-md-component="logo">
       
@@ -461,7 +380,9 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
@@ -552,8 +473,6 @@
               </div>
             
             
-              
-                
               
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
@@ -728,58 +647,58 @@
 <h2 id="0-step-preparations">0. step: Preparations<a class="headerlink" href="#0-step-preparations" title="Permanent link">&para;</a></h2>
 <h3 id="bios-vs-uefi-mbr-vs-gpt">BIOS vs UEFI, MBR vs GPT<a class="headerlink" href="#bios-vs-uefi-mbr-vs-gpt" title="Permanent link">&para;</a></h3>
 <p>First, if you do not know if your PC have UEFI or Legacy BIOS, please consult your motherboard's or laptop's manual. Or go into your BIOS, by spamming the <span class="keys"><kbd class="key-f2">F2</kbd></span> or <span class="keys"><kbd class="key-delete">Del</kbd></span> button when your PC is starting up. If it has a graphical interface that you can use with your mouse and not <em>hurting your eyes to look at</em>, you most likely have UEFI. In every other scenario, you probably have BIOS.</p>
-<p>In short, if your PC is capable of booting in UEFI mode, we recommend selecting GPT, if not, select MBR later in <a href="#2-step-making-a-bootable-flash-drive">Making a bootable flash drive</a>. These technologies usually come in pair, like UEFI and GPT or BIOS and MBR. And while you could switch things up, like UEFI and MBR or BIOS and GPT, it is not recommended. Here, for example, the UEFI and GPT pair means UEFI boot mode on GPT partitions. Also UEFI systems usually backward compatible and can boot in Legacy mode often called CSM. If your system have CSM, it is recommended to switch it off, because the booting probably will be done in Legacy or BIOS mode otherwise.</p>
+<p>In short, if your PC is capable of booting in UEFI mode, we recommend selecting GPT, if not, select MBR later in <a href="#2-step-making-a-bootable-flash-drive">Making a bootable flash drive</a>. These technologies usually come in pair, like UEFI and GPT or BIOS and MBR. And while you could switch things up, like UEFI and MBR or BIOS and GPT, it is not recommended. Here, for example, the UEFI and GPT pair means UEFI boot mode on GPT partitions. Also, UEFI systems usually backward compatible and can boot in Legacy mode, often called CSM. If your system have CSM, it is recommended to switch it off, because the booting probably will be done in Legacy or BIOS mode otherwise.</p>
 <h3 id="drivers">Drivers<a class="headerlink" href="#drivers" title="Permanent link">&para;</a></h3>
-<p>Second recommended thing to do before doing any other thing, is to download your drivers, at least your network drivers.</p>
-<p>If you do not know how to that, we can give you a general idea, but sadly the manufacturer's websites are not desinged similarly. The fastest way to find the drivers you need, just Google "&lt;<em>the name of your motherboard or laptop</em>&gt; drivers", of course without the <span class="keys"><kbd class="key-less">&lt;</kbd></span> and <span class="keys"><kbd class="key-greater">&gt;</kbd></span> symbols. Click the search result which takes you to the website of the manufacturer of your device. There find the drivers, probably under the Support section or something like that.</p>
-<p>Alternatively, and <strong>this method should not be considered the default option</strong>, download the network drivers with Snappy Driver Installer Origin and take the whole folder of it with you before you format you partition(s). Help on this method can be found <a href="../after-install/#internetsoundbluetoothother-hardware-not-working">here</a>, from the second paragraph.</p>
+<p>The second recommended thing to do before doing any other thing, is to download your drivers, at least your network drivers.</p>
+<p>If you do not know how to that, we can give you a general idea, but sadly the manufacturer's websites are not designed similarly. The fastest way to find the drivers you need, just Google "&lt;<em>the name of your motherboard or laptop</em>&gt; drivers", of course without the <span class="keys"><kbd class="key-less">&lt;</kbd></span> and <span class="keys"><kbd class="key-greater">&gt;</kbd></span> symbols. Click the search result, which takes you to the website of the manufacturer of your device. There find the drivers, probably under the Support section or something like that.</p>
+<p>Alternatively, and <strong>this method should not be considered the default option</strong>, download the network drivers with Snappy Driver Installer Origin and take the whole folder of it with you before you format your partition(s). Help on this method can be found <a href="../after-install/#internetsoundbluetoothother-hardware-not-working">here</a>, from the second paragraph.</p>
 <h3 id="check-what-drives-and-partitions-you-have">Check what drives and partitions you have<a class="headerlink" href="#check-what-drives-and-partitions-you-have" title="Permanent link">&para;</a></h3>
-<p>Third thing recommended thing before installing, is to check what drives and partitions you have. More specifically how Windows identifies them.</p>
-<p>Open <code>Disk Management</code> by right clicking on the Start menu icon, and selecting it.</p>
+<p>The third thing recommended thing before installing, is to check what drives and partitions you have. More specifically, how Windows identifies them.</p>
+<p>Open <code>Disk Management</code> by right-clicking on the Start menu icon, and selecting it.</p>
 <p>Should look like this:</p>
 <p><img alt="disk_management" src="../img/install/0_disk_management.png" /></p>
-<p>Here as you can see, this example have two drives, with the first having 3 partitions, and the second only one. This is a common setup, where the user have a drive which holds the OS, and another drive for everything else, e.g. data, movies, games.</p>
-<p>The recommended way to do the installation is to at least format (or more like delete and recreate, you will see it at <a href="#4-step-installing">installing</a>) the partitons storing the OS. So everything on the first drive, in this example. Additionally you can format your second drive and it's partitions too, but make sure you backed up everything.</p>
+<p>Here as you can see, this example has two drives, with the first having 3 partitions, and the second only one. This is a common setup, where the user has a drive which holds the OS, and another drive for everything else, e.g. data, movies, games.</p>
+<p>The recommended way to do the installation is to at least format (or more like delete and recreate, you will see it at <a href="#4-step-installing">installing</a>) the partitions storing the OS. So everything on the first drive, in this example. Additionally, you can format your second drive and it's partitions too, but make sure you backed up everything.</p>
 <p>Another common setup is where you have one drive with multiple partitions. Here you will need to delete the OS partitions too (at least). Usually the C: partition, and other system and reserved and recovery partitions. Here too, additionally you can format all of your partitions, but make sure you backed up everything from these.</p>
-<p>Additional advice is if you are worried you could not identify your partitions inside the installer, take note of the sizes of them. If you have multiple partitions with the same size, take note of the free space too.</p>
-<p>To reiterate, you will need to delete all OS partitions, not just the C: partition, but every system, reserved, recovery, etc. partitions too. These you can easily identify by the small, only couple of megabytes size of them.</p>
+<p>Additional advice is if you are worried you could not identify your partitions inside the installer, take note of the sizes of them. If you have multiple partitions with the same size, take note of the free space, too.</p>
+<p>To reiterate, you will need to delete all OS partitions, not just the C: partition, but every system, reserved, recovery, etc. partitions too. These you can easily identify by the small, an only couple of megabytes size of them.</p>
 <h3 id="backup">Backup<a class="headerlink" href="#backup" title="Permanent link">&para;</a></h3>
 <details class="warning" open="open">
 <summary>Warning</summary>
-<p>This Windows installing process will delete your previos OS, so you should back up everything you plan to seeing again in the future. At least have separate partition to save your data. Or you can move your things to a flash drive, even the installing flash drive, just after the <a href="#2-step-making-a-bootable-flash-drive">2. step</a>, but before the <a href="#3-step-booting-the-flash-drive">3rd</a>.</p>
+<p>This Windows installing process will delete your previous OS, so you should back up everything you plan to seeing again in the future. At least have separate partition to save your data. Or you can move your things to a flash drive, even the installing flash drive, just after the <a href="#2-step-making-a-bootable-flash-drive">2. step</a>, but before the <a href="#3-step-booting-the-flash-drive">3rd</a>.</p>
 </details>
 <h2 id="1-step-download-revios">1. step: Download ReviOS<a class="headerlink" href="#1-step-download-revios" title="Permanent link">&para;</a></h2>
 <p>You can find our supported versions on the <a href="https://www.revi.cc/revios/download" target="_blank">Download page</a> of our website.</p>
 <p>Here download the version of your choice.</p>
 <h3 id="verification">Verification<a class="headerlink" href="#verification" title="Permanent link">&para;</a></h3>
-<p>On Windows, go where you downloaded the installer of ReviOS, and <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd>Right click</kbd></span> on an empty space of the file explorer window, and select <code>Open Powershell window here</code>. Type in the following command: <code class="highlight"><span class="nb">Get-FileHash</span> <span class="n">-Path</span> <span class="p">&lt;</span><span class="n">file</span> <span class="n">name</span><span class="p">&gt;</span> <span class="n">-Algorithm</span> <span class="n">SHA256</span></code>, and replace the <code>&lt;file name&gt;</code> part with the name of the ReviOS installer file's name. You can use the <span class="keys"><kbd class="key-tab">Tab</kbd></span> button to autocomplete the file name.</p>
+<p>On Windows, go where you downloaded the installer of ReviOS, and <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd>Right-click</kbd></span> on an empty space of the file explorer window, and select <code>Open PowerShell window here</code>. Type in the following command: <code class="highlight"><span class="nb">Get-FileHash</span> <span class="n">-Path</span> <span class="p">&lt;</span><span class="n">file</span> <span class="n">name</span><span class="p">&gt;</span> <span class="n">-Algorithm</span> <span class="n">SHA256</span></code>, and replace the <code>&lt;file name&gt;</code> part with the name of the ReviOS installer file's name. You can use the <span class="keys"><kbd class="key-tab">Tab</kbd></span> button to autocomplete the file name.</p>
 <p>When the command returns with the hash of the file, compare it to the corresponding SHA-256 hash value on the <a href="https://www.revi.cc/revios/download/verify" target="_blank">Verification page</a> of our website.</p>
 <h2 id="2-step-making-a-bootable-flash-drive">2. step: Making a bootable flash drive<a class="headerlink" href="#2-step-making-a-bootable-flash-drive" title="Permanent link">&para;</a></h2>
 <p>Now you have 2 choices, either to use Rufus or Ventoy. This guide will show both.</p>
 <details class="danger" open="open">
 <summary>Danger</summary>
-<p>Both of these method/software will wipe everything from your flash drive. If you want to see the contents of it in the future, <mark><strong>make a backup</strong></mark>.</p>
+<p>Both of these methods/software will wipe everything from your flash drive. If you want to see the contents of it in the future, <mark><strong>make a backup</strong></mark>.</p>
 </details>
 <h3 id="ventoy">Ventoy<a class="headerlink" href="#ventoy" title="Permanent link">&para;</a></h3>
 <p>What makes Ventoy a better choice over Rufus is that you can use it on Linux too, and it's much easier.</p>
-<p>You can download Ventory <a href="https://www.ventoy.net/en/download.html" target="_blank">here</a>.</p>
+<p>You can download Ventoy <a href="https://www.ventoy.net/en/download.html" target="_blank">here</a>.</p>
 <p>You do not need to install Ventoy, after extracting the zip file, just open <code>Ventoy2Disk.exe</code>.</p>
 <p>Should look something like this:</p>
 <p><img alt="ventoy1" src="../img/install/1_ventoy1.png" /></p>
 <p>Select your USB device from the dropdown menu. If it is not present, in the <code>Option</code> menu select the <code>Show All Devices</code> option to show everything. But be sure to select the right device in the dropdown menu, because with this enabled, every storage device will be listed!</p>
 <p>Select the partition style/scheme of your choice from Options, Partition Style. More detail in <a href="#bios-vs-uefi-mbr-vs-gpt">BIOS vs UEFI, MBR vs GPT</a></p>
 <p><img alt="ventoy2" src="../img/install/2_ventoy2.png" /></p>
-<p>Additionally you can select the <code>Secure Boot Support</code>, especially if you have Windows 11 and plan on playing with games or anti-cheat that require it.</p>
+<p>Additionally, you can select the <code>Secure Boot Support</code>, especially if you have Windows 11 and plan on playing with games or anti-cheat that require it.</p>
 <p>Now click on the <code>Install</code> button.</p>
 <p>After the software finishes, you can close the window.</p>
-<p>You can now copy the ReviOS installer iso file to the partition of the flash drive, called <code>Ventoy</code>.</p>
+<p>You can now copy the ReviOS installer ISO file to the partition of the flash drive, called <code>Ventoy</code>.</p>
 <p>On Linux, the method of using Ventoy should be the same.</p>
 <h3 id="rufus">Rufus<a class="headerlink" href="#rufus" title="Permanent link">&para;</a></h3>
 <p>You can download Rufus <a href="https://rufus.ie/" target="_blank">here</a>.</p>
-<p>Like Ventoy, this software also does not need installation. Should look like this, after opening the exe file:</p>
+<p>Like Ventoy, this software also does not need installation. Should look like this, after opening the EXE file:</p>
 <p><img alt="rufus1" src="../img/install/3_rufus1.png" /></p>
-<p>Here first select your flash drive under the <code>Device</code> dropdown menu. If it is not present, click <code>Show advanced drive properties</code>, and tick <code>List USB Hard Drives</code>.</p>
-<p>Then select the iso file by clicking on the <code>SELECT</code> button.</p>
+<p>Here, first select your flash drive under the <code>Device</code> dropdown menu. If it is not present, click <code>Show advanced drive properties</code>, and tick <code>List USB Hard Drives</code>.</p>
+<p>Then select the ISO file by clicking on the <code>SELECT</code> button.</p>
 <p>With ReviOS 10 the only thing you need to do before starting to prepare your flash drive is to decide MBR or GPT you will use. If you do not what are those, this guide wrote in detail about it <a href="#bios-vs-uefi-mbr-vs-gpt">above</a>.</p>
 <p>Should look something like this with ReviOS 10:</p>
 <p><img alt="rufus_win10" src="../img/install/4_rufus_win10.png" /></p>
@@ -788,29 +707,29 @@
 <p><img alt="rufus_win11" src="../img/install/5_rufus_win11.png" /></p>
 <p>Now you can start the preparation, by clicking the <code>START</code> button</p>
 <h2 id="3-step-booting-the-flash-drive">3. step: Booting the flash drive<a class="headerlink" href="#3-step-booting-the-flash-drive" title="Permanent link">&para;</a></h2>
-<p>To boot into your flash drive, open <code>Start menu</code>, click on <code>Power</code>, and then hold <span class="keys"><kbd class="key-shift">Shift</kbd></span> and click on <code>Restart</code>. This way a full screen menu should come up looking like this:</p>
+<p>To boot into your flash drive, open <code>Start menu</code>, click on <code>Power</code>, and then hold <span class="keys"><kbd class="key-shift">Shift</kbd></span> and click on <code>Restart</code>. This way, a full screen menu should come up looking like this:</p>
 <p><img alt="6_shift_restart" src="../img/install/6_shift_restart.png" /></p>
 <p>There if you have the option <code>Use a device</code>, click it, and then the option with the name of your flash drive or <code>EFI USB Device</code>.</p>
 <p>If you do not have any of the options mentioned before, first consult the manual of your motherboard or laptop, and find out which key is the Boot Menu.</p>
-<p>When you restart your PC, after it shutdown, and just started to boot up again and you can see the logo of your motherboard/laptop, start spamming that key.</p>
-<p>A list should come up with options to boot. Also usually the last option is to enter BIOS. Here choose the option with the name of your flash drive. If you have multiple options with the name of it, choose that boots in UEFI mode, if you selected GPT when preparing the flash drive. Or if it does not show the names, only USB Drive and Optical Drive and Hard Drive, somethings like those, obviously choose the USB Drive like option.</p>
+<p>When you restart your PC, after it shutdown, and just started to boot up again, and you can see the logo of your motherboard/laptop, start spamming that key.</p>
+<p>A list should come up with options to boot. Also, usually the last option is to enter BIOS. Here, choose the option with the name of your flash drive. If you have multiple options with the name of it, choose that boots in UEFI mode, if you selected GPT when preparing the flash drive. Or if it does not show the names, only USB Drive and Optical Drive and Hard Drive, something like those, obviously choose the USB Drive like option.</p>
 <!-- TODO: add BIOS boot order changing -->
 
 <h2 id="4-step-installing">4. step: Installing<a class="headerlink" href="#4-step-installing" title="Permanent link">&para;</a></h2>
-<p>If you done everything good so far, the installer boot up, and should look like this:</p>
+<p>If you have done everything good so far, the installer boot up, and should look like this:</p>
 <p><img alt="installer1" src="../img/install/7_installer1.png" /></p>
-<p>Accept the license terms, and then the disk selection step comes up. Here you have multiple choices, depending on the configuration you are using. This part of the setup relies on the knowlegde of your drives, which we discuss at <a href="#check-what-drives-and-partitions-you-have">Check what drives and partitions you have</a>.</p>
+<p>Accept the license terms, and then the disk selection step comes up. Here you have multiple choices, depending on the configuration you are using. This part of the setup relies on the knowledge of your drives, which we discuss at <a href="#check-what-drives-and-partitions-you-have">Check what drives and partitions you have</a>.</p>
 <hr />
 <h3 id="the-most-common-setup-one-drive-with-the-os-and-another-for-everything-else">The most common setup: one drive with the OS and another for everything else<a class="headerlink" href="#the-most-common-setup-one-drive-with-the-os-and-another-for-everything-else" title="Permanent link">&para;</a></h3>
 <p><img alt="installer2" src="../img/install/8_installer2.png" /></p>
 <p>Check what partitions your previous Windows installation uses, and delete those with the <code>Delete</code> button.</p>
-<p>And then select the drive which used to store your previos Windows, and click <code>New</code> and <code>Apply</code>. This creates a new partition from the whole drive, and could and probably will make other, OS related partitions, as the pop up window says: <code>To ensure that all Windows features work correctly, Windows might create additional partitions for system files.</code>.</p>
-<p>Additionally, if you really want a clean start, you can format your other drive(s) too.</p>
+<p>And then select the drive which used to store your previous Windows, and click <code>New</code> and <code>Apply</code>. This creates a new partition from the whole drive, and could and probably will make other, OS related partitions, as the pop-up window says: <code>To ensure that all Windows features work correctly, Windows might create additional partitions for system files.</code></p>
+<p>Additionally, if you want a clean start, you can format your other drive(s) too.</p>
 <h3 id="other-setups">Other setups<a class="headerlink" href="#other-setups" title="Permanent link">&para;</a></h3>
 <p>If you have a similar setup - like on the picture -, just the extra data partition (Drive 1 Partition 1 in this example) is on your first drive (Drive 0), then you should only delete the ones that associated with Windows, like obviously the Primary that holds the files of the previous OS, and also the system, reserved, recovery, etc. partitions that are only megabyte sized.</p>
-<p>For example, if we pretend that on the picture above the Drive 1 Partition 1 is part of Drive 0 and it is Partition 4, and you do not want to lose the data on that, you should not delete it, but every other partition you most definitely should.</p>
+<p>For example, if we pretend that on the picture above the Drive 1 Partition 1 is part of Drive 0, and it is Partition 4, and you do not want to lose the data on that, you should not delete it, but every other partition you most definitely should.</p>
 <hr />
-<p>After you created the partitions you wanted, select the you first created, the one you meant for the OS, and click <code>Next</code>.</p>
+<p>After you created the partitions you wanted, select the first you created, the one you meant for the OS, and click <code>Next</code>.</p>
 <p>The installation started, you do not need to do anything for a while.</p>
 <p>If the installer finishes, it will restart.</p>
 <p>Then the OS will load for a bit, with the text <code>Getting ready</code> on the screen.</p>
@@ -824,18 +743,18 @@
 <p><img alt="post_install_cortana" src="../img/install/11_post_install_cortana.png" /></p>
 <p>You are done with the Windows post install setup, the OS will load for some time.</p>
 <h2 id="6-step-finishing-the-installation">6. step: Finishing the installation<a class="headerlink" href="#6-step-finishing-the-installation" title="Permanent link">&para;</a></h2>
-<p>After arriving on your desktop, first, let the script that popped up run through. Do not do anything until the script restarts your PC. If it is not closing, read <a href="../after-install/#the-do-not-close-the-window-otherwise-your-system-wont-work-properly-window-not-closing">this</a> article.</p>
+<p>After arriving at your desktop, first, let the script that popped up run through. Do not do anything until the script restarts your PC. If it is not closing, read <a href="../after-install/#the-do-not-close-the-window-otherwise-your-system-wont-work-properly-window-not-closing">this</a> article.</p>
 <p>After your PC boots up again, this guide have some recommendation to go through.</p>
 <ol>
 <li>
 <p>Activate your Windows. Help in the <a href="https://www.revi.cc/revios/post-install#h.p_wN71uiu-sFys" target="_blank">ReviOS Post-Install</a> guide.</p>
 </li>
 <li>
-<p>In <code>Settings</code> -&gt; <code>Time &amp; Language</code> -&gt; <code>Language</code> add your language, even if you want to use Windows on English. To change your keyboard layout to non-English you need to add that languae. After that you can change your Regional format or Keyboard layout or even what language Windows displays:</p>
+<p>In <code>Settings</code> → <code>Time &amp; Language</code> → <code>Language</code>, and add your language, even if you want to use Windows on English. To change your keyboard layout to non-English, you need to add that language. After that, you can change your regional format or keyboard layout or even what language Windows displays:</p>
 <p><img alt="language" src="../img/install/12_language.png" /></p>
 </li>
 <li>
-<p>Set the time, because ReviOS's default is the UTC time zone. <code>Settings</code> -&gt; <code>Time &amp; Language</code> -&gt; <code>Date &amp; time</code></p>
+<p>Set the time, because ReviOS's default is the UTC time zone. <code>Settings</code> → <code>Time &amp; Language</code> → <code>Date &amp; time</code></p>
 </li>
 <li>
 <p>Download and install your drivers. This guide discussed downloading and installing drivers before, in great detail, check it  <a href="#drivers">here</a>.</p>
@@ -950,7 +869,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.instant", "toc.follow"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.top", "navigation.instant", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.6e54b5cd.min.js"></script>

@@ -75,9 +75,7 @@
     
       
 
-  
-
-<header class="md-header md-header--lifted" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="ReviOS Frequently Asked Questions" class="md-header__button md-logo" aria-label="ReviOS Frequently Asked Questions" data-md-component="logo">
       
@@ -142,88 +140,13 @@
     
   </nav>
   
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-tabs__inner md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
-      Home
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="../install/" class="md-tabs__link">
-      How to install ReviOS
-    </a>
-  </li>
-
-      
-        
-  
-  
-    
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../before-install/" class="md-tabs__link md-tabs__link--active">
-        Frequently Asked Questions
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="https://www.revi.cc/" class="md-tabs__link">
-      Revision website
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
-  <li class="md-tabs__item">
-    <a href="https://discord.gg/962y4pU" class="md-tabs__link">
-      Revision Discord
-    </a>
-  </li>
-
-      
-    </ul>
-  </div>
-</nav>
-    
-  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -236,10 +159,8 @@
                   <div class="md-sidebar__inner">
                     
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="ReviOS Frequently Asked Questions" class="md-nav__button md-logo" aria-label="ReviOS Frequently Asked Questions" data-md-component="logo">
       
@@ -291,7 +212,9 @@
   
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
@@ -457,7 +380,7 @@
       
         <li class="md-nav__item">
   <a href="#faceit-is-not-working" class="md-nav__link">
-    Faceit is not working
+    FACEIT is not working
   </a>
   
 </li>
@@ -626,7 +549,7 @@
       
         <li class="md-nav__item">
   <a href="#faceit-is-not-working" class="md-nav__link">
-    Faceit is not working
+    FACEIT is not working
   </a>
   
 </li>
@@ -647,7 +570,7 @@
 
 <h1 id="after-installing-revios">After installing ReviOS<a class="headerlink" href="#after-installing-revios" title="Permanent link">&para;</a></h1>
 <h2 id="the-do-not-close-the-window-otherwise-your-system-wont-work-properly-window-not-closing">The "Do not close the window, otherwise your system won't work properly" window not closing<a class="headerlink" href="#the-do-not-close-the-window-otherwise-your-system-wont-work-properly-window-not-closing" title="Permanent link">&para;</a></h2>
-<p>Make sure you did not selected a character in the command prompt (a white rectangle). This pauses the running of the script. Press Esc or Enter, and the script will continue.</p>
+<p>Make sure you did not select a character in the command prompt (a white rectangle). This pauses the running of the script. Press Esc or Enter, and the script will continue.</p>
 <hr />
 <h2 id="i-cannot-log-into-my-user">I cannot log into my user<a class="headerlink" href="#i-cannot-log-into-my-user" title="Permanent link">&para;</a></h2>
 <p>This is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into your Microsoft account set a PIN code too.</p>
@@ -655,9 +578,9 @@
 <hr />
 <h2 id="internetsoundbluetoothother-hardware-not-working">Internet/Sound/Bluetooth/other hardware... not working<a class="headerlink" href="#internetsoundbluetoothother-hardware-not-working" title="Permanent link">&para;</a></h2>
 <p>Download the drivers from the manufacturer's website and install them.</p>
-<p>If you can not do that, because you do not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use usb tethering) download <a href="https://www.snappy-driver-installer.org/" target="_blank">Snappy Driver Installer Origin</a>. </p>
+<p>If you can not do that, because you do not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use USB tethering) download <a href="https://www.snappy-driver-installer.org/" target="_blank">Snappy Driver Installer Origin</a>. </p>
 <p>Extract it, and start the software with <code>SDIO_auto.bat</code>. Then select the <code>Download Network Drivers Only</code> option. It will start the download of all the existing network drivers. </p>
-<p>If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. Or if you used usb tethering, you can disconnect your phone and install your network drivers right away. After restart you can scan the PC for more missing drivers, or better yet, go to the manufacturer's website, and download the drivers from there.</p>
+<p>If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. Or, if you used USB tethering, you can disconnect your phone and install your network drivers right away. After restart, you can scan the PC for more missing drivers, or better yet, go to the manufacturer's website, and download the drivers from there.</p>
 <hr />
 <h2 id="second-monitor-not-workingblank-or-freshrate-not-desired">Second monitor not working/blank or freshrate not desired<a class="headerlink" href="#second-monitor-not-workingblank-or-freshrate-not-desired" title="Permanent link">&para;</a></h2>
 <p>Install GPU drivers. <a href="https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F" target="_blank">Help to tweak</a></p>
@@ -668,7 +591,7 @@
 <h2 id="can-i-use-windows-update">Can I use Windows Update?<a class="headerlink" href="#can-i-use-windows-update" title="Permanent link">&para;</a></h2>
 <p>Not recommended, because it will disable tweaks and reinstall bloatware.</p>
 <p>In the latest versions it was removed, due to users updating without reading the FAQ or asking.</p>
-<p>If you still want to update, you can manually install updates with the help of <a href="https://www.revi.cc/revios/workspace/updating" target="_blank">this guide</a> or reactivate the Windows Update menu item in settings with this steps:</p>
+<p>If you still want to update, you can manually install updates with the help of <a href="https://www.revi.cc/revios/workspace/updating" target="_blank">this guide</a> or reactivate the Windows Update menu item in settings with these steps:</p>
 <ul>
 <li>Open <code>regedit</code></li>
 <li>Go to <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer</code></li>
@@ -682,11 +605,11 @@
 <hr />
 <h2 id="how-can-i-update-to-the-newest-version-of-revios">How can I update to the newest version of ReviOS?<a class="headerlink" href="#how-can-i-update-to-the-newest-version-of-revios" title="Permanent link">&para;</a></h2>
 <p>You need to reinstall. Do not forget to backup your data.</p>
-<p>If you want to update because of Faceit, make sure to check out <a href="../before-install/#which-version-do-i-need-for-faceit">the section about it</a>.</p>
+<p>If you want to update because of FACEIT, make sure to check out <a href="../before-install/#which-version-do-i-need-for-faceit">the section about it</a>.</p>
 <hr />
 <h2 id="can-i-use-the-reset-this-pc-feature">Can I use the Reset this PC feature?<a class="headerlink" href="#can-i-use-the-reset-this-pc-feature" title="Permanent link">&para;</a></h2>
 <p>It is probably not working, and even if it would work, using is not recommended , because it probably will disable tweaks and reinstall bloatware.</p>
-<p>We recommend to reinstall ReviOS. Do not forget to backup your data.</p>
+<p>We recommend reinstalling ReviOS. Do not forget to backup your data.</p>
 <hr />
 <h2 id="gpu-and-network-monitoring-not-working-in-the-task-manager">GPU and Network monitoring not working in the Task Manager<a class="headerlink" href="#gpu-and-network-monitoring-not-working-in-the-task-manager" title="Permanent link">&para;</a></h2>
 <p>Yes, they were stripped because leaking memory.</p>
@@ -719,7 +642,7 @@
 <hr />
 <h2 id="there-are-some-visual-bugs-on-the-taskbar-in-revios-11">There are some visual bugs on the taskbar in ReviOS 11<a class="headerlink" href="#there-are-some-visual-bugs-on-the-taskbar-in-revios-11" title="Permanent link">&para;</a></h2>
 <p>These bugs came from Windows 11, hope they will be fixed in next Microsoft update releases.</p>
-<p>In the mean time, try <a href="https://www.startallback.com/" target="_blank">StartAllBack</a>.</p>
+<p>In the meantime, try <a href="https://www.startallback.com/" target="_blank">StartAllBack</a>.</p>
 <hr />
 <h2 id="microsoft-store-xbox-app-not-working">Microsoft Store / Xbox app not working<a class="headerlink" href="#microsoft-store-xbox-app-not-working" title="Permanent link">&para;</a></h2>
 <p>Run <code>ctfmon</code> and <code>wsreset</code> commands.</p>
@@ -745,7 +668,7 @@
 <li>Go where you downloaded the files, <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd>Right click</kbd></span> and choose <code>Open Powershell window here</code></li>
 <li>
 <p>Run <code>Add-AppxPackage</code> with the downloaded files. E.g.: <code>Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx</code>.</p>
-<p><strong>Make sure you install the packages the order listed above.</strong></p>
+<p><strong>Make sure you install the packages in the order listed above.</strong></p>
 </li>
 <li>
 <p>Restart</p>
@@ -760,12 +683,12 @@
 <li>Restart</li>
 </ul>
 <hr />
-<h2 id="faceit-is-not-working">Faceit is not working<a class="headerlink" href="#faceit-is-not-working" title="Permanent link">&para;</a></h2>
-<p>You are probably using a version of ReviOS which is not supported by Faceit anymore. Details <a href="../before-install/#which-version-do-i-need-for-faceit">here</a>.</p>
+<h2 id="faceit-is-not-working">FACEIT is not working<a class="headerlink" href="#faceit-is-not-working" title="Permanent link">&para;</a></h2>
+<p>You are probably using a version of ReviOS which is not supported by FACEIT anymore. Details <a href="../before-install/#which-version-do-i-need-for-faceit">here</a>.</p>
 <hr />
 <h1 id="outdated-questions">Outdated questions<a class="headerlink" href="#outdated-questions" title="Permanent link">&para;</a></h1>
 <h2 id="windows-update-icon-showed-up-on-the-taskbar-andor-the-update-and-shutdownrestart-option-showed-up">Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up<a class="headerlink" href="#windows-update-icon-showed-up-on-the-taskbar-andor-the-update-and-shutdownrestart-option-showed-up" title="Permanent link">&para;</a></h2>
-<p>This is a bug in the <code>22.01</code> version, for now you can use <a href="https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg" target="_blank">this fix</a> for the taskbar icon. In the <code>22.02</code> version it is already fixed.</p>
+<p>This is a bug in the <code>22.01</code> version, for now you can use <a href="https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg" target="_blank">this fix</a> for the taskbar icon. In the <code>22.02</code> version, it is already fixed.</p>
 <hr />
 <h2 id="how-to-change-lock-screen-background">How to change lock screen background?<a class="headerlink" href="#how-to-change-lock-screen-background" title="Permanent link">&para;</a></h2>
 <ul>
@@ -868,7 +791,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.instant", "toc.follow"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.top", "navigation.instant", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.6e54b5cd.min.js"></script>
