@@ -2,7 +2,7 @@
 
 ## The "Do not close the window, otherwise your system won't work properly" window not closing
 
-Make sure you did not selected a character in the command prompt (a white rectangle). This pauses the running of the script. Press Esc or Enter, and the script will continue.
+Make sure you did not select a character in the command prompt (a white rectangle). This pauses the running of the script. Press Esc or Enter, and the script will continue.
 
 ---
 
@@ -18,11 +18,11 @@ Other technique to evade the bug, is to log into your Microsoft account in the M
 
 Download the drivers from the manufacturer's website and install them.
 
-If you can not do that, because you do not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use usb tethering) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
+If you can not do that, because you do not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use USB tethering) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
 
 Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
 
-If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. Or if you used usb tethering, you can disconnect your phone and install your network drivers right away. After restart you can scan the PC for more missing drivers, or better yet, go to the manufacturer's website, and download the drivers from there.
+If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. Or, if you used USB tethering, you can disconnect your phone and install your network drivers right away. After restart, you can scan the PC for more missing drivers, or better yet, go to the manufacturer's website, and download the drivers from there.
 
 ---
 
@@ -44,7 +44,7 @@ Not recommended, because it will disable tweaks and reinstall bloatware.
 
 In the latest versions it was removed, due to users updating without reading the FAQ or asking.
 
-If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu item in settings with this steps:
+If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu item in settings with these steps:
 
 - Open `regedit`
 - Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer`
@@ -60,7 +60,7 @@ If you still want to update, you can manually install updates with the help of [
 
 You need to reinstall. Do not forget to backup your data.
 
-If you want to update because of Faceit, make sure to check out [the section about it](before-install.md#which-version-do-i-need-for-faceit).
+If you want to update because of FACEIT, make sure to check out [the section about it](before-install.md#which-version-do-i-need-for-faceit).
 
 ---
 
@@ -68,7 +68,7 @@ If you want to update because of Faceit, make sure to check out [the section abo
 
 It is probably not working, and even if it would work, using is not recommended , because it probably will disable tweaks and reinstall bloatware.
 
-We recommend to reinstall ReviOS. Do not forget to backup your data.
+We recommend reinstalling ReviOS. Do not forget to backup your data.
 
 ---
 
@@ -108,7 +108,7 @@ If this method is not working, install [Chocolatey](https://chocolatey.org/){tar
 
 These bugs came from Windows 11, hope they will be fixed in next Microsoft update releases.
 
-In the mean time, try [StartAllBack](https://www.startallback.com/){target=_blank}.
+In the meantime, try [StartAllBack](https://www.startallback.com/){target=_blank}.
 
 ---
 
@@ -137,7 +137,7 @@ If the updating is done, and Xbox login is still not working, go through these s
 - Go where you downloaded the files, ++shift+"Right click"++ and choose `Open Powershell window here`
 - Run `Add-AppxPackage` with the downloaded files. E.g.: `Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`.
 
-    **Make sure you install the packages the order listed above.**
+    **Make sure you install the packages in the order listed above.**
 
 - Restart
 
@@ -152,9 +152,9 @@ If the updating is done, and Xbox login is still not working, go through these s
 
 ---
 
-## Faceit is not working
+## FACEIT is not working
 
-You are probably using a version of ReviOS which is not supported by Faceit anymore. Details [here](before-install.md#which-version-do-i-need-for-faceit).
+You are probably using a version of ReviOS which is not supported by FACEIT anymore. Details [here](before-install.md#which-version-do-i-need-for-faceit).
 
 ---
 
@@ -165,7 +165,7 @@ You are probably using a version of ReviOS which is not supported by Faceit anym
 
 ## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
 
-This is a bug in the `22.01` version, for now you can use [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` version it is already fixed.
+This is a bug in the `22.01` version, for now you can use [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` version, it is already fixed.
 
 ---
 

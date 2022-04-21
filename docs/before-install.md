@@ -25,8 +25,13 @@ As of this moment (2022-04-19), there are only 2 versions of ReviOS that are sup
 
     Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/965855822372569099){target=_blank}.
 
+**FACEIT only works on 10 22.04 and 11 22.04 versions.** [Details below](#which-version-do-i-need-for-FACEIT).
 
-**Faceit only works on 10 22.04 and 11 22.04 versions.** [Details below](#which-version-do-i-need-for-faceit).
+### But which version is the fastest? Or the better? ReviOS 10 or ReviOS 11?
+
+These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation** is more supported on **Windows 11**, these are not ReviOS related things, these differences are present on the stock Windowses too.
+
+Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you may need to enable Secure Boot and TPM, regardless that ReviOS 11 skips the check when installing, so if your hardware does not support it, use ReviOS 10. (The writer of this guide at the of writing this answer is not sure whether FACEIT needs Secure Boot and TPM on Windows 10 too, or not, like Vanguard.)
 
 ---
 
@@ -35,7 +40,7 @@ As of this moment (2022-04-19), there are only 2 versions of ReviOS that are sup
 Refer to our website's section about this, although it's the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run. The Windows 11 versions of ReviOS have the Secure Boot and TPM requirements disabled.
 
 ???+ note "TPM and Secure Boot on Windows 11"
-    If you play games or use anti-cheats that require Secure Boot and TPM, you still need to enable those fuctions.
+    If you play games or use anti-cheats that require Secure Boot and TPM, you still need to enable those functions.
 
 ### ReviOS RAM usage
 
@@ -54,11 +59,11 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ---
 
-## Which version do I need for Faceit?
+## Which version do I need for FACEIT?
 
-As of this moment (2022-04-19), Faceit only works on the `10 22.04` and `11 22.04` versions.
+As of this moment (2022-04-19), FACEIT only works on the `10 22.04` and `11 22.04` versions.
 
-If you are using one of these versions, and still cannot use Faceit, since the release of that version probably another update was released by Microsoft, which is required by Faceit. New build of ReviOS will be released soon. 
+If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon. 
 
 ---
 
