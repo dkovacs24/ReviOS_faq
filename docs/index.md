@@ -13,4 +13,4 @@ Also use Google (or the search engine of your choice), especially with not ReviO
 This website was created and is maintained by [Dawe24#1229](https://discord.com/users/310497849274007553){target=_blank}. If you have a question or want to report something about this website, you can find me on [our Discord server](https://discord.gg/962y4pU){target=_blank}. **I will not answer questions in private messages, be that ReviOS related or not.**
 
 
-<p style="font-size: 20pt;">If this guide website helped you in any way, please let us know on our Discord server. Thanks.</p>
+<p style="font-size: 20pt;">If this website helped you in any way, please let us know on our Discord server. Thanks.</p>

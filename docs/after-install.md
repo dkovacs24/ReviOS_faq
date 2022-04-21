@@ -40,9 +40,9 @@ Yes, in the Settings. If that is not working, follow [this guide](https://www.re
 
 ## Can I use Windows Update?
 
-Not recommended, because it will disable tweaks and reinstall bloatware.
+Not recommended, because **it will revert tweaks**, **reinstall bloatware** and cause setbacks with respect to privacy and other pre-applied features, might even **break your OS**.
 
-In the latest versions it was removed, due to users updating without reading the FAQ or asking.
+In the latest versions, the Windows Update menu item from Settings was removed, due to users updating without reading the FAQ or asking.
 
 If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu item in settings with these steps:
 
