@@ -62,11 +62,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#advice-before-doing-anything" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -75,7 +70,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="ReviOS Frequently Asked Questions" class="md-header__button md-logo" aria-label="ReviOS Frequently Asked Questions" data-md-component="logo">
       
@@ -104,50 +101,11 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
@@ -183,15 +141,23 @@
   
 
 
+  <li class="md-tabs__item">
+    <a href="related/" class="md-tabs__link">
+      ReviOS related questions
+    </a>
+  </li>
+
+      
+        
   
   
-  
-    <li class="md-tabs__item">
-      <a href="before-install/" class="md-tabs__link">
-        Frequently Asked Questions
-      </a>
-    </li>
-  
+
+
+  <li class="md-tabs__item">
+    <a href="not-related/" class="md-tabs__link">
+      Not ReviOS related questions
+    </a>
+  </li>
 
       
         
@@ -221,7 +187,13 @@
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -265,8 +237,6 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
       <a href="." class="md-nav__link md-nav__link--active">
         Home
@@ -298,57 +268,25 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="related/" class="md-nav__link">
+        ReviOS related questions
+      </a>
+    </li>
+  
+
     
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
-      
-        <label class="md-nav__link" for="__nav_3">
-          Frequently Asked Questions
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Frequently Asked Questions" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Frequently Asked Questions
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
+
   
   
   
     <li class="md-nav__item">
-      <a href="before-install/" class="md-nav__link">
-        Before and while installing ReviOS
+      <a href="not-related/" class="md-nav__link">
+        Not ReviOS related questions
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="after-install/" class="md-nav__link">
-        After installing ReviOS
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -402,8 +340,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -417,7 +353,14 @@
                 
 
 
-<h1 id="advice-before-doing-anything">Advice before doing anything<a class="headerlink" href="#advice-before-doing-anything" title="Permanent link">&para;</a></h1>
+  <h1>Home</h1>
+
+<style>
+p {
+  font-size: 16pt;
+}
+</style>
+
 <p>Before using reading this website, please do your own research, look around on the <a href="https://www.revi.cc/" target="_blank">ReviOS website</a>, there specifically in the <a href="https://www.revi.cc/revios/download/changelog" target="_blank">Changelogs</a>, the <a href="https://www.revi.cc/revios/post-install" target="_blank">Post-install</a> guide and the <a href="https://www.revi.cc/revios/workspace" target="_blank">Workspace</a> and on <a href="https://discord.gg/962y4pU" target="_blank">our Discord server</a>.</p>
 <p>Also use Google (or the search engine of your choice), especially with not ReviOS related questions.</p>
 <p>This website was created and is maintained by <a href="https://discord.com/users/310497849274007553" target="_blank">Dawe24#1229</a>. If you have a question or want to report something about this website, you can find me on <a href="https://discord.gg/962y4pU" target="_blank">our Discord server</a>. <strong>I will not answer questions in private messages, be that ReviOS related or not.</strong></p>
@@ -513,7 +456,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.top", "navigation.instant", "navigation.tracking", "toc.follow"], "search": "assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.instant", "navigation.tracking", "toc.follow"], "search": "assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.6e54b5cd.min.js"></script>
