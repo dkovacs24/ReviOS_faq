@@ -187,7 +187,7 @@ After the last restart you should arrive at this screen, obviously here you have
 
 ![post_install_username](img/install/9_post_install_username.png)
 
-And here a password. You can skip this question by just clicking on `Next`. But be warned, this can lead to a bug in ReviOS. More detail [here](after-install.md#i-cannot-log-into-my-user).
+And here a password. You can skip this question by just clicking on `Next`. But be warned, this can lead to a bug in ReviOS. More detail [here](related.md#i-cannot-log-into-my-user).
 
 ![post_install_password](img/install/10_post_install_password.png)
 
