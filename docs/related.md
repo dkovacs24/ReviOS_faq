@@ -1,8 +1,91 @@
-# After installing ReviOS
+---
+hide:
+  - navigation
+---
 
-## The "Do not close the window, otherwise your system won't work properly" window not closing
+# ReviOS related questions
 
-Make sure you did not select a character in the command prompt (a white rectangle). This pauses the running of the script. Press Esc or Enter, and the script will continue.
+## What is the difference between the versions? What to choose?
+
+As of this moment (2022-04-19), there are only 2 versions of ReviOS that are supported: `10 22.04`, `11 21.04`. No other versions are supported.
+
+=== "ReviOS 10 22.04"
+
+    Based on the latest Windows 10.
+
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.odb11cheqkzw){target=_blank}
+
+    [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
+
+    Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/963477645859901491){target=_blank}.
+
+
+=== "Revios 11 22.04"
+
+    Based on the latest Windows 11.
+
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
+
+    [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
+
+    Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/965855822372569099){target=_blank}.
+
+
+**FACEIT only works on `10 22.04` and `11 22.04` versions.** [Details below](#which-version-do-i-need-for-faceit).
+
+### But which version is the fastest? Or the better? ReviOS 10 or ReviOS 11?
+
+These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation** is more supported on **Windows 11**, these are not ReviOS related things, these differences are present on the stock Windows too.
+
+Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you may need to enable Secure Boot and TPM, regardless that ReviOS 11 skips the check when installing, so if your hardware does not support it, use ReviOS 10.
+
+## What is the system requirement for ReviOS?
+
+Refer to our website's section about this, although it's the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run. The Windows 11 versions of ReviOS have the Secure Boot and TPM requirements disabled.
+
+???+ note "TPM and Secure Boot on Windows 11"
+    If you play games or use anti-cheats that require Secure Boot and TPM, you still need to enable those functions.
+
+### ReviOS RAM usage
+
+| Total RAM Capacity | Max Usage                       | Actual Available Amount |
+| ------------------ | ------------------------------- | ------------------------- |
+| 2 GB               | 1.1 GB down to 0.9, 1.4 GB peak | 600 MB to 1.1 GB          |
+| 4 GB               | 0.8 GB                          | 3.2 GB                    |
+| 8 GB               | 1 GB                            | 7 GB                      |
+| 16 GB              | 1 GB                            | 15 GB                     |
+| 24 GB              | 1.3 GB                          | 22.7 GB                   |
+
+Tested on a fresh installation of ReviOS 10 22.01, in VirtualBox, on AMD Ryzen 5900X.
+
+Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
+
+
+---
+
+## Which version do I need for FACEIT?
+
+As of this moment (2022-04-19), FACEIT only works on the `10 22.04` and `11 22.04` versions.
+
+If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon. 
+
+---
+
+## Where are the older versions?
+
+On the website, under [Archive Downloads](https://www.revi.cc/revios/download/archive-downloads){target=_blank}.
+
+---
+
+## How to install ReviOS?
+
+The tutorial is [here](install.md).
+
+---
+
+## Can I install ReviOS on a MacBook?
+
+Yes, you can. Follow [this guide](https://jensd.be/1011/windows/install-windows-10-on-a-macbook-air-2019-2020-with-t2-chip){target=_blank}, with the ReviOS iso of course.
 
 ---
 
@@ -11,30 +94,6 @@ Make sure you did not select a character in the command prompt (a white rectangl
 This is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into your Microsoft account set a PIN code too.
 
 Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Solution reported [here](https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001){target=_blank}.
-
----
-
-## Internet/Sound/Bluetooth/other hardware... not working
-
-Download the drivers from the manufacturer's website and install them.
-
-If you can not do that, because you do not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use USB tethering) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
-
-Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
-
-If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. Or, if you used USB tethering, you can disconnect your phone and install your network drivers right away. After restart, you can scan the PC for more missing drivers, or better yet, go to the manufacturer's website, and download the drivers from there.
-
----
-
-## Second monitor not working/blank or freshrate not desired
-
-Install GPU drivers. [Help to tweak](https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F){target=_blank}
-
----
-
-## Can I download other languages?
-
-Yes, in the Settings. If that is not working, follow [this guide](https://www.revi.cc/revios/workspace/lang){target=_blank}.
 
 ---
 
@@ -60,7 +119,7 @@ If you still want to update, you can manually install updates with the help of [
 
 You need to reinstall. Do not forget to backup your data.
 
-If you want to update because of FACEIT, make sure to check out [the section about it](before-install.md#which-version-do-i-need-for-faceit).
+If you want to update because of FACEIT, make sure to check out [the section about it](#which-version-do-i-need-for-faceit).
 
 ---
 
@@ -104,14 +163,6 @@ If this method is not working, install [Chocolatey](https://chocolatey.org/){tar
 
 ---
 
-## There are some visual bugs on the taskbar in ReviOS 11
-
-These bugs came from Windows 11, hope they will be fixed in next Microsoft update releases.
-
-In the meantime, try [StartAllBack](https://www.startallback.com/){target=_blank}.
-
----
-
 ## Microsoft Store / Xbox app not working
 
 Run `ctfmon` and `wsreset` commands.
@@ -152,16 +203,7 @@ If the updating is done, and Xbox login is still not working, go through these s
 
 ---
 
-## FACEIT is not working
-
-You are probably using a version of ReviOS which is not supported by FACEIT anymore. Details [here](before-install.md#which-version-do-i-need-for-faceit).
-
----
-
-
-
-# Outdated questions
-
+# Outdated
 
 ## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
 

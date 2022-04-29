@@ -7,6 +7,8 @@ hide:
 
 In this guide you will see how to install ReviOS (or any Windows for that matter).
 
+We discuss here the installation of ReviOS with a **USB drive** (or usually called a flash drive in the guide). If you do not have a USB drive, you can use the script of iidanL, [InstallWindowsWithoutUSB](https://github.com/iidanL/InstallWindowsWithoutUSB){target=_blank}. We do not support this method of installing, use it at your own risk.
+
 ## 0. step: Preparations
 
 ### BIOS vs UEFI, MBR vs GPT
@@ -22,7 +24,7 @@ The second recommended thing to do before doing any other thing, is to download 
 
 If you do not know how to that, we can give you a general idea, but sadly the manufacturer's websites are not designed similarly. The fastest way to find the drivers you need, just Google "<*the name of your motherboard or laptop*> drivers", of course without the ++less++ and ++greater++ symbols. Click the search result, which takes you to the website of the manufacturer of your device. There find the drivers, probably under the Support section or something like that.
 
-Alternatively, and **this method should not be considered the default option**, download the network drivers with Snappy Driver Installer Origin and take the whole folder of it with you before you format your partition(s). Help on this method can be found [here](after-install.md#internetsoundbluetoothother-hardware-not-working), from the second paragraph.
+Alternatively, and **this method should not be considered the default option**, download the network drivers with Snappy Driver Installer Origin and take the whole folder of it with you before you format your partition(s). Help on this method can be found [here](not-related.md#internetsoundbluetoothother-hardware-not-working), from the second paragraph.
 
 ### Check what drives and partitions you have
 
@@ -197,7 +199,7 @@ You are done with the Windows post install setup, the OS will load for some time
 
 ## 6. step: Finishing the installation
 
-After arriving at your desktop, first, let the script that popped up run through. Do not do anything until the script restarts your PC. If it is not closing, read [this](after-install.md#the-do-not-close-the-window-otherwise-your-system-wont-work-properly-window-not-closing) article.
+After arriving at your desktop, first, let the script that popped up run through. Do not do anything until the script restarts your PC. If it is not closing, read [this](not-related.md#the-do-not-close-the-window-otherwise-your-system-wont-work-properly-window-not-closing) article.
 
 After your PC boots up again, this guide have some recommendation to go through.
 

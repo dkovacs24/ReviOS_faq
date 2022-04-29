@@ -13,9 +13,8 @@ copyright: |
 nav:
     - Home: 'index.md'
     - How to install ReviOS: 'install.md'
-    - Frequently Asked Questions:
-      - Before and while installing ReviOS: 'before-install.md'
-      - After installing ReviOS: 'after-install.md'
+    - ReviOS related questions: 'related.md'
+    - Not ReviOS related questions: 'not-related.md'
     - Revision website: 'https://www.revi.cc/'
     - Revision Discord: 'https://discord.gg/962y4pU'
 theme:
@@ -32,8 +31,10 @@ theme:
   #  code: DM Mono
   features:
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     # - navigation.sections
+    # - navigation.indexes
+    # - navigation.expand
     - navigation.top
     - navigation.instant
     - navigation.tracking
@@ -69,7 +70,9 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/962y4pU
       name: Revision Discord
-# plugins:
-  #  - redirects:
-      #  redirect_maps:
-          #  'install.md': 'index.md'
+plugins:
+   - redirects:
+       redirect_maps: 
+        'after-install.md': 'index.md'
+        'before-install.md': 'index.md'
+        # 'install.md': 'index.md'
