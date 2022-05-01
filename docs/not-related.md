@@ -30,7 +30,7 @@ If it finishes (you can monitor the process on the top side of the window), copy
 
 ---
 
-## Second monitor not working/blank or freshrate not desired
+## Second monitor not working/blank or refresh rate not desired
 
 Install GPU drivers. [Help to tweak](https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F){target=_blank}
 
