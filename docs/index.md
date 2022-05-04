@@ -5,7 +5,7 @@ hide:
 ---
 
 <style>
-p {
+body > p {
   font-size: 16pt;
 }
 </style>
