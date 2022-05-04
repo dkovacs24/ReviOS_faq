@@ -107,7 +107,7 @@ If you still want to update, you can manually install updates with the help of [
 
 - Open `regedit`
 - Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer`
-- Remove `windowsupdate` from `SettingsPageVisibility`
+- Remove `windowsupdate` and `windowsinsider` from `SettingsPageVisibility`
 - Restart
 
 ???+ warning 
