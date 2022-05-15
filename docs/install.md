@@ -132,9 +132,9 @@ Now you can start the preparation, by clicking the `START` button
 
 ### If you don't have a USB drive
 
-...you can go into Disk Management, select one of your partitions that have atleast 4 to 5 gigabytes of free space. ++Right-click++ on that partition, and select `Shrink Volume...`. Then a window asks how many space do you want to cut of that partition, in megabytes. Write in 5120, but at least the size of the ISO file times 1024 plus 100.
+...you can go into Disk Management, select one of your partitions that have atleast 4 to 5 gigabytes of free space. ++"Right-click"++ on that partition, and select `Shrink Volume...`. Then a window asks how many space do you want to cut of that partition, in megabytes. Write in 5120, but at least the size of the ISO file times 1024 plus 100.
 
-A new partition will pop up. ++Right-click++ on it, and select `New Simple Volume...`. A setup wizard will appear, there you can select the letter and name of the partition, although those have not much relevance.
+A new partition will pop up. ++"Right-click"++ on it, and select `New Simple Volume...`. A setup wizard will appear, there you can select the letter and name of the partition, although those have not much relevance.
 
 If you are done, the formatted partition will be ready for you to extract the contents of the ISO file. If you went with this method, the following steps should be the same, just this guide will call your partition with the installer's file a flash drive, not a partition.
 
