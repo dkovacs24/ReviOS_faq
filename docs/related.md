@@ -3,6 +3,12 @@ hide:
   - navigation
 ---
 
+<style>
+    details > p {
+        font-size: 14pt;
+    }
+</style>
+
 # ReviOS related questions
 
 ## What is the difference between the versions? What to choose?
@@ -11,7 +17,7 @@ As of this moment (2022-04-19), there are only 2 versions of ReviOS that are sup
 
 === "ReviOS 10 22.04"
 
-    Based on the latest Windows 10.
+    Based on the latest Windows 10 Pro (19044.1620), released on 12th of April 2022.
 
     [Changelog](https://www.revi.cc/revios/download/changelog#h.odb11cheqkzw){target=_blank}
 
@@ -22,7 +28,7 @@ As of this moment (2022-04-19), there are only 2 versions of ReviOS that are sup
 
 === "Revios 11 22.04"
 
-    Based on the latest Windows 11.
+    Based on the latest Windows 11 Pro (22000.651), released on 19th of April 2022.
 
     [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
 
@@ -105,12 +111,12 @@ In the latest versions, the Windows Update menu item from Settings was removed, 
 
 If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu item in settings with these steps:
 
-- Open `regedit`
-- Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer`
-- Remove `windowsupdate` and `windowsinsider` from `SettingsPageVisibility`
-- Restart
+1. Open `regedit`
+2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer`
+3. Remove `windowsupdate` and `windowsinsider` from `SettingsPageVisibility`
+4. Restart
 
-???+ warning 
+???+ warning
     ==**If you update, might as well just use stock Windows.**== Reasons explained above.
 
 ---
@@ -131,26 +137,71 @@ We recommend reinstalling ReviOS. Do not forget to backup your data.
 
 ---
 
+## Valorant CFG error
+
+Either [turn on Windows Defender](#where-is-windows-defender-can-i-use-it), and you can enable Control Flow Guard in Windows Security.
+
+Or run this command in a PowerShell terminal (you may need to start the terminal in administrator mode):
+
+```powershell 
+Set-ProcessMitigation -Name vgc.exe -Enable CFG
+```
+
+If Vanguard still not working, you can try these two command: (you have to disable CFG to Discord, because it will crash)
+
+```powershell
+Set-ProcessMitigation -System -Enable CFG
+Set-ProcessMitigation -Name Discord.exe -Disable CFG
+```
+
+---
+
+## iTunes not detecting any Apple device
+
+It is because ReviOS misses Apple driver, which you could download only by Windows Update, but that is still not recommended. Instead you can use [3uTools](http://www.3u.com/) to repair the drivers.
+
+Once installed, after opening the software, go to:
+
+1. `Toolbox`
+2. `iTunes Utility`
+3. `Repair Driver`
+4. `Advanced Repair`
+
+There select `Uninstall the old driver files stored in system`. After, iTunes should work.
+
+Link to the original messages on Discord: [Message 1](https://discord.com/channels/619835916139364383/626772969611460619/930729137830789141) and [Message 2](https://discord.com/channels/619835916139364383/650007673626165261/973323621789491230)
+
+---
+
 ## GPU and Network monitoring not working in the Task Manager
 
 Yes, they were stripped because leaking memory.
 
 To reactivate GPU statistics:
 
-- Open `cmd`
-- Run this: `reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f`
-- Then run this: `sc start GraphicsPerfSvc`
+1. Open `cmd`
+2. Run this:
+  
+    ```
+    reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f
+    ```
+
+3. Then run this: 
+    
+    ```
+    sc start GraphicsPerfSvc
+    ```
   
     ???+ note
         If this command fails, which is most likely to happen, download [this zip](https://cdn.discordapp.com/attachments/626772969611460619/953223235833589780/wscapi.zip){target=_blank}, and place the contents of it inside the System32 folder. [Link to the original message and conversation](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274)
 
-- Restart
+4. Restart
 
 To reactivate Network statistics:
 
-- Open `regedit`
-- At `HKLM\System\CurrentControlSet\Services\Ndu` set `Start` to `2`
-- Restart
+1. Open `regedit`
+2. At `HKLM\System\CurrentControlSet\Services\Ndu` set `Start` to `2`
+3. Restart
 
 ---
 
@@ -169,54 +220,46 @@ Run `ctfmon` and `wsreset` commands.
 
 If the login not working in the Xbox app, try these steps:
 
-- Open Microsoft Store
-- Click the 3 dots in the upper right corner of the window
-- Click Downloads and updates
-- Click Get updates
+1. Open Microsoft Store
+2. Click the 3 dots in the upper right corner of the window
+3. Click Downloads and updates
+4. Click Get updates
   
 If you have updates, it should start installing them automatically.
 
 If the updating is done, and Xbox login is still not working, go through these steps (tested on `22.01` and `22.02`):
 
-- Go to [https://store.rg-adguard.net/](https://store.rg-adguard.net/){target=_blank}
-- Change the search options from `URL (link)` to `PackageFamilyName` and `RP` to `Slow`, and search for `Microsoft.GamingApp_8wekyb3d8bbwe`
-- Download the following packages:
-    - `Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
-    - `Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
-    - `Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe.appx`
-    - `Microsoft.GamingApp_2203.1001.4.0_neutral_~_8wekyb3d8bbwe.msixbundle`
-- Go where you downloaded the files, ++shift+"Right click"++ and choose `Open Powershell window here`
-- Run `Add-AppxPackage` with the downloaded files. E.g.: `Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`.
+1. Go to [https://store.rg-adguard.net/](https://store.rg-adguard.net/){target=_blank}
+2. Change the search options from `URL (link)` to `PackageFamilyName` and `RP` to `Slow`, and search for `Microsoft.GamingApp_8wekyb3d8bbwe`
+3. Download the following packages:
+    1. `Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
+    2. `Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
+    3. `Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe.appx`
+    4. `Microsoft.GamingApp_2203.1001.4.0_neutral_~_8wekyb3d8bbwe.msixbundle`
+4. Go where you downloaded the files, ++shift+"Right click"++ and choose `Open Powershell window here`
+5. Run `Add-AppxPackage` with the downloaded files. E.g.: `Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`.
 
     **Make sure you install the packages in the order listed above.**
 
-- Restart
+6. Restart
 
 ---
 
 ## Where is Windows Defender? Can I use it?
 
-- Go to `"%userprofile%\Documents\Workspace\Windows Defender"`
-- Run `Start.bat`
-- Press `1`
-- Restart
-
----
-
-# Outdated
-
-## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
-
-This is a bug in the `22.01` version, for now you can use [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` version, it is already fixed.
+1. Go to `"%userprofile%\Documents\Workspace\Windows Defender"` folder. On `ReviOS 11 22.04` you can find this folder in `C:\Users\Public\Public Documents`. Copy it back to your user's Documents folder.
+2. Run `Start.bat`
+3. Press `1`
+4. Restart
 
 ---
 
 ## How to change lock screen background?
 
-- Open `regedit`
-- Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization`
-- Set the `NoLockScreen` key's value to `0`
-- Now you should be able to change it in Settings, if not, restart
+1. Open `regedit`
+2. Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization`
+3. Set the `NoLockScreen` key's value to `0`
+4. Now you should be able to change it in Settings, if not, restart
 
 ---
 
@@ -225,3 +268,9 @@ This is a bug in the `22.01` version, for now you can use [this fix](https://cdn
 [Discord message link with instructions](https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116){target=_blank}
 
 [Zip file with the fix](https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip){target=_blank}
+
+---
+
+## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
+
+This is a bug in the `22.01` version, for now you can use [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` version, it is already fixed.

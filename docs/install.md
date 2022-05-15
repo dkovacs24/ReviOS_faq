@@ -3,16 +3,21 @@ hide:
   - navigation
 ---
 
+<style>
+    details > p {
+        font-size: 14pt;
+    }
+</style>
+
 # How to install ReviOS
 
 In this guide you will see how to install ReviOS (or any Windows for that matter).
 
-We discuss here the installation of ReviOS with a **USB drive** (or usually called a flash drive in the guide). If you do not have a USB drive, you can use the script of iidanL, [InstallWindowsWithoutUSB](https://github.com/iidanL/InstallWindowsWithoutUSB){target=_blank}. We do not support this method of installing, use it at your own risk.
+We discuss here the installation of ReviOS with a **USB drive** (or usually called a flash drive in the guide). This guide also mentions a way to boot into the installer without a USB drive, but the main method is to use a flash drive. Another way is to use the script of iidanL, [InstallWindowsWithoutUSB](https://github.com/iidanL/InstallWindowsWithoutUSB){target=_blank}. We do not support this method of installing, use it at your own risk. (It sets up your new Windows to dual boot.)
 
 ## 0. step: Preparations
 
 ### BIOS vs UEFI, MBR vs GPT
-
 
 First, if you do not know if your PC have UEFI or Legacy BIOS, please consult your motherboard's or laptop's manual. Or go into your BIOS, by spamming the ++f2++ or ++delete++ button when your PC is starting up. If it has a graphical interface that you can use with your mouse and not *hurting your eyes to look at*, you most likely have UEFI. In every other scenario, you probably have BIOS.
 
@@ -49,7 +54,7 @@ To reiterate, you will need to delete all OS partitions, not just the C: partiti
 ### Backup
 
 ???+ warning
-    This Windows installing process will delete your previous OS, so you should back up everything you plan to seeing again in the future. At least have separate partition to save your data. Or you can move your things to a flash drive, even the installing flash drive, just after the [2. step](#2-step-making-a-bootable-flash-drive), but before the [3rd](#3-step-booting-the-flash-drive).
+    This Windows installing process will delete your previous OS, so you should back up everything you plan on seeing again in the future. At least have separate partition to save your data. Or you can move your things to a flash drive, even the installing flash drive, just after the [2. step](#2-step-making-a-bootable-flash-drive), but before the [3.](#3-step-booting-the-flash-drive)
 
 
 ## 1. step: Download ReviOS
@@ -60,7 +65,7 @@ Here download the version of your choice.
 
 ### Verification
 
-On Windows, go where you downloaded the installer of ReviOS, and ++shift+"Right-click"++ on an empty space of the file explorer window, and select `Open PowerShell window here`. Type in the following command: ```#!powershell Get-FileHash -Path <file name> -Algorithm SHA256```, and replace the `<file name>` part with the name of the ReviOS installer file's name. You can use the ++tab++ button to autocomplete the file name.
+On Windows, go where you downloaded the installer of ReviOS, and ++shift+"Right-click"++ on an empty space of the file explorer window, and select `Open PowerShell window here`. Type in the following command: `#!powershell Get-FileHash -Path <file name> -Algorithm SHA256`, and replace the `<file name>` part with the name of the ReviOS installer file's name. You can use the ++tab++ button to autocomplete the file name.
 
 When the command returns with the hash of the file, compare it to the corresponding SHA-256 hash value on the [Verification page](https://www.revi.cc/revios/download/verify){target=_blank} of our website.
 
@@ -124,6 +129,14 @@ Should look something like this with ReviOS 11:
 ![rufus_win11](img/install/5_rufus_win11.png)
 
 Now you can start the preparation, by clicking the `START` button
+
+### If you don't have a USB drive
+
+...you can go into Disk Management, select one of your partitions that have atleast 4 to 5 gigabytes of free space. ++Right-click++ on that partition, and select `Shrink Volume...`. Then a window asks how many space do you want to cut of that partition, in megabytes. Write in 5120, but at least the size of the ISO file times 1024 plus 100.
+
+A new partition will pop up. ++Right-click++ on it, and select `New Simple Volume...`. A setup wizard will appear, there you can select the letter and name of the partition, although those have not much relevance.
+
+If you are done, the formatted partition will be ready for you to extract the contents of the ISO file. If you went with this method, the following steps should be the same, just this guide will call your partition with the installer's file a flash drive, not a partition.
 
 ## 3. step: Booting the flash drive
 
@@ -203,7 +216,7 @@ After arriving at your desktop, first, let the script that popped up run through
 
 After your PC boots up again, this guide have some recommendation to go through.
 
-1. Activate your Windows. Help in the [ReviOS Post-Install](https://www.revi.cc/revios/post-install#h.p_wN71uiu-sFys){target=_blank} guide.
+1. Activate your Windows with a valid Pro key. Help in the [ReviOS Post-Install](https://www.revi.cc/revios/post-install#h.p_wN71uiu-sFys){target=_blank} guide.
 
 2. In `Settings` → `Time & Language` → `Language`, and add your language, even if you want to use Windows on English. To change your keyboard layout to non-English, you need to add that language. After that, you can change your regional format or keyboard layout or even what language Windows displays:
     

@@ -48,5 +48,3 @@ These bugs came from Windows 11, hope they will be fixed in next Microsoft updat
 
 In the meantime, try [StartAllBack](https://www.startallback.com/){target=_blank}.
 
----
-
