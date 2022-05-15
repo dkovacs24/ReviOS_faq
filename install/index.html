@@ -367,6 +367,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#if-you-dont-have-a-usb-drive" class="md-nav__link">
+    If you don't have a USB drive
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -599,6 +606,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#if-you-dont-have-a-usb-drive" class="md-nav__link">
+    If you don't have a USB drive
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -666,9 +680,15 @@
                 
 
 
+<style>
+    details > p {
+        font-size: 14pt;
+    }
+</style>
+
 <h1 id="how-to-install-revios">How to install ReviOS<a class="headerlink" href="#how-to-install-revios" title="Permanent link">&para;</a></h1>
 <p>In this guide you will see how to install ReviOS (or any Windows for that matter).</p>
-<p>We discuss here the installation of ReviOS with a <strong>USB drive</strong> (or usually called a flash drive in the guide). If you do not have a USB drive, you can use the script of iidanL, <a href="https://github.com/iidanL/InstallWindowsWithoutUSB" target="_blank">InstallWindowsWithoutUSB</a>. We do not support this method of installing, use it at your own risk.</p>
+<p>We discuss here the installation of ReviOS with a <strong>USB drive</strong> (or usually called a flash drive in the guide). This guide also mentions a way to boot into the installer without a USB drive, but the main method is to use a flash drive. Another way is to use the script of iidanL, <a href="https://github.com/iidanL/InstallWindowsWithoutUSB" target="_blank">InstallWindowsWithoutUSB</a>. We do not support this method of installing, use it at your own risk. (It sets up your new Windows to dual boot.)</p>
 <h2 id="0-step-preparations">0. step: Preparations<a class="headerlink" href="#0-step-preparations" title="Permanent link">&para;</a></h2>
 <h3 id="bios-vs-uefi-mbr-vs-gpt">BIOS vs UEFI, MBR vs GPT<a class="headerlink" href="#bios-vs-uefi-mbr-vs-gpt" title="Permanent link">&para;</a></h3>
 <p>First, if you do not know if your PC have UEFI or Legacy BIOS, please consult your motherboard's or laptop's manual. Or go into your BIOS, by spamming the <span class="keys"><kbd class="key-f2">F2</kbd></span> or <span class="keys"><kbd class="key-delete">Del</kbd></span> button when your PC is starting up. If it has a graphical interface that you can use with your mouse and not <em>hurting your eyes to look at</em>, you most likely have UEFI. In every other scenario, you probably have BIOS.</p>
@@ -690,7 +710,7 @@
 <h3 id="backup">Backup<a class="headerlink" href="#backup" title="Permanent link">&para;</a></h3>
 <details class="warning" open="open">
 <summary>Warning</summary>
-<p>This Windows installing process will delete your previous OS, so you should back up everything you plan to seeing again in the future. At least have separate partition to save your data. Or you can move your things to a flash drive, even the installing flash drive, just after the <a href="#2-step-making-a-bootable-flash-drive">2. step</a>, but before the <a href="#3-step-booting-the-flash-drive">3rd</a>.</p>
+<p>This Windows installing process will delete your previous OS, so you should back up everything you plan on seeing again in the future. At least have separate partition to save your data. Or you can move your things to a flash drive, even the installing flash drive, just after the <a href="#2-step-making-a-bootable-flash-drive">2. step</a>, but before the <a href="#3-step-booting-the-flash-drive">3.</a></p>
 </details>
 <h2 id="1-step-download-revios">1. step: Download ReviOS<a class="headerlink" href="#1-step-download-revios" title="Permanent link">&para;</a></h2>
 <p>You can find our supported versions on the <a href="https://www.revi.cc/revios/download" target="_blank">Download page</a> of our website.</p>
@@ -731,6 +751,10 @@
 <p>Should look something like this with ReviOS 11:</p>
 <p><img alt="rufus_win11" src="../img/install/5_rufus_win11.png" /></p>
 <p>Now you can start the preparation, by clicking the <code>START</code> button</p>
+<h3 id="if-you-dont-have-a-usb-drive">If you don't have a USB drive<a class="headerlink" href="#if-you-dont-have-a-usb-drive" title="Permanent link">&para;</a></h3>
+<p>...you can go into Disk Management, select one of your partitions that have atleast 4 to 5 gigabytes of free space. ++Right-click++ on that partition, and select <code>Shrink Volume...</code>. Then a window asks how many space do you want to cut of that partition, in megabytes. Write in 5120, but at least the size of the ISO file times 1024 plus 100.</p>
+<p>A new partition will pop up. ++Right-click++ on it, and select <code>New Simple Volume...</code>. A setup wizard will appear, there you can select the letter and name of the partition, although those have not much relevance.</p>
+<p>If you are done, the formatted partition will be ready for you to extract the contents of the ISO file. If you went with this method, the following steps should be the same, just this guide will call your partition with the installer's file a flash drive, not a partition.</p>
 <h2 id="3-step-booting-the-flash-drive">3. step: Booting the flash drive<a class="headerlink" href="#3-step-booting-the-flash-drive" title="Permanent link">&para;</a></h2>
 <p>To boot into your flash drive, open <code>Start menu</code>, click on <code>Power</code>, and then hold <span class="keys"><kbd class="key-shift">Shift</kbd></span> and click on <code>Restart</code>. This way, a full screen menu should come up looking like this:</p>
 <p><img alt="6_shift_restart" src="../img/install/6_shift_restart.png" /></p>
@@ -772,7 +796,7 @@
 <p>After your PC boots up again, this guide have some recommendation to go through.</p>
 <ol>
 <li>
-<p>Activate your Windows. Help in the <a href="https://www.revi.cc/revios/post-install#h.p_wN71uiu-sFys" target="_blank">ReviOS Post-Install</a> guide.</p>
+<p>Activate your Windows with a valid Pro key. Help in the <a href="https://www.revi.cc/revios/post-install#h.p_wN71uiu-sFys" target="_blank">ReviOS Post-Install</a> guide.</p>
 </li>
 <li>
 <p>In <code>Settings</code> → <code>Time &amp; Language</code> → <code>Language</code>, and add your language, even if you want to use Windows on English. To change your keyboard layout to non-English, you need to add that language. After that, you can change your regional format or keyboard layout or even what language Windows displays:</p>
