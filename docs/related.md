@@ -23,8 +23,7 @@ As of this moment (2022-05-20), there are only 2 versions of ReviOS that are sup
 
     [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
-<!--- TODO --->
-    Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/963477645859901491){target=_blank}. 
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/977317104049070100){target=_blank}. 
 
 
 === "Revios 11 22.04"
@@ -35,10 +34,10 @@ As of this moment (2022-05-20), there are only 2 versions of ReviOS that are sup
 
     [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
 
-    Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/965855822372569099){target=_blank}.
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/965855822372569099){target=_blank}.
 
 
-**FACEIT only works on `10 22.05` and `11 22.04` versions.** [Details below](#which-version-do-i-need-for-faceit).
+**FACEIT only works on `10 22.05`, `11 22.04` and `10 22.04` for a limited time versions.** [Details below](#which-version-do-i-need-for-faceit).
 
 ### But which version is the fastest? Or the better? ReviOS 10 or ReviOS 11?
 
@@ -73,7 +72,7 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ## Which version do I need for FACEIT?
 
-As of this moment (2022-05-20), FACEIT only works on the `10 22.05` and `11 22.04` versions.
+As of this moment (2022-05-20), FACEIT only works on the `10 22.05` and `11 22.04` versions. The `10 22.04` build is FACEIT compatible for a limited, although we do not support it anymore.
 
 If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon. 
 
