@@ -13,37 +13,40 @@ hide:
 
 ## What is the difference between the versions? What to choose?
 
-As of this moment (2022-04-19), there are only 2 versions of ReviOS that are supported: `10 22.04`, `11 21.04`. No other versions are supported.
+As of this moment (2022-05-20), there are only 2 versions of ReviOS that are supported: `10 22.05`, `11 21.04`. No other versions are supported.
 
-=== "ReviOS 10 22.04"
+=== "ReviOS 10 22.05"
 
-    Based on the latest Windows 10 Pro (19044.1620), released on 12th of April 2022.
+    Based on the latest Windows 10 Pro (19044.1737), released on 20th of May 2022.
 
-    [Changelog](https://www.revi.cc/revios/download/changelog#h.odb11cheqkzw){target=_blank}
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
 
     [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
-    Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/963477645859901491){target=_blank}.
+<!--- TODO --->
+    Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/963477645859901491){target=_blank}. 
 
 
 === "Revios 11 22.04"
 
     Based on the latest Windows 11 Pro (22000.651), released on 19th of April 2022.
 
-    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.rhpiak7lkjq1){target=_blank}
 
     [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
 
     Alternative download links on the [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640/965855822372569099){target=_blank}.
 
 
-**FACEIT only works on `10 22.04` and `11 22.04` versions.** [Details below](#which-version-do-i-need-for-faceit).
+**FACEIT only works on `10 22.05` and `11 22.04` versions.** [Details below](#which-version-do-i-need-for-faceit).
 
 ### But which version is the fastest? Or the better? ReviOS 10 or ReviOS 11?
 
-These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation** is more supported on **Windows 11**, these are not ReviOS related things, these differences are present on the stock Windows too.
+These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation** are more supported on **Windows 11**, these are not ReviOS related things, these differences are present on the stock Windows too.
 
 Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you may need to enable Secure Boot and TPM, regardless that ReviOS 11 skips the check when installing, so if your hardware does not support it, use ReviOS 10.
+
+---
 
 ## What is the system requirement for ReviOS?
 
@@ -66,12 +69,11 @@ Tested on a fresh installation of ReviOS 10 22.01, in VirtualBox, on AMD Ryzen 5
 
 Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
-
 ---
 
 ## Which version do I need for FACEIT?
 
-As of this moment (2022-04-19), FACEIT only works on the `10 22.04` and `11 22.04` versions.
+As of this moment (2022-05-20), FACEIT only works on the `10 22.05` and `11 22.04` versions.
 
 If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon. 
 
@@ -236,7 +238,7 @@ If the updating is done, and Xbox login is still not working, go through these s
     2. `Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
     3. `Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe.appx`
     4. `Microsoft.GamingApp_2203.1001.4.0_neutral_~_8wekyb3d8bbwe.msixbundle`
-4. Go where you downloaded the files, ++shift+"Right click"++ and choose `Open Powershell window here`
+4. Go where you downloaded the files, ++shift+"Right-click"++ and choose `Open Powershell window here`
 5. Run `Add-AppxPackage` with the downloaded files. E.g.: `Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`.
 
     **Make sure you install the packages in the order listed above.**
@@ -247,10 +249,23 @@ If the updating is done, and Xbox login is still not working, go through these s
 
 ## Where is Windows Defender? Can I use it?
 
-1. Go to `"%userprofile%\Documents\Workspace\Windows Defender"` folder. On `ReviOS 11 22.04` you can find this folder in `C:\Users\Public\Public Documents`. Copy it back to your user's Documents folder.
+1. Go to `%userprofile%\Documents\Workspace\Windows Defender` folder. On `ReviOS 11 22.04` you can find this folder in `C:\Users\Public\Public Documents`. Copy it back to your user's Documents folder.
 2. Run `Start.bat`
 3. Press `1`
 4. Restart
+
+---
+
+## Can I enable Superfetch / SysMain?
+
+In older ReviOS versions it was stripped completely, but since ReviOS 10 22.05 it's only disabled.
+
+If you want to enable it:
+
+1. Go to `%userprofile%\Documents\Workspace\Revision-Tool` folder.
+2. Run `Start.bat`
+3. Restart
+
 
 ---
 
