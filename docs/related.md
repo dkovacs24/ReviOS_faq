@@ -37,7 +37,7 @@ As of this moment (2022-05-20), there are only 2 versions of ReviOS that are sup
     Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/965855822372569099){target=_blank}.
 
 
-**FACEIT only works on `10 22.05`, `11 22.04` and `10 22.04` for a limited time versions.** [Details below](#which-version-do-i-need-for-faceit).
+**FACEIT only works on `10 22.05`, `11 22.04` and `10 22.04` for a limited time.** [Details below](#which-version-do-i-need-for-faceit).
 
 ### But which version is the fastest? Or the better? ReviOS 10 or ReviOS 11?
 
