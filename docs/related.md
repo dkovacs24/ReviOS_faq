@@ -187,16 +187,19 @@ To reactivate GPU statistics:
     reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f
     ```
 
-3. Then run this: 
+3. Restart your PC
+
+4. Then run this: 
     
     ```
     sc start GraphicsPerfSvc
     ```
   
     ???+ note
-        If this command fails, which is most likely to happen, download [this zip](https://cdn.discordapp.com/attachments/626772969611460619/953223235833589780/wscapi.zip){target=_blank}, and place the contents of it inside the System32 folder. [Link to the original message and conversation](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274)
+        If this command fails, which is most likely to happen on 22.04 and older versions, download [this zip](https://cdn.discordapp.com/attachments/626772969611460619/953223235833589780/wscapi.zip){target=_blank}, and place the contents of it inside the System32 folder. [Link to the original message and conversation](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274)
 
-4. Restart
+If you do not see your GPU in the Performance tab in Task Manager, restart your PC again.
+
 
 To reactivate Network statistics:
 
