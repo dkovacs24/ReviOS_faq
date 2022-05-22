@@ -222,6 +222,8 @@ If this method is not working, install [Chocolatey](https://chocolatey.org/){tar
 
 Run `ctfmon` and `wsreset` commands.
 
+If still not working, try `wsreset -i`.
+
 If the login not working in the Xbox app, try these steps:
 
 1. Open Microsoft Store
@@ -251,7 +253,7 @@ If the updating is done, and Xbox login is still not working, go through these s
 
 ## Where is Windows Defender? Can I use it?
 
-1. Go to `%userprofile%\Documents\Workspace\Windows Defender` folder. On `ReviOS 11 22.04` you can find this folder in `C:\Users\Public\Public Documents`. Copy it back to your user's Documents folder.
+1. Go to `%userprofile%\Documents\Workspace\Windows Defender` folder. On `ReviOS 11 22.04` you can find this folder in `C:\Users\Public\Documents`. Copy it back to your user's Documents folder.
 2. Run `Start.bat`
 3. Press `1`
 4. Restart
