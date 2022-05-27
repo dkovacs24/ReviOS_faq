@@ -13,31 +13,31 @@ hide:
 
 ## What is the difference between the versions? What to choose?
 
-As of this moment (2022-05-20), there are only 2 versions of ReviOS that are supported: `10 22.05`, `11 21.04`. No other versions are supported.
+As of this moment (2022-05-27), there are only 2 versions of ReviOS that are supported: `10 22.05`, `11 21.05`. No other versions are supported.
 
 === "ReviOS 10 22.05"
 
     Based on the latest Windows 10 Pro (19044.1737), released on 20th of May 2022.
 
-    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.pektfqjptiza){target=_blank}
 
     [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
     Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/977581424125313087){target=_blank}. 
 
 
-=== "Revios 11 22.04"
+=== "ReviOS 11 22.05"
 
-    Based on the latest Windows 11 Pro (22000.651), released on 19th of April 2022.
+    Based on the latest Windows 11 Pro (22000.708), released on 27th of May 2022.
 
-    [Changelog](https://www.revi.cc/revios/download/changelog#h.rhpiak7lkjq1){target=_blank}
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
 
     [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
 
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/965855822372569099){target=_blank}.
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/979681610469363752){target=_blank}.
 
 
-**FACEIT only works on `10 22.05`, `11 22.04` and `10 22.04` for a limited time.** [Details below](#which-version-do-i-need-for-faceit).
+**FACEIT only works on `10 22.05` and `11 22.05`. For a limited time `10 22.04` and `11 22.04` works too.** [Details below](#which-version-do-i-need-for-faceit).
 
 ### But which version is the fastest? Or the better? ReviOS 10 or ReviOS 11?
 
@@ -57,12 +57,12 @@ Refer to our website's section about this, although it's the same as the stock W
 ### ReviOS RAM usage
 
 | Total RAM Capacity | Max Usage                       | Actual Available Amount |
-| ------------------ | ------------------------------- | ------------------------- |
-| 2 GB               | 1.1 GB down to 0.9, 1.4 GB peak | 600 MB to 1.1 GB          |
-| 4 GB               | 0.8 GB                          | 3.2 GB                    |
-| 8 GB               | 1 GB                            | 7 GB                      |
-| 16 GB              | 1 GB                            | 15 GB                     |
-| 24 GB              | 1.3 GB                          | 22.7 GB                   |
+| ------------------ | ------------------------------- | ----------------------- |
+| 2 GB               | 1.1 GB down to 0.9, 1.4 GB peak | 600 MB to 1.1 GB        |
+| 4 GB               | 0.8 GB                          | 3.2 GB                  |
+| 8 GB               | 1 GB                            | 7 GB                    |
+| 16 GB              | 1 GB                            | 15 GB                   |
+| 24 GB              | 1.3 GB                          | 22.7 GB                 |
 
 Tested on a fresh installation of ReviOS 10 22.01, in VirtualBox, on AMD Ryzen 5900X.
 
@@ -72,7 +72,7 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ## Which version do I need for FACEIT?
 
-As of this moment (2022-05-20), FACEIT only works on the `10 22.05` and `11 22.04` versions. The `10 22.04` build is FACEIT compatible for a limited, although we do not support it anymore.
+As of this moment (2022-05-27), FACEIT only works on the `10 22.05` and `11 22.05` versions. The `10 22.04` and `11 22.05` builds are FACEIT compatible for a limited, although we do not support those anymore.
 
 If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon. 
 
