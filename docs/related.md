@@ -78,18 +78,6 @@ If you are using one of these versions, and still cannot use FACEIT, since the r
 
 ---
 
-## Where are the older versions?
-
-On the website, under [Archive Downloads](https://www.revi.cc/revios/download/archive-downloads){target=_blank}.
-
----
-
-## How to install ReviOS?
-
-The tutorial is [here](install.md).
-
----
-
 ## Can I install ReviOS on a MacBook?
 
 Yes, you can. Follow [this guide](https://jensd.be/1011/windows/install-windows-10-on-a-macbook-air-2019-2020-with-t2-chip){target=_blank}, with the ReviOS iso of course.
@@ -138,42 +126,6 @@ We recommend reinstalling ReviOS. Do not forget to backup your data.
 
 ---
 
-## Valorant CFG error
-
-Either [turn on Windows Defender](#where-is-windows-defender-can-i-use-it), and you can enable Control Flow Guard in Windows Security.
-
-Or run this command in a PowerShell terminal (you may need to start the terminal in administrator mode):
-
-```powershell 
-Set-ProcessMitigation -Name vgc.exe -Enable CFG
-```
-
-If Vanguard still not working, you can try these two command: (you have to disable CFG to Discord, because it will crash)
-
-```powershell
-Set-ProcessMitigation -System -Enable CFG
-Set-ProcessMitigation -Name Discord.exe -Disable CFG
-```
-
----
-
-## iTunes not detecting any Apple device
-
-It is because ReviOS misses Apple driver, which you could download only by Windows Update, but that is still not recommended. Instead you can use [3uTools](http://www.3u.com/) to repair the drivers.
-
-Once installed, after opening the software, go to:
-
-1. `Toolbox`
-2. `iTunes Utility`
-3. `Repair Driver`
-4. `Advanced Repair`
-
-There select `Uninstall the old driver files stored in system`. After, iTunes should work.
-
-Link to the original messages on Discord: [Message 1](https://discord.com/channels/619835916139364383/626772969611460619/930729137830789141) and [Message 2](https://discord.com/channels/619835916139364383/650007673626165261/973323621789491230)
-
----
-
 ## GPU and Network monitoring not working in the Task Manager
 
 Yes, they were stripped because leaking memory.
@@ -209,45 +161,50 @@ To reactivate Network statistics:
 
 ---
 
-## AMD driver installation is crashing
-
-It is a Windows 11 bug. Try running the installer in silent mode, with the `/S` flag. 
-[Here](https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562){target=_blank} is help and a script to automate it.
-
-If this method is not working, install [Chocolatey](https://chocolatey.org/){target=_blank} and then the `amd-ryzen-chipset` package.
-
----
-
 ## Microsoft Store / Xbox app not working
 
 Run `ctfmon` and `wsreset` commands.
 
-If still not working, try `wsreset -i`.
+On ReviOS 10 22.05 try this:
 
-If the login not working in the Xbox app, try these steps:
+1. Open PowerShell in administrator mode, e.g. ++"Right-click"++ on the Start Menu button (++win++), and select `Windows PowerShell (Admin)`
 
-1. Open Microsoft Store
-2. Click the 3 dots in the upper right corner of the window
-3. Click Downloads and updates
-4. Click Get updates
+2. Run this command:
+   
+    ```powershell
+    Get-CimInstance -Namespace "Root\cimv2\mdm\dmmap" -ClassName "MDM_EnterpriseModernAppManagement_AppManagement01" | Invoke-CimMethod -MethodName UpdateScanMethod
+    ```
+
+3. After this, go inside the Store, and check for app updates.
+    
+    On the older Store UI you can do it by:
+
+      1. Click the 3 dots in the upper right corner of the window
+      2. Click `Downloads and updates`
+
+    On the newer Store, you can do it by going inside the Library page.
   
-If you have updates, it should start installing them automatically.
+If you have updates, the Store should start installing them automatically. If not, click `Get Updates`.
 
-If the updating is done, and Xbox login is still not working, go through these steps (tested on `22.01` and `22.02`):
+As a last resort, you can try the `wsreset -i` command. It reinstalls the Store app. It must be let running at least 20 minutes.
 
-1. Go to [https://store.rg-adguard.net/](https://store.rg-adguard.net/){target=_blank}
-2. Change the search options from `URL (link)` to `PackageFamilyName` and `RP` to `Slow`, and search for `Microsoft.GamingApp_8wekyb3d8bbwe`
-3. Download the following packages:
-    1. `Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
-    2. `Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
-    3. `Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe.appx`
-    4. `Microsoft.GamingApp_2203.1001.4.0_neutral_~_8wekyb3d8bbwe.msixbundle`
-4. Go where you downloaded the files, ++shift+"Right-click"++ and choose `Open Powershell window here`
-5. Run `Add-AppxPackage` with the downloaded files. E.g.: `Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`.
-
-    **Make sure you install the packages in the order listed above.**
-
-6. Restart
+> *Older, ReviOS 22.01 and 22.02 Xbox app problem (not supported versions):*
+> 
+> If the updating is done, and Xbox login is still not working, go through these steps:
+> 
+> 1. Go to [https://store.rg-adguard.net/](https://store.rg-adguard.net/){target=_blank}
+> 2. Change the search options from `URL (link)` to `PackageFamilyName` and `RP` to `Slow`, and search for `Microsoft.GamingApp_8wekyb3d8bbwe`
+> 3. Download the following packages:
+>     1. `Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
+>     2. `Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe.appx`
+>     3. `Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe.appx`
+>     4. `Microsoft.GamingApp_2203.1001.4.0_neutral_~_8wekyb3d8bbwe.msixbundle`
+> 4. Go where you downloaded the files, ++shift+"Right-click"++ and choose `Open Powershell window here`
+> 5. Run `Add-AppxPackage` with the downloaded files. E.g.: `Add-AppxPackage Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe.appx`.
+> 
+>     **Make sure you install the packages in the order listed above.**
+> 
+> 6. Restart
 
 ---
 
@@ -270,6 +227,55 @@ If you want to enable it:
 2. Run `Start.bat`
 3. Restart
 
+---
+
+## Blank screen after logging into ReviOS
+
+1. On the blank screen with cursor, press ++ctrl+alt+delete++, it will bring you the option for Task Manager along with other options. Open Task Manager.
+
+    Alternatively, you can also use the key combination ++ctrl+shift+esc++ to open the Task Manager directly.
+
+2. Click `File`, then `Run new task`.
+3. With the new window open `services.msc`.
+4. Search for the `App Readiness` service, and open it's properties by double-clicking it.
+5. Set the `Startup type` to `Disabled`.
+6. In the Task Manager click `File` and `Run new task` again.
+7. Run `shutdown /r /f /t 0`. It will restart your PC.
+
+
+## iTunes not detecting any Apple device
+
+It is because ReviOS misses Apple driver, which you could download only by Windows Update, but that is still not recommended. Instead you can use [3uTools](http://www.3u.com/) to repair the drivers.
+
+Once installed, after opening the software, go to:
+
+1. `Toolbox`
+2. `iTunes Utility`
+3. `Repair Driver`
+4. `Advanced Repair`
+
+There select `Uninstall the old driver files stored in system`. After, iTunes should work.
+
+Link to the original messages on Discord: [Message 1](https://discord.com/channels/619835916139364383/626772969611460619/930729137830789141) and [Message 2](https://discord.com/channels/619835916139364383/650007673626165261/973323621789491230)
+
+---
+
+## Valorant CFG error
+
+Either [turn on Windows Defender](#where-is-windows-defender-can-i-use-it), and you can enable Control Flow Guard in Windows Security.
+
+Or run this command in a PowerShell terminal (you may need to start the terminal in administrator mode):
+
+```powershell 
+Set-ProcessMitigation -Name vgc.exe -Enable CFG
+```
+
+If Vanguard still not working, you can try these two command: (you have to disable CFG to Discord, because it will crash)
+
+```powershell
+Set-ProcessMitigation -System -Enable CFG
+Set-ProcessMitigation -Name Discord.exe -Disable CFG
+```
 
 ---
 
@@ -279,6 +285,15 @@ If you want to enable it:
 2. Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization`
 3. Set the `NoLockScreen` key's value to `0`
 4. Now you should be able to change it in Settings, if not, restart
+
+---
+
+## AMD driver installation is crashing
+
+It is a Windows 11 bug. Try running the installer in silent mode, with the `/S` flag. 
+[Here](https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562){target=_blank} is help and a script to automate it.
+
+If this method is not working, install [Chocolatey](https://chocolatey.org/){target=_blank} and then the `amd-ryzen-chipset` package.
 
 ---
 
