@@ -13,7 +13,18 @@ hide:
 
 ## What is the difference between the versions? What to choose?
 
-As of this moment (2022-05-27), there are only 2 versions of ReviOS that are supported: `10 22.05`, `11 21.05`. No other versions are supported.
+As of this moment (2022-06-17), there are only 2 versions of ReviOS that are supported: `11 22.06`, `10 21.05`. No other versions are supported.
+
+=== "ReviOS 11 22.06"
+
+    Based on the latest Windows 11 Pro (22621.105), released on 17th of June 2022.
+
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
+
+    [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
+
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/987387352362156122){target=_blank}. 
+
 
 === "ReviOS 10 22.05"
 
@@ -26,20 +37,9 @@ As of this moment (2022-05-27), there are only 2 versions of ReviOS that are sup
     Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/977581424125313087){target=_blank}. 
 
 
-=== "ReviOS 11 22.05"
+**For FACEIT we always recommend to use the latest versions of ReviOS** [Details below](#which-version-do-i-need-for-faceit).
 
-    Based on the latest Windows 11 Pro (22000.708), released on 27th of May 2022.
-
-    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
-
-    [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
-
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/979681610469363752){target=_blank}.
-
-
-**FACEIT only works on `10 22.05` and `11 22.05`. For a limited time `10 22.04` and `11 22.04` works too.** [Details below](#which-version-do-i-need-for-faceit).
-
-### But which version is the fastest? Or the better? ReviOS 10 or ReviOS 11?
+### Which version is the fastest? Or the better? ReviOS 10 or ReviOS 11?
 
 These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation** are more supported on **Windows 11**, these are not ReviOS related things, these differences are present on the stock Windows too.
 
@@ -72,7 +72,7 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ## Which version do I need for FACEIT?
 
-As of this moment (2022-05-27), FACEIT only works on the `10 22.05` and `11 22.05` versions. The `10 22.04` and `11 22.05` builds are FACEIT compatible for a limited, although we do not support those anymore.
+As of this moment (2022-06-17), FACEIT only works on the `11 22.06`, `11 22.05` and `10 22.05` versions. The `10 22.04` and `11 22.05` builds are probably still compatible with FACEIT, but not for long.
 
 If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon. 
 
@@ -210,9 +210,9 @@ As a last resort, you can try the `wsreset -i` command. It reinstalls the Store 
 
 ## Where is Windows Defender? Can I use it?
 
-1. Go to `%userprofile%\Documents\Workspace\Windows Defender` folder. On `ReviOS 11 22.04` you can find this folder in `C:\Users\Public\Documents`. Copy it back to your user's Documents folder.
+1. Go to `%userprofile%\Documents\Workspace\Revision-Tool` folder (on older versions of ReviOS the last folder was `Windows Defender`). On `ReviOS 11 22.04` you can find this folder in `C:\Users\Public\Documents`. Copy it back to your user's Documents folder.
 2. Run `Start.bat`
-3. Press `1`
+3. Select the desired option
 4. Restart
 
 ---
@@ -225,7 +225,8 @@ If you want to enable it:
 
 1. Go to `%userprofile%\Documents\Workspace\Revision-Tool` folder.
 2. Run `Start.bat`
-3. Restart
+3. Select the desired option
+4. Restart
 
 ---
 
@@ -242,6 +243,7 @@ If you want to enable it:
 6. In the Task Manager click `File` and `Run new task` again.
 7. Run `shutdown /r /f /t 0`. It will restart your PC.
 
+---
 
 ## iTunes not detecting any Apple device
 
