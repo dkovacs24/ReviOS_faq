@@ -28,7 +28,17 @@ Make sure you did not select a character in the command prompt (a white rectangl
 
 Download the drivers from the manufacturer's website and install them.
 
-If you can not do that, because you do not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use USB tethering) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
+**AS A LAST RESORT** (meaning do not jump on this option directly) you can use [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}.
+
+1. Download SDIO from here: [https://www.snappy-driver-installer.org/](https://www.snappy-driver-installer.org/)
+2. Extract `SDIO-*.zip`
+3. Run `SDIO_auto.bat` and accept the license
+4. Once the Welcome window pop-ups, click on `Download Indexes Only`
+5. Choose the drivers you want to update and click the `Install` button
+
+### If you do not have internet...
+
+... is probably because you are missing the network drivers. Somehow (like on another computer or by connecting your phone to your pc to use USB tethering) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
 
 Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
 

@@ -164,6 +164,10 @@ If you have done everything good so far, the installer boot up, and should look 
 
 Accept the license terms, and then the disk selection step comes up. Here you have multiple choices, depending on the configuration you are using. This part of the setup relies on the knowledge of your drives, which we discuss at [Check what drives and partitions you have](#check-what-drives-and-partitions-you-have).
 
+### Missing drivers
+
+When you arrive to the partition making and selecting part of the installing process, but the installer asks for drivers, you might need Intel Rapid Storage Technology (IRST) drivers. [Here is a helping guide from the Asus Support page.](https://www.asus.com/support/FAQ/1044458/)
+
 ---
 
 ### The most common setup: one drive with the OS and another for everything else
