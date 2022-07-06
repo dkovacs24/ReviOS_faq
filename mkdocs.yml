@@ -21,7 +21,7 @@ theme:
   name: material
   language: en
   logo: img/revision_crop.png
-  # favicon: assets/images/favicon.png
+  favicon: img/revision_crop.png
   palette: 
     scheme: slate
     primary: red
