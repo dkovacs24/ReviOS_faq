@@ -8,7 +8,7 @@
       
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../img/revision_crop.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
     
     
@@ -340,6 +340,19 @@
     Internet/Sound/Bluetooth/other hardware... not working
   </a>
   
+    <nav class="md-nav" aria-label="Internet/Sound/Bluetooth/other hardware... not working">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-you-do-not-have-internet" class="md-nav__link">
+    If you do not have internet...
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -455,6 +468,19 @@
     Internet/Sound/Bluetooth/other hardware... not working
   </a>
   
+    <nav class="md-nav" aria-label="Internet/Sound/Bluetooth/other hardware... not working">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-you-do-not-have-internet" class="md-nav__link">
+    If you do not have internet...
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -504,7 +530,16 @@
 <hr />
 <h2 id="internetsoundbluetoothother-hardware-not-working">Internet/Sound/Bluetooth/other hardware... not working<a class="headerlink" href="#internetsoundbluetoothother-hardware-not-working" title="Permanent link">&para;</a></h2>
 <p>Download the drivers from the manufacturer's website and install them.</p>
-<p>If you can not do that, because you do not have internet, probably your network driver is missing. Somehow (like on another computer or by connecting your phone to your pc to use USB tethering) download <a href="https://www.snappy-driver-installer.org/" target="_blank">Snappy Driver Installer Origin</a>. </p>
+<p><strong>AS A LAST RESORT</strong> (meaning do not jump on this option directly) you can use <a href="https://www.snappy-driver-installer.org/" target="_blank">Snappy Driver Installer Origin</a>.</p>
+<ol>
+<li>Download SDIO from here: <a href="https://www.snappy-driver-installer.org/">https://www.snappy-driver-installer.org/</a></li>
+<li>Extract <code>SDIO-*.zip</code></li>
+<li>Run <code>SDIO_auto.bat</code> and accept the license</li>
+<li>Once the Welcome window pop-ups, click on <code>Download Indexes Only</code></li>
+<li>Choose the drivers you want to update and click the <code>Install</code> button</li>
+</ol>
+<h3 id="if-you-do-not-have-internet">If you do not have internet...<a class="headerlink" href="#if-you-do-not-have-internet" title="Permanent link">&para;</a></h3>
+<p>... is probably because you are missing the network drivers. Somehow (like on another computer or by connecting your phone to your pc to use USB tethering) download <a href="https://www.snappy-driver-installer.org/" target="_blank">Snappy Driver Installer Origin</a>. </p>
 <p>Extract it, and start the software with <code>SDIO_auto.bat</code>. Then select the <code>Download Network Drivers Only</code> option. It will start the download of all the existing network drivers. </p>
 <p>If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. Or, if you used USB tethering, you can disconnect your phone and install your network drivers right away. After restart, you can scan the PC for more missing drivers, or better yet, go to the manufacturer's website, and download the drivers from there.</p>
 <hr />
