@@ -11,6 +11,17 @@ hide:
 
 # ReviOS related questions
 
+## Unsupported things on ReviOS
+
+Disabled:
+
+- Automatic Windows Updates
+    - With that automatic driver installation too. Install your drivers manually. [Help here](not-related.md#internetsoundbluetoothother-hardware-not-working)
+
+Not working:
+- Phone calls
+- Stock email client
+
 ## What is the difference between the versions? What to choose?
 
 As of this moment (2022-06-24), there are only 2 versions of ReviOS that are supported: `11 22.06`, `10 21.06`. No other versions are supported.
@@ -34,7 +45,7 @@ As of this moment (2022-06-24), there are only 2 versions of ReviOS that are sup
 
     [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
-    Alternative download links are not avaiable right now, this section will be updated as soon as we have mirror links. 
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/990178962720292896){target=_blank}.
 
 
 **For FACEIT we always recommend to use the latest versions of ReviOS** [Details below](#which-version-do-i-need-for-faceit).
@@ -80,12 +91,6 @@ If you are using one of these versions, and still cannot use FACEIT, since the r
 
 ---
 
-## Can I install ReviOS on a MacBook?
-
-Yes, you can. Follow [this guide](https://jensd.be/1011/windows/install-windows-10-on-a-macbook-air-2019-2020-with-t2-chip){target=_blank}, with the ReviOS iso of course.
-
----
-
 ## I cannot log into my user
 
 This is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into your Microsoft account set a PIN code too.
@@ -120,11 +125,43 @@ If you want to update because of FACEIT, make sure to check out [the section abo
 
 ---
 
-## Can I use the Reset this PC feature?
+## How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications?
 
-It is probably not working, and even if it would work, using is not recommended , because it probably will disable tweaks and reinstall bloatware.
+1. In the `Documents` folder of the (default) user go to `Workspace` and then `Revision-Tool` folder. To be exact: `%userprofile%\Documents\Workspace\Revision-Tool`
+2. Run `Start.bat`
+3. Select the desired option
+4. Restart
 
-We recommend reinstalling ReviOS. Do not forget to backup your data.
+### Full list of features of the Revision-Tool
+
+On ReviOS 11 (22.06):
+
+- Defender
+- Superfetch
+- UAC
+- Notifications
+- Inking And Typing Personalization
+
+On ReviOS 10 (22.06):
+
+- Defender
+- Superfetch
+- Windows Update features
+- UAC
+- Notifications
+- Inking And Typing Personalization
+- Full Screen Optimizations
+- VC Runtimes
+
+---
+
+## Explorer.exe crashing
+
+Open a PowerShell window, and run this command:
+
+```powershell
+Add-AppxPackage -Register -Path C:\Windows\SystemApps\Microsoft.UI.Xaml.CBS_8wekyb3d8bbwe\AppxManifest.xml -DisableDevelopmentMode -ForceApplicationShutdown
+```
 
 ---
 
@@ -150,7 +187,7 @@ To reactivate GPU statistics:
     ```
   
     ???+ note
-        If this command fails, which is most likely to happen on 22.04 and older versions, download [this zip](https://cdn.discordapp.com/attachments/626772969611460619/953223235833589780/wscapi.zip){target=_blank}, and place the contents of it inside the System32 folder. [Link to the original message and conversation](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274)
+        If this command fails, which is most likely to happen on 22.04 and older versions, download [this zip](files/wscapi.zip), and place the contents of it inside the System32 folder. [Link to the original message and conversation](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274)
 
 If you do not see your GPU in the Performance tab in Task Manager, restart your PC again.
 
@@ -210,28 +247,6 @@ As a last resort, you can try the `wsreset -i` command. It reinstalls the Store 
 
 ---
 
-## Where is Windows Defender? Can I use it?
-
-1. Go to `%userprofile%\Documents\Workspace\Revision-Tool` folder (on older versions of ReviOS the last folder was `Windows Defender`). On `ReviOS 11 22.04` you can find this folder in `C:\Users\Public\Documents`. Copy it back to your user's Documents folder.
-2. Run `Start.bat`
-3. Select the desired option
-4. Restart
-
----
-
-## Can I enable Superfetch / SysMain?
-
-In older ReviOS versions it was stripped completely, but since ReviOS 10 22.05 it's only disabled.
-
-If you want to enable it:
-
-1. Go to `%userprofile%\Documents\Workspace\Revision-Tool` folder.
-2. Run `Start.bat`
-3. Select the desired option
-4. Restart
-
----
-
 ## Blank screen after logging into ReviOS
 
 1. On the blank screen with cursor, press ++ctrl+alt+delete++, it will bring you the option for Task Manager along with other options. Open Task Manager.
@@ -266,12 +281,14 @@ Link to the original messages on Discord: [Message 1](https://discord.com/channe
 
 ## Valorant CFG error
 
-Either [turn on Windows Defender](#where-is-windows-defender-can-i-use-it), and you can enable Control Flow Guard in Windows Security.
+Either [turn on Windows Defender](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications), and you can enable Control Flow Guard in Windows Security.
 
 Or run this command in a PowerShell terminal (you may need to start the terminal in administrator mode):
 
 ```powershell 
 Set-ProcessMitigation -Name vgc.exe -Enable CFG
+Set-ProcessMitigation -Name vgc.exe -Enable DEF
+Set-ProcessMitigation -Name vgc.exe -Enable AuditDynamicCode
 ```
 
 If Vanguard still not working, you can try these two command: (you have to disable CFG to Discord, because it will crash)
@@ -305,10 +322,10 @@ If this method is not working, install [Chocolatey](https://chocolatey.org/){tar
 
 [Discord message link with instructions](https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116){target=_blank}
 
-[Zip file with the fix](https://cdn.discordapp.com/attachments/626772969611460619/800174514813665290/fix-network-icon.zip){target=_blank}
+[Zip file with the fix](files/fix-network-icon.zip)
 
 ---
 
 ## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
 
-This is a bug in the `22.01` version, for now you can use [this fix](https://cdn.discordapp.com/attachments/626772969611460619/942019507730391050/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` version, it is already fixed.
+This is a bug in the `22.01` version, for now you can use [this fix](files/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` version, it is already fixed.
