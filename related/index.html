@@ -354,6 +354,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rufus-unable-to-patchsetup-files-for-boot-error" class="md-nav__link">
+    Rufus "Unable to patch/setup files for boot" error
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#i-cannot-log-into-my-user" class="md-nav__link">
     I cannot log into my user
   </a>
@@ -375,11 +382,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications" class="md-nav__link">
-    How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications?
+  <a href="#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool" class="md-nav__link">
+    How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications? Revision Tool
   </a>
   
-    <nav class="md-nav" aria-label="How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications?">
+    <nav class="md-nav" aria-label="How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications? Revision Tool">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -600,6 +607,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rufus-unable-to-patchsetup-files-for-boot-error" class="md-nav__link">
+    Rufus "Unable to patch/setup files for boot" error
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#i-cannot-log-into-my-user" class="md-nav__link">
     I cannot log into my user
   </a>
@@ -621,11 +635,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications" class="md-nav__link">
-    How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications?
+  <a href="#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool" class="md-nav__link">
+    How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications? Revision Tool
   </a>
   
-    <nav class="md-nav" aria-label="How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications?">
+    <nav class="md-nav" aria-label="How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications? Revision Tool">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -739,9 +753,12 @@
 </ul>
 </li>
 </ul>
-<p>Not working:
-- Phone calls
-- Stock email client</p>
+<p>Not working:</p>
+<ul>
+<li>Phone calls</li>
+<li>Microsoft email client</li>
+</ul>
+<hr />
 <h2 id="what-is-the-difference-between-the-versions-what-to-choose">What is the difference between the versions? What to choose?<a class="headerlink" href="#what-is-the-difference-between-the-versions-what-to-choose" title="Permanent link">&para;</a></h2>
 <p>As of this moment (2022-06-24), there are only 2 versions of ReviOS that are supported: <code>11 22.06</code>, <code>10 21.06</code>. No other versions are supported.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">ReviOS 11 22.06</label><label for="__tabbed_1_2">ReviOS 10 22.06</label></div>
@@ -816,6 +833,11 @@
 <p>The <code>22.05</code> builds are probably still compatible with FACEIT, but not for long. Keep in mind that we do not support those versions anymore.</p>
 <p>If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon. </p>
 <hr />
+<h2 id="rufus-unable-to-patchsetup-files-for-boot-error">Rufus "Unable to patch/setup files for boot" error<a class="headerlink" href="#rufus-unable-to-patchsetup-files-for-boot-error" title="Permanent link">&para;</a></h2>
+<p>On older versions of Rufus <strong>select Standard at Image options</strong>.</p>
+<p>On newer versions when <strong>a window pops up</strong> with the options to remove Secure Boot and TPM or RAM and disk or Microsoft account requirements or disable data collection, <strong>select neither</strong>. <strong>ReviOS skips all of these already.</strong></p>
+<p><mark>Or just try Ventoy. Help in the <a href="../install/#ventoy">installation tutorial</a>.</mark></p>
+<hr />
 <h2 id="i-cannot-log-into-my-user">I cannot log into my user<a class="headerlink" href="#i-cannot-log-into-my-user" title="Permanent link">&para;</a></h2>
 <p>This is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into your Microsoft account set a PIN code too.</p>
 <p>Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Solution reported <a href="https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001" target="_blank">here</a>.</p>
@@ -823,13 +845,7 @@
 <h2 id="can-i-use-windows-update">Can I use Windows Update?<a class="headerlink" href="#can-i-use-windows-update" title="Permanent link">&para;</a></h2>
 <p>Not recommended, because <strong>it will revert tweaks</strong>, <strong>reinstall bloatware</strong> and cause setbacks with respect to privacy and other pre-applied features, might even <strong>break your OS</strong>.</p>
 <p>In the latest versions, the Windows Update menu item from Settings was removed, due to users updating without reading the FAQ or asking.</p>
-<p>If you still want to update, you can manually install updates with the help of <a href="https://www.revi.cc/revios/workspace/updating" target="_blank">this guide</a> or reactivate the Windows Update menu item in settings with these steps:</p>
-<ol>
-<li>Open <code>regedit</code></li>
-<li>Go to <code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer</code></li>
-<li>Remove <code>windowsupdate</code> and <code>windowsinsider</code> from <code>SettingsPageVisibility</code></li>
-<li>Restart</li>
-</ol>
+<p>If you still want to update, you can manually install updates with the help of <a href="https://www.revi.cc/revios/workspace/updating" target="_blank">this guide</a> or reactivate the Windows Update menu item in Settings with the Revision Tool. For more information about the tool, please read <a href="#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool">the section about it</a>.</p>
 <details class="warning" open="open">
 <summary>Warning</summary>
 <p><mark><strong>If you update, might as well just use stock Windows.</strong></mark> Reasons explained above.</p>
@@ -839,7 +855,7 @@
 <p>You need to reinstall. Do not forget to backup your data.</p>
 <p>If you want to update because of FACEIT, make sure to check out <a href="#which-version-do-i-need-for-faceit">the section about it</a>.</p>
 <hr />
-<h2 id="how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications">How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications?<a class="headerlink" href="#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications" title="Permanent link">&para;</a></h2>
+<h2 id="how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool">How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications? Revision Tool<a class="headerlink" href="#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool" title="Permanent link">&para;</a></h2>
 <ol>
 <li>In the <code>Documents</code> folder of the (default) user go to <code>Workspace</code> and then <code>Revision-Tool</code> folder. To be exact: <code>%userprofile%\Documents\Workspace\Revision-Tool</code></li>
 <li>Run <code>Start.bat</code></li>
@@ -874,7 +890,7 @@
 </td></tr></table>
 <hr />
 <h2 id="gpu-and-network-monitoring-not-working-in-the-task-manager">GPU and Network monitoring not working in the Task Manager<a class="headerlink" href="#gpu-and-network-monitoring-not-working-in-the-task-manager" title="Permanent link">&para;</a></h2>
-<p>Yes, they were stripped because leaking memory.</p>
+<p>They were disabled because leaking memory.</p>
 <p>To reactivate GPU statistics:</p>
 <ol>
 <li>Open <code>cmd</code></li>

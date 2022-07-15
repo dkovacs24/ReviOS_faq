@@ -361,13 +361,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rufus" class="md-nav__link">
-    Rufus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#if-you-dont-have-a-usb-drive" class="md-nav__link">
     If you don't have a USB drive
   </a>
@@ -607,13 +600,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#rufus" class="md-nav__link">
-    Rufus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#if-you-dont-have-a-usb-drive" class="md-nav__link">
     If you don't have a USB drive
   </a>
@@ -733,13 +719,20 @@
 <p>On Windows, go where you downloaded the installer of ReviOS, and <span class="keys"><kbd class="key-shift">Shift</kbd><span>+</span><kbd>Right-click</kbd></span> on an empty space of the file explorer window, and select <code>Open PowerShell window here</code>. Type in the following command: <code class="highlight"><span class="nb">Get-FileHash</span> <span class="n">-Path</span> <span class="p">&lt;</span><span class="n">file</span> <span class="n">name</span><span class="p">&gt;</span> <span class="n">-Algorithm</span> <span class="n">SHA256</span></code>, and replace the <code>&lt;file name&gt;</code> part with the name of the ReviOS installer file's name. You can use the <span class="keys"><kbd class="key-tab">Tab</kbd></span> button to autocomplete the file name.</p>
 <p>When the command returns with the hash of the file, compare it to the corresponding SHA-256 hash value on the <a href="https://www.revi.cc/revios/download/verify" target="_blank">Verification page</a> of our website.</p>
 <h2 id="2-step-making-a-bootable-flash-drive">2. step: Making a bootable flash drive<a class="headerlink" href="#2-step-making-a-bootable-flash-drive" title="Permanent link">&para;</a></h2>
-<p>Now you have 2 choices, either to use Rufus or Ventoy. This guide will show both.</p>
+<!--
+Now you have 2 choices, either to use Rufus or Ventoy. This guide will show both.
+
+???+ danger
+    Both of these methods/software will wipe everything from your flash drive. If you want to see the contents of it in the future, ==**make a backup**==.
+-->
+
+<h3 id="ventoy">Ventoy<a class="headerlink" href="#ventoy" title="Permanent link">&para;</a></h3>
+<!--What makes Ventoy a better choice over Rufus is that you can use it on Linux too, and it's much easier.-->
+
 <details class="danger" open="open">
 <summary>Danger</summary>
-<p>Both of these methods/software will wipe everything from your flash drive. If you want to see the contents of it in the future, <mark><strong>make a backup</strong></mark>.</p>
+<p>This method will wipe everything from your flash drive. If you want to see the contents of it in the future, <mark><strong>make a backup</strong></mark>.</p>
 </details>
-<h3 id="ventoy">Ventoy<a class="headerlink" href="#ventoy" title="Permanent link">&para;</a></h3>
-<p>What makes Ventoy a better choice over Rufus is that you can use it on Linux too, and it's much easier.</p>
 <p>You can download Ventoy <a href="https://www.ventoy.net/en/download.html" target="_blank">here</a>.</p>
 <p>You do not need to install Ventoy, after extracting the zip file, just open <code>Ventoy2Disk.exe</code>.</p>
 <p>Should look something like this:</p>
@@ -752,19 +745,34 @@
 <p>After the software finishes, you can close the window.</p>
 <p>You can now copy the ReviOS installer ISO file to the partition of the flash drive, called <code>Ventoy</code>.</p>
 <p>On Linux, the method of using Ventoy should be the same.</p>
-<h3 id="rufus">Rufus<a class="headerlink" href="#rufus" title="Permanent link">&para;</a></h3>
-<p>You can download Rufus <a href="https://rufus.ie/" target="_blank">here</a>.</p>
-<p>Like Ventoy, this software also does not need installation. Should look like this, after opening the EXE file:</p>
-<p><img alt="rufus1" src="../img/install/3_rufus1.png" /></p>
-<p>Here, first select your flash drive under the <code>Device</code> dropdown menu. If it is not present, click <code>Show advanced drive properties</code>, and tick <code>List USB Hard Drives</code>.</p>
-<p>Then select the ISO file by clicking on the <code>SELECT</code> button.</p>
-<p>With ReviOS 10 the only thing you need to do before starting to prepare your flash drive is to decide MBR or GPT you will use. If you do not what are those, this guide wrote in detail about it <a href="#bios-vs-uefi-mbr-vs-gpt">above</a>.</p>
-<p>Should look something like this with ReviOS 10:</p>
-<p><img alt="rufus_win10" src="../img/install/4_rufus_win10.png" /></p>
-<p>With ReviOS 11 select GPT. There is one more thing to look out for, and make sure you do not change it, no matter what hardware you have. It is the <code>Image option</code>. Again, it does not matter that you have TPM or not, <mark><strong>do not change this option from <code>Standard</code> to <code>Extended</code></strong></mark>, because the ReviOS installer will not work!</p>
-<p>Should look something like this with ReviOS 11:</p>
-<p><img alt="rufus_win11" src="../img/install/5_rufus_win11.png" /></p>
-<p>Now you can start the preparation, by clicking the <code>START</code> button</p>
+<!--
+### Rufus
+
+You can download Rufus [here](https://rufus.ie/){target=_blank}.
+
+Like Ventoy, this software also does not need installation. Should look like this, after opening the EXE file:
+
+![rufus1](img/install/3_rufus1.png)
+
+Here, first select your flash drive under the `Device` dropdown menu. If it is not present, click `Show advanced drive properties`, and tick `List USB Hard Drives`.
+
+Then select the ISO file by clicking on the `SELECT` button.
+
+With ReviOS 10 the only thing you need to do before starting to prepare your flash drive is to decide MBR or GPT you will use. If you do not what are those, this guide wrote in detail about it [above](#bios-vs-uefi-mbr-vs-gpt).
+
+Should look something like this with ReviOS 10:
+
+![rufus_win10](img/install/4_rufus_win10.png)
+
+With ReviOS 11 select GPT. There is one more thing to look out for, and make sure you do not change it, no matter what hardware you have. It is the `Image option`. Again, it does not matter that you have TPM or not, ==**do not change this option from `Standard` to `Extended`**==, because the ReviOS installer will not work!
+
+Should look something like this with ReviOS 11:
+
+![rufus_win11](img/install/5_rufus_win11.png)
+
+Now you can start the preparation, by clicking the `START` button
+-->
+
 <h3 id="if-you-dont-have-a-usb-drive">If you don't have a USB drive<a class="headerlink" href="#if-you-dont-have-a-usb-drive" title="Permanent link">&para;</a></h3>
 <p>...you can go into Disk Management, select one of your partitions that have atleast 4 to 5 gigabytes of free space. <span class="keys"><kbd>Right-click</kbd></span> on that partition, and select <code>Shrink Volume...</code>. Then a window asks how many space do you want to cut of that partition, in megabytes. Write in 5120, but at least the size of the ISO file times 1024 plus 100.</p>
 <p>A new partition will pop up. <span class="keys"><kbd>Right-click</kbd></span> on it, and select <code>New Simple Volume...</code>. A setup wizard will appear, there you can select the letter and name of the partition, although those have not much relevance.</p>
@@ -800,6 +808,10 @@
 <p>Then the OS will load for a bit, with the text <code>Getting ready</code> on the screen.</p>
 <p>Then it will restart again.</p>
 <h2 id="5-step-windows-post-install-setup">5. step: Windows post install setup<a class="headerlink" href="#5-step-windows-post-install-setup" title="Permanent link">&para;</a></h2>
+<details class="info" open="open">
+<summary>Info</summary>
+<p><em>On ReviOS 11 this section looks different but the steps should be the same.</em></p>
+</details>
 <p>After the last restart you should arrive at this screen, obviously here you have to choose a username:</p>
 <p><img alt="post_install_username" src="../img/install/9_post_install_username.png" /></p>
 <p>And here a password. You can skip this question by just clicking on <code>Next</code>. But be warned, this can lead to a bug in ReviOS. More detail <a href="../related/#i-cannot-log-into-my-user">here</a>.</p>
