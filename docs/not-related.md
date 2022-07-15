@@ -16,6 +16,8 @@ Check our [official Discord server's](https://discord.gg/962y4pU){target=_blank}
 
 First, verify the ISO. You can find the checksums [here](https://www.revi.cc/revios/download/verify). And if you use Rufus, switch to Ventoy. Help in the [installation guide](install.md).
 
+If the installation needs a driver, please refer the [installation tutorial](install.md#missing-drivers).
+
 ---
 
 ## The "Do not close the window, otherwise your system won't work properly" window not closing

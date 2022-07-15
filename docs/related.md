@@ -19,8 +19,11 @@ Disabled:
     - With that automatic driver installation too. Install your drivers manually. [Help here](not-related.md#internetsoundbluetoothother-hardware-not-working)
 
 Not working:
+
 - Phone calls
-- Stock email client
+- Microsoft email client
+
+---
 
 ## What is the difference between the versions? What to choose?
 
@@ -91,6 +94,16 @@ If you are using one of these versions, and still cannot use FACEIT, since the r
 
 ---
 
+## Rufus "Unable to patch/setup files for boot" error
+
+On older versions of Rufus **select Standard at Image options**.
+
+On newer versions when **a window pops up** with the options to remove Secure Boot and TPM or RAM and disk or Microsoft account requirements or disable data collection, **select neither**. **ReviOS skips all of these already.**
+
+==Or just try Ventoy. Help in the [installation tutorial](install.md#ventoy).==
+
+---
+
 ## I cannot log into my user
 
 This is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into your Microsoft account set a PIN code too.
@@ -105,12 +118,7 @@ Not recommended, because **it will revert tweaks**, **reinstall bloatware** and 
 
 In the latest versions, the Windows Update menu item from Settings was removed, due to users updating without reading the FAQ or asking.
 
-If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu item in settings with these steps:
-
-1. Open `regedit`
-2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer`
-3. Remove `windowsupdate` and `windowsinsider` from `SettingsPageVisibility`
-4. Restart
+If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu item in Settings with the Revision Tool. For more information about the tool, please read [the section about it](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool).
 
 ???+ warning
     ==**If you update, might as well just use stock Windows.**== Reasons explained above.
@@ -125,7 +133,7 @@ If you want to update because of FACEIT, make sure to check out [the section abo
 
 ---
 
-## How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications?
+## How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications? Revision Tool
 
 1. In the `Documents` folder of the (default) user go to `Workspace` and then `Revision-Tool` folder. To be exact: `%userprofile%\Documents\Workspace\Revision-Tool`
 2. Run `Start.bat`
@@ -167,7 +175,7 @@ Add-AppxPackage -Register -Path C:\Windows\SystemApps\Microsoft.UI.Xaml.CBS_8wek
 
 ## GPU and Network monitoring not working in the Task Manager
 
-Yes, they were stripped because leaking memory.
+They were disabled because leaking memory.
 
 To reactivate GPU statistics:
 

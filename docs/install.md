@@ -71,14 +71,19 @@ When the command returns with the hash of the file, compare it to the correspond
 
 ## 2. step: Making a bootable flash drive
 
+<!--
 Now you have 2 choices, either to use Rufus or Ventoy. This guide will show both.
 
 ???+ danger
     Both of these methods/software will wipe everything from your flash drive. If you want to see the contents of it in the future, ==**make a backup**==.
+-->
 
 ### Ventoy
 
-What makes Ventoy a better choice over Rufus is that you can use it on Linux too, and it's much easier.
+<!--What makes Ventoy a better choice over Rufus is that you can use it on Linux too, and it's much easier.-->
+
+???+ danger
+    This method will wipe everything from your flash drive. If you want to see the contents of it in the future, ==**make a backup**==.
 
 You can download Ventoy [here](https://www.ventoy.net/en/download.html){target=_blank}.
 
@@ -104,6 +109,7 @@ You can now copy the ReviOS installer ISO file to the partition of the flash dri
 
 On Linux, the method of using Ventoy should be the same.
 
+<!--
 ### Rufus
 
 You can download Rufus [here](https://rufus.ie/){target=_blank}.
@@ -129,6 +135,7 @@ Should look something like this with ReviOS 11:
 ![rufus_win11](img/install/5_rufus_win11.png)
 
 Now you can start the preparation, by clicking the `START` button
+-->
 
 ### If you don't have a USB drive
 
@@ -199,6 +206,9 @@ Then the OS will load for a bit, with the text `Getting ready` on the screen.
 Then it will restart again.
 
 ## 5. step: Windows post install setup
+
+???+ info
+    *On ReviOS 11 this section looks different but the steps should be the same.*
 
 After the last restart you should arrive at this screen, obviously here you have to choose a username:
 
