@@ -51,7 +51,7 @@ As of this moment (2022-06-24), there are only 2 versions of ReviOS that are sup
     Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/990178962720292896){target=_blank}.
 
 
-**For FACEIT we always recommend to use the latest versions of ReviOS** [Details below](#which-version-do-i-need-for-faceit).
+**For FACEIT we always recommend to use the latest versions of ReviOS.** [Details below](#which-version-do-i-need-for-faceit).
 
 ### Which version is the fastest? Or the better? ReviOS 10 or ReviOS 11?
 
@@ -283,13 +283,13 @@ Once installed, after opening the software, go to:
 
 There select `Uninstall the old driver files stored in system`. After, iTunes should work.
 
-Link to the original messages on Discord: [Message 1](https://discord.com/channels/619835916139364383/626772969611460619/930729137830789141) and [Message 2](https://discord.com/channels/619835916139364383/650007673626165261/973323621789491230)
+Link to the original messages on Discord: [Message 1](https://discord.com/channels/619835916139364383/626772969611460619/930729137830789141) and [Message 2](https://discord.com/channels/619835916139364383/626772969611460619/998888988431634512)
 
 ---
 
 ## Valorant CFG error
 
-Either [turn on Windows Defender](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications), and you can enable Control Flow Guard in Windows Security.
+Either [turn on Windows Defender](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool), and you can enable Control Flow Guard in Windows Security.
 
 Or run this command in a PowerShell terminal (you may need to start the terminal in administrator mode):
 
