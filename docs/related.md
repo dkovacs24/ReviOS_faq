@@ -116,9 +116,9 @@ Other technique to evade the bug, is to log into your Microsoft account in the M
 
 Not recommended, because **it will revert tweaks**, **reinstall bloatware** and cause setbacks with respect to privacy and other pre-applied features, might even **break your OS**.
 
-In the latest versions, the Windows Update menu item from Settings was removed, due to users updating without reading the FAQ or asking.
+**Windows Update** in the latest versions of ReviOS **is not disabled**, so using the **Workspace** enable **.reg file will achieve nothing**. Only the automatic update downloading and installation is disabled, and in Settings menu the **Windows Update menu is hidden**. It is not disabled completely because half of the OS communicates through this service, for example the Store would not work.
 
-If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu item in Settings with the Revision Tool. For more information about the tool, please read [the section about it](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool).
+If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu in Settings with the Revision Tool. For more information about the tool, please read [the section about it](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool).
 
 ???+ warning
     ==**If you update, might as well just use stock Windows.**== Reasons explained above.
