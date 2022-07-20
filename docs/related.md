@@ -163,7 +163,7 @@ On ReviOS 10 (22.06):
 
 ---
 
-## Explorer.exe crashing
+## Explorer.exe crashing on ReviOS 11
 
 Open a PowerShell window, and run this command:
 
