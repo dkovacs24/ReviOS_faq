@@ -135,14 +135,16 @@ If you want to update because of FACEIT, make sure to check out [the section abo
 
 ## How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications? Revision Tool
 
-1. In the `Documents` folder of the (default) user go to `Workspace` and then `Revision-Tool` folder. To be exact: `%userprofile%\Documents\Workspace\Revision-Tool`
+If the **shortcut** of the Revision Tool is not **on the Desktop**, follow this:
+
+1. In the `Documents` folder of the user go to `Workspace` and then `Revision-Tool` folder. To be exact: `%userprofile%\Documents\Workspace\Revision-Tool`
 2. Run `Start.bat`
 3. Select the desired option
-4. Restart
+4. After the changes are done, restart your PC
 
 ### Full list of features of the Revision-Tool
 
-On ReviOS 11 (22.06):
+#### On ReviOS 11 (22.06) enable/disable:
 
 - Defender
 - Superfetch
@@ -150,7 +152,11 @@ On ReviOS 11 (22.06):
 - Notifications
 - Inking And Typing Personalization
 
-On ReviOS 10 (22.06):
+#### On ReviOS 10 (22.06):
+
+Installing VC Runtimes.
+
+Enable/Disable:
 
 - Defender
 - Superfetch
@@ -159,7 +165,8 @@ On ReviOS 10 (22.06):
 - Notifications
 - Inking And Typing Personalization
 - Full Screen Optimizations
-- VC Runtimes
+
+
 
 ---
 
