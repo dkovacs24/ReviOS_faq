@@ -26,9 +26,9 @@ theme:
     scheme: slate
     primary: red
     accent: deep orange
-  # font:
-  #  text: Inter
-  #  code: DM Mono
+  font:
+   text: Open Sans
+   code: Roboto Mono
   features:
     - navigation.tabs
     - navigation.tabs.sticky
