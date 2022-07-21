@@ -11,21 +11,7 @@ hide:
 
 # ReviOS related questions
 
-## Unsupported things on ReviOS
-
-Disabled:
-
-- Automatic Windows Updates
-    - With that automatic driver installation too. Install your drivers manually. [Help here](not-related.md#internetsoundbluetoothother-hardware-not-working)
-
-Not working:
-
-- Phone calls
-- Microsoft email client
-
----
-
-## What is the difference between the versions? What to choose?
+## What is the difference between the versions?
 
 As of this moment (2022-06-24), there are only 2 versions of ReviOS that are supported: `11 22.06`, `10 21.06`. No other versions are supported.
 
@@ -53,11 +39,31 @@ As of this moment (2022-06-24), there are only 2 versions of ReviOS that are sup
 
 **For FACEIT we always recommend to use the latest versions of ReviOS.** [Details below](#which-version-do-i-need-for-faceit).
 
-### Which version is the fastest? Or the better? ReviOS 10 or ReviOS 11?
+### Which version is the best? 
+
+Even if you do find **older version of ReviOS, we do not recommend** using those, since they are outdated. Maybe ancient version have better latency or speed, but the number of software that supports those versions are declining day by day.
+
+So always **install the latest**, because that is the best.
+
+### ReviOS 10 or ReviOS 11?
 
 These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation** are more supported on **Windows 11**, these are not ReviOS related things, these differences are present on the stock Windows too.
 
 Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you may need to enable Secure Boot and TPM, regardless that ReviOS 11 skips the check when installing, so if your hardware does not support it, use ReviOS 10.
+
+---
+
+## Unsupported things on ReviOS
+
+Disabled:
+
+- Automatic Windows Updates
+    - With that automatic driver installation too. Install your drivers manually. [Help here](not-related.md#internetsoundbluetoothother-hardware-not-working)
+
+Not working:
+
+- Phone calls
+- Microsoft email client
 
 ---
 
@@ -129,6 +135,8 @@ If you still want to update, you can manually install updates with the help of [
 
 You need to reinstall. Do not forget to backup your data.
 
+Also, you do not need to update just because a new version of ReviOS is released. If your system is stable, and you do not need newer updates for certain anti-cheat systems, you can stay on your older ReviOS version. But please note that we might not provide you support.
+
 If you want to update because of FACEIT, make sure to check out [the section about it](#which-version-do-i-need-for-faceit).
 
 ---
@@ -165,8 +173,6 @@ Enable/Disable:
 - Notifications
 - Inking And Typing Personalization
 - Full Screen Optimizations
-
-
 
 ---
 
