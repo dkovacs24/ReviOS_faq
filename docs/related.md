@@ -62,8 +62,9 @@ Disabled:
 
 Not working:
 
-- Phone calls
-- Microsoft email client
+- Phone calls *(fixed in ReviOS 11 22.07 and above)*
+- Microsoft email client *(fixed in ReviOS 11 22.07 and above)*
+- Mixed Reality *(fixed in ReviOS 11 22.07 and above)*
 
 ---
 
@@ -92,9 +93,9 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ## Which version do I need for FACEIT?
 
-As of this moment (2022-06-24), FACEIT only works on the `11 22.06` and `10 22.06` versions. 
+As of this moment (2022-07-24), FACEIT only works on the `11 22.07`, `11 22.06` and `10 22.06` versions. 
 
-The `22.06` and maybe `22.05` builds are probably still compatible with FACEIT, but not for long. Keep in mind that we do not support those versions anymore.
+The `22.05` builds are probably still compatible with FACEIT, but not for long. Keep in mind that we do not support those versions anymore.
 
 If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon. 
 
@@ -112,9 +113,17 @@ On newer versions when **a window pops up** with the options to remove Secure Bo
 
 ## I cannot log into my user
 
+*Update:* 
+
+In ReviOS 11 22.07 and above this problem is resolved. Even if you do not set a password at installation, and evade setting a PIN code when logging into your Microsoft account, at the login screen a window will pop up, and after logging in again with your MS account, you have to set a PIN code.
+
+The PIN code forcing can be disabled in `Settings` -> `Accounts` -> `Sign-in options` with `For improved security, only allow Windows Hello sign-in for Microsoft accounts on this device (Recommended)`.
+
+*Previously:*
+
 This is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into your Microsoft account set a PIN code too.
 
-Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Solution reported [here](https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001){target=_blank}.
+Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Partial solution reported [here](https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001){target=_blank}.
 
 ---
 
