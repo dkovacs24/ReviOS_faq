@@ -13,24 +13,24 @@ hide:
 
 ## What is the difference between the versions?
 
-As of this moment (2022-06-24), there are only 2 versions of ReviOS that are supported: `11 22.06`, `10 21.06`. No other versions are supported.
+As of this moment (2022-07-24), there are only 2 versions of ReviOS that are supported: `11 22.07`, `10 22.06`. No other versions are supported.
 
-=== "ReviOS 11 22.06"
+=== "ReviOS 11 22.07"
 
-    Based on the latest Windows 11 Pro (22621.105), released on 17th of June 2022.
+    Based on the latest Windows 11 Pro (22621.232), released on 24th of July 2022.
 
-    [Changelog](https://www.revi.cc/revios/download/changelog#h.3edmpc1x6kzo){target=_blank}
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
 
     [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
 
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/987387352362156122){target=_blank}. 
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1000795817705230396){target=_blank}. 
 
 
 === "ReviOS 10 22.06"
 
     Based on the latest Windows 10 Pro (19044.1806), released on 24th of June 2022.
 
-    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.1suqlzzc2q2t){target=_blank}
 
     [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
@@ -94,7 +94,7 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 As of this moment (2022-06-24), FACEIT only works on the `11 22.06` and `10 22.06` versions. 
 
-The `22.05` builds are probably still compatible with FACEIT, but not for long. Keep in mind that we do not support those versions anymore.
+The `22.06` and maybe `22.05` builds are probably still compatible with FACEIT, but not for long. Keep in mind that we do not support those versions anymore.
 
 If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon. 
 
@@ -152,13 +152,22 @@ If the **shortcut** of the Revision Tool is not **on the Desktop**, follow this:
 
 ### Full list of features of the Revision-Tool
 
-#### On ReviOS 11 (22.06) enable/disable:
+#### On ReviOS 11 (22.07):
+
+Installing VC Runtimes.
+
+Enable/Disable:
 
 - Defender
 - Superfetch
+- Windows Update features
 - UAC
 - Notifications
 - Inking And Typing Personalization
+- Full Screen Optimizations
+- Additional Windows 11 tweaks
+  - New right-click menu
+  - Tabs in File Explorer
 
 #### On ReviOS 10 (22.06):
 
