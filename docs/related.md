@@ -34,7 +34,7 @@ As of this moment (2022-07-24), there are only 2 versions of ReviOS that are sup
 
     [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
-    Alternative download links are not available right now, this website will be updated when we have the links.
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1002273626910904470){target=_blank}. 
 
 
 **For FACEIT we always recommend to use the latest versions of ReviOS.** [Details below](#which-version-do-i-need-for-faceit).
