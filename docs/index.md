@@ -22,7 +22,7 @@ This website was created and is maintained by [Dawe24#1229](https://discord.com/
 ???+ info 
     If you do not know what to do next, notice there is a menu bar on the top of the page. 
 
-    On phone this is accessible by the [hamburger menu](https://en.wikipedia.org/wiki/Hamburger_button) in the top right corner. Also there you can find the TOC ([table of contents](https://en.wikipedia.org/wiki/Table_of_contents)) of the pages.
+    On phone this is accessible by the [hamburger menu](https://en.wikipedia.org/wiki/Hamburger_button){target=_blank} in the top right corner. Also there you can find the TOC ([table of contents](https://en.wikipedia.org/wiki/Table_of_contents){target=_blank}) of the pages.
 
 
 

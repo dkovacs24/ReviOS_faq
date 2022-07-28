@@ -13,28 +13,28 @@ hide:
 
 ## What is the difference between the versions?
 
-As of this moment (2022-07-24), there are only 2 versions of ReviOS that are supported: `11 22.07`, `10 22.06`. No other versions are supported.
+As of this moment (2022-07-24), there are only 2 versions of ReviOS that are supported: `11 22.07`, `10 22.07`. No other versions are supported.
 
 === "ReviOS 11 22.07"
 
     Based on the latest Windows 11 Pro (22621.232), released on 24th of July 2022.
 
-    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.jjwpsqn2kr){target=_blank}
 
     [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
 
     Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1000795817705230396){target=_blank}. 
 
 
-=== "ReviOS 10 22.06"
+=== "ReviOS 10 22.07"
 
-    Based on the latest Windows 10 Pro (19044.1806), released on 24th of June 2022.
+    Based on the latest Windows 10 Pro (19044.1865), released on 28th of July 2022.
 
-    [Changelog](https://www.revi.cc/revios/download/changelog#h.1suqlzzc2q2t){target=_blank}
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
 
     [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/990178962720292896){target=_blank}.
+    Alternative download links are not available right now, this website will be updated when we have the links.
 
 
 **For FACEIT we always recommend to use the latest versions of ReviOS.** [Details below](#which-version-do-i-need-for-faceit).
@@ -62,9 +62,9 @@ Disabled:
 
 Not working:
 
-- Phone calls *(fixed in ReviOS 11 22.07 and above)*
-- Microsoft email client *(fixed in ReviOS 11 22.07 and above)*
-- Mixed Reality *(fixed in ReviOS 11 22.07 and above)*
+- Phone calls *(fixed in ReviOS 22.07 and above)*
+- Microsoft email client *(fixed in ReviOS 22.07 and above)*
+- Mixed Reality *(fixed in ReviOS 22.07 and above)*
 
 ---
 
@@ -93,9 +93,9 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ## Which version do I need for FACEIT?
 
-As of this moment (2022-07-24), FACEIT only works on the `11 22.07`, `11 22.06` and `10 22.06` versions. 
+As of this moment (2022-07-24), FACEIT only works on the `11 22.07` and `10 22.07` versions. 
 
-The `22.05` builds are probably still compatible with FACEIT, but not for long. Keep in mind that we do not support those versions anymore.
+The `22.05` and `22.06` builds are probably still compatible with FACEIT, but not for long. Keep in mind that we do not support those versions anymore.
 
 If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon. 
 
@@ -170,6 +170,8 @@ Enable/Disable:
 - Defender
 - Superfetch
 - Windows Update features
+  - Unhide Windows Updates
+  - Enable automatic drivers updating
 - UAC
 - Notifications
 - Inking And Typing Personalization
@@ -178,7 +180,7 @@ Enable/Disable:
   - New right-click menu
   - Tabs in File Explorer
 
-#### On ReviOS 10 (22.06):
+#### On ReviOS 10 (22.07):
 
 Installing VC Runtimes.
 
@@ -187,6 +189,8 @@ Enable/Disable:
 - Defender
 - Superfetch
 - Windows Update features
+  - Unhide Windows Updates
+  - Enable automatic drivers updating
 - UAC
 - Notifications
 - Inking And Typing Personalization
