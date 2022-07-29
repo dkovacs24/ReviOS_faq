@@ -4,7 +4,7 @@ hide:
 ---
 
 <style>
-    details > p {
+    div.admonition p:not(.admonition-title) {
         font-size: 14pt;
     }
 </style>
@@ -72,7 +72,7 @@ Not working:
 
 Refer to our website's section about this, although it's the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run. The Windows 11 versions of ReviOS have the Secure Boot and TPM requirements disabled.
 
-???+ note "TPM and Secure Boot on Windows 11"
+!!! note "TPM and Secure Boot on Windows 11"
     If you play games or use anti-cheats that require Secure Boot and TPM, you still need to enable those functions.
 
 ### ReviOS RAM usage
@@ -135,7 +135,7 @@ Not recommended, because **it will revert tweaks**, **reinstall bloatware** and 
 
 If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu in Settings with the Revision Tool. For more information about the tool, please read [the section about it](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool).
 
-???+ warning
+!!! warning
     ==**If you update, might as well just use stock Windows.**== Reasons explained above.
 
 ---
@@ -229,7 +229,7 @@ To reactivate GPU statistics:
     sc start GraphicsPerfSvc
     ```
   
-    ???+ note
+    !!! note
         If this command fails, which is most likely to happen on 22.04 and older versions, download [this zip](files/wscapi.zip), and place the contents of it inside the System32 folder. [Link to the original message and conversation](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274)
 
 If you do not see your GPU in the Performance tab in Task Manager, restart your PC again.

@@ -41,6 +41,7 @@ theme:
     - toc.follow
     # - toc.integrate
 markdown_extensions:
+  - admonition
   - meta
   - toc:
       permalink: true

@@ -4,7 +4,7 @@ hide:
 ---
 
 <style>
-    details > p {
+    div.admonition p:not(.admonition-title) {
         font-size: 14pt;
     }
 </style>
@@ -53,7 +53,7 @@ To reiterate, you will need to delete all OS partitions, not just the C: partiti
 
 ### Backup
 
-???+ warning
+!!! warning
     This Windows installing process will delete your previous OS, so you should back up everything you plan on seeing again in the future. At least have separate partition to save your data. Or you can move your things to a flash drive, even the installing flash drive, just after the [2. step](#2-step-making-a-bootable-flash-drive), but before the [3.](#3-step-booting-the-flash-drive)
 
 
@@ -74,7 +74,7 @@ When the command returns with the hash of the file, compare it to the correspond
 <!--
 Now you have 2 choices, either to use Rufus or Ventoy. This guide will show both.
 
-???+ danger
+!!! danger
     Both of these methods/software will wipe everything from your flash drive. If you want to see the contents of it in the future, ==**make a backup**==.
 -->
 
@@ -82,7 +82,7 @@ Now you have 2 choices, either to use Rufus or Ventoy. This guide will show both
 
 <!--What makes Ventoy a better choice over Rufus is that you can use it on Linux too, and it's much easier.-->
 
-???+ danger
+!!! danger
     This method will wipe everything from your flash drive. If you want to see the contents of it in the future, ==**make a backup**==.
 
 You can download Ventoy [here](https://www.ventoy.net/en/download.html){target=_blank}.
@@ -207,7 +207,7 @@ Then it will restart again.
 
 ## 5. step: Windows post install setup
 
-???+ info
+!!! info
     *On ReviOS 11 this section looks different but the steps should be the same.*
 
 After the last restart you should arrive at this screen, obviously here you have to choose a username:
