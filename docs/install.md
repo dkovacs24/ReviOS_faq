@@ -171,7 +171,7 @@ Should look something like this with ReviOS 11:
 Now you can start the preparation, by clicking the `START` button
 -->
 
-### If you don't have a USB drive
+### If you do not have a USB drive
 
 ...on Windows you can go into Disk Management, select one of your partitions that have atleast 4 to 5 gigabytes of free space. ++"Right-click"++ on that partition, and select `Shrink Volume...`. Then a window asks how many space do you want to cut of that partition, in megabytes. Write in 5120, but at least the size of the ISO file times 1024 plus 100.
 
