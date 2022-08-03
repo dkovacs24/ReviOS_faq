@@ -195,7 +195,7 @@ When you restart your PC, after it shutdown, and just started to boot up again, 
 
 A list should come up with options to boot. Also, usually the last option is to enter BIOS. Here, choose the option with the **name of your flash drive**. If you have multiple options with the name of it, choose that boots in UEFI mode, if you selected GPT when preparing the flash drive. Or if it does not show the names, only USB Drive and Optical Drive and Hard Drive, something like those, obviously choose the USB Drive like option.
 
-### Boot order changin in BIOS
+### Boot order changing in BIOS
 
 Alternatively you can go inside your BIOS settings, and change the boot order. This is a list that tells the BIOS what to boot. So when your PC boots, BIOS trys to boot from the first option from the list. If that is not working, it tries the second option, ans so on.
 
