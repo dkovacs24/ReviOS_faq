@@ -1,15 +1,5 @@
 site_name: ReviOS Frequently Asked Questions
-# copyright: |
-#   This website was last updated at <p id=date style="display:inline"><i>If you see this, the api request wasn't successful</i></p>.
-#   <script>
-#     fetch('https://api.github.com/repos/dkovacs24/ReviOS_faq/commits/gh-pages').then(response =>{
-#         return response.json();
-#         // Good job, you found out my GitHub username.
-#     }).then(data =>{
-#         let date = new Date(data["commit"]["author"]["date"]);
-#         document.getElementById("date").innerHTML = new Date(date.getTime()-(date.getTimezoneOffset()*60*1000)).toISOString().split('T')[0];
-#     })
-#   </script>
+copyright: Neither the creator and maintainer of this website, nor the team behind Revision and ReviOS is responsible for your PC, your data and files, your actions and what you do based on this website's information and advice given on the Discord server.
 nav:
     - Home: 'index.md'
     - How to install ReviOS: 'install.md'
