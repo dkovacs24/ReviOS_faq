@@ -111,6 +111,12 @@ On newer versions when **a window pops up** with the options to remove Secure Bo
 
 ---
 
+## Apps taking long time to load on ReviOS
+
+It is a bug in SmartScreen. Run this .reg file to fix the issue: [Fix-delayed-running-of-apps.reg](files/Fix-delayed-running-of-apps.reg)
+
+---
+
 ## I cannot log into my user
 
 *Update:*
