@@ -377,4 +377,4 @@ If this method is not working, install [Chocolatey](https://chocolatey.org/){tar
 
 ## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
 
-This was a bug in the `22.01` builds, for now you can use [this fix](files/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` builds, it is already fixed.
+This was a bug in the `22.01` builds, for now you can use [this fix](files/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. The issue is already fixed in newer ReviOS builds.
