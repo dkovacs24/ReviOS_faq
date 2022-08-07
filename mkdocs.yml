@@ -1,5 +1,5 @@
 site_name: ReviOS Frequently Asked Questions
-copyright: Neither the creator and maintainer of this website, nor the team behind Revision and ReviOS is responsible for your PC, your data and files, your actions and what you do based on this website's information and advice given on the Discord server.
+copyright: Neither the creator and maintainer of this website, nor the team behind Revision and ReviOS is responsible for your PC, your data and files, your actions and what you do based on this website's information and advice given on the Discord server. Use ReviOS at your own risk.
 nav:
     - Home: 'index.md'
     - How to install ReviOS: 'install.md'
