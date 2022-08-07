@@ -116,9 +116,9 @@ On newer versions when **a window pops up** with the options to remove Secure Bo
 
 ## Apps taking long time to load on ReviOS
 
-Run this command using PowerShell in administrator mode:
+Run this command using **PowerShell in administrator mode**:
 ```
-reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\smartscreen.exe" /v "Debugger" /t REG_SZ /d "%%windir%%\System32\taskkill.exe" /f
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\smartscreen.exe" /v "Debugger" /t REG_SZ /d "%windir%\System32\taskkill.exe" /f
 ```
 
 ---
