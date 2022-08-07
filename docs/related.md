@@ -47,9 +47,9 @@ So always **install the latest**, because that is the best.
 
 ### ReviOS 10 or ReviOS 11?
 
-These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation** are more supported on **Windows 11**, these are not ReviOS related things, these differences are present on the stock Windows too.
+These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation**, might perform better on **Windows 11**, due to [DirectStorage](https://www.thewindowsclub.com/what-is-directstorage-in-windows), [BypassIO](https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/bypassio) and [Thread Director](https://www.anandtech.com/show/16881/a-deep-dive-into-intels-alder-lake-microarchitectures/2), these are not ReviOS related things, these differences are present on the stock Windows too.
 
-Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you may need to enable Secure Boot and TPM, regardless that ReviOS 11 skips the check when installing, so if your hardware does not support it, use ReviOS 10.
+Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you must enable Secure Boot and TPM, regardless that ReviOS 11 skips the check when installing, so if your hardware does not support it, use ReviOS 10.
 
 ---
 
@@ -59,6 +59,9 @@ Disabled:
 
 - Automatic Windows Updates
     - With that automatic driver installation too. Install your drivers manually. [Help here](not-related.md#internetsoundbluetoothother-hardware-not-working)
+- Windows Insider Hub
+- Intel Indeo Codecs
+- Video Compression Manager (VCM) codecs
 
 Not working:
 
@@ -73,7 +76,7 @@ Not working:
 Refer to our website's section about this, although it's the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run. The Windows 11 versions of ReviOS have the Secure Boot and TPM requirements disabled.
 
 !!! note "TPM and Secure Boot on Windows 11"
-    If you play games or use anti-cheats that require Secure Boot and TPM, you still need to enable those functions.
+    In order to play games or use anti-cheats that require Secure Boot and TPM, you still need to enable those functions.
 
 ### ReviOS RAM usage
 
@@ -95,7 +98,7 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 As of this moment (2022-07-24), FACEIT only works on the `11 22.07` and `10 22.07` versions.
 
-The `22.05` and `22.06` builds are probably still compatible with FACEIT, but not for long. Keep in mind that we do not support those versions anymore.
+The `22.05` and `22.06` builds are probably still compatible with FACEIT, but not for long. Keep in mind, we do not support those versions anymore.
 
 If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon.
 
@@ -113,7 +116,10 @@ On newer versions when **a window pops up** with the options to remove Secure Bo
 
 ## Apps taking long time to load on ReviOS
 
-It is a bug in SmartScreen. Run this .reg file to fix the issue: [Fix-delayed-running-of-apps.reg](files/Fix-delayed-running-of-apps.reg)
+Run this command using PowerShell in administrator mode:
+```
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\smartscreen.exe" /v "Debugger" /t REG_SZ /d "%%windir%%\System32\taskkill.exe" /f
+```
 
 ---
 
@@ -285,7 +291,7 @@ Link to the original messages on Discord: [Message 1](https://discord.com/channe
 
 ## Explorer.exe crashing on ReviOS 11
 
-Open a PowerShell window, and run this command:
+Open a PowerShell window as administrator, and run this command:
 
 ```powershell
 Add-AppxPackage -Register -Path C:\Windows\SystemApps\Microsoft.UI.Xaml.CBS_8wekyb3d8bbwe\AppxManifest.xml -DisableDevelopmentMode -ForceApplicationShutdown
@@ -297,19 +303,12 @@ Add-AppxPackage -Register -Path C:\Windows\SystemApps\Microsoft.UI.Xaml.CBS_8wek
 
 Either [turn on Windows Defender](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool), and you can enable Control Flow Guard in Windows Security.
 
-Or run this command in a PowerShell terminal (you may need to start the terminal in administrator mode):
+Or run this command in a PowerShell terminal as administrator:
 
 ```powershell
 Set-ProcessMitigation -Name vgc.exe -Enable CFG
 Set-ProcessMitigation -Name vgc.exe -Enable DEF
 Set-ProcessMitigation -Name vgc.exe -Enable AuditDynamicCode
-```
-
-If Vanguard still not working, you can try these two command: (you have to disable CFG to Discord, because it will crash)
-
-```powershell
-Set-ProcessMitigation -System -Enable CFG
-Set-ProcessMitigation -Name Discord.exe -Disable CFG
 ```
 
 ---
@@ -346,15 +345,16 @@ To reactivate Network statistics:
 1. Open `regedit`
 2. At `HKLM\System\CurrentControlSet\Services\Ndu` set `Start` to `2`
 3. Restart
+4. Then run this:
+    ```
+    sc start Ndu
+    ```
 
 ---
 
 ## How to change lock screen background?
 
-1. Open `regedit`
-2. Go to `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization`
-3. Set the `NoLockScreen` key's value to `0`
-4. Now you should be able to change it in Settings, if not, restart
+Rename your background image to `img100.jpg` and move it to `C:\Windows\Web\Screen` (Taking ownership to the original `img100.jpg` might be mandatory).
 
 ---
 
@@ -377,4 +377,4 @@ If this method is not working, install [Chocolatey](https://chocolatey.org/){tar
 
 ## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
 
-This is a bug in the `22.01` version, for now you can use [this fix](files/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` version, it is already fixed.
+This was a bug in the `22.01` builds, for now you can use [this fix](files/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. In the `22.02` builds, it is already fixed.
