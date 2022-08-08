@@ -55,19 +55,18 @@ Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you must 
 
 ## Unsupported things on ReviOS
 
-Disabled:
+As of the **latest** ReviOS
+
+**Disabled:** (can be enabled)
 
 - Automatic Windows Updates
     - With that automatic driver installation too. Install your drivers manually. [Help here](not-related.md#internetsoundbluetoothother-hardware-not-working)
+
+**Removed:**
+
 - Windows Insider Hub
 - Intel Indeo Codecs
 - Video Compression Manager (VCM) codecs
-
-Not working:
-
-- Phone calls *(fixed in ReviOS 22.07 and above)*
-- Microsoft email client *(fixed in ReviOS 22.07 and above)*
-- Mixed Reality *(fixed in ReviOS 22.07 and above)*
 
 ---
 
