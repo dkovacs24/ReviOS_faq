@@ -10,7 +10,7 @@ hide:
 </style>
 
 !!! info
-    This website is still in the works, but it should cover almost all of the scenarios already.
+    This page is still in the works, but it should cover almost all of the scenarios already.
 
 # How to install drivers
 
@@ -114,5 +114,5 @@ You can use Snappy Driver Installer Origin.
 2. Extract the zip file
 3. Run `SDIO_auto.bat` and accept the license
 4. Once the Welcome window pop-ups, click on `Download Indexes Only`
-5. Here, only select the drivers that you need and could not find in any previous tries.
+5. Here, only select the drivers that you need and could not find in any previous tries
 6. Click on `Install`
