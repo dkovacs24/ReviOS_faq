@@ -40,7 +40,7 @@ The fastest way to find the drivers you need, just **Google** "<*the name of you
 
 After you accuired your drivers, should take them with yourself on the installation **flash drive**. So you need to **copy** the files **after the** [**2. step**](#2-step-making-a-bootable-flash-drive), but before the [3.](#3-step-booting-the-flash-drive)
 
-Alternatively, and ==this method should not be considered the default option==, download the network drivers with Snappy Driver Installer Origin and take the whole folder of it with you before you format your partition(s). Help on this method can be found [here](not-related.md#internetsoundbluetoothother-hardware-not-working), from the second paragraph.
+Alternatively, and ==this method should not be considered the default option==, download the network drivers with Snappy Driver Installer Origin and take the whole folder of it with you before you format your partition(s). Help on this method can be found on the [How to install drivers page](drivers.md#a-last-resort).
 
 ### Check what drives and partitions you have
 
@@ -275,9 +275,7 @@ After your PC boots up again, this guide have some recommendation to go through.
 
 3. Set the time, because ReviOS's default is the UTC time zone. `Settings` → `Time & Language` → `Date & time`
 
-4. Download and install your drivers. This guide discussed downloading and installing drivers before, in great detail, check it  [here](#drivers).
-    
-    Also, forget any driver installer software like Driver Booster and others like it. The only driver installer you ever should use is Snappy Driver Installer Origin, and only as a last resort, if you really cannot find your drivers or one of them is faulty.
+4. Download and install your drivers. This guide discussed downloading and installing drivers before, in great detail, check it [here](#drivers), and you can find more help on the [How to install drivers page](drivers.md).
 
 5. Go through the [ReviOS Post-Install](https://www.revi.cc/revios/post-install){target=_blank} guide. You do not need to do every step, you can skip any of them, but the Visual C++ Runtimes and DirectX installation is highly recommended.
 
