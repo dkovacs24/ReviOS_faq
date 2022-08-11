@@ -28,29 +28,16 @@ Make sure you did not select a character in the command prompt (a white rectangl
 
 ## Internet/Sound/Bluetooth/other hardware... not working
 
-Download the drivers from the manufacturer's website and install them.
-
-**AS A LAST RESORT** (meaning do not jump on this option directly) you can use [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}.
-
-1. Download SDIO from here: [https://www.snappy-driver-installer.org/](https://www.snappy-driver-installer.org/)
-2. Extract `SDIO-*.zip`
-3. Run `SDIO_auto.bat` and accept the license
-4. Once the Welcome window pop-ups, click on `Download Indexes Only`
-5. Choose the drivers you want to update and click the `Install` button
-
-### If you do not have internet...
-
-... is probably because you are missing the network drivers. Somehow (like on another computer or by connecting your phone to your pc to use USB tethering) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
-
-Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
-
-If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. Or, if you used USB tethering, you can disconnect your phone and install your network drivers right away. After restart, you can scan the PC for more missing drivers, or better yet, go to the manufacturer's website, and download the drivers from there.
+Install the driver. Help: [How to install drivers](drivers.md)
 
 ---
 
 ## Second monitor not working/blank or refresh rate not desired
 
-Install GPU drivers. [Help to tweak](https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F){target=_blank}
+Install GPU drivers.
+
+Help to install: [How to install drivers](drivers.md) 
+Help to tweak: [ReviOS Post-Install guide](https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F){target=_blank}
 
 ---
 

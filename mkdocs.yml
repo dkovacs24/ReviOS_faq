@@ -2,9 +2,10 @@ site_name: ReviOS Frequently Asked Questions
 copyright: Neither the creator and maintainer of this website, nor the team behind Revision and ReviOS is responsible for your PC, your data and files, your actions and what you do based on this website's information and advice given on the Discord server. Use ReviOS at your own risk.
 nav:
     - Home: 'index.md'
-    - How to install ReviOS: 'install.md'
     - ReviOS related questions: 'related.md'
     - Not ReviOS related questions: 'not-related.md'
+    - How to install ReviOS: 'install.md'
+    - How to install drivers: 'drivers.md'
     - Revision website: 'https://www.revi.cc/'
     - Revision Discord: 'https://discord.gg/962y4pU'
 theme:
@@ -35,7 +36,7 @@ markdown_extensions:
   - meta
   - toc:
       permalink: true
-      toc_depth: 3
+      # toc_depth: 3
   - tables
   - attr_list
   - md_in_html

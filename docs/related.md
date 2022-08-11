@@ -5,7 +5,7 @@ hide:
 
 <style>
     div.admonition p:not(.admonition-title) {
-        font-size: 14pt;
+        font-size: 125%;
     }
 </style>
 
@@ -60,7 +60,7 @@ As of the **latest** ReviOS
 **Disabled:** (can be enabled)
 
 - Automatic Windows Updates
-    - With that automatic driver installation too. Install your drivers manually. [Help here](not-related.md#internetsoundbluetoothother-hardware-not-working)
+    - With that automatic driver installation too. Install your drivers manually. Help here: [How to install drivers](drivers.md)
 
 **Removed:**
 
@@ -173,7 +173,7 @@ If the **shortcut** of the Revision Tool is not **on the Desktop**, follow this:
 
 ### Full list of features of the Revision-Tool
 
-#### On ReviOS 11 (22.07):
+**On ReviOS 11 (22.07):**
 
 Installing VC Runtimes.
 
@@ -192,7 +192,7 @@ Enable/Disable:
   - New right-click menu
   - Tabs in File Explorer
 
-#### On ReviOS 10 (22.07):
+**On ReviOS 10 (22.07):**
 
 Installing VC Runtimes.
 
@@ -254,6 +254,24 @@ As a last resort, you can try the `wsreset -i` command. It reinstalls the Store 
 >     **Make sure you install the packages in the order listed above.**
 >
 > 6. Restart
+
+---
+
+## Cannot toogle Start Menu folders in Settings
+
+If you cannot toogle Star Menu folders in Settings -> Personalization -> Start -> Folders:
+
+1. Open `regedit`
+2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Start` 
+3. Delete every key **except** `ConfigureStartPins`
+
+---
+
+## Disable old notification balloons
+
+1. Open `regedit`
+2. Go to `HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer`
+3. Set `EnableLegacyBalloonNotifications` to `0`
 
 ---
 

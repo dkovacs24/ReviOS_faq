@@ -5,8 +5,7 @@ hide:
 
 <style>
     div.admonition p:not(.admonition-title) {
-        font-size: 12pt;
-        /* somehow the actual font size becomes 2pts bigger than the defined here */
+        font-size: 125%;
     }
 </style>
 
