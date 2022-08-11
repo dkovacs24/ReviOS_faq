@@ -113,6 +113,12 @@ On newer versions when **a window pops up** with the options to remove Secure Bo
 
 ---
 
+## Missing drivers in the installation process
+
+When you arrive to the partition making and selecting part of the installing process, but the installer asks for drivers, you might need Intel Rapid Storage Technology (IRST) drivers. [Here is a helping guide from the Asus Support page.](https://www.asus.com/support/FAQ/1044458/)
+
+---
+
 ## Apps taking long time to load on ReviOS
 
 Run this command using **PowerShell in administrator mode**:
