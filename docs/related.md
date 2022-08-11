@@ -13,11 +13,13 @@ hide:
 
 ## What is the difference between the versions?
 
-As of this moment (2022-07-24), there are only 2 versions of ReviOS that are supported: `11 22.07`, `10 22.07`. No other versions are supported.
+As of this moment (2022-07-28), there are only 2 versions of ReviOS that are supported: `11 22.07`, `10 22.07`. No other versions are supported.
 
 === "ReviOS 11 22.07"
 
     Based on the latest Windows 11 Pro (22621.232), released on 24th of July 2022.
+
+    Recommended for newer systems with more recent hardware.
 
     [Changelog](https://www.revi.cc/revios/download/changelog#h.jjwpsqn2kr){target=_blank}
 
@@ -29,6 +31,8 @@ As of this moment (2022-07-24), there are only 2 versions of ReviOS that are sup
 === "ReviOS 10 22.07"
 
     Based on the latest Windows 10 Pro (19044.1865), released on 28th of July 2022.
+
+    Recommended for older systems, incompatible with Windows 11.
 
     [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
 
@@ -95,7 +99,7 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ## Which version do I need for FACEIT?
 
-As of this moment (2022-07-24), FACEIT only works on the `11 22.07` and `10 22.07` versions.
+As of this moment (2022-07-28), FACEIT only works on the `11 22.07` and `10 22.07` versions.
 
 The `22.05` and `22.06` builds are probably still compatible with FACEIT, but not for long. Keep in mind, we do not support those versions anymore.
 
