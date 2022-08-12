@@ -88,13 +88,6 @@ This is the easiest part. Extract the driver, if it comes in an archive file. Th
 !!! example
     Continuing the PC motherboard example from the previous step, if you downloaded the audio driver, you need to first extract the zip file of the driver. Then find and execute the `setup.exe`. The installer wizard will walk you through the installation of the driver. After finishing, it usually offers to restart the PC. Restart it. Or if the timing of the restart is not good for you, you can delay it, but do not forget to do it later, because until you restart, the hardware will not work.
 
-<!-- ## If you do not have internet...
-
-... is probably because you are missing the network drivers. Somehow (like on another computer or by connecting your phone to your pc to use USB tethering) download [Snappy Driver Installer Origin](https://www.snappy-driver-installer.org/){target=_blank}. 
-
-Extract it, and start the software with `SDIO_auto.bat`. Then select the `Download Network Drivers Only` option. It will start the download of all the existing network drivers. 
-
-If it finishes (you can monitor the process on the top side of the window), copy the whole folder to the other computer which doesn't have internet. Open on that computer the software, and install the missing network drivers. Or, if you used USB tethering, you can disconnect your phone and install your network drivers right away. After restart, you can scan the PC for more missing drivers, or better yet, go to the manufacturer's website, and download the drivers from there. -->
 
 ## Troubleshooting
 
