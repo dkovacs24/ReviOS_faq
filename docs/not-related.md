@@ -8,11 +8,11 @@ hide:
 
 ## Internet/Sound/Bluetooth/other hardware... not working
 
-Install the driver. Help: [How to install drivers](drivers.md)
+Install the driver. Help: [How to install drivers page](drivers.md)
 
 ### I do not have internet after installing ReviOS
 
-You probably did not follow the ReviOS installation guide, where we recommend to download your driver before installation, exactly because of this situation. Use an other computer or if your phone has mobileinternet, use USB tethering, to download the network driver. More help finding the drivers on the [How to install drivers](drivers.md) page.
+You probably did not follow the ReviOS installation guide, where we recommend to download your driver before installation, exactly because of this situation. Use an other computer or if your phone has mobileinternet, use USB tethering, to download the network driver. More help finding the drivers on the [How to install drivers page](drivers.md).
 
 <!-- ## If you do not have internet...
 
@@ -26,9 +26,11 @@ If it finishes (you can monitor the process on the top side of the window), copy
 
 ## Installation stoped with an error
 
-First, verify the ISO. You can find the checksums [here](https://www.revi.cc/revios/download/verify). And if you use Rufus, switch to Ventoy. Help in the [installation guide](install.md).
+First, verify the ISO. You can find the checksums on the [Verification page of the Revision website](https://www.revi.cc/revios/download/verify). You can get help with the verification in the [installation guide](install.md#verification)'s section about it.
 
-If the installation needs a driver, please refer the [installation tutorial](install.md#missing-drivers).
+And if you use Rufus, switch to Ventoy. Help in the [installation guide](install.md#ventoy).
+
+If the installation needs a driver, please refer the [installation guide](install.md#missing-drivers).
 
 ---
 
@@ -42,14 +44,15 @@ Make sure you did not select a character in the command prompt (a white rectangl
 
 Install GPU drivers.
 
-Help to install: [How to install drivers](drivers.md) 
-Help to tweak: [ReviOS Post-Install guide](https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F){target=_blank}
+Help to install: [How to install drivers page](drivers.md)
+
+Help to tweak: [ReviOS Post-Install guide on the Revision website](https://www.revi.cc/revios/post-install#h.p_GR11WmefRS4F){target=_blank}
 
 ---
 
 ## Can I download other languages?
 
-Yes, in the Settings. If that is not working, follow [this guide](https://www.revi.cc/revios/workspace/lang){target=_blank}.
+Yes, in the Settings. If that is not working, follow the [guide about language installation on the Revision website](https://www.revi.cc/revios/workspace/lang){target=_blank}.
 
 ---
 

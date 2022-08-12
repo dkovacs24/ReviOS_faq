@@ -64,7 +64,7 @@ As of the **latest** ReviOS
 **Disabled:** (can be enabled)
 
 - Automatic Windows Updates
-    - With that automatic driver installation too. Install your drivers manually. Help here: [How to install drivers](drivers.md)
+    - With that automatic driver installation too. Install your drivers manually. Help on the [How to install drivers page](drivers.md) .
 
 **Removed:**
 
@@ -145,7 +145,7 @@ The PIN code forcing can be disabled in `Settings` -> `Accounts` -> `Sign-in opt
 
 This is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into your Microsoft account set a PIN code too.
 
-Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Partial solution reported [here](https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001){target=_blank}.
+Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Partial solution reported with [this message on our Discord](https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001){target=_blank}.
 
 ---
 
@@ -155,7 +155,7 @@ Not recommended, because **it will revert tweaks**, **reinstall bloatware** and 
 
 **Windows Update** in the latest versions of ReviOS **is not disabled**, so using the **Workspace** enable **.reg file will achieve nothing**. Only the automatic update downloading and installation is disabled, and in Settings the **Windows Update menu is hidden**. It is not disabled completely because half of the OS communicates through this service, for example the Store would not work.
 
-If you still want to update, you can manually install updates with the help of [this guide](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu in Settings with the Revision Tool. For more information about the tool, please read [the section about it](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool).
+If you still want to update, you can manually install updates with the help of [this guide on the Revision website](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu in Settings with the Revision Tool. For more information about the tool, please read [the section about it](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool).
 
 !!! warning
     ==**If you update, might as well just use stock Windows.**== Reasons explained above.
@@ -329,9 +329,9 @@ Add-AppxPackage -Register -Path C:\Windows\SystemApps\Microsoft.UI.Xaml.CBS_8wek
 
 ## Valorant CFG error
 
-Either [turn on Windows Defender](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool), and you can enable Control Flow Guard in Windows Security.
+Either [turn on Windows Defender](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool), and you can enable Control Flow Guard in Windows Security,
 
-Or run this command in a PowerShell terminal as administrator:
+or run these commands in a PowerShell terminal as administrator:
 
 ```powershell
 Set-ProcessMitigation -Name vgc.exe -Enable CFG
@@ -363,7 +363,7 @@ To reactivate GPU statistics:
     ```
 
     !!! note
-        If this command fails, which is most likely to happen on 22.04 and older versions, download [this zip](files/wscapi.zip), and place the contents of it inside the System32 folder. [Link to the original message and conversation](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274)
+        If this command fails, which is most likely to happen on 22.04 and older versions, download [this zip](files/wscapi.zip), and place the contents of it inside the System32 folder. [Link to the original message and conversation on our Discord](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274)
 
 If you do not see your GPU in the Performance tab in Task Manager, restart your PC again.
 
@@ -388,8 +388,7 @@ Rename your background image to `img100.jpg` and move it to `C:\Windows\Web\Scre
 
 ## AMD driver installation is crashing
 
-It is a Windows 11 bug. Try running the installer in silent mode, with the `/S` flag.
-[Here](https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562){target=_blank} is help and a script to automate it.
+It is a Windows 11 bug. Try running the installer in silent mode, with the `/S` flag. [This message on our Discord](https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562){target=_blank} helps with this issue by automatizing it.
 
 If this method is not working, install [Chocolatey](https://chocolatey.org/){target=_blank} and then the `amd-ryzen-chipset` package.
 

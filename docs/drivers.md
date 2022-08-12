@@ -36,7 +36,7 @@ On PC, most of the hardware modules are on the motherboard, so you need to just 
     
     First, you should Google `ASUS PRIME H610M-K D4 drivers`. 
     
-    There, let us say you choose the ASUS Global search result. So it brings up [this website](https://www.asus.com/Motherboards-Components/Motherboards/PRIME/PRIME-H610M-K-D4/){target=_blank}.
+    There, let us say you choose the ASUS Global search result. So it brings up [the website of the motherboard](https://www.asus.com/Motherboards-Components/Motherboards/PRIME/PRIME-H610M-K-D4/){target=_blank}.
 
     Now you look around and find a `Support` page next to the `Overview`, `Tech Specs` and `Review` pages. Click the [Support page](https://www.asus.com/Motherboards-Components/Motherboards/PRIME/PRIME-H610M-K-D4/HelpDesk_knowledge/){target=_blank}.
 
@@ -59,7 +59,7 @@ These drivers should only come from the manufacturer's website, with the case of
 
 ##### NVIDIA
 
-Go to the official [NVIDIA website](https://www.nvidia.com/){target=_blank}, click the `Drivers` button on top top of the page, then select your driver. Download and install it. This should be trivial. For debloating and tweaking the driver, see the [Post-Install guide](https://www.revi.cc/revios/post-install#h.p_26IZH4oTRS4J){target=_blank} on our website.
+Go to the official [NVIDIA website](https://www.nvidia.com/){target=_blank}, click the `Drivers` button on top top of the page, then select your driver. Download and install it. This should be trivial. For debloating and tweaking the driver, see the [Post-Install guide on the Revision website](https://www.revi.cc/revios/post-install#h.p_26IZH4oTRS4J){target=_blank}.
 
 ##### AMD
 
@@ -103,7 +103,7 @@ If the downloaded driver is not working try the following:
 
 You can use Snappy Driver Installer Origin.
 
-1. Download SDIO from here: [https://www.snappy-driver-installer.org/](https://www.snappy-driver-installer.org/){target=_blank}
+1. Download SDIO from [the website of the software](https://www.snappy-driver-installer.org/){target=_blank}
 2. Extract the zip file
 3. Run `SDIO_auto.bat` and accept the license
 4. Once the Welcome window pop-ups, click on `Download Indexes Only`

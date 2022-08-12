@@ -26,7 +26,7 @@ Or go into your BIOS, you can do that ususally by spamming the ++f2++ or ++delet
 Just to be sure, inside the booting menu, and search for a setting where you can switch between option usually called "UEFI" or "Extended" and "Legacy" or "BIOS".
 
 !!! important
-    In short, if your PC is **capable of** booting in **UEFI** mode, we recommend **selecting GPT**, if not, select MBR later on in the step ["Making a bootable flash drive"](#2-step-making-a-bootable-flash-drive). 
+    In short, if your PC is **capable of** booting in **UEFI** mode, we recommend **selecting GPT**, if not, select MBR later on in the step [Making a bootable flash drive](#2-step-making-a-bootable-flash-drive). 
 
 These technologies usually come in pair, like UEFI and GPT or BIOS and MBR. And while you could switch things up, like UEFI and MBR or BIOS and GPT, it is not recommended. Here, for example, the UEFI and GPT pair means UEFI boot mode on GPT partitions. Also, UEFI systems usually backward compatible and can boot in Legacy mode, often called CSM. If your system have CSM, it is recommended to switch it off, because the booting probably will be done in Legacy or BIOS mode otherwise.
 
@@ -96,7 +96,7 @@ The **recommended** way to do the installation is to at least **format** (or mor
 
 ## 1. step: Download ReviOS
 
-You can find our supported versions on the [Download page](https://www.revi.cc/revios/download){target=_blank} of our website.
+You can find our supported versions on the [Download page of the Revision website](https://www.revi.cc/revios/download){target=_blank}.
 
 Here download the version of your choice. Help about choosing the right ReviOS: [What is the difference between the versions?](related.md#what-is-the-difference-between-the-versions)
 
@@ -107,7 +107,7 @@ Here download the version of your choice. Help about choosing the right ReviOS: 
 
 On Windows, go where you downloaded the installer of ReviOS, and ++shift+"Right-click"++ on an empty space of the file explorer window, and select `Open PowerShell window here`. Type in the following command: `#!powershell Get-FileHash -Path <file name> -Algorithm MD5`, and replace the `<file name>` part with the name of the ReviOS installer file's name. You can use the ++tab++ button to autocomplete the file name.
 
-When the command returns with the hash of the file, compare it to the corresponding MD5 hash value on the [Verification page](https://www.revi.cc/revios/download/verify){target=_blank} of our website.
+When the command returns with the hash of the file, compare it to the corresponding MD5 hash value on the [Verification page on the Revision website](https://www.revi.cc/revios/download/verify){target=_blank}.
 
 ## 2. step: Making a bootable flash drive
 
@@ -118,7 +118,7 @@ When the command returns with the hash of the file, compare it to the correspond
 !!! danger
     This method will **wipe everything** from your flash drive. If you want to see the contents of it in the future, ==**make a backup**==.
 
-You can download Ventoy [here](https://www.ventoy.net/en/download.html){target=_blank}.
+You can download Ventoy on the [official website of the software](https://www.ventoy.net/en/download.html){target=_blank}.
 
 You do not need to install Ventoy, after extracting the zip file, just open `Ventoy2Disk.exe`.
 
@@ -128,7 +128,7 @@ Should look something like this:
 
 **Select** your **USB device** from the **dropdown menu**. If it is not present, in the `Option` menu select the `Show All Devices` option to show everything. But be sure to select the right device in the dropdown menu, because with this enabled, every storage device will be listed!
 
-Select the partition style/scheme of your choice from **Options**, **Partition Style**. More detail in [BIOS vs UEFI, MBR vs GPT](#bios-vs-uefi-mbr-vs-gpt)
+Select the partition style/scheme of your choice from **Options**, **Partition Style**. More detail in [BIOS vs UEFI, MBR vs GPT section](#bios-vs-uefi-mbr-vs-gpt)
 
 ![ventoy2](img/install/2_ventoy2.png)
 
@@ -213,10 +213,10 @@ Accept the license terms, and then the disk selection step comes up. Here you ha
 ### Partitions
 
 !!! info "Missing driver"
-    When you arrive to the partition making and selecting part of the installing process, but the installer asks for drivers, you might need Intel Rapid Storage Technology (IRST) drivers. [Here is a helping guide from the Asus Support page.](https://www.asus.com/support/FAQ/1044458/)
+    When you arrive to the partition making and selecting part of the installing process, but the installer asks for drivers, you might need Intel Rapid Storage Technology (IRST) drivers. [Here is a helping guide from the Asus Support page](https://www.asus.com/support/FAQ/1044458/).
 
 !!! warning "Important"
-    This part of the setup relies on the knowledge of your drives, which we discuss at [Check what drives and partitions you have](#check-what-drives-and-partitions-you-have).
+    This part of the setup relies on the knowledge of your drives, which we discuss at [Check what drives and partitions you have section](#check-what-drives-and-partitions-you-have).
 
 
 ![installer2](img/install/8_installer2.png)
@@ -263,11 +263,11 @@ You are done with the Windows post install setup, the OS will load for some time
 
 ## 6. step: Finishing the installation
 
-After arriving at your desktop, first, **let the script that popped up run through**. **Do not do anything until the script restarts your PC**. If it is not closing, read [this](not-related.md#the-do-not-close-the-window-otherwise-your-system-wont-work-properly-window-not-closing) article.
+After arriving at your desktop, first, **let the script that popped up run through**. **Do not do anything until the script restarts your PC**. If it is not closing, read [the section about this phenomenon](not-related.md#the-do-not-close-the-window-otherwise-your-system-wont-work-properly-window-not-closing).
 
 After your PC boots up again, this guide have some recommendation to go through.
 
-1. Activate your Windows with a valid Pro key. Help in the [ReviOS Post-Install](https://www.revi.cc/revios/post-install#h.p_wN71uiu-sFys){target=_blank} guide.
+1. Activate your Windows with a valid Pro key. Help in the [ReviOS Post-Install guide on the Revision website](https://www.revi.cc/revios/post-install#h.p_wN71uiu-sFys){target=_blank}.
 
 2. In `Settings` → `Time & Language` → `Language`, and add your language, even if you want to use Windows on English. To change your keyboard layout to non-English, you need to add that language. After that, you can change your regional format or keyboard layout or even what language Windows displays:
     
@@ -277,5 +277,5 @@ After your PC boots up again, this guide have some recommendation to go through.
 
 4. Download and install your drivers. This guide discussed downloading and installing drivers before, in great detail, check it [here](#drivers), and you can find more help on the [How to install drivers page](drivers.md).
 
-5. Go through the [ReviOS Post-Install](https://www.revi.cc/revios/post-install){target=_blank} guide. You do not need to do every step, you can skip any of them, but the Visual C++ Runtimes and DirectX installation is highly recommended.
+5. Go through the [ReviOS Post-Install guide on the Revision website](https://www.revi.cc/revios/post-install){target=_blank} guide. You do not need to do every step, you can skip any of them, but the Visual C++ Runtimes and DirectX installation is highly recommended.
 
