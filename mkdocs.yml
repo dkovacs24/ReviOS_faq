@@ -7,7 +7,7 @@ nav:
     - How to install ReviOS: 'install.md'
     - How to install drivers: 'drivers.md'
     - Revision website: 'https://www.revi.cc/'
-    - Revision Discord: 'https://discord.gg/962y4pU'
+    - Revision Discord: 'discord.md'
 theme:
   name: material
   language: en
