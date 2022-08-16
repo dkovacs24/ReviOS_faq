@@ -14,7 +14,7 @@ hide:
 
 # How to install drivers
 
-!!! warning
+!!! warning "About driver installer tools and Windows Update"
     Lots of users install their drivers incorrectly, like use a driver installer tool or Windows Update to install an outdated or not even working one. Do not use any of these methods. Driver installer software in the best case scenario install a not working or outdated driver. Worst case scenario, break your Windows and case Blue Screen of Death. Windows Update just bad. Most hardware it cannot identify, or installs older driver for it.
 
 ## Step 0: What drivers do you need

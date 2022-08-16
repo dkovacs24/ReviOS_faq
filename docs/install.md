@@ -25,10 +25,10 @@ Or go into your BIOS, you can do that ususally by spamming the ++f2++ or ++delet
 
 Just to be sure, inside the booting menu, and search for a setting where you can switch between option usually called "UEFI" or "Extended" and "Legacy" or "BIOS".
 
-!!! important
-    In short, if your PC is **capable of** booting in **UEFI** mode, we recommend **selecting GPT**, if not, select MBR later on in the step [Making a bootable flash drive](#2-step-making-a-bootable-flash-drive). 
-
 These technologies usually come in pair, like UEFI and GPT or BIOS and MBR. And while you could switch things up, like UEFI and MBR or BIOS and GPT, it is not recommended. Here, for example, the UEFI and GPT pair means UEFI boot mode on GPT partitions. Also, UEFI systems usually backward compatible and can boot in Legacy mode, often called CSM. If your system have CSM, it is recommended to switch it off, because the booting probably will be done in Legacy or BIOS mode otherwise.
+
+!!! tldr
+    In short, if your PC is **capable of** booting in **UEFI** mode, we recommend **selecting GPT**, if not, select MBR later on in the step [Making a bootable flash drive](#2-step-making-a-bootable-flash-drive). 
 
 ### Drivers
 
@@ -46,8 +46,12 @@ Alternatively, and ==this method should not be considered the default option==, 
 
 The third thing recommended thing before installing, is to check what drives and partitions you have. More specifically, how are they identified.
 
-!!! help
-    Before getting into that, let me explain how this whole drives and partitions thing works. You have in your PC one or more drives. Those can be SSD or HDD, but for this explaination does not matter. And on one drive you have one or more partitions. This guide mostly talks about partitions.
+!!! help "Explanation"
+    Before getting into that, let me explain how this whole drives and partitions thing works.
+    
+    You have in your PC one or more drives. Those can be SSD or HDD, but for this explaination does not matter.
+    
+    And on one drive you have one or more partitions. This guide mostly talks about partitions.
 
     !!! note
         Windows uses the terms "disk" and "drive" interchangeably. So they mean the same.
@@ -90,7 +94,7 @@ The **recommended** way to do the installation is to at least **format** (or mor
 
 ### Backup
 
-!!! warning
+!!! danger
     This Windows installing process will delete your previous OS, so you should back up everything you plan on seeing again in the future. At least have separate partition to save your data. Or you can move your things to a flash drive, even the installing flash drive, just after the [2. step](#2-step-making-a-bootable-flash-drive), but before the [3.](#3-step-booting-the-flash-drive)
 
 
@@ -241,8 +245,8 @@ Then it will restart again.
 
 ## 5. step: Windows post install setup
 
-!!! info
-    On ReviOS 11 this section looks different but the steps should be the same.
+!!! note
+    On Windows 11 this section looks different but, the steps should be the same. Furthermore, in newer builds of ReviOS, we added the possibility to change the language and keyboard here. This tutorial does not reflect that, since the pictures has not been updated in a while.
 
 After the last restart you should arrive at this screen, obviously here you have to choose a username:
 
