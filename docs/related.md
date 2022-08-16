@@ -51,9 +51,16 @@ So always **install the latest**, because that is the best.
 
 ### ReviOS 10 or ReviOS 11?
 
-These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation**, might perform better on **Windows 11**, due to [DirectStorage](https://www.thewindowsclub.com/what-is-directstorage-in-windows), [BypassIO](https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/bypassio) and [Thread Director](https://www.anandtech.com/show/16881/a-deep-dive-into-intels-alder-lake-microarchitectures/2), these are not ReviOS related things, these differences are present on stock Windows too.
+These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation**, might perform better on **Windows 11**, due to [DirectStorage](https://www.thewindowsclub.com/what-is-directstorage-in-windows){target=_blank}, [BypassIO](https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/bypassio){target=_blank} and [Thread Director](https://www.anandtech.com/show/16881/a-deep-dive-into-intels-alder-lake-microarchitectures/2){target=_blank}, these are not ReviOS related things, these differences are present on stock Windows too.
 
 Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you must enable Secure Boot and TPM, regardless that ReviOS 11 skips the check when installing, so if your hardware does not support it, use ReviOS 10.
+
+And if you care about latency, Windows 10 still provides a better experience.
+
+<figure markdown>
+  [![Example image](img/latency.png){width="800"}](img/latency.png){target=_blank}
+  <figcaption>Graph shows Win10 vs Win11 latency. Tested with Intel i7-10700KF and GTX 1070ti by Muren#6968.<br>Click the image to open it</figcaption>
+</figure>
 
 ---
 
