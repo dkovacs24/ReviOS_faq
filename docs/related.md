@@ -188,6 +188,20 @@ If the **shortcut** of the Revision Tool is not **on the Desktop**, follow this:
 3. Select the desired option
 4. After the changes are done, restart your PC
 
+If you cannot find the Revision Tool inside the the Documents folder, or you can download it from here: [Revision-Tool.zip](files/Revision-Tool.zip)
+
+!!! warning "Revision Tool on older versions of ReviOS"
+    This Revision Tool is fully compatible only with the latest builds of ReviOS, that is right now the `22.07`. If you try to use some or all of the functions of this version of the Revision Tool, they might not work.
+
+    Not exhaustive list of functions that will not work:
+
+    - Windows Defenter before the `11 21.12` and `10 22.01`
+    - Superfetch before `22.05`
+    - Windows Update features
+    - Full Screen Optimizations before `10 22.06` and `11 22.07`
+
+    Related: [ReviOS Changelog](https://www.revi.cc/revios/download/changelog){target=_blank}
+
 ### Full list of features of the Revision-Tool
 
 **On ReviOS 11 (22.07):**
