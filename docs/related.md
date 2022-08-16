@@ -195,9 +195,8 @@ If you cannot find the Revision Tool inside the the Documents folder, or you can
 
     Not exhaustive list of functions that will not work:
 
-    - Windows Defenter before the `11 21.12` and `10 22.01`
+    - Windows Defenter before `11 21.12` and `10 22.01`
     - Superfetch before `22.05`
-    - Windows Update features
     - Full Screen Optimizations before `10 22.06` and `11 22.07`
 
     Related: [ReviOS Changelog](https://www.revi.cc/revios/download/changelog){target=_blank}
