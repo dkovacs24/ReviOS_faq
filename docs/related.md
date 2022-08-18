@@ -287,9 +287,9 @@ As a last resort, you can try the `wsreset -i` command. It reinstalls the Store 
 
 ---
 
-## Cannot toogle Start Menu folders in Settings
+## Cannot toggle Start Menu folders in Settings
 
-If you cannot toggle Start Menu folders in Settings -> Personalization -> Start -> Folders:
+If you cannot toggle on Start Menu folders in Settings -> Personalization -> Start -> Folders:
 
 1. Open `regedit`
 2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Start` 
@@ -297,13 +297,18 @@ If you cannot toggle Start Menu folders in Settings -> Personalization -> Start 
 
 ---
 
-## Infinite loading screen when signing in via Windows Mail
+## Windows Mail not working
 
-The issue is related to the Contacts perrmission being disabled in the privacy settings.
+1. Open PowerShell in administrator mode, e.g. ++"Right-click"++ on the Start Menu button (++win++), and select `Windows PowerShell (Admin)`
+2. Run this command:
 
-1. Open `Settings`
-2. Go to `Privacy & security` -> `Contacts`
-3. Toggle on `Contact access`, `Let apps access your contacts` and `Mail and Calendar`
+    ```powershell
+    dism.exe /Online /Add-Capability /CapabilityName:OneCoreUAP.OneSync~~~~0.0.1.0
+    ```
+
+3. After this, Open `Settings`
+4. Go to `Privacy & security` -> `Contacts`
+5. Toggle on `Contact access`, `Let apps access your contacts` and `Mail and Calendar`
 
 ---
 
@@ -373,7 +378,7 @@ Set-ProcessMitigation -Name vgc.exe -Enable AuditDynamicCode
 
 ## GPU and Network monitoring not working in the Task Manager
 
-They were disabled because leaking memory.
+They are disabled because of leaking memory.
 
 To reactivate GPU statistics:
 
