@@ -289,11 +289,21 @@ As a last resort, you can try the `wsreset -i` command. It reinstalls the Store 
 
 ## Cannot toogle Start Menu folders in Settings
 
-If you cannot toogle Star Menu folders in Settings -> Personalization -> Start -> Folders:
+If you cannot toggle Start Menu folders in Settings -> Personalization -> Start -> Folders:
 
 1. Open `regedit`
 2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Start` 
 3. Delete every key **except** `ConfigureStartPins`
+
+---
+
+## Infinite loading screen when signing in via Windows Mail
+
+The issue is related to the Contacts perrmission being disabled in the privacy settings.
+
+1. Open `Settings`
+2. Go to `Privacy & security` -> `Contacts`
+3. Toggle on `Contact access`, `Let apps access your contacts` and `Mail and Calendar`
 
 ---
 
