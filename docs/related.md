@@ -188,7 +188,7 @@ If the **shortcut** of the Revision Tool is not **on the Desktop**, follow this:
 3. Select the desired option
 4. After the changes are done, restart your PC
 
-If you cannot find the Revision Tool inside the the Documents folder, or you just want to download it, you can do it here:
+If you cannot find the Revision Tool inside the Documents folder, or you just want to download it, you can do it here:
 
 [:fontawesome-solid-download: Download Revision-Tool.zip](files/Revision-Tool.zip){ .md-button .md-button--primary }
 
