@@ -188,7 +188,12 @@ If the **shortcut** of the Revision Tool is not **on the Desktop**, follow this:
 3. Select the desired option
 4. After the changes are done, restart your PC
 
-If you cannot find the Revision Tool inside the the Documents folder, or you can download it from here: [Revision-Tool.zip](files/Revision-Tool.zip)
+If you cannot find the Revision Tool inside the the Documents folder, or you just want to download it, you can do it here:
+
+[:fontawesome-solid-download: Download Revision-Tool.zip](files/Revision-Tool.zip){ .md-button .md-button--primary }
+
+> MD5 checksum: `ba63377d40ac7f72681268e4e91312ae`
+
 
 !!! warning "Revision Tool on older versions of ReviOS"
     This Revision Tool is fully compatible only with the latest builds of ReviOS, that is right now the `22.07`. If you try to use some or all of the functions of this version of the Revision Tool, they might not work.
@@ -205,38 +210,34 @@ If you cannot find the Revision Tool inside the the Documents folder, or you can
 
 **On ReviOS 11 (22.07):**
 
-Installing VC Runtimes.
-
-Enable/Disable:
-
-- Defender
-- Superfetch
-- Windows Update features
-  - Unhide Windows Updates
-  - Enable automatic drivers updating
-- UAC
-- Notifications
-- Inking And Typing Personalization
-- Full Screen Optimizations
-- Additional Windows 11 tweaks
-  - New right-click menu
-  - Tabs in File Explorer
+- Installing VC Runtimes.
+- Enable/Disable:
+    - Defender
+    - Superfetch
+    - Windows Update features
+        - Unhide Windows Updates
+        - Enable automatic drivers updating
+    - UAC
+    - Notifications
+    - Inking And Typing Personalization
+    - Full Screen Optimizations
+    - Additional Windows 11 tweaks
+        - New right-click menu
+        - Tabs in File Explorer
 
 **On ReviOS 10 (22.07):**
 
-Installing VC Runtimes.
-
-Enable/Disable:
-
-- Defender
-- Superfetch
-- Windows Update features
-  - Unhide Windows Updates
-  - Enable automatic drivers updating
-- UAC
-- Notifications
-- Inking And Typing Personalization
-- Full Screen Optimizations
+- Installing VC Runtimes
+- Enable/Disable:
+    - Defender
+    - Superfetch
+    - Windows Update features
+        - Unhide Windows Updates
+        - Enable automatic drivers updating
+    - UAC
+    - Notifications
+    - Inking And Typing Personalization
+    - Full Screen Optimizations
 
 ---
 
