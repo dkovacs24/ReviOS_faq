@@ -74,3 +74,5 @@ plugins:
         'before-install.md': 'index.md'
         'discord.md': 'https://discord.gg/962y4pU'
   - git-revision-date
+  - glightbox:
+      draggable: false
