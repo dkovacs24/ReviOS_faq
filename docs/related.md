@@ -21,11 +21,11 @@ As of this moment (2022-07-28), there are only 2 versions of ReviOS that are sup
 
     Recommended for older systems, incompatible with Windows 11.
 
-    [Changelog](){target=_blank}
+    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
 
-    [Download](){target=_blank}
+    [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](){target=_blank}.
+    Alternative download links are a work in progess. Stay tuned.
 
 
 === "ReviOS 11 22.07"
