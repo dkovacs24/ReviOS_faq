@@ -44,6 +44,8 @@ When the command returns with the hash of the file, compare it to the correspond
 
 First, you need to extract the files of the ISO file. This is important, because it most likely will not work just from mounting the ISO. Another scenarios when the upgrade might not work are if you extracted the ISO to a USB or a network mounted drive. So make sure the files are on your PC. The easiest way if you just do it on your Desktop.
 
+Now all you have to do is to open the `setup.exe` in the installer.
+
 If you get the following error, and you done everything according to the guide so far, a restart usually solves it.
 
 ![upgrade_img1_error.png](img/upgrade/upgrade_img1_error.png){.center}
