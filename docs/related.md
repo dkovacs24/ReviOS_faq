@@ -13,7 +13,20 @@ hide:
 
 ## What is the difference between the versions?
 
-As of this moment (2022-07-28), there are only 2 versions of ReviOS that are supported: `11 22.07`, `10 22.07`. No other versions are supported.
+As of this moment (2022-07-28), there are only 2 versions of ReviOS that are supported: `10 22.08` and `11 22.07`. No other versions are supported.
+
+=== "ReviOS 10 22.08"
+
+    Based on the latest Windows 10 Pro (19044.1865), released on 31th of July 2022.
+
+    Recommended for older systems, incompatible with Windows 11.
+
+    [Changelog](){target=_blank}
+
+    [Download](){target=_blank}
+
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](){target=_blank}.
+
 
 === "ReviOS 11 22.07"
 
@@ -28,20 +41,7 @@ As of this moment (2022-07-28), there are only 2 versions of ReviOS that are sup
     Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1000795817705230396){target=_blank}.
 
 
-=== "ReviOS 10 22.07"
-
-    Based on the latest Windows 10 Pro (19044.1865), released on 28th of July 2022.
-
-    Recommended for older systems, incompatible with Windows 11.
-
-    [Changelog](https://www.revi.cc/revios/download/changelog#h.5m29vb11epyy){target=_blank}
-
-    [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
-
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1002273626910904470){target=_blank}.
-
-
-**For FACEIT we always recommend to use the latest versions of ReviOS.** [Details below](#which-version-do-i-need-for-faceit).
+**For FACEIT we always recommend to use the latest versions of ReviOS.** [Details below](#is-revios-faceit-compatible-which-version-do-i-need-for-faceit).
 
 ### Which version is the best?
 
@@ -58,9 +58,14 @@ Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you must 
 And if you care about latency, Windows 10 still provides a better experience.
 
 <figure markdown>
-  [![Example image](img/latency.png){width="800"}](img/latency.png){target=_blank}
-  <figcaption>Graph shows Win10 vs Win11 latency. Tested with Intel i7-10700KF and GTX 1070ti by Muren#6968.<br>Click the image to open it</figcaption>
+  ![graph](img/latency.png){width=600px}
+  <figcaption>Graph shows Win10 vs Win11 latency. Tested with Intel i7-10700KF and GTX 1070TI by Muren#6968.<br>Click the image to open it</figcaption>
 </figure>
+
+### Why are there two ISOs files for each ReviOS version?
+
+One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS. Read more at [How can I update to the newest version of ReviOS?](#how-can-i-upgrade-to-the-newest-build-of-revios) section.
+
 
 ---
 
@@ -71,7 +76,7 @@ As of the **latest** ReviOS
 **Disabled:** (can be enabled)
 
 - Automatic Windows Updates
-    - With that automatic driver installation too. Install your drivers manually. Help on the [How to install drivers page](drivers.md) .
+    - With that automatic driver installation too. Install your drivers manually. Help on the [How to install drivers page](drivers.md).
 
 **Removed:**
 
@@ -83,7 +88,7 @@ As of the **latest** ReviOS
 
 ## What is the system requirement for ReviOS?
 
-Refer to our website's section about this, although it's the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run. The Windows 11 versions of ReviOS have the Secure Boot and TPM requirements disabled.
+Refer to our website's section about this, although it is the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run. The Windows 11 versions of ReviOS have the Secure Boot and TPM requirements disabled.
 
 !!! note "TPM and Secure Boot on Windows 11"
     In order to play games or use anti-cheats that require Secure Boot and TPM, you still need to enable those functions.
@@ -104,13 +109,15 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ---
 
-## Which version do I need for FACEIT?
+## Is ReviOS FACEIT compatible? Which version do I need for FACEIT?
 
-As of this moment (2022-07-28), FACEIT only works on the `11 22.07` and `10 22.07` versions.
+Since ReviOS is Windows, yes it is compatible.
 
-The `22.05` and `22.06` builds are probably still compatible with FACEIT, but not for long. Keep in mind, we do not support those versions anymore.
+As of this moment (2022-08-31), the recommended builds of ReviOS are `10 22.08` and `11 22.07`.
 
-If you are using one of these versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS will be released soon.
+The `22.06` builds are probably still compatible with FACEIT, but not for long. Keep in mind, we do not support and recommend those versions anymore.
+
+If you are using one of the recommended versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS probably will be released too, soon.
 
 ---
 
@@ -126,7 +133,7 @@ On newer versions when **a window pops up** with the options to remove Secure Bo
 
 ## Missing drivers in the installation process
 
-When you arrive to the partition making and selecting part of the installing process, but the installer asks for drivers, you might need Intel Rapid Storage Technology (IRST) drivers. [Here is a helping guide from the Asus Support page.](https://www.asus.com/support/FAQ/1044458/)
+When you arrive to the partition making and selecting part of the installing process, but the installer asks for drivers, you might need Intel Rapid Storage Technology (IRST) drivers. [Here is a helping guide from the Asus Support page.](https://www.asus.com/support/FAQ/1044458/){target=_blank}
 
 ---
 
@@ -144,9 +151,9 @@ reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution 
 
 *Update:*
 
-In ReviOS 11 22.07 and above this problem is resolved. Even if you do not set a password at installation, and evade setting a PIN code when logging into your Microsoft account, at the login screen a window will pop up, and after logging in again with your MS account, you have to set a PIN code.
+In ReviOS 22.07 (Windows 10 and 11) and above this problem is resolved. Even if you do not set a password at installation, and evade setting a PIN code when logging into your Microsoft account, at the login screen a window will pop up, and after logging in again with your MS account, you have to set a PIN code.
 
-The PIN code forcing can be disabled in `Settings` -> `Accounts` -> `Sign-in options` with `For improved security, only allow Windows Hello sign-in for Microsoft accounts on this device (Recommended)`.
+The PIN code forcing can be disabled in `Settings` -> `Accounts` -> `Sign-in options` with `For improved security, only allow Windows Hello sign-in for Microsoft accounts on this device (Recommended)` after loggin in with your MS account and setting a PIN code. Then you can delete the PIN code, if you want to.
 
 *Previously:*
 
@@ -156,7 +163,7 @@ Other technique to evade the bug, is to log into your Microsoft account in the M
 
 ---
 
-## Can I use Windows Update?
+## Can I use Windows Update? Where is the Windows Update menu in Settings?
 
 Not recommended, because **it will revert tweaks**, **reinstall bloatware** and cause setbacks with respect to privacy and other pre-applied features, might even **break your OS**.
 
@@ -167,15 +174,20 @@ If you still want to update, you can manually install updates with the help of [
 !!! warning
     ==**If you update, might as well just use stock Windows.**== Reasons explained above.
 
+Instead, you maybe might want to upgrade your ReviOS instance to a newer build. About that, you can read more here: [How can I upgrade to the newest build of ReviOS?](#how-can-i-upgrade-to-the-newest-build-of-revios)
+
 ---
 
-## How can I update to the newest version of ReviOS?
+## How can I upgrade to the newest build of ReviOS?
 
-You need to reinstall. Do not forget to backup your data.
+!!! danger
+    ==**This is an EXPERIMENTAL method**==. We tested it numerous times, but obviously we cannot cover all the edge cases, so use this with caution!
 
-Also, you do not need to update just because a new version of ReviOS is released. If your system is stable, and you do not need newer updates for certain anti-cheat systems, you can stay on your older ReviOS version. But please note that we might not provide you support.
+With newer builds of ReviOS we provide 2 separate ISOs. One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS version. This way, the users can update their ReviOS instance without reinstalling and losing files.
 
-If you want to update because of FACEIT, make sure to check out [the section about it](#which-version-do-i-need-for-faceit).
+For instructions about upgrading your older ReviOS build, please read our [How to update ReviOS](upgrade.md) guide.
+
+If you want to update because of FACEIT, make sure to check out [the section about it](#is-revios-faceit-compatible-which-version-do-i-need-for-faceit).
 
 ---
 
@@ -245,30 +257,32 @@ If you cannot find the Revision Tool inside the Documents folder, or you just wa
 
 Run `ctfmon` and `wsreset` commands.
 
-On ReviOS 10 22.05 try this:
-
-1. Open PowerShell in administrator mode, e.g. ++"Right-click"++ on the Start Menu button (++win++), and select `Windows PowerShell (Admin)`
-
-2. Run this command:
-
-    ```powershell
-    Get-CimInstance -Namespace "Root\cimv2\mdm\dmmap" -ClassName "MDM_EnterpriseModernAppManagement_AppManagement01" | Invoke-CimMethod -MethodName UpdateScanMethod
-    ```
-
-3. After this, go inside the Store, and check for app updates.
-
-    On the older Store UI you can do it by:
-
-      1. Click the 3 dots in the upper right corner of the window
-      2. Click `Downloads and updates`
-
-    On the newer Store, you can do it by going inside the Library page.
-
-If you have updates, the Store should start installing them automatically. If not, click `Get Updates`.
-
 As a last resort, you can try the `wsreset -i` command. It reinstalls the Store app. It must be let running at least 20 minutes.
 
-> *Older, ReviOS 22.01 and 22.02 Xbox app problem (not supported versions):*
+> *ReviOS 22.05 Store problem (not supported build anymore, so not relevant)*
+> 
+> 1. Open PowerShell in administrator mode, e.g. ++"Right-click"++ on the Start Menu button (++win++), and select `Windows PowerShell (Admin)`
+> 
+> 2. Run this command:
+> 
+>     ```powershell
+>     Get-CimInstance -Namespace "Root\cimv2\mdm\dmmap" -ClassName "MDM_EnterpriseModernAppManagement_AppManagement01" | Invoke-CimMethod -MethodName UpdateScanMethod
+>     ```
+> 
+> 3. After this, go inside the Store, and check for app updates.
+> 
+>     On the older Store UI you can do it by:
+> 
+>       1. Click the 3 dots in the upper right corner of the window
+>       2. Click `Downloads and updates`
+> 
+>     On the newer Store, you can do it by going inside the Library page.
+> 
+> If you have updates, the Store should start installing them automatically. If not, click `Get Updates`.
+
+<br>
+
+> *Older, ReviOS 22.01 and 22.02 Xbox app problem (not supported versions anymore):*
 >
 > If the updating is done, and Xbox login is still not working, go through these steps:
 >
@@ -323,7 +337,7 @@ If you cannot toggle on Start Menu folders in Settings -> Personalization -> Sta
 
 ## iTunes not detecting any Apple device
 
-It is because ReviOS misses Apple driver, which you could download only by Windows Update, but that is still not recommended. Instead you can use [3uTools](http://www.3u.com/) to repair the drivers.
+It is because ReviOS lacks some Apple drivers, which you could download only by Windows Update, but that is still not recommended. Instead, you can use [3uTools](http://www.3u.com/){target=_blank} to repair the drivers.
 
 Once installed, after opening the software, go to:
 
@@ -334,7 +348,7 @@ Once installed, after opening the software, go to:
 
 There select `Uninstall the old driver files stored in system`. After, iTunes should work.
 
-Link to the original messages on Discord: [Message 1](https://discord.com/channels/619835916139364383/626772969611460619/930729137830789141) and [Message 2](https://discord.com/channels/619835916139364383/626772969611460619/998888988431634512)
+Link to the original messages on Discord: [Message 1](https://discord.com/channels/619835916139364383/626772969611460619/930729137830789141){target=_blank} and [Message 2](https://discord.com/channels/619835916139364383/626772969611460619/998888988431634512){target=_blank}
 
 ---
 
@@ -399,7 +413,7 @@ To reactivate GPU statistics:
     ```
 
     !!! note
-        If this command fails, which is most likely to happen on 22.04 and older versions, download [this zip](files/wscapi.zip), and place the contents of it inside the System32 folder. [Link to the original message and conversation on our Discord](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274)
+        If this command fails, which is most likely to happen on 22.04 and older versions, download [this zip](files/wscapi.zip), and place the contents of it inside the System32 folder. [Link to the original message and conversation on our Discord](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274){target=_blank}
 
 If you do not see your GPU in the Performance tab in Task Manager, restart your PC again.
 
