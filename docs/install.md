@@ -7,6 +7,11 @@ hide:
     div.admonition p:not(.admonition-title) {
         font-size: 125%;
     }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
 
 # How to install ReviOS
@@ -61,7 +66,7 @@ Open `Disk Management` by right-clicking on the Start menu icon, and selecting i
 
 Should look like this:
 
-![disk_management](img/install/0_disk_management.png)
+![disk_management](img/install/0_disk_management.png){.center}
 
 The **recommended** way to do the installation is to at least **format** (or more like delete and recreate, you will see it at [installing](#4-step-installing)) the **partitions storing the OS**. Usually the partition that was called C: by the Windows on it, and other **System** and **Reserved** and **Recovery** partitions. Additionally, you can format your other partitions too, but **make sure you backed up everything**.
 
@@ -109,9 +114,9 @@ Here download the version of your choice. Help about choosing the right ReviOS: 
 !!! attention
     This step is very important, it can save you a lot of time in the future.
 
-On Windows, go where you downloaded the installer of ReviOS, and ++shift+"Right-click"++ on an empty space of the file explorer window, and select `Open PowerShell window here`. Type in the following command: `#!powershell Get-FileHash -Path <file name> -Algorithm MD5`, and replace the `<file name>` part with the name of the ReviOS installer file's name. You can use the ++tab++ button to autocomplete the file name.
+On Windows, go in the File Explorer where you downloaded the ISO file, and ++shift+"Right-click"++ on an empty space of the window, and select `Open PowerShell window here`. Type in the following command: `#!powershell Get-FileHash -Algorithm MD5 -Path <file name>`, and replace the `<file name>` part with the name of the ReviOS installer file's name. **You can use the ++tab++ button to autocomplete the file name.**
 
-When the command returns with the hash of the file, compare it to the corresponding MD5 hash value on the [Verification page on the Revision website](https://www.revi.cc/revios/download/verify){target=_blank}.
+When the command returns with the hash of the file, compare it to the corresponding MD5 hash value on the [Verification page on the Revision website](https://www.revi.cc/revios/download/verify){target=_blank}. If they are the same, your ISO file is not corrupted, you can carry on with the process.
 
 ## 2. step: Making a bootable flash drive
 
@@ -128,13 +133,13 @@ You do not need to install Ventoy, after extracting the zip file, just open `Ven
 
 Should look something like this:
 
-![ventoy1](img/install/1_ventoy1.png)
+![ventoy1](img/install/1_ventoy1.png){.center}
 
 **Select** your **USB device** from the **dropdown menu**. If it is not present, in the `Option` menu select the `Show All Devices` option to show everything. But be sure to select the right device in the dropdown menu, because with this enabled, every storage device will be listed!
 
 Select the partition style/scheme of your choice from **Options**, **Partition Style**. More detail in [BIOS vs UEFI, MBR vs GPT section](#bios-vs-uefi-mbr-vs-gpt)
 
-![ventoy2](img/install/2_ventoy2.png)
+![ventoy2](img/install/2_ventoy2.png){.center}
 
 Additionally, you can select the `Secure Boot Support`, especially if you have Windows 11 and plan on playing with games or anti-cheat that require it.
 
@@ -210,7 +215,7 @@ Alternatively you can go inside your BIOS settings, and change the boot order. T
 
 If you have done everything good so far, the installer boot up, and should look like this:
 
-![installer1](img/install/7_installer1.png)
+![installer1](img/install/7_installer1.png){.center width=600px}
 
 Accept the license terms, and then the disk selection step comes up. Here you have multiple choices, depending on the configuration you are using. 
 
@@ -223,7 +228,7 @@ Accept the license terms, and then the disk selection step comes up. Here you ha
     This part of the setup relies on the knowledge of your drives, which we discuss at [Check what drives and partitions you have section](#check-what-drives-and-partitions-you-have).
 
 
-![installer2](img/install/8_installer2.png)
+![installer2](img/install/8_installer2.png){.center width=600px}
 
 Check what partitions your previous Windows installation uses, what you noted down, and delete those with the `Delete` button.
 
@@ -250,18 +255,18 @@ Then it will restart again.
 
 After the last restart you should arrive at this screen, obviously here you have to choose a username:
 
-![post_install_username](img/install/9_post_install_username.png)
+![post_install_username](img/install/9_post_install_username.png){.center width=600px}
 
 And here a password. You can skip this question by just clicking on `Next`. 
 
 !!! warning
     Skipping this can lead to a bug in ReviOS. More details [here](related.md#i-cannot-log-into-my-user).
 
-![post_install_password](img/install/10_post_install_password.png)
+![post_install_password](img/install/10_post_install_password.png){.center width=600px}
 
 Here just press `Not now`. Even if you press `Accept`, Cortana probably will not work.
 
-![post_install_cortana](img/install/11_post_install_cortana.png)
+![post_install_cortana](img/install/11_post_install_cortana.png){.center width=600px}
 
 You are done with the Windows post install setup, the OS will load for some time.
 
@@ -275,7 +280,7 @@ After your PC boots up again, this guide have some recommendation to go through.
 
 2. In `Settings` → `Time & Language` → `Language`, and add your language, even if you want to use Windows on English. To change your keyboard layout to non-English, you need to add that language. After that, you can change your regional format or keyboard layout or even what language Windows displays:
     
-    ![language](img/install/12_language.png)
+    ![language](img/install/12_language.png){.center}
 
 3. Set the time, because ReviOS's default is the UTC time zone. `Settings` → `Time & Language` → `Date & time`
 
