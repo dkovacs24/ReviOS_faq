@@ -31,7 +31,7 @@ And you need at least 20 GB of free space on the partition you have ReviOS (usua
 
 You can download the latest build of ReviOS from the [Download page of our website](https://www.revi.cc/revios/download).
 
-==Make sure you download the `Upgrade` image.==
+==Make sure you download the `Upgrade-only` option. And the `Upgrade` word must be in the file name.==
 
 ### Verification
 
