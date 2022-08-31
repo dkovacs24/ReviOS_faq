@@ -16,8 +16,16 @@ hide:
 
 # How to upgrade ReviOS to a newer version?
 
+## Information
+
+With newer builds of ReviOS we provide 2 separate ISOs. One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS version. This way, the users can update their ReviOS instance without reinstalling and losing files.
+
 !!! danger
     ==**This is an EXPERIMENTAL method**==. We tested it numerous times, but obviously we cannot cover all the edge cases, so use this with caution!
+
+Also, this method is only working if you are upgrading a previous ReviOS installation or a stock Windows (but for that a complete fresh installation is more preferable). Upgrading other custom tweaked system is not working. Cross-upgrades, like from ReviOS 10 to 11 or vice versa, should work, but it is not tested. 
+
+And you need at least 20 GB of free space on the partition you have ReviOS (usually called C:).
 
 ## Step 1: Download the ISO
 

@@ -185,7 +185,7 @@ Instead, you maybe might want to upgrade your ReviOS instance to a newer build. 
 
 With newer builds of ReviOS we provide 2 separate ISOs. One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS version. This way, the users can update their ReviOS instance without reinstalling and losing files.
 
-For instructions about upgrading your older ReviOS build, please read our [How to update ReviOS](upgrade.md) guide.
+For instructions and more information about upgrading your older ReviOS instance, please read our [How to update ReviOS](upgrade.md) guide.
 
 If you want to update because of FACEIT, make sure to check out [the section about it](#is-revios-faceit-compatible-which-version-do-i-need-for-faceit).
 
