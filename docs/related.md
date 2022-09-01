@@ -64,7 +64,7 @@ And if you care about latency, Windows 10 still provides a better experience.
 
 ### Why are there two ISOs files for each ReviOS version?
 
-One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS. Read more at [How can I update to the newest version of ReviOS?](#how-can-i-upgrade-to-the-newest-build-of-revios) section.
+One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS. Read more at [How can I upgrade to the newest build of ReviOS?](#how-can-i-upgrade-to-the-newest-build-of-revios) section.
 
 
 ---
@@ -187,7 +187,7 @@ With newer builds of ReviOS we provide 2 separate ISOs. One for installing a com
 
 For instructions and more information about upgrading your older ReviOS instance, **please read our [How to update ReviOS](upgrade.md) guide**.
 
-If you want to update because of FACEIT, make sure to check out [the section about it](#is-revios-faceit-compatible-which-version-do-i-need-for-faceit).
+If you want to upgrade because of FACEIT, make sure to check out [the section about it](#is-revios-faceit-compatible-which-version-do-i-need-for-faceit).
 
 ---
 
