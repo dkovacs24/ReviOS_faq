@@ -57,10 +57,10 @@ Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you must 
 
 And if you care about latency, Windows 10 still provides a better experience.
 
-<figure markdown>
-  ![graph](img/latency.png){width=600px}
+<!-- <figure markdown>
+  ![graph](img/dc/latency.png){width=600px}
   <figcaption>Graph shows Win10 vs Win11 latency. Tested with Intel i7-10700KF and GTX 1070TI by Muren#6968.<br>Click the image to open it</figcaption>
-</figure>
+</figure> -->
 
 ### Why are there two ISOs files for each ReviOS version?
 
@@ -185,7 +185,7 @@ Instead, you maybe might want to upgrade your ReviOS instance to a newer build. 
 
 With newer builds of ReviOS we provide 2 separate ISOs. One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS version. This way, **the users can update their ReviOS instance without reinstalling and losing files**.
 
-For instructions and more information about upgrading your older ReviOS instance, **please read our [How to update ReviOS](upgrade.md) guide**.
+For instructions and more information about upgrading your older ReviOS instance, **please read our [How to upgrade ReviOS](upgrade.md) guide**.
 
 If you want to upgrade because of FACEIT, make sure to check out [the section about it](#is-revios-faceit-compatible-which-version-do-i-need-for-faceit).
 
@@ -220,36 +220,40 @@ If you cannot find the Revision Tool inside the Documents folder, or you just wa
 
 ### Full list of features of the Revision-Tool
 
-**On ReviOS 11 (22.07):**
+=== "On ReviOS 10 (22.08)"
 
-- Installing VC Runtimes.
-- Enable/Disable:
-    - Defender
-    - Superfetch
-    - Windows Update features
-        - Unhide Windows Updates
-        - Enable automatic drivers updating
-    - UAC
-    - Notifications
-    - Inking And Typing Personalization
-    - Full Screen Optimizations
-    - Additional Windows 11 tweaks
-        - New right-click menu
-        - Tabs in File Explorer
+    - Enable/Disable:
+        - Defender
+        - Superfetch
+            - Memory Compression
+        - Windows Update features
+            - Unhide Windows Updates
+            - Enable automatic drivers updating
+        - UAC
+        - Notifications
+        - Inking And Typing Personalization
+        - Full Screen Optimizations
+    - Installing VC Runtimes
 
-**On ReviOS 10 (22.07):**
 
-- Installing VC Runtimes
-- Enable/Disable:
-    - Defender
-    - Superfetch
-    - Windows Update features
-        - Unhide Windows Updates
-        - Enable automatic drivers updating
-    - UAC
-    - Notifications
-    - Inking And Typing Personalization
-    - Full Screen Optimizations
+=== "On ReviOS 11 (22.07)"
+
+    - Enable/Disable:
+        - Defender
+        - Superfetch
+        - Windows Update features
+            - Unhide Windows Updates
+            - Enable automatic drivers updating
+        - UAC
+        - Notifications
+        - Inking And Typing Personalization
+        - Full Screen Optimizations
+        - Additional Windows 11 tweaks
+            - New right-click menu
+            - Tabs in File Explorer
+    - Installing VC Runtimes
+
+
 
 ---
 
