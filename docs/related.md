@@ -57,10 +57,11 @@ Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you must 
 
 And if you care about latency, Windows 10 still provides a better experience.
 
-<!-- <figure markdown>
-  ![graph](img/dc/latency.png){width=600px}
-  <figcaption>Graph shows Win10 vs Win11 latency. Tested with Intel i7-10700KF and GTX 1070TI by Muren#6968.<br>Click the image to open it</figcaption>
-</figure> -->
+<figure markdown>
+  ![graph](img/latency.png){width=600px}
+  <figcaption>Graph shows Windows 10 21H2 LTSC (19044.1288) vs Windows 11 22H2 22621.105
+ latency. Tested with Intel i7-10700KF and GTX 1070TI by Muren#6968.<br>Click the image to open it</figcaption>
+</figure>
 
 ### Why are there two ISOs files for each ReviOS version?
 
