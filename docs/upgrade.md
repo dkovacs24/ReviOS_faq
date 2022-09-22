@@ -16,16 +16,16 @@ hide:
 
 # How to upgrade ReviOS to a newer version?
 
-## Information
+## Information and prerequisites
 
 With newer builds of ReviOS we provide 2 separate ISOs. One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS version. This way, the users can update their ReviOS instance without reinstalling and losing files.
 
 !!! danger
     ==**This is an EXPERIMENTAL method**==. We tested it numerous times, but obviously we cannot cover all the edge cases, so use this with caution!
 
-Also, this method is only working if you are upgrading a previous ReviOS installation or a stock Windows (but for that a complete fresh installation is more preferable). Upgrading other custom tweaked system is not working. Cross-upgrades, like from ReviOS 10 to 11 or vice versa, should work, but it is not tested. 
+This method is only working if you are upgrading a **previous ReviOS installation** that is at least on the **21H2** Windows version, or a stock Windows (but for that a complete fresh installation is more preferable). Upgrading **other** custom **tweaked** system is **not working**. Cross-upgrades, like from ReviOS 10 to 11 or vice versa, should work, but it is not tested. 
 
-And you need at least 20 GB of free space on the partition you have ReviOS (usually called C:).
+And you need **at least 20 GB of free space** on the partition you have ReviOS (usually called C:).
 
 ## Step 1: Download the ISO
 
@@ -40,11 +40,18 @@ In the File Explorer go where you downloaded the ISO file, and ++shift+"Right-cl
 When the command returns with the hash of the file, compare it to the corresponding MD5 hash value on the [Verification page on the Revision website](https://www.revi.cc/revios/download/verify){target=_blank}. If they are the same, your ISO file is not corrupted, you can carry on with the process.
 
 
-## Step 2: Starting the upgrade
+## Step 2: Preparation
 
-First, you need to [**extract the files of the ISO file**](https://www.makeuseof.com/mount-extract-iso-file-windows/). This is important, because the **upgrading most likely will not work just from mounting the ISO**. Another scenarios when it might not work are if you extracted the ISO to a USB or a network mounted drive. So **make sure the files are on your PC**. The easiest way if you just do it on your Desktop.
+First, you need to **extract the files of the ISO file**. Either by mounting the image and copying the files out, or with an file archiver software, like [7-Zip](https://www.7-zip.org/). 
 
-Now all you have to do is to **open the `setup.exe` in the installer**.
+This is important, because the **upgrading most likely will not work just running from the mounted the ISO**. 
+
+Another scenarios when it might not work are if you extracted the ISO to a USB or a network mounted drive. So **make sure the files are on your PC**. The easiest way if you just do it on your Desktop.
+
+
+## Step 3: Starting
+
+Now all you have to do is to **run the `setup.exe` as administrator in the files of the installer**.
 
 If you get the following error, and you done everything according to the guide so far, a **restart** usually solves it.
 
@@ -64,6 +71,6 @@ From now on, you only need to just wait. For how long is varied by the hardware,
 
 While upgrading, your OS will reboot multiple times.
 
-## Step 3: Finalizing
+## Step 4: Finalizing
 
 After upgrading, the OS will run its preparation again, just like the after a fresh installation. It may take some time, too, since it will delete the remains of the previous Windows (Windows.old folder).

@@ -7,6 +7,11 @@ hide:
     div.admonition p:not(.admonition-title) {
         font-size: 125%;
     }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 </style>
 
 # ReviOS related questions
@@ -437,6 +442,24 @@ To reactivate Network statistics:
 ## How to change lock screen background?
 
 Rename your background image to `img100.jpg` and move it to `C:\Windows\Web\Screen` (Taking ownership to the original `img100.jpg` might be mandatory).
+
+---
+
+## Font bug
+
+If your text looks like how it is on the picture below...
+
+![font-bug](img/msi-afterburner-font-bug.png){width=300 .center}
+
+... you need to change the `Language for non-Unicode fonts` in the `Region` settings.
+
+You can find it either in the Control Panel, or by just seaching for it in the Start Menu.
+
+When after opening it change to the `Administrative` tab. It will look like this.
+
+![region](img/region.png){width=400 .center}
+
+Here open the `Change system locale...` menu, then select your language. And check the option `Beta: Use Unicode UTF-8 for worldwide language support`.
 
 ---
 
