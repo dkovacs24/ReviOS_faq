@@ -1,0 +1,106 @@
+[
+	{
+        "name": "ReviOS 10 22.09",
+        "md5": "02C25493C4512650BAC41B930A1FC937"
+    },
+	{
+        "name": "ReviOS 10 22.09 (Upgrade)",
+        "md5": "2C4130FBC6D35772A5960D1D295A7E9A"
+    },
+	{
+        "name": "ReviOS 11 22.09",
+        "md5": "4D6FE5A8F1869A4F3B45D0CC4FC3D3EF"
+    },
+	{
+        "name": "ReviOS 11 22.09 (Upgrade)",
+        "md5": "8EE13FD42083D3A6B862F25E8EEC4B17"
+    },
+    {
+        "name": "ReviOS 10 22H2 22.08",
+        "md5": "6F8CB342E89FFE7B9AA56A9F50552224"
+    },
+    {
+        "name": "ReviOS 10 22H2 22.08 (Upgrade)",
+        "md5": "829EC644B71AFC278EAE0453FEABA77C"
+    },
+    {
+        "name": "ReviOS 10 22.07",
+        "md5": "A7A87DEC82C7853AE214E2452F2601CC"
+    },
+    {
+        "name": "ReviOS 11 22H2 22.07",
+        "md5": "B137BCB3DC802FE508E4959226369C12"
+    },
+    {
+        "name": "ReviOS 10 22.06",
+        "md5": "8FB372F7B8AC8D66FB45A37C2A8B0E7A"
+    },
+    {
+        "name": "ReviOS 11 22H2 22.06",
+        "md5": "35B64E17F1B8E8250A6CDFD4D6D653B0"
+    },
+    {
+        "name": "ReviOS 11 22.05",
+        "md5": "E0FFC06E0DD362B2DD304A5F6D64A770"
+    },
+    {
+        "name": "ReviOS 10 21H2 22.05",
+        "md5": "86693E8D19DEAE4A596CCFD4D14CD502"
+    },
+    {
+        "name": "ReviOS 11 22.04",
+        "md5": "A19531C7743CE2C007453A29F8A42972"
+    },
+    {
+        "name": "ReviOS 10 21H2 22.04",
+        "md5": "D2FBD97EBE0A758105D7D23A6A71F155"
+    },
+    {
+        "name": "ReviOS 11 22.02",
+        "md5": "B1E354C7036AEF0878AD0BFCEA7F9311"
+    },
+    {
+        "name": "ReviOS 10 21H2 22.01",
+        "md5": "B752D9927662F5AA943D90DA9DF4BD59"
+    },
+    {
+        "name": "ReviOS 11 21.12",
+        "md5": "DB5872882F95DE5B5295B0709FFDCA04"
+    },
+    {
+        "name": "ReviOS 21H2 1.0",
+        "md5": "C296AF7588F23E9E9B8C0F8CE8993644"
+    },
+    {
+        "name": "ReviOS 21H1 1.0",
+        "md5": "7DE32F2D799F7D25B99CB009FCB89941"
+    },
+    {
+        "name": "ReviOS 20H2 S1.0",
+        "md5": "C5D10BE2AF390C6DA3CD769BFACD59FA"
+    },
+    {
+        "name": "ReviOS 1709 S1.0",
+        "md5": "17AEE7534162ACE3C34FAF6389A82F05"
+    },
+    {
+        "name": "ReviOS 2004 S1.0",
+        "md5": "2FCA939326F6EE3214C04C2C6A5A16EF"
+    },
+    {
+        "name": "ReviOS 1709 U4.0",
+        "md5": "09B179A826D48192840C634F5B863DF0"
+    },
+    {
+        "name": "ReviOS 1709 U3.5",
+        "md5": "17FF46F0931A7D2905830D06F18CC7F5"
+    },
+    {
+        "name": "UnifyOS 1.5",
+        "md5": "F6E0689F5C75579566D66DA4F7168D2A"
+    },
+    {
+        "name": "AmendOS 3.0",
+        "md5": "2A2181A423BC99039AF5754997448AAC"
+    }
+]
