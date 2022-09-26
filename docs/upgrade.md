@@ -46,18 +46,16 @@ To begin with, it is mandatory to **extract the files of the ISO file** on the p
 
 This is important, because the **upgrading process will not work just running from the mounted ISO**. 
 
-Another scenarios when it might not work are if you extracted the ISO to a USB or a network mounted drive. So **make sure the files are on your PC**. The easiest way if you just do it on your Desktop.
+Another scenarios when it might not work are if you extracted the ISO to a USB or a network mounted drive.
+
+So **make sure the files are on your PC**. The easiest way if you just do it on your `Desktop` or the root of the Windows partition, usually called `C:`.
 
 
 ## Step 3: Starting
 
 Now all you have to do is to **run the `upgrade.bat` file**.
 
-If you get the following error, and you have done everything according to the guide so far, a **restart** usually solves it.
-
-![upgrade_img1_error.png](img/upgrade/upgrade_img1_error.png){.center}
-
-So if everything went right, the following should open.
+The following should open.
 
 ![upgrade_img2_starting.png](img/upgrade/upgrade_img2_starting.png){.center}
 
@@ -65,7 +63,7 @@ Here, just go through with the defaults the installation give you. (Next, Accept
 
 And you should arrive to the following screen:
 
-==**It isn't actually installing **Windows Server**. ReviOS *tricks* the `setup.exe` file which gives people ability to upgrade to ReviOS 11 builds on hardwares without TPM and SecureBoot**==.
+==**It is not actually installing **Windows Server**. ReviOS *tricks* the `setup.exe` file which gives people ability to upgrade to ReviOS 11 builds on hardwares without TPM and SecureBoot**==.
 
 ![upgrade_img3_updating.png](img/upgrade/upgrade_img3_updating.png){.center}
 
@@ -73,21 +71,20 @@ From now on, you only need to just wait. For how long is varied by the hardware,
 
 While upgrading, your OS will reboot multiple times.
 
-## Step 4: Finalizing
+### Possible issues
 
-After upgrading, the OS will run its preparation again, just like the after a fresh installation. By default, ReviOS doesn't remove the Windows.old folder, because some users prefer old version. To clean it up, you can run Disk Cleanup as administrator and choose `Previous Windows installations(s)`, [more information](https://www.thewindowsclub.com/remove-previous-windows-installations).
+If you get the error `Unable to create required installation folder // Error code: 0x8030002F`, and you have done everything according to the guide in step 1, a **restart** usually solves it.
 
-## Possible Issues
+![upgrade_img1_error.png](img/upgrade/upgrade_img1_error.png){.center}
 
-As stated in the introduction, this method is experimental and might not work on your device. If you're having issues with the upgrade, this section might help.
+If a reboot has not solved this issue for you, you are probably affected by an issue in Windows itself. You can try the following steps in order.
 
-### Unable to create required installation folder // Error Code 0x8030002F
-
-If a reboot hasn't solved this issue for you, you're probably affected by an issue in Windows itself. You can try the following steps in order.
-- If you haven't already, **unzip the .iso file**. This can be done with any archive software like WinRAR or 7-Zip.
-- If you used WinRAR before, try 7-Zip and then run the `upgrade.bat` again.
-- Move the folder of the unzipped .iso to the root of your `C:` drive, then run the `upgrade.bat` again.
-- Run the `setup.exe` directly, instead of using the `upgrade.bat`
-- Try **step 1** from [this guide](https://windowsreport.com/unable-create-required-installation-folder/#1)
+1. If you copied the files from the mounted ISO or used WinRAR before, **try [7-Zip](https://www.7-zip.org/)** for extraction and then run the `upgrade.bat` again.
+2. Run the `setup.exe` directly, instead of using the `upgrade.bat`.
+3. Try **step 1** from [this guide](https://windowsreport.com/unable-create-required-installation-folder/#1). This must be a last resort, since it will give access to the `Local` folder inside `AppData` for everyone and everything.
 
 If none of these steps have solved the issue, you will have to do a clean installation. Upgrading **will not work on your machine**.
+
+## Step 4: Finalizing
+
+After upgrading, the OS will run its preparation again, just like the after a fresh installation. By default, ReviOS does not remove the Windows.old folder, because some users prefer old version. To clean it up, you can run Disk Cleanup as administrator and choose `Previous Windows installations(s)`, [more information](https://www.thewindowsclub.com/remove-previous-windows-installations).
