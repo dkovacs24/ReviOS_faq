@@ -76,3 +76,18 @@ While upgrading, your OS will reboot multiple times.
 ## Step 4: Finalizing
 
 After upgrading, the OS will run its preparation again, just like the after a fresh installation. By default, ReviOS doesn't remove the Windows.old folder, because some users prefer old version. To clean it up, you can run Disk Cleanup as administrator and choose `Previous Windows installations(s)`, [more information](https://www.thewindowsclub.com/remove-previous-windows-installations).
+
+## Possible Issues
+
+As stated in the introduction, this method is experimental and might not work on your device. If you're having issues with the upgrade, this section might help.
+
+### Unable to create required installation folder // Error Code 0x8030002F
+
+If a reboot hasn't solved this issue for you, you're probably affected by an issue in Windows itself. You can try the following steps in order.
+- If you haven't already, **unzip the .iso file**. This can be done with any archive software like WinRAR or 7-Zip.
+- If you used WinRAR before, try 7-Zip and then run the `upgrade.bat` again.
+- Move the folder of the unzipped .iso to the root of your `C:` drive, then run the `upgrade.bat` again.
+- Run the `setup.exe` directly, instead of using the `upgrade.bat`
+- Try **step 1** from [this guide](https://windowsreport.com/unable-create-required-installation-folder/#1)
+
+If none of these steps have solved the issue, you will have to do a clean installation. Upgrading **will not work on your machine**.
