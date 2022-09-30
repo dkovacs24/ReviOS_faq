@@ -36,7 +36,7 @@ If the installation needs a driver, please refer the [installation guide](instal
 
 ## The "Do not close the window, otherwise your system won't work properly" window not closing
 
-Make sure you did not select a character in the command prompt (a **white rectangle**). This puts the terminal window in selection mode and pauses the running of the script. **Press Esc** or Enter, and the script will continue. If you are not sure, but the window title has the "Select" word (see the example), it is definitely in selection mode.
+Make sure you did not select a character in the command prompt (a **white rectangle**). This puts the terminal window in selection mode and pauses the running of the script. **Press Esc** or Enter, and the script will continue. If you are not sure, but the window title has the `Select` word (see the example), it is definitely in selection mode.
 
 <figure markdown>
   ![Example image](img/cmd.png)

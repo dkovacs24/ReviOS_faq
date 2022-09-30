@@ -48,13 +48,13 @@ As of this moment (2022-09-24), there are only 2 versions of ReviOS that are sup
 
 **For FACEIT we always recommend to use the latest versions of ReviOS.** [Details below](#is-revios-faceit-compatible-which-version-do-i-need-for-faceit).
 
-### Which version is the best?
+### Which build of ReviOS is the best?
 
-Even if you do find **older version of ReviOS, we do not recommend** using those, since they are outdated. Maybe ancient version have better latency or speed, but the number of software that supports those versions are declining day by day.
+Even if you do find **older builds of ReviOS, we do not recommend** using those, since they are outdated. Maybe ancient version have a slightly better latency or speed, but the number of software that supports those versions are declining day by day. And ReviOS is getting better with every release.
 
 So always **install the latest**, because that is the best.
 
-### ReviOS 10 or ReviOS 11?
+### Which version of ReviOS is the best? ReviOS 10 or ReviOS 11?
 
 These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation**, might perform better on **Windows 11**, due to [DirectStorage](https://www.thewindowsclub.com/what-is-directstorage-in-windows){target=_blank}, [BypassIO](https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/bypassio){target=_blank} and [Thread Director](https://www.anandtech.com/show/16881/a-deep-dive-into-intels-alder-lake-microarchitectures/2){target=_blank}, these are not ReviOS related things, these differences are present on stock Windows too.
 
@@ -207,13 +207,13 @@ If the **shortcut** of the Revision Tool is not **on the Desktop**, follow this:
 
 If you cannot find the Revision Tool inside the Documents folder, or you just want to download it, you can do it here:
 
-[:fontawesome-solid-download: Download Revision-Tool.zip](files/Revision-Tool.zip){ .md-button .md-button--primary }
+[:fontawesome-solid-download: Download Revision-Tool_2209.zip](files/Revision-Tool_2209.zip){ .md-button .md-button--primary }
 
-> MD5 checksum: `ba63377d40ac7f72681268e4e91312ae`
+> MD5 checksum: `5be1e62cdddcd1b425ba27a8e4891e78`
 
 
 !!! warning "Revision Tool on older versions of ReviOS"
-    This Revision Tool is fully compatible only with the latest builds of ReviOS, that is right now the `22.07`. If you try to use some or all of the functions of this version of the Revision Tool, they might not work.
+    This Revision Tool is from `22.09`. Some of the functions of this version of Revision Tool might not work on every build of ReviOS.
 
     Not exhaustive list of functions that will not work:
 
@@ -225,7 +225,7 @@ If you cannot find the Revision Tool inside the Documents folder, or you just wa
 
 ### Full list of features of the Revision-Tool
 
-=== "On ReviOS 10 (22.08)"
+=== "On ReviOS 10 (22.09)"
 
     - Enable/Disable:
         - Defender
@@ -241,7 +241,7 @@ If you cannot find the Revision Tool inside the Documents folder, or you just wa
     - Installing VC Runtimes
 
 
-=== "On ReviOS 11 (22.07)"
+=== "On ReviOS 11 (22.09)"
 
     - Enable/Disable:
         - Defender
