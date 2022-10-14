@@ -35,7 +35,13 @@ Download the latest **Upgrade** build of ReviOS 10 or 11 from the [Download page
 
 ### Verification
 
-In the File Explorer go where you downloaded the ISO file, and ++shift+"Right-click"++ on an empty space of the window, and select `Open PowerShell window here`. Type in the following command: `#!powershell Get-FileHash -Algorithm MD5 -Path <file name>`, and replace the `<file name>` part with the name of the ReviOS installer file's name. **You can use the ++tab++ button to autocomplete the file name.**
+In the File Explorer go where you downloaded the ISO file, and ++shift+"Right-click"++ on an empty space of the window, and select `Open PowerShell window here`. Type in the following command:
+
+```powershell
+Get-FileHash -Algorithm MD5 -Path <file name>
+```
+
+And replace the `<file name>` part with the name of the ReviOS installer file's name. **You can use the ++tab++ button to autocomplete the file name.**
 
 When the command returns with the hash of the file, compare it to the corresponding MD5 hash value on the [Verification page on the Revision website](https://www.revi.cc/revios/download/verify){target=_blank}. If they match, it means the ISO file is not corrupted, you can carry on with the process.
 
@@ -55,7 +61,7 @@ So **make sure the files are on your PC**. The easiest way if you just do it on 
 
 Now all you have to do is to **run the `upgrade.bat` file**.
 
-The following should open.
+The following should open. **If not, see the [Possible issues](#possible-issues)**
 
 ![upgrade_img2_starting.png](img/upgrade/upgrade_img2_starting.png){.center}
 
@@ -73,17 +79,17 @@ While upgrading, your OS will reboot multiple times.
 
 ### Possible issues
 
-If you get the error `Unable to create required installation folder // Error code: 0x8030002F`, and you have done everything according to the guide in step 1, a **restart** usually solves it.
+If you get the error `Unable to create required installation folder // Error code: 0x8030002F`, and you have done everything according to the guide, a **restart** usually solves it.
 
 ![upgrade_img1_error.png](img/upgrade/upgrade_img1_error.png){.center}
 
 If a reboot has not solved this issue for you, you are probably affected by an issue in Windows itself. You can try the following steps in order.
 
 1. If you copied the files from the mounted ISO or used WinRAR before, **try [7-Zip](https://www.7-zip.org/)** for extraction and then run the `upgrade.bat` again.
-2. Run the `setup.exe` directly, instead of using the `upgrade.bat`.
+2. Run the `setup.exe` directly, instead of using the `upgrade.bat`. And select not to install updates, although it seems like this setting does not affect the upgrading of ReviOS.
 3. Try **step 1** from [this guide](https://windowsreport.com/unable-create-required-installation-folder/#1). This must be a last resort, since it will give access to the `Local` folder inside `AppData` for everyone and everything.
 
-If none of these steps have solved the issue, you will have to do a clean installation. Upgrading **will not work on your machine**.
+If none of these steps have solved the issue, you will have to do a [clean installation](install.md). Upgrading **will not work on your machine**.
 
 ## Step 4: Finalizing
 
