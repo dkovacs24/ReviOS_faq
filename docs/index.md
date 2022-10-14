@@ -10,7 +10,7 @@ hide:
     }
 </style>
 
-Before using reading this website, please do your own research, look around on the [ReviOS website](https://www.revi.cc/){target=_blank}, there specifically in the [Changelogs](https://www.revi.cc/revios/download/changelog){target=_blank}, the [Post-install](https://www.revi.cc/revios/post-install){target=_blank} guide and the [Workspace](https://www.revi.cc/revios/workspace){target=_blank} and on [our Discord server](https://discord.gg/962y4pU){target=_blank}.
+Before using reading this website, please do your own research, look around on the [ReviOS website](https://www.revi.cc/){target=_blank}, there specifically in the [Changelogs](https://www.revi.cc/revios/download/changelog){target=_blank} and the [Post-Install](https://www.revi.cc/revios/post-install){target=_blank} guide and search for solutions on [our Discord server](https://discord.gg/962y4pU){target=_blank}, because every question is asked at least a dozen times already.
 
 Also use Google (or the search engine of your choice), especially with not ReviOS related questions.
 
