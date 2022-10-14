@@ -20,7 +20,7 @@ In this guide you will see how to install ReviOS (or any Windows for that matter
 
 We discuss here the installation of ReviOS with a **USB drive** (or usually called a flash drive in the guide). This guide also mentions a way to boot into the installer without a USB drive, but the main method is to use a flash drive. Another way is to use the script of iidanL, [InstallWindowsWithoutUSB](https://github.com/iidanL/InstallWindowsWithoutUSB){target=_blank}. We do not support this method of installing, use it at your own risk. (TLDR: It sets up your new Windows to dual boot.)
 
-## 0. step: Preparations
+## Step 0: Preparations
 
 ### BIOS vs UEFI, MBR vs GPT
 
@@ -33,7 +33,7 @@ Just to be sure, inside the booting menu, and search for a setting where you can
 These technologies usually come in pair, like UEFI and GPT or BIOS and MBR. And while you could switch things up, like UEFI and MBR or BIOS and GPT, it is not recommended. Here, for example, the UEFI and GPT pair means UEFI boot mode on GPT partitions. Also, UEFI systems usually backward compatible and can boot in Legacy mode, often called CSM. If your system have CSM, it is recommended to switch it off, because the booting probably will be done in Legacy or BIOS mode otherwise.
 
 !!! tldr
-    In short, if your PC is **capable of** booting in **UEFI** mode, we recommend **selecting GPT**, if not, select MBR later on in the step [Making a bootable flash drive](#2-step-making-a-bootable-flash-drive). 
+    In short, if your PC is **capable of** booting in **UEFI** mode, we recommend **selecting GPT**, if not, select MBR later on in the step [Making a bootable flash drive](#step-2-making-a-bootable-flash-drive). 
 
 ### Drivers
 
@@ -43,7 +43,7 @@ If you do not know how to download your driver, we can give you a general idea, 
 
 The fastest way to find the drivers you need, just **Google** "<*the name of your motherboard or laptop*> drivers", of course without the `<` and `>` symbols. Click the search result which takes you to the **website of the manufacturer** of your device. There find the drivers, probably under the **Support section** or something like that.
 
-After you accuired your drivers, should take them with yourself on the installation **flash drive**. So you need to **copy** the files **after the** [**2. step**](#2-step-making-a-bootable-flash-drive), but before the [3.](#3-step-booting-the-flash-drive)
+After you accuired your drivers, should take them with yourself on the installation **flash drive**. So you need to **copy** the files **after the** [**2nd step**](#step-2-making-a-bootable-flash-drive), but before the [3rd](#step-3-booting-the-flash-drive)
 
 Alternatively, and ==this method should not be considered the default option==, download the network drivers with Snappy Driver Installer Origin and take the whole folder of it with you before you format your partition(s). Help on this method can be found on the [How to install drivers page](drivers.md#a-last-resort).
 
@@ -68,7 +68,7 @@ Should look like this:
 
 ![disk_management](img/install/0_disk_management.png){.center}
 
-The **recommended** way to do the installation is to at least **format** (or more like delete and recreate, you will see it at [installing](#4-step-installing)) the **partitions storing the OS**. Usually the partition that was called C: by the Windows on it, and other **System** and **Reserved** and **Recovery** partitions. Additionally, you can format your other partitions too, but **make sure you backed up everything**.
+The **recommended** way to do the installation is to at least **format** (or more like delete and recreate, you will see it at [Installing](#step-4-installing)) the **partitions storing the OS**. Usually the partition that was called C: by the Windows on it, and other **System** and **Reserved** and **Recovery** partitions. Additionally, you can format your other partitions too, but **make sure you backed up everything**.
 
 !!! tip
     Additional advice is if you are worried you could not identify your partitions inside the installer, take note of the sizes and the number of them. If you have multiple partitions with the same size, take note of the free space, too.
@@ -100,10 +100,10 @@ The **recommended** way to do the installation is to at least **format** (or mor
 ### Backup
 
 !!! danger
-    This Windows installing process will delete your previous OS, so you should back up everything you plan on seeing again in the future. At least have separate partition to save your data. Or you can move your things to a flash drive, even the installing flash drive, just after the [2. step](#2-step-making-a-bootable-flash-drive), but before the [3.](#3-step-booting-the-flash-drive)
+    This Windows installing process will delete your previous OS, so you should back up everything you plan on seeing again in the future. At least have separate partition to save your data. Or you can move your things to a flash drive, even the installing flash drive, just after the [2nd step](#step-2-making-a-bootable-flash-drive), but before the [3rd](#step-3-booting-the-flash-drive)
 
 
-## 1. step: Download ReviOS
+## Step 1: Download ReviOS
 
 You can find our supported versions on the [Download page of the Revision website](https://www.revi.cc/revios/download){target=_blank}.
 
@@ -114,11 +114,17 @@ Here download the version of your choice. Help about choosing the right ReviOS: 
 !!! attention
     This step is very important, it can save you a lot of time in the future.
 
-On Windows, go in the File Explorer where you downloaded the ISO file, and ++shift+"Right-click"++ on an empty space of the window, and select `Open PowerShell window here`. Type in the following command: `#!powershell Get-FileHash -Algorithm MD5 -Path <file name>`, and replace the `<file name>` part with the name of the ReviOS installer file's name. **You can use the ++tab++ button to autocomplete the file name.**
+On Windows, go in the File Explorer where you downloaded the ISO file, and ++shift+"Right-click"++ on an empty space of the window, and select `Open PowerShell window here`. Type in the following command: 
+
+```powershell
+Get-FileHash -Algorithm MD5 -Path <file name>
+```
+
+And replace the `<file name>` part with the name of the ReviOS installer file's name. **You can use the ++tab++ button to autocomplete the file name.**
 
 When the command returns with the hash of the file, compare it to the corresponding MD5 hash value on the [Verification page on the Revision website](https://www.revi.cc/revios/download/verify){target=_blank}. If they are the same, your ISO file is not corrupted, you can carry on with the process.
 
-## 2. step: Making a bootable flash drive
+## Step 2: Making a bootable flash drive
 
 ### Ventoy
 
@@ -187,7 +193,7 @@ A new partition will pop up. ++"Right-click"++ on it, and select `New Simple Vol
 
 If you are done, the formatted partition will be ready for you to extract the contents of the ISO file. If you went with this method, the following steps should be the same, just this guide will call your partition with the installer's file a flash drive, not a partition.
 
-## 3. step: Booting the flash drive
+## Step 3: Booting the flash drive
 
 <!-- To boot into your flash drive, open `Start menu`, click on `Power`, and then hold ++shift++ and click on `Restart`. This way, a full screen menu should come up looking like this:
 
@@ -211,7 +217,7 @@ Alternatively you can go inside your BIOS settings, and change the boot order. T
     This option is not optimal, because if you are done with your Windows installation, but before booting the OS the first time, you have to change the boot order back in BIOS or remove the installer media, the flash drive, because you will boot into the installer again.
 
 
-## 4. step: Installing
+## Step 4: Installing
 
 If you have done everything good so far, the installer boot up, and should look like this:
 
@@ -248,7 +254,7 @@ Then the OS will load for a bit, with the text `Getting ready` on the screen.
 
 Then it will restart again.
 
-## 5. step: Windows post install setup
+## Step 5: Windows post install setup
 
 !!! note
     On Windows 11 this section looks different but, the steps should be the same. Furthermore, in newer builds of ReviOS, we added the possibility to change the language and keyboard here. This tutorial does not reflect that, since the pictures has not been updated in a while.
@@ -270,7 +276,7 @@ Here just press `Not now`. Even if you press `Accept`, Cortana probably will not
 
 You are done with the Windows post install setup, the OS will load for some time.
 
-## 6. step: Finishing the installation
+## Step 6: Finishing the installation
 
 After arriving at your desktop, first, **let the script that popped up run through**. **Do not do anything until the script restarts your PC**. If it is not closing, read [the section about this phenomenon](not-related.md#the-do-not-close-the-window-otherwise-your-system-wont-work-properly-window-not-closing).
 
