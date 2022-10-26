@@ -9,13 +9,13 @@ hide:
     }
 </style>
 
-!!! info
-    This page is still in the works, but it should cover almost all of the scenarios already.
+<!-- !!! info
+    This page is still in the works, but it should cover almost all of the scenarios already. -->
 
 # How to install drivers
 
 !!! warning "About driver installer tools and Windows Update"
-    Lots of users install their drivers incorrectly, like use a driver installer tool or Windows Update to install an outdated or not even working one. Do not use any of these methods. Driver installer software in the best case scenario install a not working or outdated driver. Worst case scenario, break your Windows and case Blue Screen of Death. Windows Update just bad. Most hardware it cannot identify, or installs older driver for it.
+    Lot of users install their drivers incorrectly, like use a driver installer tool or Windows Update. Do not use any of these methods. Driver installer software in the best case scenario will install a not working or outdated driver. Worst case scenario, break your Windows and case Blue Screen of Death. Windows Update just bad. Most hardware it cannot identify, or installs older driver for it.
 
 ## Step 0: What drivers do you need
 
@@ -51,19 +51,21 @@ On a laptop, the steps are almost exactly the same. Since the laptop's motherboa
 
 ### Other hardware
 
-Other hardware that is not part of the motherboard.
+Other hardware that is not part of the motherboard. You should look up the manual of the hardware for a guide, or check the manufacturer's website for drivers.
 
 #### GPU drivers
 
-These drivers should only come from the manufacturer's website, with the case of GPUs it is either NVIDIA, AMD or Intel.
+GPUs are the most common with drivers are not from the motherboard drivers. These drivers should only come from the manufacturer's website, with the case of GPUs it is either NVIDIA, AMD or Intel.
 
 ##### NVIDIA
 
-Go to the official [NVIDIA website](https://www.nvidia.com/){target=_blank}, click the `Drivers` button on top top of the page, then select your driver. Download and install it. This should be trivial. For debloating and tweaking the driver, see the [Post-Install guide on the Revision website](https://www.revi.cc/revios/post-install#h.p_26IZH4oTRS4J){target=_blank}.
+Go to the official [NVIDIA website](https://www.nvidia.com/){target=_blank}, click the `Drivers` button on top top of the page.
+Select your GPU, and then the type of the driver (Game Ready or Studio Ready driver, [read more here](https://itigic.com/nvidia-game-ready-vs-studio-drivers-differences-which-one-to-choose/)).
+After that click `Search` and download the first option.
 
 ##### AMD
 
-Go to the official [AMD website](https://www.amd.com/en/support){target=_blank}, and down the page select your hardware, download the driver and install it.
+Go to the official [AMD website](https://www.amd.com/en/support){target=_blank}, and down the page select your hardware, click `SUBMIT`, download the driver compatible with your operating system.
 
 ##### Intel
 
@@ -83,11 +85,16 @@ If you cannot find your CPU on the ark website, you can go on a different method
 
 ## Step 2: Installing the driver
 
-This is the easiest part. Extract the driver, if it comes in an archive file. Then you need to find an executable file, usually called `setup`, with the extensions `.exe` or `.msi`.
+This is the easiest part. If the driver is for the motherboard, it usually comes archived or compressed. Extract it, and find an executable file, usually called `setup`, with the extensions `.exe` or `.msi`. You just run it, and follow the on screen structions.
+
+Other hardware's drivers are often a standalone `exe` file. You just run those files, and follow the on screen structions.
 
 !!! example
     Continuing the PC motherboard example from the previous step, if you downloaded the audio driver, you need to first extract the zip file of the driver. Then find and execute the `setup.exe`. The installer wizard will walk you through the installation of the driver. After finishing, it usually offers to restart the PC. Restart it. Or if the timing of the restart is not good for you, you can delay it, but do not forget to do it later, because until you restart, the hardware will not work.
 
+### NVIDIA
+
+For debloating and tweaking the driver, see the [Post-Install guide on the Revision website](https://www.revi.cc/revios/post-install#h.p_26IZH4oTRS4J){target=_blank}.
 
 ## Troubleshooting
 

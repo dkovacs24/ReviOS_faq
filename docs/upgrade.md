@@ -21,7 +21,7 @@ hide:
 With newer builds of ReviOS we provide 2 separate ISOs. One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS version. This way, the users can update their ReviOS instance without reinstalling and losing files.
 
 !!! danger
-    ==**This is an EXPERIMENTAL method**==. Upgrading is tested numerous times, but we obviously cannot cover all the edge cases, so use this with caution!
+    ==**This is an EXPERIMENTAL method**==. Upgrading was tested numerous times, but we obviously cannot cover all the edge cases, so use this with caution!
 
 This method is only working if you are upgrading a **previous ReviOS installation** that is at least on the **21H2** Windows version, or a stock Windows (but for that a complete fresh installation is more preferable). Upgrading from **other** custom **tweaked** systems is neither working nor supported. Cross-upgrades, like from ReviOS 10 to 11 or vice versa, should work, but it is not tested. 
 
@@ -31,7 +31,7 @@ And you need **at least 20-25 GB of free space** on the partition you have ReviO
 
 Download the latest **Upgrade** build of ReviOS 10 or 11 from the [Download page of our website](https://www.revi.cc/revios/download).
 
-==Make sure you download the `Upgrade-only` option. And the `Upgrade` word must be in the file name.==
+==Make sure you download the `Upgrade `/`Upgrade-only` option. And the `Upgrade` word must be in the file name.==
 
 ### Verification
 
