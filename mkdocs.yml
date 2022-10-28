@@ -7,6 +7,7 @@ nav:
     - How to install ReviOS: 'install.md'
     - How to install drivers: 'drivers.md'
     - How to upgrade ReviOS: 'upgrade.md'
+    - Archived questions: 'archive.md'
 theme:
   name: material
   language: en

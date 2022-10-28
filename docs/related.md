@@ -18,7 +18,7 @@ hide:
 
 ## What is the difference between the versions?
 
-As of this moment (2022-09-24), there are only 2 versions of ReviOS that are supported: `10 22.09` and `11 22.09`. No other versions are supported.
+As of this moment (2022-09-24), there are only 2 versions of ReviOS that are supported: `10 22.09` and `11 22.09`. No other versions or builds are supported.
 
 === "ReviOS 10 22.09"
 
@@ -46,11 +46,11 @@ As of this moment (2022-09-24), there are only 2 versions of ReviOS that are sup
     Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1023333840535687200){target=_blank}.
 
 
-**For FACEIT we always recommend to use the latest versions of ReviOS.** [Details below](#is-revios-faceit-compatible-which-version-do-i-need-for-faceit).
+**For FACEIT we always recommend to use the latest builds of ReviOS.** [Details below](#is-revios-faceit-compatible-which-build-do-i-need-for-faceit).
 
 ### Which build of ReviOS is the best?
 
-Even if you do find **older builds of ReviOS, we do not recommend** using those, since they are outdated. Maybe ancient version have a slightly better latency or speed, but the number of software that supports those versions are declining day by day. And ReviOS is getting better with every release.
+Even if you do find **older builds of ReviOS, we do not recommend** using those, since they are outdated. Maybe ancient builds have a slightly better latency or speed, but the number of software that supports those are declining day by day. And ReviOS is getting better with every release.
 
 So always **install the latest**, because that is the best.
 
@@ -67,10 +67,9 @@ And if you care about latency, Windows 10 still provides a better experience.
   <figcaption>Graph shows the latency of <b>Windows 10 LTSC 21H2 19044.1288</b> and <b>Windows 11 22H2 22621.105</b>. Tested with Intel i7-10700KF and GTX 1070TI by Muren#6968.<br>Click the image to open it</figcaption>
 </figure>
 
-### Why are there two ISOs files for each ReviOS version?
+### Why are there two ISO files for each ReviOS version?
 
 One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS. Read more at [How can I upgrade to the newest build of ReviOS?](#how-can-i-upgrade-to-the-newest-build-of-revios) section.
-
 
 ---
 
@@ -93,7 +92,7 @@ As of the **latest** ReviOS
 
 ## What is the system requirement for ReviOS?
 
-Refer to our website's section about this, although it is the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run. The Windows 11 versions of ReviOS have the Secure Boot and TPM requirements disabled.
+Refer to our website's section about this, although it is the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run. The Windows 11 versions of ReviOS have the Secure Boot and TPM requirements disabled only for the installation of the OS.
 
 !!! note "TPM and Secure Boot on Windows 11"
     In order to play games or use anti-cheats that require Secure Boot and TPM, you still need to enable those functions.
@@ -114,15 +113,15 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ---
 
-## Is ReviOS FACEIT compatible? Which version do I need for FACEIT?
+## Is ReviOS FACEIT compatible? Which build do I need for FACEIT?
 
 Since ReviOS is Windows, yes it is compatible.
 
 As of this moment (2022-09-24), the recommended builds of ReviOS are `10 22.09` and `11 22.09`.
 
-The `22.07` and `22.08` builds are probably still compatible with FACEIT, but not for long. Keep in mind, we do not support and recommend those versions anymore.
+The `22.07` and `22.08` builds are probably still compatible with FACEIT, but not for long. Keep in mind, we do not support and recommend those builds anymore.
 
-If you are using one of the recommended versions, and still cannot use FACEIT, since the release of that version probably another update was released by Microsoft, which is required by FACEIT. A new build of ReviOS probably will be released too, soon.
+If you are using one of the recommended builds, and still cannot use FACEIT, probably another updates were released by Microsoft, which is required by FACEIT. A new build of ReviOS probably will be released too, soon.
 
 ---
 
@@ -142,44 +141,18 @@ When you arrive to the partition making and selecting part of the installing pro
 
 ---
 
-## Apps taking long time to load on ReviOS
-
-Run this command using **PowerShell in administrator mode**:
-
-```powershell
-reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\smartscreen.exe" /v "Debugger" /t REG_SZ /d "%windir%\System32\taskkill.exe" /f
-```
-
----
-
-## I cannot log into my user
-
-*Update:*
-
-In ReviOS 22.07 (Windows 10 and 11) and above this problem is resolved. Even if you do not set a password at installation, and evade setting a PIN code when logging into your Microsoft account, at the login screen a window will pop up, and after logging in again with your MS account, you have to set a PIN code.
-
-The PIN code forcing can be disabled in `Settings` -> `Accounts` -> `Sign-in options` with `For improved security, only allow Windows Hello sign-in for Microsoft accounts on this device (Recommended)` after loggin in with your MS account and setting a PIN code. Then you can delete the PIN code, if you want to.
-
-*Previously:*
-
-This is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into your Microsoft account set a PIN code too.
-
-Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Partial solution reported with [this message on our Discord](https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001){target=_blank}.
-
----
-
 ## Can I use Windows Update? Where is the Windows Update menu in Settings?
 
 Not recommended, because **it will revert tweaks**, **reinstall bloatware** and cause setbacks with respect to privacy and other pre-applied features, might even **break your OS**.
 
-**Windows Update** in the latest versions of ReviOS **is not disabled**, so using the **Workspace** enable **.reg file will achieve nothing**. Only the automatic update downloading and installation is disabled, and in Settings the **Windows Update menu is hidden**. It is not disabled completely because half of the OS communicates through this service, for example the Store would not work.
+**Windows Update** in the latest builds of ReviOS **is not disabled**, only the automatic update downloading and installation is, and in Settings the **Windows Update menu is hidden**. It is not disabled completely because half of the OS communicates through this service, for example the Store would not work.
 
 If you still want to update, you can manually install updates with the help of [this guide on the Revision website](https://www.revi.cc/revios/workspace/updating){target=_blank} or reactivate the Windows Update menu in Settings with the Revision Tool. For more information about the tool, please read [the section about it](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool).
 
 !!! warning
     ==**If you update, might as well just use stock Windows.**== Reasons explained above.
 
-Instead, you maybe might want to upgrade your ReviOS instance to a newer build. About that, you can read more here: [How can I upgrade to the newest build of ReviOS?](#how-can-i-upgrade-to-the-newest-build-of-revios)
+Instead, you might want to upgrade your ReviOS instance to a newer build. About that, you can read more here: [How can I upgrade to the newest build of ReviOS?](#how-can-i-upgrade-to-the-newest-build-of-revios)
 
 ---
 
@@ -188,11 +161,11 @@ Instead, you maybe might want to upgrade your ReviOS instance to a newer build. 
 !!! danger
     ==**This is an EXPERIMENTAL method**==. We tested it numerous times, but obviously we cannot cover all the edge cases, so use this with caution!
 
-With newer builds of ReviOS we provide 2 separate ISOs. One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS version. This way, **the users can update their ReviOS instance without reinstalling and losing files**.
+With newer builds of ReviOS we provide 2 separate ISOs. One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS installation. This way, **the users can update their ReviOS instance without reinstalling and losing files**.
 
 For instructions and more information about upgrading your older ReviOS instance, **please read our [How to upgrade ReviOS](upgrade.md) guide**.
 
-If you want to upgrade because of FACEIT, make sure to check out [the section about it](#is-revios-faceit-compatible-which-version-do-i-need-for-faceit).
+If you want to upgrade because of FACEIT, make sure to check out [the section about it](#is-revios-faceit-compatible-which-build-do-i-need-for-faceit).
 
 ---
 
@@ -212,12 +185,12 @@ If you cannot find the Revision Tool inside the Documents folder, or you just wa
 > MD5 checksum: `5be1e62cdddcd1b425ba27a8e4891e78`
 
 
-!!! warning "Revision Tool on older versions of ReviOS"
+!!! warning "Revision Tool on older builds of ReviOS"
     This Revision Tool is from `22.09`. Some of the functions of this version of Revision Tool might not work on every build of ReviOS.
 
     Not exhaustive list of functions that will not work:
 
-    - Windows Defenter before `11 21.12` and `10 22.01`
+    - Windows Defender before `11 21.12` and `10 22.01`
     - Superfetch before `22.05`
     - Full Screen Optimizations before `10 22.06` and `11 22.07`
 
@@ -292,7 +265,7 @@ As a last resort, you can try the `wsreset -i` command. It reinstalls the Store 
 
 <br>
 
-> *Older, ReviOS 22.01 and 22.02 Xbox app problem (not supported versions anymore):*
+> *Older, ReviOS 22.01 and 22.02 Xbox app problem (not supported builds anymore):*
 >
 > If the updating is done, and Xbox login is still not working, go through these steps:
 >
@@ -309,39 +282,6 @@ As a last resort, you can try the `wsreset -i` command. It reinstalls the Store 
 >     **Make sure you install the packages in the order listed above.**
 >
 > 6. Restart
-
----
-
-## Cannot toggle Start Menu folders in Settings
-
-If you cannot toggle on Start Menu folders in Settings -> Personalization -> Start -> Folders:
-
-1. Open `regedit`
-2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\Start` 
-3. Delete every key **except** `ConfigureStartPins`
-
----
-
-## Windows Mail not working
-
-1. Open PowerShell in administrator mode, e.g. ++"Right-click"++ on the Start Menu button (++win++), and select `Windows PowerShell (Admin)`
-2. Run this command:
-
-    ```powershell
-    dism.exe /Online /Add-Capability /CapabilityName:OneCoreUAP.OneSync~~~~0.0.1.0
-    ```
-
-3. After this, Open `Settings`
-4. Go to `Privacy & security` -> `Contacts`
-5. Toggle on `Contact access`, `Let apps access your contacts` and `Mail and Calendar`
-
----
-
-## Disable old notification balloons
-
-1. Open `regedit`
-2. Go to `HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer`
-3. Set `EnableLegacyBalloonNotifications` to `0`
 
 ---
 
@@ -362,31 +302,6 @@ Link to the original messages on Discord: [Message 1](https://discord.com/channe
 
 ---
 
-## Blank screen after logging into ReviOS
-
-1. On the blank screen with cursor, press ++ctrl+alt+delete++, it will bring you the option for Task Manager along with other options. Open Task Manager.
-
-    Alternatively, you can also use the key combination ++ctrl+shift+esc++ to open the Task Manager directly.
-
-2. Click `File`, then `Run new task`.
-3. With the new window open `services.msc`.
-4. Search for the `App Readiness` service, and open it's properties by double-clicking it.
-5. Set the `Startup type` to `Disabled`.
-6. In the Task Manager click `File` and `Run new task` again.
-7. Run `shutdown /r /f /t 0`. It will restart your PC.
-
----
-
-## Explorer.exe crashing on ReviOS 11
-
-Open a PowerShell window as administrator, and run this command:
-
-```powershell
-Add-AppxPackage -Register -Path C:\Windows\SystemApps\Microsoft.UI.Xaml.CBS_8wekyb3d8bbwe\AppxManifest.xml -DisableDevelopmentMode -ForceApplicationShutdown
-```
-
----
-
 ## Valorant CFG error
 
 Either [turn on Windows Defender](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool), and you can enable Control Flow Guard in Windows Security,
@@ -398,45 +313,6 @@ Set-ProcessMitigation -Name vgc.exe -Enable CFG
 Set-ProcessMitigation -Name vgc.exe -Enable DEF
 Set-ProcessMitigation -Name vgc.exe -Enable AuditDynamicCode
 ```
-
----
-
-## GPU and Network monitoring not working in the Task Manager
-
-They are disabled because of leaking memory.
-
-To reactivate GPU statistics:
-
-1. Open `cmd`
-2. Run this:
-
-    ```
-    reg add "HKLM\SYSTEM\CurrentControlSet\Services\GraphicsPerfSvc" /v "Start" /t REG_DWORD /d "2" /f
-    ```
-
-3. Restart your PC
-
-4. Then run this:
-
-    ```
-    sc start GraphicsPerfSvc
-    ```
-
-    !!! note
-        If this command fails, which is most likely to happen on 22.04 and older versions, download [this zip](files/wscapi.zip), and place the contents of it inside the System32 folder. [Link to the original message and conversation on our Discord](https://discord.com/channels/619835916139364383/626772969611460619/953223236244619274){target=_blank}
-
-If you do not see your GPU in the Performance tab in Task Manager, restart your PC again.
-
-
-To reactivate Network statistics:
-
-1. Open `regedit`
-2. At `HKLM\System\CurrentControlSet\Services\Ndu` set `Start` to `2`
-3. Restart
-4. Then run this:
-    ```
-    sc start Ndu
-    ```
 
 ---
 
@@ -464,22 +340,8 @@ Here open the `Change system locale...` menu, then select your language. And che
 
 ---
 
-## AMD driver installation is crashing
+## Disable old notification balloons
 
-It is a Windows 11 bug. Try running the installer in silent mode, with the `/S` flag. [This message on our Discord](https://discord.com/channels/619835916139364383/626772969611460619/932975660392128562){target=_blank} helps with this issue by automatizing it.
-
-If this method is not working, install [Chocolatey](https://chocolatey.org/){target=_blank} and then the `amd-ryzen-chipset` package.
-
----
-
-## Internet icon bug
-
-[Discord message link with instructions](https://discord.com/channels/619835916139364383/626772969611460619/800174514951684116){target=_blank}
-
-[Zip file with the fix](files/fix-network-icon.zip)
-
----
-
-## Windows Update icon showed up on the taskbar and/or the "Update and shutdown/restart" option showed up
-
-This was a bug in the `22.01` builds, for now you can use [this fix](files/Fix-Windows-Update-Taskbar.reg){target=_blank} for the taskbar icon. The issue is already fixed in newer ReviOS builds.
+1. Open `regedit`
+2. Go to `HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer`
+3. Set `EnableLegacyBalloonNotifications` to `0`

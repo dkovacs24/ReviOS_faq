@@ -5,6 +5,11 @@ hide:
 
 # Not ReviOS related questions
 
+## Downloads are not working / Google Drive: "Sorry, you can't view or download this file at this time." / MEGA quota exceeded
+
+Check our [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640){target=_blank} and [website](https://www.revi.cc/revios/download){target=_blank} for alternative download links.
+
+---
 
 ## Internet/Sound/Bluetooth/other hardware... not working
 
@@ -58,18 +63,3 @@ Help to tweak: [ReviOS Post-Install guide on the Revision website](https://www.r
 ## Can I download other languages?
 
 Yes, in the Settings. If that is not working, follow the [guide about language installation on the Revision website](https://www.revi.cc/revios/workspace/lang){target=_blank}.
-
----
-
-## There are some visual bugs on the taskbar in ReviOS 11
-
-These bugs came from Windows 11, hope they will be fixed in next Microsoft update releases.
-
-In the meantime, try [StartAllBack](https://www.startallback.com/){target=_blank}.
-
-
----
-
-## Downloads are not working / Google Drive: "Sorry, you can't view or download this file at this time." / MEGA quota exceeded
-
-Check our [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640){target=_blank} and [website](https://www.revi.cc/revios/download){target=_blank} for alternative download links.
