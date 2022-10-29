@@ -30,7 +30,7 @@ As of this moment (2022-10-28), there are only 2 versions of ReviOS that are sup
 
     [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1035618788965613659){target=_blank}.
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1035973166897577984){target=_blank}.
 
 
 === "ReviOS 11 22.09"
@@ -43,7 +43,7 @@ As of this moment (2022-10-28), there are only 2 versions of ReviOS that are sup
 
     [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
 
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1035618788965613659){target=_blank}.
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1035973166897577984){target=_blank}.
 
 
 **For FACEIT we always recommend to use the latest builds of ReviOS.** [Details below](#is-revios-faceit-compatible-which-build-do-i-need-for-faceit).
