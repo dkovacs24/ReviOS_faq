@@ -266,7 +266,7 @@ After the last restart you should arrive at this screen, obviously here you have
 And here a password. You can skip this question by just clicking on `Next`. 
 
 !!! warning
-    Skipping this can lead to a bug in ReviOS. More details [here](related.md#i-cannot-log-into-my-user).
+    Skipping this can lead to a bug in ReviOS. More details [here](archive.md#i-cannot-log-into-my-user).
 
 ![post_install_password](img/install/10_post_install_password.png){.center width=600px}
 
