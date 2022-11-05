@@ -95,7 +95,9 @@ As of the **latest** ReviOS
 Refer to our website's section about this, although it is the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run. The Windows 11 versions of ReviOS have the Secure Boot and TPM requirements disabled only for the installation of the OS.
 
 !!! note "TPM and Secure Boot on Windows 11"
-    In order to play games or use anti-cheats that require Secure Boot and TPM, you still need to enable those functions.
+    In order to play games or use anti-cheats that require Secure Boot and TPM, you still need to enable those functions. 
+    
+    For more information and confirmation, check the requirements of the software you are going to use. Usually, anti-cheats does not require neither TPM nor Secure Boot on Windows 10.
 
 ### ReviOS RAM usage
 
