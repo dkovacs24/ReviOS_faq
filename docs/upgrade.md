@@ -41,7 +41,7 @@ In the File Explorer go where you downloaded the ISO file, and ++shift+"Right-cl
 Get-FileHash -Algorithm MD5 -Path <file name>
 ```
 
-And replace the `<file name>` part with the name of the ReviOS installer file's name. **You can use the ++tab++ button to autocomplete the file name.**
+And replace the `<file name>` part with the name of the ReviOS installer file's name. **You can use the ++tab++ button to autocomplete the file name.** For example: `Get-FileHash -Algorithm MD5 -Path .\ReviOS-10-22.10-Upgrade.iso`
 
 When the command returns with the hash of the file, compare it to the corresponding MD5 hash value on the [Verification page on the Revision website](https://www.revi.cc/revios/download/verify){target=_blank}. If they match, it means the ISO file is not corrupted, you can carry on with the process.
 
