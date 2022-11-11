@@ -5,19 +5,21 @@ hide:
 
 # Not ReviOS related questions
 
-## Downloads are not working / Google Drive: "Sorry, you can't view or download this file at this time." / MEGA quota exceeded
+## Downloads are not working / Google Drive: "Sorry, you can't view or download this file at this time." / MEGA quota exceeded {.to-scrape}
 
 Check our [official Discord server's](https://discord.gg/962y4pU){target=_blank} [download channel](https://discord.com/channels/619835916139364383/658369065110339640){target=_blank} and [website](https://www.revi.cc/revios/download){target=_blank} for alternative download links.
 
 ---
 
-## Internet/Sound/Bluetooth/other hardware... not working
+## Internet/Sound/Bluetooth/other hardware... not working {.to-scrape}
 
 Install the driver. Help: [How to install drivers page](drivers.md)
 
-### I do not have internet after installing ReviOS
+### I do not have internet after installing ReviOS {.to-scrape}
 
-You probably did not follow the ReviOS installation guide, where we recommend to download your driver before installation, exactly because of this situation. Use an other computer or if your phone has mobileinternet, use USB tethering, to download the network driver. More help finding the drivers on the [How to install drivers page](drivers.md).
+You probably did not follow the ReviOS installation guide, where we recommend to download your driver before installation, exactly because of this situation. 
+
+Use an other computer, or if your phone has mobile internet, use USB tethering, to download the network driver. More help finding the drivers on the [How to install drivers page](drivers.md).
 
 <!-- ## If you do not have internet...
 
@@ -29,7 +31,7 @@ If it finishes (you can monitor the process on the top side of the window), copy
 
 ---
 
-## Installation stoped with an error
+## Installation stoped with an error {.to-scrape}
 
 First, verify the ISO. You can find the checksums on the [Verification page of the Revision website](https://www.revi.cc/revios/download/verify). You can get help with the verification in the [installation guide](install.md#verification)'s section about it.
 
@@ -39,7 +41,7 @@ If the installation needs a driver, please refer the [installation guide](instal
 
 ---
 
-## The "Do not close the window, otherwise your system won't work properly" window not closing
+## The "Do not close the window, otherwise your system won't work properly" window not closing {.to-scrape}
 
 Make sure you did not select a character in the command prompt (a **white rectangle**). This puts the terminal window in selection mode and pauses the running of the script. **Press Esc** or Enter, and the script will continue. If you are not sure, but the window title has the `Select` word (see the example), it is definitely in selection mode.
 
@@ -50,7 +52,7 @@ Make sure you did not select a character in the command prompt (a **white rectan
 
 ---
 
-## Second monitor not working/blank or refresh rate not desired
+## Second monitor not working/blank or refresh rate not desired {.to-scrape}
 
 Install GPU drivers.
 
@@ -60,6 +62,6 @@ Help to tweak: [ReviOS Post-Install guide on the Revision website](https://www.r
 
 ---
 
-## Can I download other languages?
+## Can I download other languages? {.to-scrape}
 
 Yes, in the Settings. If that is not working, follow the [guide about language installation on the Revision website](https://www.revi.cc/revios/workspace/lang){target=_blank}.

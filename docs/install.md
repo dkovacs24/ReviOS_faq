@@ -107,7 +107,7 @@ The **recommended** way to do the installation is to at least **format** (or mor
 
 You can find our supported versions on the [Download page of the Revision website](https://www.revi.cc/revios/download){target=_blank}.
 
-Here download the version of your choice. Help about choosing the right ReviOS: [What is the difference between the versions?](related.md#what-is-the-difference-between-the-versions)
+Here download the the `Clean Installation` option of the version of your choice. Help about choosing the right ReviOS: [What is the difference between the versions?](related.md#what-is-the-difference-between-the-versions)
 
 ### Verification
 

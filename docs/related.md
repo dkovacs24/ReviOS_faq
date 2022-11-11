@@ -16,7 +16,7 @@ hide:
 
 # ReviOS related questions
 
-## What is the difference between the versions?
+## What is the difference between the versions? {.to-scrape}
 
 As of this moment (2022-10-28), there are only 2 versions of ReviOS that are supported: `10 22.10` and `11 22.10`. No other versions or builds are supported.
 
@@ -48,13 +48,13 @@ As of this moment (2022-10-28), there are only 2 versions of ReviOS that are sup
 
 **For FACEIT we always recommend to use the latest builds of ReviOS.** [Details below](#is-revios-faceit-compatible-which-build-do-i-need-for-faceit).
 
-### Which build of ReviOS is the best?
+### Which build of ReviOS is the best? {.to-scrape}
 
 Even if you do find **older builds of ReviOS, we do not recommend** using those, since they are outdated. Maybe ancient builds have a slightly better latency or speed, but the number of software that supports those are declining day by day. And ReviOS is getting better with every release.
 
 So always **install the latest**, because that is the best.
 
-### Which version of ReviOS is the best? ReviOS 10 or ReviOS 11?
+### Which version of ReviOS is the best? ReviOS 10 or ReviOS 11? {.to-scrape}
 
 These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation**, might perform better on **Windows 11**, due to [DirectStorage](https://www.thewindowsclub.com/what-is-directstorage-in-windows){target=_blank}, [BypassIO](https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/bypassio){target=_blank} and [Thread Director](https://www.anandtech.com/show/16881/a-deep-dive-into-intels-alder-lake-microarchitectures/2){target=_blank}, these are not ReviOS related things, these differences are present on stock Windows too.
 
@@ -67,13 +67,19 @@ And if you care about latency, Windows 10 still provides a better experience.
   <figcaption>Graph shows the latency of <b>Windows 10 LTSC 21H2 19044.1288</b> and <b>Windows 11 22H2 22621.105</b>. Tested with Intel i7-10700KF and GTX 1070TI by Muren#6968.<br>Click the image to open it</figcaption>
 </figure>
 
-### Why are there two ISO files for each ReviOS version?
+### Why are there two ISO files for each ReviOS version? {.to-scrape}
 
 One for installing a completely new ReviOS instance, and one for upgrading a previous ReviOS. Read more at [How can I upgrade to the newest build of ReviOS?](#how-can-i-upgrade-to-the-newest-build-of-revios) section.
 
+#### Should I use the Clean Installation or the Upgrade image? {.to-scrape}
+
+If you are installing ReviOS the first time, obviously the `Clean Installation`.
+
+If you are already on ReviOS, you can use the `Upgrade` images, but a reinstall is always better, and cleaner, in my opinion and experience. Also you do not have to use the latest build of ReviOS every time.
+
 ---
 
-## Unsupported things on ReviOS
+## Unsupported things on ReviOS {.to-scrape}
 
 As of the **latest** ReviOS
 
@@ -90,7 +96,7 @@ As of the **latest** ReviOS
 
 ---
 
-## What is the system requirement for ReviOS?
+## What is the system requirement for ReviOS? {.to-scrape}
 
 Refer to our website's section about this, although it is the same as the stock Windows have, but ReviOS usually uses less RAM, and fewer processes run. The Windows 11 versions of ReviOS have the Secure Boot and TPM requirements disabled only for the installation of the OS.
 
@@ -99,7 +105,7 @@ Refer to our website's section about this, although it is the same as the stock 
     
     For more information and confirmation, check the requirements of the software you are going to use. Usually, anti-cheats does not require neither TPM nor Secure Boot on Windows 10.
 
-### ReviOS RAM usage
+### ReviOS RAM usage {.to-scrape}
 
 | Total RAM Capacity | Max Usage                       | Actual Available Amount |
 | ------------------ | ------------------------------- | ----------------------- |
@@ -115,7 +121,7 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 ---
 
-## Is ReviOS FACEIT compatible? Which build do I need for FACEIT?
+## Is ReviOS FACEIT compatible? Which build do I need for FACEIT? {.to-scrape}
 
 Since ReviOS is Windows, yes it is compatible.
 
@@ -127,7 +133,7 @@ If you are using one of the recommended builds, and still cannot use FACEIT, pro
 
 ---
 
-## Rufus "Unable to patch/setup files for boot" error
+## Rufus "Unable to patch/setup files for boot" error {.to-scrape}
 
 On older versions of Rufus **select Standard at Image options**.
 
@@ -137,13 +143,13 @@ On newer versions when **a window pops up** with the options to remove Secure Bo
 
 ---
 
-## Missing drivers in the installation process
+## Missing drivers in the installation process {.to-scrape}
 
 When you arrive to the partition making and selecting part of the installing process, but the installer asks for drivers, you might need Intel Rapid Storage Technology (IRST) drivers. [Here is a helping guide from the Asus Support page.](https://www.asus.com/support/FAQ/1044458/){target=_blank}
 
 ---
 
-## Can I use Windows Update? Where is the Windows Update menu in Settings?
+## Can I use Windows Update? Where is the Windows Update menu in Settings? {.to-scrape}
 
 Not recommended, because **it will revert tweaks**, **reinstall bloatware** and cause setbacks with respect to privacy and other pre-applied features, might even **break your OS**.
 
@@ -158,7 +164,7 @@ Instead, you might want to upgrade your ReviOS instance to a newer build. About 
 
 ---
 
-## How can I upgrade to the newest build of ReviOS?
+## How can I upgrade to the newest build of ReviOS? {.to-scrape}
 
 !!! danger
     ==**This is an EXPERIMENTAL method**==. We tested it numerous times, but obviously we cannot cover all the edge cases, so use this with caution!
@@ -171,7 +177,7 @@ If you want to upgrade because of FACEIT, make sure to check out [the section ab
 
 ---
 
-## How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications? Revision Tool
+## How can I enable Windows Defender or Superfetch (SysMain) or UAC or Notifications? Revision Tool {.to-scrape}
 
 If the **shortcut** of the Revision Tool is not **on the Desktop**, follow this:
 
@@ -238,7 +244,7 @@ If you cannot find the Revision Tool inside the Documents folder, or you just wa
 
 ---
 
-## Microsoft Store / Xbox app not working
+## Microsoft Store / Xbox app not working {.to-scrape}
 
 Run `ctfmon` and `wsreset` commands.
 
@@ -287,7 +293,7 @@ As a last resort, you can try the `wsreset -i` command. It reinstalls the Store 
 
 ---
 
-## iTunes not detecting any Apple device
+## iTunes not detecting any Apple device {.to-scrape}
 
 It is because ReviOS lacks some Apple drivers, which you could download only by Windows Update, but that is still not recommended. Instead, you can use [3uTools](http://www.3u.com/){target=_blank} to repair the drivers.
 
@@ -304,7 +310,7 @@ Link to the original messages on Discord: [Message 1](https://discord.com/channe
 
 ---
 
-## Valorant CFG error
+## Valorant CFG error {.to-scrape}
 
 Either [turn on Windows Defender](#how-can-i-enable-windows-defender-or-superfetch-sysmain-or-uac-or-notifications-revision-tool), and you can enable Control Flow Guard in Windows Security,
 
@@ -318,13 +324,13 @@ Set-ProcessMitigation -Name vgc.exe -Enable AuditDynamicCode
 
 ---
 
-## How to change lock screen background?
+## How to change lock screen background? {.to-scrape}
 
 Rename your background image to `img100.jpg` and move it to `C:\Windows\Web\Screen` (Taking ownership to the original `img100.jpg` might be mandatory).
 
 ---
 
-## Font bug
+## Font bug {.to-scrape}
 
 If your text looks like how it is on the picture below...
 
@@ -342,7 +348,7 @@ Here open the `Change system locale...` menu, then select your language. And che
 
 ---
 
-## Disable old notification balloons
+## Disable old notification balloons {.to-scrape}
 
 1. Open `regedit`
 2. Go to `HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer`
