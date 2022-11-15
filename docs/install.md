@@ -131,7 +131,11 @@ When the command returns with the hash of the file, compare it to the correspond
 <!--What makes Ventoy a better choice over Rufus is that you can use it on Linux too, and it's much easier.-->
 
 !!! danger
-    This method will **wipe everything** from your flash drive. If you want to see the contents of it in the future, ==**make a backup**==.
+    This method will **wipe everything** from your flash drive. If you want to see the contents of it in the future, ==**make a backup**==. You can copy back the contents of the flash driver after Ventoy did it's thing. The partition probably will be named `Ventoy`.
+
+!!! tldr "Tldr: on how Ventoy works"
+    With Ventoy, you don't need to format the flash drive over and over, you just need to copy the image files to the USB drive and boot them directly. You can copy many files at a time and ventoy will give you a boot menu to select them.
+    And actually you will boot a hidden partition, with the sufficient software to boot up an image file after you select it.
 
 You can download Ventoy on the [official website of the software](https://www.ventoy.net/en/download.html){target=_blank}.
 
@@ -219,7 +223,16 @@ Alternatively you can go inside your BIOS settings, and change the boot order. T
 
 ## Step 4: Installing
 
-If you have done everything good so far, the installer boot up, and should look like this:
+If you have done everything good so far, and used Ventoy, a menu will be open with the option to select and image to run. It will look similar to this image:
+
+<figure markdown>
+  ![Ventoy_menu](img/install/6.5_Ventoy_menu.png){.center width=50%}
+  <figcaption markdown>Click on the picture to open it full size<br>Source: [Ventoy website](https://www.ventoy.net/en/screenshot.html)</figcaption>
+</figure>
+
+Select the desired image file. If you used Ventoy the first time, only one entry will be in the list.
+
+When the installer boots up, it should look something like this:
 
 ![installer1](img/install/7_installer1.png){.center width=600px}
 
