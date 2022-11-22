@@ -18,11 +18,11 @@ hide:
 
 ## What is the difference between the versions? {.to-scrape}
 
-As of this moment (2022-10-28), there are only 2 versions of ReviOS that are supported: `10 22.10` and `11 22.10`. No other versions or builds are supported.
+As of this moment (2022-11-22), there are only 2 versions of ReviOS that are supported: `10 22.11` and `11 22.11`. No other versions or builds are supported.
 
-=== "ReviOS 10 22.09"
+=== "ReviOS 10 22.11"
 
-    Based on the latest Windows 10 Pro (19045.2193), released on 28th of October 2022.
+    Based on the latest Windows 10 Pro (19045.2311), released on 22nd of November 2022.
 
     Recommended for older systems, incompatible with Windows 11.
 
@@ -30,12 +30,12 @@ As of this moment (2022-10-28), there are only 2 versions of ReviOS that are sup
 
     [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1035973166897577984){target=_blank}.
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/){target=_blank}.
 
 
-=== "ReviOS 11 22.09"
+=== "ReviOS 11 22.11"
 
-    Based on the latest Windows 11 Pro (22621.755), released on 28th of October 2022.
+    Based on the latest Windows 11 Pro (22621.898), released on 22nd of November 2022.
 
     Recommended for newer systems with more recent hardware.
 
@@ -43,7 +43,7 @@ As of this moment (2022-10-28), there are only 2 versions of ReviOS that are sup
 
     [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
 
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1035973166897577984){target=_blank}.
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/){target=_blank}.
 
 
 **For FACEIT we always recommend to use the latest builds of ReviOS.** [Details below](#is-revios-faceit-compatible-which-build-do-i-need-for-faceit).
@@ -125,9 +125,9 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 Since ReviOS is Windows, yes it is compatible.
 
-As of this moment (2022-10-28), the recommended builds of ReviOS are `10 22.10` and `11 22.10`.
+As of this moment (2022-10-28), the recommended builds of ReviOS are `10 22.11` and `11 22.11`.
 
-The `22.08` and `22.09` builds are probably still compatible with FACEIT, but not for long. Keep in mind, we do not support and recommend those builds anymore.
+The `22.09` and `22.10` builds are probably still compatible with FACEIT, but not for long. Keep in mind, we do not support and recommend those builds anymore.
 
 If you are using one of the recommended builds, and still cannot use FACEIT, probably another updates were released by Microsoft, which is required by FACEIT. A new build of ReviOS probably will be released too, soon.
 
@@ -188,15 +188,12 @@ If the **shortcut** of the Revision Tool is not **on the Desktop**, follow this:
 
 If you cannot find the Revision Tool inside the Documents folder, or you just want to download it, you can do it here:
 
-[:fontawesome-solid-download: Download Revision-Tool_2209.zip](files/Revision-Tool_2209.zip){ .md-button .md-button--primary }
-
-> MD5 checksum: `5be1e62cdddcd1b425ba27a8e4891e78`
-
+[:fontawesome-solid-download: Download Revision Tool](https://github.com/MeetRevision/revision-tool/releases/latest){.md-button .md-button--primary target=_blank}
 
 !!! warning "Revision Tool on older builds of ReviOS"
-    This Revision Tool is from `22.09`. Some of the functions of this version of Revision Tool might not work on every build of ReviOS.
+    The requirement for this Revision Tool is at least `22.11`, or newer. Some of the functions of this version of Revision Tool might not work on every build of ReviOS.
 
-    Not exhaustive list of functions that will not work:
+    **Not exhaustive list of functions that will not work:**
 
     - Windows Defender before `11 21.12` and `10 22.01`
     - Superfetch before `22.05`
