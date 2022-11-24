@@ -181,12 +181,21 @@ If you want to upgrade because of FACEIT, make sure to check out [the section ab
 
 If the **shortcut** of the Revision Tool is not **on the Desktop**, follow this:
 
+On `22.11` or newer:
+
+1. The new Revision Tool is installed at `C:\Program Files (x86)\Revision Tool`
+2. Run the `revitool.exe`, or make a shortcut of it to the Desktop
+3. Select the desired option
+4. After the changes are done, restart your PC
+
+On every ReviOS build (**LEGACY TOOL**):
+
 1. In the `Documents` folder of the user go to `Workspace` and then `Revision-Tool` folder. To be exact: `%userprofile%\Documents\Workspace\Revision-Tool`
 2. Run `Start.bat`
 3. Select the desired option
 4. After the changes are done, restart your PC
 
-If you cannot find the Revision Tool inside the Documents folder, or you just want to download it, you can do it here:
+If you cannot find the Revision Tool, or you just want to download it, you can do it here:
 
 [:fontawesome-solid-download: Download Revision Tool](https://github.com/MeetRevision/revision-tool/releases/latest){.md-button .md-button--primary target=_blank}
 
