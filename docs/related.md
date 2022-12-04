@@ -143,12 +143,6 @@ On newer versions when **a window pops up** with the options to remove Secure Bo
 
 ---
 
-## Missing drivers in the installation process {.to-scrape}
-
-When you arrive to the partition making and selecting part of the installing process, but the installer asks for drivers, you might need Intel Rapid Storage Technology (IRST) drivers. [Here is a helping guide from the Asus Support page.](https://www.asus.com/support/FAQ/1044458/){target=_blank}
-
----
-
 ## Can I use Windows Update? Where is the Windows Update menu in Settings? {.to-scrape}
 
 Not recommended, because **it will revert tweaks**, **reinstall bloatware** and cause setbacks with respect to privacy and other pre-applied features, might even **break your OS**.
