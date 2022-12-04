@@ -204,43 +204,26 @@ If you cannot find the Revision Tool, or you just want to download it, you can d
 
     Related: [ReviOS Changelog](https://www.revi.cc/revios/download/changelog){target=_blank}
 
-### Full list of features of the Revision-Tool
+### Full list of features of the Revision Tool
 
-=== "On ReviOS 10 (22.09)"
-
-    - Enable/Disable:
-        - Defender
-        - Superfetch
-            - Memory Compression
-        - Windows Update features
-            - Unhide Windows Updates
-            - Enable automatic drivers updating
-        - UAC
-        - Notifications
-        - Inking And Typing Personalization
-        - Full Screen Optimizations
-    - Installing VC Runtimes
-
-
-=== "On ReviOS 11 (22.09)"
-
-    - Enable/Disable:
-        - Defender
-        - Superfetch
-            - Memory Compression
-        - Windows Update features
-            - Unhide Windows Updates
-            - Enable automatic drivers updating
-        - UAC
-        - Notifications
-        - Inking And Typing Personalization
-        - Full Screen Optimizations
-        - Additional Windows 11 tweaks
-            - New right-click menu
-            - Tabs in File Explorer
-    - Installing VC Runtimes
-
-
+- Security
+    - Windows Defender (default: OFF)
+    - User Account Control (default: ON)
+    - Spectre & Meltdown Mitigation (default: OFF)
+    - Intel TSX (default: ON)
+- Usability
+    - Windows Notifications (default: ON)
+    - Legacy Notification Balloons (default: ON)
+    - Inking And Typing Personalization (default: OFF)
+    - Windows 11
+        - New Windows 11 Context Menu (default: ON)
+        - File Explorer Tabs (default: ON)
+- Performance
+    - Superfetch (default: OFF)
+    - Fullscreen optimization (default: OFF)
+- Windows Updates
+    - Hide the Windows Updates page (default: ON)
+    - Automatic Driver Updates (default: OFF)
 
 ---
 
