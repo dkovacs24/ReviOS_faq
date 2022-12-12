@@ -102,6 +102,7 @@ If the downloaded driver is not working try the following:
 
 - Did you restart after installing the driver? If not, it probably will fix it.
 - Try to find and install an older driver.
+- Check out the [last resort](#a-last-resort)
 
 ## A LAST RESORT
 
