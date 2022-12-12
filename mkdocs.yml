@@ -15,10 +15,10 @@ theme:
   favicon: favicon.ico
   palette: 
     scheme: slate
-    primary: red
-    accent: deep orange
+    primary: indigo
+    accent: light blue
   font:
-   text: Open Sans
+   text: Inter
    code: Roboto Mono
   features:
     - navigation.tabs
@@ -33,7 +33,6 @@ theme:
     # - toc.integrate
 markdown_extensions:
   - admonition
-  - meta
   - toc:
       permalink: true
       # toc_depth: 3
