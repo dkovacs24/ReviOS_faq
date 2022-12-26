@@ -18,11 +18,11 @@ hide:
 
 ## What is the difference between the versions? {.to-scrape}
 
-As of this moment (2022-11-22), there are only 2 versions of ReviOS that are supported: `10 22.11` and `11 22.11`. No other versions or builds are supported.
+As of this moment (2022-12-25), there are only 2 versions of ReviOS that are supported: `10 22.12` and `11 22.12`. No other versions or builds are supported.
 
-=== "ReviOS 10 22.11"
+=== "ReviOS 10 22.12"
 
-    Based on the latest Windows 10 Pro (19045.2311), released on 22nd of November 2022.
+    Based on the latest Windows 10 Pro (19045.2364), released on 25th of December 2022.
 
     Recommended for older systems, incompatible with Windows 11.
 
@@ -30,12 +30,12 @@ As of this moment (2022-11-22), there are only 2 versions of ReviOS that are sup
 
     [Download](https://www.revi.cc/revios/download#h.vxvav5mpn4w){target=_blank}
 
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/){target=_blank}.
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1056539155015929898{target=_blank}.
 
 
-=== "ReviOS 11 22.11"
+=== "ReviOS 11 22.12"
 
-    Based on the latest Windows 11 Pro (22621.898), released on 22nd of November 2022.
+    Based on the latest Windows 11 Pro (22621.963), released on 25th of December 2022.
 
     Recommended for newer systems with more recent hardware.
 
@@ -43,7 +43,7 @@ As of this moment (2022-11-22), there are only 2 versions of ReviOS that are sup
 
     [Download](https://www.revi.cc/revios/download#h.kwa7bvvnrtc9){target=_blank}
 
-    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/){target=_blank}.
+    Alternative download links on the official [Discord](https://discord.gg/962y4pU){target=_blank} server's [download channel](https://discord.com/channels/619835916139364383/658369065110339640/1056539155015929898){target=_blank}.
 
 
 **For FACEIT we always recommend to use the latest builds of ReviOS.** [Details below](#is-revios-faceit-compatible-which-build-do-i-need-for-faceit).
@@ -125,9 +125,9 @@ Credit to [Stasium#0001](https://stasium.dev/){target=_blank}.
 
 Since ReviOS is Windows, yes it is compatible.
 
-As of this moment (2022-10-28), the recommended builds of ReviOS are `10 22.11` and `11 22.11`.
+As of this moment (2022-10-28), the recommended builds of ReviOS are `10 22.12` and `11 22.12`.
 
-The `22.09` and `22.10` builds are probably still compatible with FACEIT, but not for long. Keep in mind, we do not support and recommend those builds anymore.
+The `22.11` and `22.10` builds are probably still compatible with FACEIT, but not for long. Keep in mind, we do not support and recommend those builds anymore.
 
 If you are using one of the recommended builds, and still cannot use FACEIT, probably another updates were released by Microsoft, which is required by FACEIT. A new build of ReviOS probably will be released too, soon.
 
