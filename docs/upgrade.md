@@ -59,7 +59,7 @@ So **make sure the files are on your PC**. The easiest way if you just do it on 
 
 ## Step 3: Starting
 
-Now all you have to do is to **run the `upgrade.bat` file**.
+Now all you have to do is to **run the `upgrade.bat` file**. If you do no have an `upgrade.bat` file, just run the `setup.exe`. Same, if an error returns with the bat file, for example missing no telemetry parameter.
 
 The following should open. **If not, see the [Possible issues](#possible-issues)**
 
