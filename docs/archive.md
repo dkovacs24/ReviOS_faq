@@ -55,22 +55,6 @@ To reactivate Network statistics:
 
 ---
 
-## I cannot log into my user
-
-*Update:*
-
-In ReviOS 22.07 (Windows 10 and 11) and above this problem is resolved. Even if you do not set a password at installation, and evade setting a PIN code when logging into your Microsoft account, at the login screen a window will pop up, and after logging in again with your MS account, you have to set a PIN code.
-
-The PIN code forcing can be disabled in `Settings` -> `Accounts` -> `Sign-in options` with `For improved security, only allow Windows Hello sign-in for Microsoft accounts on this device (Recommended)` after loggin in with your MS account and setting a PIN code. Then you can delete the PIN code, if you want to.
-
-*Previously:*
-
-This is happening, because of the connection of a Microsoft account to the local user. Right now the only fix is to reinstall your OS, and after you log into your Microsoft account set a PIN code too.
-
-Other technique to evade the bug, is to log into your Microsoft account in the Microsoft Store. That way you will not be locked out and still can use your PC without a PIN code. Partial solution reported with [this message on our Discord](https://discord.com/channels/619835916139364383/626772969611460619/944214984047616001){target=_blank}.
-
----
-
 ## Blank screen after logging into ReviOS
 
 1. On the blank screen with cursor, press ++ctrl+alt+delete++, it will bring you the option for Task Manager along with other options. Open Task Manager.
