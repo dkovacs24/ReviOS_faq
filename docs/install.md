@@ -116,23 +116,23 @@ Here download the the `Clean Installation` option of the version of your choice.
 
 === "Automatic Method"
 
-  Using an automatic tool made by [Stasium](https://github.com/StasiumDev/), you can automagically verify the downloaded ISO. You can download it [here](https://github.com/StasiumDev/ReviOS-Verifier/releases). 
+    Using an automatic tool made by [Stasium](https://github.com/StasiumDev/), you can automagically verify the downloaded ISO. You can download it [here](https://github.com/StasiumDev/ReviOS-Verifier/releases). 
   
-  After downloading the .zip file, extract it to a location of your choice. Here you will see a `revi-verifier.exe` file. Drag the downloaded Revi ISO onto this program. It will scan the file and check if it has downloaded successfully. 
+    After downloading the .zip file, extract it to a location of your choice. Here you will see a `revi-verifier.exe` file. Drag the downloaded Revi ISO onto this program. It will scan the file and check if it has downloaded successfully. 
   
-  If the program reports an error with the file, you should download the ISO again, preferrably from another source. Multiple alternative sources can be found on the [Revision Discord](https://discord.gg/962y4pU).
+    If the program reports an error with the file, you should download the ISO again, preferrably from another source. Multiple alternative sources can be found on the [Revision Discord](https://discord.gg/962y4pU).
 
 === "Manual Method"
 
-  On Windows, go in the File Explorer where you downloaded the ISO file, and ++shift+"Right-click"++ on an empty space of the window, and select `Open PowerShell window here`. Type in the following command: 
+    On Windows, go in the File Explorer where you downloaded the ISO file, and ++shift+"Right-click"++ on an empty space of the window, and select `Open PowerShell window here`. Type in the following command: 
 
-  ```powershell
-  Get-FileHash -Algorithm MD5 -Path <file name>
-  ```
+    ```powershell
+    Get-FileHash -Algorithm MD5 -Path <file name>
+    ```
 
-  And replace the `<file name>` part with the name of the ReviOS installer file's name. **You can use the ++tab++ button to autocomplete the file name.** For example: `Get-FileHash -Algorithm MD5 -Path .\ReviOS-10-22.10.iso`
+    And replace the `<file name>` part with the name of the ReviOS installer file's name. **You can use the ++tab++ button to autocomplete the file name.** For example: `Get-FileHash -Algorithm MD5 -Path .\ReviOS-10-22.10.iso`
 
-  When the command returns with the hash of the file, compare it to the corresponding MD5 hash value on the [Verification page on the Revision website](https://www.revi.cc/revios/download/verify){target=_blank}. If they are the same, your ISO file is not corrupted, you can carry on with the process.
+    When the command returns with the hash of the file, compare it to the corresponding MD5 hash value on the [Verification page on the Revision website](https://www.revi.cc/revios/download/verify){target=_blank}. If they are the same, your ISO file is not corrupted, you can carry on with the process.
 
 ## Step 2: Making a bootable flash drive
 
