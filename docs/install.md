@@ -116,7 +116,7 @@ Here download the the `Clean Installation` option of the version of your choice.
 
 === "Automatic Method"
 
-    Using an automatic tool made by [Stasium](https://github.com/StasiumDev/), you can automagically verify the downloaded ISO. You can download it [here](https://github.com/StasiumDev/ReviOS-Verifier/releases). 
+    Using an automatic tool made by [Stasium](https://github.com/StasiumDev/), you can automatically verify the downloaded ISO. You can download it [here](https://github.com/StasiumDev/ReviOS-Verifier/releases). 
   
     After downloading the .zip file, extract it to a location of your choice. Here you will see a `revi-verifier.exe` file. Drag the downloaded Revi ISO onto this program. It will scan the file and check if it has downloaded successfully. 
   
