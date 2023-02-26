@@ -56,7 +56,7 @@ So always **install the latest**, because that is the best.
 
 ### Which version of ReviOS is the best? ReviOS 10 or ReviOS 11? {.to-scrape}
 
-These two versions of ReviOS have very little difference between them, and it mainly boils down to **what do you like more**. Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation**, might perform better on **Windows 11**, due to [DirectStorage](https://www.thewindowsclub.com/what-is-directstorage-in-windows){target=_blank}, [BypassIO](https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/bypassio){target=_blank} and [Thread Director](https://www.anandtech.com/show/16881/a-deep-dive-into-intels-alder-lake-microarchitectures/2){target=_blank}, these are not ReviOS related things, these differences are present on stock Windows too.
+These two versions of ReviOS have very little difference between them, and it mainly boils down to **what you like more**, Windows 10 or Windows 11. Although **DirectX 12 games** and latest **Intel** processors, like the **12th generation** or up, might perform better on **Windows 11**, due to [DirectStorage](https://www.thewindowsclub.com/what-is-directstorage-in-windows){target=_blank}, [BypassIO](https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/bypassio){target=_blank} and [Thread Director](https://www.anandtech.com/show/16881/a-deep-dive-into-intels-alder-lake-microarchitectures/2){target=_blank}, these are not ReviOS related things, these differences are present on stock Windows too.
 
 Also, if you plan on using anti-cheat systems like FACEIT or Vanguard, you must enable Secure Boot and TPM, regardless that ReviOS 11 skips the check when installing, so if your hardware does not support it, use ReviOS 10.
 
@@ -79,7 +79,7 @@ If you are already on ReviOS, you can use the `Upgrade` images, but a reinstall 
 
 ---
 
-## Unsupported things on ReviOS {.to-scrape}
+## Unsupported features on ReviOS {.to-scrape}
 
 As of the **latest** ReviOS
 
@@ -92,7 +92,6 @@ As of the **latest** ReviOS
 
 - Windows Insider Hub
 - Intel Indeo Codecs
-- Video Compression Manager (VCM) codecs
 
 ---
 
@@ -175,14 +174,14 @@ If you want to upgrade because of FACEIT, make sure to check out [the section ab
 
 If the **shortcut** of the Revision Tool is not **on the Desktop**, follow this:
 
-On `22.11` or newer:
+For ReviOS - `22.11` or newer:
 
 1. The new Revision Tool is installed at `C:\Program Files (x86)\Revision Tool`
 2. Run the `revitool.exe`, or make a shortcut of it to the Desktop
 3. Select the desired option
 4. After the changes are done, restart your PC
 
-On every ReviOS build (**LEGACY TOOL**):
+For legacy ReviOS builds (**LEGACY TOOL**):
 
 1. In the `Documents` folder of the user go to `Workspace` and then `Revision-Tool` folder. To be exact: `%userprofile%\Documents\Workspace\Revision-Tool`
 2. Run `Start.bat`
@@ -194,7 +193,7 @@ If you cannot find the Revision Tool, or you just want to download it, you can d
 [:fontawesome-solid-download: Download Revision Tool](https://github.com/MeetRevision/revision-tool/releases/latest){.md-button .md-button--primary target=_blank}
 
 !!! warning "Revision Tool on older builds of ReviOS"
-    The requirement for this Revision Tool is at least `22.11`, or newer. Some of the functions of this version of Revision Tool might not work on every build of ReviOS.
+    The requirement for this Revision Tool is at least `22.10`, or newer. Some of the functions of this version of Revision Tool might not work on every build of ReviOS.
 
     **Not exhaustive list of functions that will not work:**
 
@@ -219,11 +218,16 @@ If you cannot find the Revision Tool, or you just want to download it, you can d
         - New Windows 11 Context Menu (default: ON)
         - File Explorer Tabs (default: ON)
 - Performance
-    - Superfetch (default: OFF)
-    - Fullscreen optimization (default: OFF)
+    - Superfetch (default: OFF for SSD; ON for HDD)
+    - Fullscreen optimization (default: ON)
+    - Optimizations for windowed games (default: OFF)
 - Windows Updates
     - Hide the Windows Updates page (default: ON)
     - Automatic Driver Updates (default: OFF)
+- Miscellaneous
+    - Fast Startup & Hibernate (default: OFF)
+    - Network and GPU monitoring (default: OFF)
+    - Multiplane overlay (MPO) (default: ON)
 
 ---
 
@@ -278,7 +282,7 @@ As a last resort, you can try the `wsreset -i` command. It reinstalls the Store 
 
 ## iTunes not detecting any Apple device {.to-scrape}
 
-It is because ReviOS lacks some Apple drivers, which you could download only by Windows Update, but that is still not recommended. Instead, you can use [3uTools](http://www.3u.com/){target=_blank} to repair the drivers.
+ReviOS disables automatic drivers updating by default, thus iTunes cannnot detect Apple devices. To fix it, you can use [3uTools](http://www.3u.com/){target=_blank} to repair the drivers.
 
 Once installed, after opening the software, go to:
 
@@ -309,7 +313,7 @@ Set-ProcessMitigation -Name vgc.exe -Enable AuditDynamicCode
 
 ## How to change lock screen background? {.to-scrape}
 
-Rename your background image to `img100.jpg` and move it to `C:\Windows\Web\Screen` (Taking ownership to the original `img100.jpg` might be mandatory).
+Make a copy of your background image and rename to `img100.jpg` & `img105.jpg` and move them to `C:\Windows\Web\Screen` (Taking ownership to the original `img100.jpg` might be mandatory). 
 
 ---
 
@@ -330,12 +334,6 @@ When after opening it change to the `Administrative` tab. It will look like this
 Here open the `Change system locale...` menu, then select your language. And check the option `Beta: Use Unicode UTF-8 for worldwide language support`.
 
 ---
-
-## Disable old notification balloons {.to-scrape}
-
-1. Open `regedit`
-2. Go to `HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\Explorer`
-3. Set `EnableLegacyBalloonNotifications` to `0`
 
 ---
 
