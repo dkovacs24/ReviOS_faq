@@ -66,6 +66,7 @@ Another scenarios when it might not work are if you extracted the ISO to a USB o
 
 So **make sure the files are on your PC**. The easiest way if you just do it on your `Desktop` or the root of the Windows partition, usually called `C:`.
 
+if using **ReviOS builds 22.10** or later, it is **essential to disable** Windows Defender, User Account Control (UAC), and Fast Startup via **Revision Tool**.
 
 ## Step 3: Starting
 
