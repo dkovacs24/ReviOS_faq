@@ -10,6 +10,7 @@ nav:
     - Archived questions: 'archive.md'
 theme:
   name: material
+  custom_dir: overrides
   language: en
   logo: img/revision_crop.png
   favicon: favicon.ico
@@ -27,7 +28,7 @@ theme:
     # - navigation.indexes
     # - navigation.expand
     - navigation.top
-    - navigation.instant
+    # - navigation.instant
     - navigation.tracking
     - toc.follow
     # - toc.integrate
@@ -55,16 +56,16 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
 extra:
   generator: true
-  social:
-    - icon: octicons/person-16
-      link: https://discord.com/users/310497849274007553
-      name: Dawe24#1229
-    - icon: material/web
-      link: https://www.revi.cc/
-      name: Revision website
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/962y4pU
-      name: Revision Discord
+  # social:
+  #   - icon: octicons/person-16
+  #     link: https://discord.com/users/310497849274007553
+  #     name: Dawe24#1229
+  #   - icon: material/web
+  #     link: https://www.revi.cc/
+  #     name: Revision website
+  #   - icon: fontawesome/brands/discord
+  #     link: https://discord.gg/962y4pU
+  #     name: Revision Discord
 plugins:
   - search
   - redirects:
@@ -72,6 +73,13 @@ plugins:
         'after-install.md': 'index.md'
         'before-install.md': 'index.md'
         'discord.md': 'https://discord.gg/962y4pU'
+        'index.md': 'https://www.revi.cc/docs/'
+        'related.md': 'https://www.revi.cc/docs/'
+        'not-related.md': 'https://www.revi.cc/docs/'
+        'install.md': 'https://www.revi.cc/docs/'
+        'drivers.md': 'https://www.revi.cc/docs/'
+        'upgrade.md': 'https://www.revi.cc/docs/'
+        'archive.md': 'https://www.revi.cc/docs/'
   - git-revision-date
   - glightbox:
       draggable: false
