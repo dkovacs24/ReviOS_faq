@@ -1,13 +1,7 @@
 # ReviOS frequently asked questions
 
-[https://www.revi.cc/](https://www.revi.cc/)
+This project merged with the new [Revision website](https://www.revi.cc/), and further development will be made there.
 
-This project moved from GitHub Pages to Netlify.
+Address for the pulished work used to be: [revios.rignoa.com](https://revios.rignoa.com/)
 
-Old GitHub pages address was [dkovacs24.github.io/ReviOS_faq](https://dkovacs24.github.io/ReviOS_faq)
-
-New Netlify address is: [revios-faq.netlify.app](https://revios-faq.netlify.app/)
-
-The custom domain used for GH Pages now points to Netlify: [revios.rignoa.com](https://revios.rignoa.com/)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/968d548f-4f41-4fc7-8abc-fe3e73e73925/deploy-status)](https://app.netlify.com/sites/revios-faq/deploys)
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/dkovacs24/ReviOS_faq">ReviOS FAQ</a> by <span property="cc:attributionName">dkovacs24 (<a href="https://discord.com/users/310497849274007553">Dawe24#1229</a>)</span> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p> 
